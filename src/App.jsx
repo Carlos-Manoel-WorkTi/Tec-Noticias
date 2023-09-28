@@ -1,7 +1,14 @@
-export default function App() {
+// src/App.js
+import React from 'react';
+import Navbar from './components/Navbar';
+
+function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-  )
+    <div>
+      <Navbar />
+      {/* Conteúdo do seu aplicativo */}
+    </div>
+  );
 }
+
+export default App;
