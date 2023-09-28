@@ -1,16 +1,36 @@
+// src/components/Navbar.js
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
     <nav className="bg-blue-500 p-4">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="text-white text-2xl font-semibold">Meu Site</div>
+        <Link to="/" className="text-white text-2xl font-semibold">
+          Meu Site
+        </Link>
         <div className="hidden md:block">
           <ul className="flex space-x-4">
-            <li className="text-white hover:text-gray-300">Início</li>
-            <li className="text-white hover:text-gray-300">Sobre</li>
-            <li className="text-white hover:text-gray-300">Serviços</li>
-            <li className="text-white hover:text-gray-300">Contato</li>
+            <li>
+              <Link to="/" className="text-white hover:text-gray-300">
+                Início
+              </Link>
+            </li>
+            <li>
+              <Link to="/sobre" className="text-white hover:text-gray-300">
+                Sobre
+              </Link>
+            </li>
+            <li>
+              <Link to="/servicos" className="text-white hover:text-gray-300">
+                Serviços
+              </Link>
+            </li>
+            <li>
+              <Link to="/contato" className="text-white hover:text-gray-300">
+                Contato
+              </Link>
+            </li>
           </ul>
         </div>
         <div className="md:hidden">
