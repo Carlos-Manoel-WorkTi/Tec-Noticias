@@ -4,12 +4,13 @@
 
 <head>
 	<title>Login</title>
+	<link rel="stylesheet" href="css/login-style.css">
 </head>
 
 <body>
-	<div>
+	<div class="container">
 		<!-- PARTE ESQUERDA -->
-		<div>
+		<div class="left">
 			<header>
 				<div>
 					<h2>LOGIN</h2>
@@ -17,12 +18,12 @@
 			</header>
 			<form>
 				<div>
-					<label for="Email">Email</label>
-					<input type="email" name="Email" id="Email" value="" />
+					<label for="Email">Email:</label>
+					<input type="email" name="Email" id="Email" value="" placeholder="Digite seu email" />
 				</div>
 				<div>
-					<label for="Senha">Senha</label>
-					<input type="password" name="Senha" id="Senha" value="" />
+					<label for="Senha">Senha:</label>
+					<input type="password" name="Senha" id="Senha" value="" placeholder="Digite sua senha"/>
 				</div>
 				<div>
 					<a href="#">Esqueceu a senha? clique aqui</a>
@@ -33,35 +34,35 @@
 			</form> <!-- FIM DO FORMULÁRIO -->
 		</div>
 		<!-- PARTE DIREITA -->
-		<div>
+		<div class="right">
 			<div>
-				<h2>Seja bem-vindo ao Tec Notícias, faça login ou clique aqui para criar sua conta.</h2>
+				<h2>Seja bem-vindo ao <span id="titulo">Tec Notícias</span>, faça login ou clique aqui para criar sua conta.</h2>
 			</div>
 			<div>
 				<a href="index.html"><button type="button">CRIAR</button></a>
 			</div>
 			<div>
-				<img  style='height: 200px; width: 300px;' src="img/sobreposição.png"  alt="COMPLEMENTO" />
+				<img  id="img-over" src="img/sobreposição.png"  alt="COMPLEMENTO" />
 			</div>
 		</div>
-		<div>
+		<div class="bottom">
 			<!-- PARTE INFERIOR -->
 			<div>
-				<img style='height: 50px; width: 100px;' src="img/new-logo.png" alt="Logo" />
+				<img src="img/new-logo.png" alt="logo" id="logo" />
 			</div>
 			<div>
-				<h1><a href="cadastro.html">Ainda não tem conta? Clique aqui</a></h1>
+				<a href="cadastro.html">Ainda não tem conta? Clique aqui</a>
 			</div>
 		</div>
-		<!-- FOOTER -->
-		<footer>
-			<ul>
-				<li><a href="#">Termos</a></li>
-				<li><a href="#">País</a></li>
-				<li><a href="#">Sobre</a></li>
-			</ul>
-		</footer>
 	</div>
+	<!-- FOOTER -->
+	<footer>
+		<ul>
+			<li><a href="#">Termos</a></li>
+			<li><a href="#">Brasil</a></li>
+			<li><a href="#">Sobre</a></li>
+		</ul>
+	</footer>
 </body>
 
 </html>
