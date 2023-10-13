@@ -4,32 +4,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style></style>
-  <title>Tec Noticias</title>
+  <!-- Links para os estilos (CSS) -->
+  <link rel="stylesheet" href="css/logo.css">
+  <link rel="stylesheet" href="css/style-lastNews.css">
+  <link rel="stylesheet" href="css/style-podcasts.css">
+  <link rel="stylesheet" href="css/style-evento.css">
+  <link rel="stylesheet" href="css/style-cultura.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    integrity="sha512-UJfAaOlIRtdR+0P6C3KUoTDAxVTuy3lnSXLyLKlHYJlcSU8Juge/mjeaxDNMlw9LgeIotgz5FP8eUQPhX1q10A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styleMediaView.css">
+
+
+  <title>nav bar</title>
 </head>
 
-<body>
+<body class="container-fluid">
   <header>
 
-    <nav>
-      <div>
-        <img src="img/logo.png" alt="logo" />
-        <a href="#"><i>MENU</i></a>
-        <ul>
-          <li><a href="index.html">INICIO</a></li>
-          <li><a href="noticias.html">NOTICIAS</a></li>
-          <li><a href="podcasts.html">PODCASTS</a></li>
-          <li><a href="eventos.html">EVENTOS</a></li>
-          <li><a href="cultura.html">CULTURA</a></li>
+    <nav class="nav-extended cor-nav">
+      <div class="nav-wrapper" data-aos="fade-down" data-aos-duration="500">
+        <img class="brand-logo" src="img/logo.png" alt="logo" data-aos="fade-rght" data-aos-duration="1100" />
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">MENU</i></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li class="links-nav"><a href="sass.html" class="actived">INICIO</a></li>
+          <li class="links-nav"><a href="sass.html">NOTICIAS</a></li>
+          <li class="links-nav"><a href="collapsible.html">PODCASTS</a></li>
+          <li class="links-nav"><a href="collapsible.html">EVENTOS</a></li>
+          <li class="links-nav"><a href="collapsible.html">CULTURA</a></li>
+          <!-- formulario para pesquisar -->
           <li>
             <form>
-              <div>
-                <input type="text" placeholder="Digite sua pesquisa...">
-                <button type="button"><i>close</i></button>
-                <button type="button">Buscar</button>
+              <div class="input-field hide search-area">
+                <input type="text" id="search" placeholder="Digite sua pesquisa...">
+                <button type="button" id="cancel-button" class="btn "><i
+                    class="material-icons right search-icon-close">close</i></button>
+                <button type="button" id="search-button" class="">Buscar</button>
               </div>
-              <button type="button"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="60" height="40"
-                  viewBox="0,0,256,256">
+              <!-- <i class="material-icons material-icons-outlined btn-search ">search</i> -->
+
+              <button class="btn-search " type="button"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                  width="60" height="40" viewBox="0,0,256,256">
                   <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
                     stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
                     font-family="none" font-weight="none" font-size="none" text-anchor="none"
@@ -43,8 +61,8 @@
                 </svg></button>
             </form>
           </li>
-          <li><a href="#"><button>CADASTRAR</button></a></li>
-          <li><a href="login.html"><button>ENTRAR</button></a></li>
+          <li class="btns"><a href="collapsible.html"><button class="btn-cria">CADASTRAR</button></a></li>
+          <li class="right"><a href="collapsible.html"><button class="btn-login">ENTRAR</button></a></li>
 
         </ul>
       </div>
@@ -52,292 +70,381 @@
     </div>
     </nav>
   </header>
+
+
+
   <section>
 
-    <div>
-      <div>
-        <h2>Seja bem vindo ao TEC notícias</h2>
+    <div id="container-sec-one" class=" row mt-2 xl12 l12" data-aos="zoom-out-up" data-aos-duration="3000">
+      <div class="col l6">
+        <div class="word"></div>
+
       </div>
-      <!-- CARROUSEL -->
-      <div>
-        <a href="artigo.html"><img src="img/android-14-hero-image-p8p.width-1600.format-webp.pnj.webp" alt="card">
-          <div>
-            <h3>ANDROID:14</h3>
+      <!-- CAROUSEL -->
+      <div class="carousel l6">
+        <a href="" class="carousel-item"><img src="https://picsum.photos/200/200?category=technology" alt="card"
+            class="card-image">
+          <div class="card-title tex ">
+            <h3>Concorrente do node chegou</h3>
           </div>
         </a>
-        <a href=""><img src="https://picsum.photos/200/200?category=technolgy" alt="card">
+        <a href="" class="carousel-item"><img src="https://picsum.photos/200/200?category=technolgy" alt="card"
+            class="card-image">
           <div class="card-title tex">
             <h3>A Guerra dos Streaming</h3>
           </div>
         </a>
-        <a href=""><img src="https://picsum.photos/200/200?category=technolog" alt="card">
-          <div>
+        <a href="" class="carousel-item"><img src="https://picsum.photos/200/200?category=technolog" alt="card"
+            class="card-image">
+          <div class="card-title tex">
             <h3>Lançamento do Tesla Model Y</h3>
           </div>
         </a>
-        <a href=""><img src="https://picsum.photos/200/200?category=technology" alt="card">
-          <div>
+        <a href="" class="carousel-item"><img src="https://picsum.photos/200/200?category=technology" alt="card"
+            class="card-image">
+          <div class="card-title tex">
             <h3>Avanços na Inteligência Artificial</h3>
           </div>
         </a>
-        <a href=""><img src="https://picsum.photos/200/200?category=tchnology" alt="card">
-          <div>
+        <a href="" class="carousel-item"><img src="https://picsum.photos/200/200?category=tchnology" alt="card"
+            class="card-image">
+          <div class="card-title ">
             <h3>Cibersegurança em Alta</h3>
           </div>
         </a>
 
-        <a href=""><img src="https://picsum.photos/200/200?category=tecology" alt="card">
-          <div>
-            <h3>Novo Smartphone Dobrável da Apple</h3>
-          </div>
-        </a>
-      </div>
-      <!--FIM CARROUSEL -->
-  </section>
-  <!-- ULTIMAS NOTICIAS -->
-  <!-- CARDS -->
-  <div>
-    <h2>ULTIMAS NOTICIAS</h2>
-    <div>
-      <div>
-        <img src="" alt="Imagem da notícia">
-        <h3>Título da notícia</h3>
-        <p>Resumo da notícia</p>
-      </div>
-    </div>
-    <div>
-      <div>
-        <img src="" alt="Imagem da notícia">
-        <h3>Título da notícia</h3>
-        <p>Resumo da notícia</p>
-      </div>
-    </div>
-    <div>
-      <div>
-        <img src="" alt="Imagem da notícia">
-        <h3>Título da notícia</h3>
-        <p>Resumo da notícia</p>
-      </div>
-    </div>
-  </div>
-
-  <div>
-    <div>
-      <img src="" alt="Imagem da notícia">
-      <h3>Título da notícia</h3>
-      <p>Resumo da notícia</p>
-    </div>
-  </div>
-
-  <div>
-    <img src="" alt="Imagem da notícia">
-    <h3>Título da notícia</h3>
-    <p>Resumo da notícia</p>
-  </div>
-  <!-- FIM CARDS -->
-  <!-- Ver mais -->
-  <a href="#"><button>Ver mais</button></a>
-  <!-- FIM Ver mais -->
-
-  <section>
-    <!-- IMAGEM PARALAX-->
-    <div>
-      <img style="width: 500px;" src="img/imas.jpeg" alt="Imagem em parallax">
-      <span>paralax</span>
-    </div>
-    <!-- FIM IMAGEM PARALAX -->
-  </section>
-
-  <section>
-    <!-- PODCASTS -->
-    <h2>PODCASTS</h2>
-    <div>
-      <div>
-        <!-- VIDEO ATUAL -->
-        <iframe src="" frameborder="0"></iframe>
-      </div>
-
-      <!-- CARDS -->
-      <div>
-        <div>
-          <img src="" alt="Capa do vídeo">
-          <p>Resumo</p>
-          <a href="#"><button>Assistir</button></a>
-        </div>
-        <div>
-          <img src="" alt="Capa do vídeo">
-          <p>Resumo</p>
-          <a href="#"><button>Assistir</button></a>
-        </div>
-        <div>
-          <img src="" alt="Capa do vídeo">
-          <p>Resumo</p>
-          <a href="#"><button>Assistir</button></a>
-        </div>
-      </div>
-      <!-- FIM DOS CARDS -->
-
-      <!-- Ver mais -->
-      <a href="podcasts.html"><button>Ver mais</button></a>
-      <!-- FIM Ver mais -->
-    </div>
-    <!-- FIM PODCASTS -->
-  </section>
-  <section>
-    <!-- EVENTOS -->
-    <div>
-      <h2>EVENTOS</h2>
-      <!-- CARDS -->
-      <div>
-        <img src="" alt="capa do evento">
-        <h4>titulo do evento</h4>
-        <p>resumo </p>
-        <p>autor</p>
-        <p>data</p>
-      </div>
-    </div>
-    <div>
-      <img src="" alt="capa do evento">
-      <h4>titulo do evento</h4>
-      <p>resumo </p>
-      <p>autor</p>
-      <p>data</p>
-    </div>
-    </div>
-    <div>
-      <img src="" alt="capa do evento">
-      <h4>titulo do evento</h4>
-      <p>resumo </p>
-      <p>autor</p>
-      <p>data</p>
-    </div>
-    <!-- VER MAIS -->
-    <a href="evento.html"><button>ver mais</button></a>
-    </div>
-  </section>
-  <section>
-    <!-- CULTURA -->
-    <div>
-      <H2>CULTURA</H2>
-      <!-- CARROUSEL -->
-      <div>
-        <a href="#"><img src="https://picsum.photos/200/200?category=technology" alt="card">
-          <div>
-            <h3>Concorrente do node chegou</h3>
-          </div>
-        </a>
-        <a href=""><img src="https://picsum.photos/200/200?category=technolgy" alt="card">
+        <a href="" class="carousel-item"><img src="https://picsum.photos/200/200?category=tecology" alt="card"
+            class="card-image">
           <div class="card-title tex">
-            <h3>A Guerra dos Streaming</h3>
-          </div>
-        </a>
-        <a href=""><img src="https://picsum.photos/200/200?category=technolog" alt="card">
-          <div>
-            <h3>jogos</h3>
-          </div>
-        </a>
-        <a href=""><img src="https://picsum.photos/200/200?category=technology" alt="card">
-          <div>
-            <h3>Inteligência Artificial</h3>
-          </div>
-        </a>
-        <a href=""><img src="https://picsum.photos/200/200?category=tchnology" alt="card">
-          <div>
-            <h3>Cibersegurança</h3>
-          </div>
-        </a>
-
-        <a href=""><img src="https://picsum.photos/200/200?category=tecology" alt="card">
-          <div>
             <h3>Novo Smartphone Dobrável da Apple</h3>
           </div>
         </a>
       </div>
-      <!--FIM CARROUSEL -->
-      <section>
-        <!-- FRASE DE MOTIVAÇÃO -->
-        <img src="" alt="frase de motivação">
-      </section>
-      <section>
-        <!-- PLANOS DE ASSSINATURA -->
-        <div>
-          <!-- PLANO1 -->
-          <div>
-            <a href="#"><img src="" alt="assinatura1"></a>
+  </section>
+
+  <!-- ULTIMAS NOTICIAS -->
+  <section>
+    <div class="last-news">
+      <div class="row" id="tittle-lastNews">
+        <h2>Últimas notícias</h2>
+      </div>
+      <div class="row center text-center">
+        <div class="col xl4">
+          <div class="card">
+            <img src="https://picsum.photos/200/200?category=technolgy" alt="card" class="card-image">
+            <div class="card-title">olllaaaa</div>
+            <div class="card-content">
+              <p>oihihihihi</p>
+            </div>
           </div>
-          <!-- PLANO2 -->
-          <div>
-            <a href="#"><img src="" alt="assinatura2"></a>
+        </div>
+        <div class="col xl4">
+          <div class="card">
+            <img src="https://picsum.photos/200/200?category=technolgy" alt="card" class="card-image">
+            <div class="card-title">olllaaaa</div>
+            <div class="card-content">
+              <p>oihihihihi</p>
+            </div>
           </div>
-          <!-- PLANO3 -->
-          <div>
-            <a href="#"><img src="" alt="assinatura3"></a>
+        </div>
+        <div class="col xl4">
+          <div class="card">
+            <img src="https://picsum.photos/200/200?category=technolgy" alt="card" class="card-image">
+            <div class="card-title">olllaaaa</div>
+            <div class="card-content">
+              <p>oihihihihi</p>
+            </div>
           </div>
-      </section>
-      <section>
-        <!-- PUBLICIDDE -->
-        <a href="#"><img src="" alt="publicidade"></a>
-      </section>
+        </div>
+      </div>
+      <!-- linha 2 -->
+      <div class="row center text-center">
+        <div class="col xl4">
+          <div class="card">
+            <img src="https://picsum.photos/200/200?category=technolgy" alt="card" class="card-image">
+            <div class="card-title">olllaaaa</div>
+            <div class="card-content">
+              <p>oihihihihi</p>
+            </div>
+          </div>
+        </div>
+        <div class="col xl4">
+          <div class="card">
+            <img src="https://picsum.photos/200/200?category=technolgy" alt="card" class="card-image">
+            <div class="card-title">olllaaaa</div>
+            <div class="card-content">
+              <p>oihihihihi</p>
+            </div>
+          </div>
+        </div>
+        <div class="col xl4">
+          <div class="card">
+            <img src="https://picsum.photos/200/200?category=technolgy" alt="card" class="card-image">
+            <div class="card-title">olllaaaa</div>
+            <div class="card-content">
+              <p>oihihihihi</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row center">
+        <div class="col xl12 "><a href="#" class="button-seeMore">Ver mais</a></div>
+      </div>
     </div>
   </section>
-  <!-- FOOTER -->
-  <footer>
-    <div>
-      <div>
-        <div>
-          <h5>Quem somos?</h5>
-          <p>Somos a Tec Notícias, uma empresa de notícias especializada em tecnologia,
-            trazendo as últimas novidades e análises do mundo da tecnologia para você.</p>
+  <!-- FIM ULTIMAS NOTICIAS -->
+
+  <!-- PODCASTS -->
+  <section>
+    <div class="sectio-two podcasts">
+      <div class="row" id="tittle-lastNews">
+        <h2>Podcasts</h2>
+      </div>
+      <div class="row center">
+        <div class="col xl12">
+          <iframe width="900" height="505" src="https://www.youtube.com/embed/NM2BMYdD2Gk?si=GmrcoX7yWqkAc392"
+            frameborder="0" allowfullscreen></iframe>
         </div>
-        <div>
-          <h5>Sobre</h5>
+      </div>
+      <div class="row center text-center">
+        <div class="col xl4">
+          <div class="card">
+            <img src="https://picsum.photos/200/200?category=technolgy" alt="card" class="card-image">
+            <div class="card-title">olllaaaa</div>
+            <div class="card-content">
+              <p>oihihihihi</p>
+            </div>
+          </div>
+        </div>
+        <div class="col xl4">
+          <div class="card">
+            <img src="https://picsum.photos/200/200?category=technolgy" alt="card" class="card-image">
+            <div class="card-title">olllaaaa</div>
+            <div class="card-content">
+              <p>oihihihihi</p>
+            </div>
+          </div>
+        </div>
+        <div class="col xl4">
+          <div class="card">
+            <img src="https://picsum.photos/200/200?category=technolgy" alt="card" class="card-image">
+            <div class="card-title">olllaaaa</div>
+            <div class="card-content">
+              <p>oihihihihi</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row center">
+        <div class="col xl12 "><a href="#" class="button-seeMore">Ver mais</a></div>
+      </div>
+    </div>
+  </section>
+  <!-- FIM PODCASTS  -->
+  <!-- EVENTOS -->
+  <section>
+    <div class="eventos">
+      <div class="row" id="tittle-lastNews">
+        <h2>Eventos</h2>
+      </div>
+      <div class="row center text-center">
+        <div class="col xl12 mb-3">
+          <div class="card-eventos">
+            <img src="https://picsum.photos/200/200?category=technolgy" alt="card-evento" class="left">
+            <div class="card-title-eventos left">
+              <h3>titulo</h3>
+              <div class="card-eventos-resumo valign-wrapper">
+                <p>resumo</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row center text-center">
+        <div class="col xl12 mb-3">
+          <div class="card-eventos">
+            <img src="https://picsum.photos/200/200?category=technolgy" alt="card-evento" class="left">
+            <div class="card-title-eventos left">
+              <h3>titulo</h3>
+              <div class="card-eventos-resumo valign-wrapper">
+                <p>resumo</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row center text-center">
+        <div class="col xl12 mb-3">
+          <div class="card-eventos">
+            <img src="https://picsum.photos/200/200?category=technolgy" alt="card-evento" class="left">
+            <div class="card-title-eventos left">
+              <h3>titulo</h3>
+              <div class="card-eventos-resumo valign-wrapper">
+                <p>resumo</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row center">
+        <div class="col xl12 "><a href="#" class="button-seeMore">Ver mais</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FIM EVENTOS -->
+  <!-- CULTURA -->
+  <section>
+    <div class=" cultura">
+         <div class="row" id="tittle-lastNews">
+        <h2>Cultura</h2>
+      </div>
+      <div class="row">
+        <!-- CAROUSEL -->
+        <div class="col carousel xl12">
+          <a href="" class="carousel-item"><img src="https://picsum.photos/200/200?category=technology" alt="card"
+              class="card-image">
+            <div class="card-title tex ">
+              <h3>Concorrente do node chegou</h3>
+            </div>
+          </a>
+          <a href="" class="carousel-item"><img src="https://picsum.photos/200/200?category=technolgy" alt="card"
+              class="card-image">
+            <div class="card-title tex">
+              <h3>A Guerra dos Streaming</h3>
+            </div>
+          </a>
+          <a href="" class="carousel-item"><img src="https://picsum.photos/200/200?category=technolog" alt="card"
+              class="card-image">
+            <div class="card-title tex">
+              <h3>Lançamento do Tesla Model Y</h3>
+            </div>
+          </a>
+          <a href="" class="carousel-item"><img src="https://picsum.photos/200/200?category=technology" alt="card"
+              class="card-image">
+            <div class="card-title tex">
+              <h3>Avanços na Inteligência Artificial</h3>
+            </div>
+          </a>
+          <a href="" class="carousel-item"><img src="https://picsum.photos/200/200?category=tchnology" alt="card"
+              class="card-image">
+            <div class="card-title ">
+              <h3>Cibersegurança em Alta</h3>
+            </div>
+          </a>
+
+          <a href="" class="carousel-item"><img src="https://picsum.photos/200/200?category=tecology" alt="card"
+              class="card-image">
+            <div class="card-title tex">
+              <h3>Novo Smartphone Dobrável da Apple</h3>
+            </div>
+          </a>
+        </div>
+        <div class="row center">
+          <div class="col xl12 "><a href="#" class="button-seeMore">Ver mais</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- FIM CULTURA -->
+
+  <!-- FOOTER -->
+  <footer class="page-footer">
+    <div class="data-aos" data-aos="fade-up" data-aos-duration="1000">
+      <div class="row center inf-footer">
+        <div class="col xl4 m4 left-align">
+          <h5 class="blue-text text-lighten-6 inf-footer">Quem somos?</h5>
+          <p class="grey-text text-footer" >Somos a Tec Notícias, uma empresa de notícias especializada em tecnologia, trazendo as últimas novidades e análises do mundo da tecnologia para você.</p>
+        </div>
+        <div class="col xl4 m5">
+          <h5 class="blue-text text-lighten-6 inf-footer">Sobre</h5>
           <ul>
-            <li><a href="#!">Sobre a Tec Notícias</a></li>
-            <li><a href="#!">Política de Privacidade</a></li>
-            <li><a href="#!">Contato de Suporte</a></li>
-            <li><a href="#!">Perfil do usuário</a></li>
+            <li><a class="grey-text text-footer" href="#!">Sobre a Tec Notícias</a></li>
+            <li><a class="grey-text text-footer" href="#!">Política de Privacidade</a></li>
+            <li><a class="grey-text text-footer" href="#!">Contato de Suporte</a></li>
+            <li><a class="grey-text text-footer" href="#!">Perfil do usuário</a></li>
           </ul>
         </div>
-        <div>
-          <h5>Tecnologias</h5>
+        <div class="col xl4 m3 right-align">
+          <h5 class="blue-text text-lighten-6 inf-footer">Tecnologias</h5>
           <ul>
-            <li><a href="#!">JavaScript</a></li>
-            <li><a href="#!">Inteligência Artificial</a></li>
-            <li><a href="#!">Ciência de Dados</a></li>
-            <li><a href="#!">Inovações em TI</a></li>
+            <li><a class="grey-text text-footer" href="#!">JavaScript</a></li>
+            <li><a class="grey-text text-footer" href="#!">Inteligência Artificial</a></li>
+            <li><a class="grey-text text-footer" href="#!">Ciência de Dados</a></li>
+            <li><a class="grey-text text-footer" href="#!">Inovações em TI</a></li>
           </ul>
         </div>
       </div>
-
-      <div>
-        <div>
-          <img style="width: 50px; height: 50px;"
+      <!-- Ícones de redes sociais coloridos do Google Material Icons -->
+      <div class="row center-align pt2 icons-footer">
+        <div class="col s3">
+          <img class="responsive-img"
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg" alt="Facebook">
         </div>
-        <div>
-          <img style="width: 50px; height: 50px;"
+        <div class="col s3">
+          <img class="responsive-img"
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/twitter/twitter-original.svg" alt="Twitter">
         </div>
-        <div>
-          <img style="width: 50px; height: 50px;"
+        <div class="col s3">
+          <img class="responsive-img"
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn">
         </div>
-        <div>
-          <img style="width: 50px; height: 50px;"
+        <div class="col s3">
+          <img class="responsive-img"
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
             style="background-color: rgb(255, 255, 255);border-radius: 100%;" />
         </div>
       </div>
+      <!-- Adicionar uma linha -->
     </div>
-    <div>
-      <div>
-        © 2018 Tec Notícias - Todos os Direitos Reservados
-        <a href="#!">Termos de Serviço</a>
-      </div>
+    <div class="footer-copyright inf-footer">
+        <span class="copyright">© 2018 Tec Notícias - Todos os Direitos Reservados</span>
+        
+        <a class="grey-text text-lighten-4 right" href="#!">Termos de Serviço</a>
     </div>
   </footer>
+  
+
+
+
+  <!-- Scripts JavaScript para texto animado -->
+  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src="./script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="js/textanimate.js"></script>
+  <script src="js/script.js"></script>
+
+  <!-- Scripts JavaScript para Materialize CSS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"
+    integrity="sha512-NiWqa2rceHnN3Z5j6mSAvbwwg3tiwVNxiAQaaSMSXnRRDh5C2mk/+sKQRw8qjV1vN4nf8iK2a0b048PnHbyx+Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- Script para animação de entrada (AOS) -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
   <script>
+    // Inicialização da animação de entrada com AOS
+    AOS.init();
+
+    // materialize 
+    M.AutoInit();
+
+    // Configuração do carousel
+    $(document).ready(function () {
+      $('.carousel').carousel({
+        indicators: true
+      });
+      setInterval(function () {
+        $('.carousel').carousel('next')
+      }, 5000)
+    });
+
   </script>
+</body>
 </body>
 
 </html>
