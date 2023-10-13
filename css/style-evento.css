@@ -1,0 +1,10 @@
+@media (min-width: 992px) {
+  .eventos {
+    margin: 5%;
+  }
+  .card-eventos {
+    /* padding-top: 20px; */
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+  }
+}
