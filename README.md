@@ -22,3 +22,4 @@ O projeto "TEC Notícias" é um site que provê notícias e informações relaci
  - Cultura
  - Podcasts
  - Apresentação da materia
+ - Área de assinante(pendente)
