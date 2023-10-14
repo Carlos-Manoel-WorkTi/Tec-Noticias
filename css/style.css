@@ -54,7 +54,17 @@ a {
   list-style: none;
   text-decoration: none;
 }
-
+.button-seeMore{
+  background: linear-gradient(to bottom,rgb(147, 30, 171),rgb(79, 30, 140),rgb(12, 13, 50));
+  text-decoration: none;
+  list-style: none;
+  border-radius: 10px;
+  padding: 10px 10px;
+  font-size: 30px;
+  width: 200px;
+  a{
+      color: rgb(255, 255, 255);
+  }}
 .btn-login {
   width: 110%;
   color: white;
