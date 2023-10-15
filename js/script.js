@@ -44,3 +44,26 @@ document.addEventListener('DOMContentLoaded', function () {
         searchInput.value = '';
     }
 });
+
+// EVENTOS 
+function checkScreenSize() {
+    const element = document.querySelectorAll(".remove-align");
+
+    // Verifique a largura da janela
+    if (window.innerWidth < 600) {
+        // Se a largura da janela for menor que 600 pixels, remova a classe "valing-wrapper"
+        element.forEach(e => {
+
+            e.classList.remove("valign-wrapper");
+        })
+    } else {
+        // Caso contrário, adicione a classe "valing-wrapper"
+        element.forEach(e => {
+        e.classList.add("valign-wrapper");
+        })
+    }
+}
+
+// Execute a função quando a página carregar e quando a janela for redimensionada
+window.addEventListener("load", checkScreenSize);
+window.addEventListener("resize", checkScreenSize);

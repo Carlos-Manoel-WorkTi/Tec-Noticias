@@ -3,6 +3,13 @@
         background-color: rgba(2, 1, 7, 0.931);
         padding-bottom: 30px;
         padding-top: 10px;
+        .button-seeMore{
+          margin-top: -170px;
+          height: 60px;
+          a{
+            margin-top: -145px;
+          }
+        }
         .carousel {
             width: 600px;
             height: 650px;

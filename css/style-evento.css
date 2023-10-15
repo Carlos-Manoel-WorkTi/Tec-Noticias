@@ -1,46 +1,31 @@
-@media (min-width: 992px) {
+
   .eventos {
     padding: 5%;
-  }
-  .card-eventos {
-    /* padding-top: 20px; */
-    height: 320px;
-    background-color: rgba(58, 80, 144, 0.291);
-  }
-  .card-eventos img{
-    margin-left:-15px;
-  }
-  .eventos{  
-   color: rgb(255, 255, 255);
-   border-bottom: 2px solid white;
-   margin-left: 10px;
-  }
-  .card-text-evento{
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    h2{
-      color: #ffffff;
-      font-size: 30px;
-    }
-    p{
-      font-size: 30px;
-      margin-top: 6px;
-      color: rgb(204, 204, 204);
+    color: white;
 
+    .texto-evento {
+      margin-top: 20px;
     }
-    span{
-      font-size: 12px;
-      margin-top: 0px;
-      color: #ffffff;
+    .texto-evento{
+      width: 60%;
+    }
+    .card .card-content {
+      background-color: rgb(18, 24, 60);
+      padding: 0px;
+      border-radius: 0 0 2px 2px;
+    }
+    .card-image img{
+      margin-left:10px;
+    } 
+    .resumo-evento{
+      color: rgb(165, 164, 164);
+      padding-bottom: 10px;
     }
     .data-evento{
-      display: flex;
-      justify-content: right;
-      height: 350px;
-      align-items: end;
-      color: rgb(207, 207, 207);
-      padding-bottom: 15px;
+      color: rgb(197, 197, 197);
+    }
+    .autor-evento{
+      color: rgb(255, 255, 255);
     }
   }
-}
+

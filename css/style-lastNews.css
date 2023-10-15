@@ -1,4 +1,7 @@
 @media (min-width: 992px) {
+    .last-news{
+        margin: 40px;
+    }
     #tittle-lastNews{
         color: white;
         border-left: 2px solid violet;
@@ -6,24 +9,30 @@
         height: 60px;
         margin-top: 100px;
     }
-
-    .last-news{
-        border-bottom: 2px solid white;
-        margin: 5%;
-    }
-    .card-ultimas-noticias{
-        background-color: rgba(244, 246, 247, 0.97);
-    }
-    .card-title-last-news{
-        height: 45%;
-        background: linear-gradient(to right, #0c1254, #640083);
-        color: white;
-        border-bottom-right-radius: 40%;
-        border-bottom-left-radius: 40%;
-        overflow: hidden;
-        text-align: center;
-    }
-    .reumo-last-New{
-        background-color: #640083;
-    }
+    .ultimas-noticias {
+         
+        .texto-evento {
+          margin-top: 2px;}
+          h6{
+            color: rgb(255, 255, 255);
+          }
+        p{
+          color: rgb(203, 197, 197);
+          padding-bottom: 10px;
+        }
+        .card,.card-content{
+            border: none !important;
+            box-shadow: none;
+        }
+        .card .card-content {
+          padding: 8px;
+          border-radius: 0 0 2px 2px;
+          padding-bottom: 0;
+          background-color: rgb(2, 1, 26);
+          border: none;
+        }
+        .autor-evento,.data-evento{
+          color: rgb(255, 255, 255);
+        }
+      }
 }
