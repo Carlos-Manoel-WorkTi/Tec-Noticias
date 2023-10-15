@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style></style>
+    <link rel="stylesheet" href="css pasta eventos/eventos.css">
     <title>Tec Noticias</title>
 </head>
 
@@ -45,72 +45,97 @@
     <main>
 
         <section>
-            <div>
-                <div>
-                    <div>
-                        <h2>EVENTOS</h2>
-                    </div>
-                    <div>
-                        <p>Fique atento para os melhores os eventos queos surgem na área tech no Brasil.</p>
-                    </div>
+            <div class="banner">
+                <div class="banner-conteudo">
+                    <h2>EVENTOS</h2>
+                    <p>Fique atento para os melhores os eventos queos surgem na área tech no Brasil.</p>
                 </div>
-                <div>
+            </div>
+
+            <!--Começo dos Eventos-->
+            <div class="eventos">
+                <div class="filtrador">
                     <label for="filtro">FILTRO:</label>
                     <select name="filtro" id="filtro">
                         <option disabled selected hidden value="">Selecione</option>
-                        <option value="recentes">Recentes</option>
-                        <option value="populares">Populares</option>
-                        <option value="entrevistas">Entrevistas</option>
-                        <option value="analises">Análises</option> <!-- Corrected the value attribute -->
-                        <option value="tendencias">Tendências</option> <!-- Corrected the value attribute -->
+                        <option value="cursos">Cursos</option>
+                        <option value="hackatons">Hackatons</option>
+                        <option value="bootcamps">Bootcamp</option>
+                        <option value="online">Online</option>
+                        <option value="presencial">Presencial</option> <!-- Corrected the value attribute -->
+                        <option value="gratuito">Gratuito</option> <!-- Corrected the value attribute -->
+                        <option value="privado">Privado</option>
                     </select>
                 </div>
-                 <div>
-                   <div>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/3MdGMnkxHSQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+                <!--Card de Evento-->
+                <div class="card-evento">
+                    <div class="imagem-evento">
+                        <img src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="FOTO QUE REPRESENTA O EVENTO">
                     </div>
                     <div>
-                        <h1>Confira os Desafios de TI Para 2023</h1>
-                        <p>Para você que deseja crescer no mercado da tecnologia da informação, o primeiro passo é conhecer bem qual é o rumo que a TI está tomando. E nesse vídeo, você vai descobrir quais são os principais desafios para o próximo ano!</p>
-                        <span>Estreou em 16 de dez. de 2022</span>
-                        <div><button><a href="https://youtu.be/3MdGMnkxHSQ?si=NSwJRK4XHMi-dAVD">Assistir agora</a></button></div>
+                        <div class="texto-evento">
+                            <h1>Confira os Desafios de TI Para 2023</h1>
+                            <p>Para você que deseja crescer no mercado da tecnologia da informação, o primeiro passo é conhecer bem qual é o rumo que a TI está tomando. E nesse vídeo, você vai descobrir quais são os principais desafios para o próximo ano!</p>
+                            <p>Postado: 16 de dez. de 2022</p>
+                            <div class="filtros-evento">
+                                <div class="filtro-evento">Bootcamp</div>
+                                <div class="filtro-evento">Gratuito</div>
+                                <div class="filtro-evento">Online</div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
                 <!-- outro evento -->
                 <hr>
-                <div>
-                    <img src="img/guide-video-playback-react.avif" alt="Imagem de capa" width="560" height="315">
-                </div>
-                <div>
-                    <h1>Desafio de React: Aprenda, Desenvolva, Vença!</h1>
-                    <p>React é uma biblioteca JavaScript popular para construção de interfaces de usuário. Uma das melhores maneiras de aprimorar suas habilidades em React é enfrentar desafios de programação. Isso não apenas aprofundará seu conhecimento, mas também o ajudará a se preparar para situações do mundo real.</p>
-                    <span>Data de transmissão: 8 outubro de 2023</span>
-                    <div><button><a href="https://www.youtube.com/live/ex12hW8cqRE?si=al4OTa0HRaqVDgS7">COMEÇAR</a></button></div>
-                </div>
+
+                <!--Card de Evento-->
+                <div class="card-evento">
+                    <div class="imagem-evento">
+                        <img src="https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDN8fHRlY2hub2xvZ3l8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="FOTO QUE REPRESENTA O EVENTO">
+                    </div>
+                    <div>
+                        <div class="texto-evento">
+                            <h1>Desafio de React: Aprenda, Desenvolva, Vença!</h1>
+                            <p>React é uma biblioteca JavaScript popular para construção de interfaces de usuário. Uma das melhores maneiras de aprimorar suas habilidades em React é enfrentar desafios de programação. Isso não apenas aprofundará seu conhecimento, mas também o ajudará a se preparar para situações do mundo real.</p>
+                            <p>Postado: 8 outubro de 2023</p>
+                            <div class="filtros-evento">
+                                <div class="filtro-evento">Curso</div>
+                                <div class="filtro-evento">Privado</div>
+                                <div class="filtro-evento">Presencial</div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
                 <hr>
                 <!-- outro evento -->
                 <hr>
-                <div>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ex12hW8cqRE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <!--Card de Evento-->
+                <div class="card-evento">
+                    <div class="imagem-evento">
+                        <img src="https://images.unsplash.com/photo-1455165814004-1126a7199f9b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTB8fHRlY2hub2xvZ3l8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="FOTO QUE REPRESENTA O EVENTO">
+                    </div>
+                    <div>
+                        <div class="texto-evento">
+                            <h1>Aula Inaugural - Santander Bootcamp 2023</h1>
+                            <p>A nova edição do Santander Bootcamp conta com 6 trilhas e 75 mil bolsas de estudo para serem distribuídas a pessoas de todo o Brasil. O programa é voltado para aqueles que estão iniciando carreira em desenvolvimento de software, em transição de carreira ou que já atuam profissionalmente e buscam evoluir e conquistar melhores oportunidades no mercado de tecnologia.</p>
+                            <p>Postado: 17 de ago. de 2023</p>
+                            <div class="filtros-evento">
+                                <div class="filtro-evento">Hackaton</div>
+                                <div class="filtro-evento">Gratuito</div>
+                                <div class="filtro-evento">Online</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <h1>Aula Inaugural - Santander Bootcamp 2023</h1>
-                    <p>A nova edição do Santander Bootcamp conta com 6 trilhas e 75 mil bolsas de estudo para serem distribuídas a pessoas de todo o Brasil. O programa é voltado para aqueles que estão iniciando carreira em desenvolvimento de software, em transição de carreira ou que já atuam profissionalmente e buscam evoluir e conquistar melhores oportunidades no mercado de tecnologia. 
-                    </p>
-                    <span>Transmitido ao vivo em 17 de ago. de 2023</span>
-                    <div><button><a href="https://www.youtube.com/live/ex12hW8cqRE?si=al4OTa0HRaqVDgS7">Assistir agora</a></button></div>
-                </div>
-            </div>
+                 <!-- ADD MAIS BLOCOS -->
+                <div class="btn-eventos"><button>Ver mais eventos</button></div>
  
-   
-                <!-- ADD MAIS BLOCOS -->
-            </div>
-            <div>
-                <div><button><a href="Ver mais">veja mais</a></button></div>
             </div>
         </section>
+
         <section>
             <div><a href="#"><img src="" alt="anuncio">Publicidade</a></div>
         </section>
