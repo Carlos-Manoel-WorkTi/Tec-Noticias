@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header, footer{
@@ -43,6 +44,7 @@ header, footer{
 .eventos{
     padding-left: 60px;
     padding-top: 30px;
+    background-color: #e2e2e2;
 }
 
 .card-evento{
@@ -69,12 +71,32 @@ header, footer{
 .texto-evento{
     width: 800px;
     padding-left: 30px;
-    padding-top: 20px;
+    padding-top: 5px;
     padding-bottom: 20px;
 }
 
 .texto-evento h1, .texto-evento p{
     padding-bottom: 10px;
+}
+
+.texto-evento h1{
+    background-image: linear-gradient(to bottom, #28156d , #2B26BF );
+  
+  /* Segundo passo: apagar do fundo tudo que não estiver imediatamente atrás de texto */
+  background-clip: text;
+  -webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */
+
+  /* Terceiro passo: apagar o texto, deixando apenas o fundo atrás dele */
+  -webkit-text-fill-color: transparent;
+
+  /* Cor que contraste com o degradê, caso o navegador não suporte `background-clip: text` */
+  color: black;
+}
+
+.texto-evento p{
+    font-size: 17px;
+    font-weight: lighter;
+    line-height: 24px;
 }
 
 .filtros-evento{
