@@ -1,0 +1,6 @@
+@media (min-width: 992px){
+    .podcasts{
+        border-bottom: 2px solid white;
+        margin: 5%;
+    }
+}

@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    background: linear-gradient(to bottom,rgb(0, 0, 4),rgb(7, 1, 25),rgb(84, 3, 102));
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    max-width: 1100px;
+    width: 80vw;
+    background-color: aliceblue;
+    margin-top: 5vh;
+    padding: 10px;
+    border-radius: 10px;
+}
+.left{
+    float: left;
+    width: 40%;
+    margin-left: 25px;
+    text-align: center;
+}
+.left h2{
+    margin: 40px 0 20px 0;
+    font-size: 30px;
+    background: linear-gradient(to bottom,rgb(4, 4, 143),rgb(101, 23, 161),rgb(243, 243, 243));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.left label{
+    display: flex;
+    width: 100%;
+    line-height: 20px;
+    font-weight: bolder;
+    margin-top: 2px;
+}
+#Senha,#Email{
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.011);
+    display: flex;
+    width: 90%;
+    height: 28px;
+    padding-left: 8px;
+    border: 1.5px solid black;
+    outline: none;
+}
+.left a{
+    color: rgb(23, 75, 205);
+}
+.left button{
+    padding: 2px;
+    font-size: 18px;
+    color: white;
+    background: linear-gradient(to bottom,rgb(27, 27, 156),rgb(183, 105, 195),rgb(243, 243, 243));
+    padding: 6px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bolder;
+}
+.right{
+    float: right;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    border-left: 1px solid rgb(183, 38, 220);
+    padding-left: 10px;
+}
+.right h2{
+    margin: 70px 10px 0px 10px;
+    font-size: 25px;
+}
+.right button{
+    padding: 2px;
+    font-size: 18px;
+    color: white;
+    background: linear-gradient(to bottom,rgb(27, 27, 156),rgb(183, 105, 195),rgb(243, 243, 243));
+    padding: 6px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bolder;
+}
+#titulo{
+    background: linear-gradient(to bottom,rgb(6, 6, 60),rgb(124, 51, 135),white);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#img-over{
+    width: 90%;
+    margin-top: -50px;
+
+}
+.bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 500px;
+    width: 100%;
+}
+#logo{
+    margin-top: 20px;
+    height: 50px;
+    height: 60px;
+    margin-bottom: -15px;
+}
+.bottom a{
+    text-decoration: none;
+    color: rgb(29, 99, 228);
+    font-size: 12px;
+    
+}
+ footer ul,a{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    text-decoration: none;
+    justify-content: center;
+    padding-top: 20px;
+    color: white;
+    font-size: 13px;
+}

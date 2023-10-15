@@ -1,0 +1,153 @@
+body{
+ margin: 0;
+ padding:0;
+ zoom: 100%;
+}
+@media (min-width: 992px) {
+  .cor-nav {
+    height: 133px !important;
+    padding-top: 17px;
+  }
+  /* Aumente a altura dos elementos internos conforme desejado */
+  .brand-logo {
+    height: 100px;
+    width: 200px;
+    margin-left: 30px;
+  }
+  #nav-mobile {
+    padding-right: 0px;
+    margin-top: 10px;
+    height: 10px !important;
+    margin-right: 15px;
+  }
+  .links-nav a {
+    font-size: 15px;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+  /* Aumentar o tamanho da fonte para os elementos do formulário */
+  .search-area {
+  right: 10px;
+  background-color: #01030c71;
+  border-radius: 10%;
+  overflow: hidden;
+  outline: none;
+  margin-right: 900pc;
+}
+  input[type="text"] {
+    font-size: 300px; /* Ajuste o tamanho da fonte conforme necessário */
+  }
+  .btn-search,.btn-search svg{
+    margin: 10px -7px 0 -5px;
+    border: none;
+    background-color: rgba(35, 38, 90, 0);
+  }
+  .btn-login {
+    font-size: 20px;
+    height: 60px;
+    margin-top: 10px ;
+    margin-left: 2px;
+  }
+  .btn-cria {
+    font-size: 20px;
+    height: 60px;
+    margin-top: 10px;
+    margin-left: 2px;
+  }
+  /* fim da header */
+
+  /* section one */
+  #container-sec-one {
+    height: 500px;
+  }
+  .word {
+    padding-left: 12%;
+    padding-top: 19%;
+    color: #ffffff;
+    font: 90 normal 4em/1.5 "Montserrat", sans-serif;
+    text-shadow: 1px 1px 2px rgba(53, 8, 104, 0.5),
+      2px 2px 4px rgba(42, 6, 83, 0.5), 3px 3px 6px rgba(42, 6, 83, 0.5),
+      4px 4px 8px rgba(42, 6, 83, 0.5), 5px 5px 10px rgba(42, 6, 83, 0.578);
+  }
+  .carousel {
+    width: 600px;
+    height: 650px;
+    perspective: 450px;
+    margin: 0 20px 0 20px ;
+  }
+  .carousel .carousel-item {
+    width: 240px;
+    top: -130px;
+    background-size: cover;
+  }
+  .carousel .carousel-item img {
+    width: 100%;
+    height: 260px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+  }
+  .indicators {
+    top: 1309px;
+  }
+  .card-title {
+    height: 45%;
+    background: linear-gradient(to right, #0c1254, #640083);
+    color: white;
+    border-bottom-right-radius: 40%;
+    overflow: hidden;
+    text-align: center;
+  }
+  .card-title h3 {
+    font-size: 20px;
+    margin-top: 10px;
+    padding: 5%;
+  }
+  /* section dois */
+
+
+  .section-two{
+    margin: auto;
+  }
+
+
+  /* footer */
+  .inf-footer{
+    font-size: 60px;
+  }
+}
+
+
+@media screen and (max-width:1220px){
+  .cor-nav {
+    height: 125px !important;
+    padding-top: 17px;
+  }
+  .brand-logo {
+    height: 80px;
+    width: 180px;
+    margin-left: 10px;
+  }
+  .links-nav a {
+    font-size: 13px;
+    margin-right: 5px;
+    margin-top: 10px;
+  }
+  .btn-search,.btn-search svg{
+    margin: 10px -10px 0 -7px;
+    height: 35px;
+    background-color: rgba(35, 38, 90, 0);
+  }
+  .btn-login {
+    font-size: 20px;
+    height: 50px;
+    margin-top: 15px ;  
+  }
+  .btn-cria {
+    font-size: 16px;
+    height: 50px;
+    margin-top: 15px;
+  }
+  .page-footer{
+   font-size: 20px;
+  }
+}

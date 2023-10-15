@@ -1,0 +1,29 @@
+@media (min-width: 992px) {
+    #tittle-lastNews{
+        color: white;
+        border-left: 2px solid violet;
+        padding-left: 10px;
+        height: 60px;
+        margin-top: 100px;
+    }
+
+    .last-news{
+        border-bottom: 2px solid white;
+        margin: 5%;
+    }
+    .card-ultimas-noticias{
+        background-color: rgba(244, 246, 247, 0.97);
+    }
+    .card-title-last-news{
+        height: 45%;
+        background: linear-gradient(to right, #0c1254, #640083);
+        color: white;
+        border-bottom-right-radius: 40%;
+        border-bottom-left-radius: 40%;
+        overflow: hidden;
+        text-align: center;
+    }
+    .reumo-last-New{
+        background-color: #640083;
+    }
+}
