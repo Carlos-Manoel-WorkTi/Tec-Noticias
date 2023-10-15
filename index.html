@@ -1,82 +1,38 @@
 <!DOCTYPE html>
 
-  <html lang="pt-br">
-
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style></style>
-    <title>Tec Noticias</title>
-  </head>
-
-  <body>
-    <header>
-
-      <nav>
-        <div>
-          <img src="img/logo.png" alt="logo" />
-          <a href="#"><i>MENU</i></a>
-          <ul>
-            <li><a href="inicio.html">INICIO</a></li>
-            <li><a href="noticias.html">NOTICIAS</a></li>
-            <li><a href="podcasts.html">PODCASTS</a></li>
-            <li><a href="eventos.html">EVENTOS</a></li>
-            <li><a href="cultura.html">CULTURA</a></li>
-            <li>
-              <form>
-                <div>
-                  <input type="text" placeholder="Digite sua pesquisa...">
-                  <button type="button"><i>close</i></button>
-                  <button type="button">Buscar</button>
-                </div>
-                <button type="button"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="60" height="40"
-                    viewBox="0,0,256,256">
-                    <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
-                      stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
-                      font-family="none" font-weight="none" font-size="none" text-anchor="none"
-                      style="mix-blend-mode: normal">
-                      <g transform="scale(5.12,5.12)">
-                        <path
-                          d="M21,3c-9.37891,0 -17,7.62109 -17,17c0,9.37891 7.62109,17 17,17c3.71094,0 7.14063,-1.19531 9.9375,-3.21875l13.15625,13.125l2.8125,-2.8125l-13,-13.03125c2.55469,-2.97656 4.09375,-6.83984 4.09375,-11.0625c0,-9.37891 -7.62109,-17 -17,-17zM21,5c8.29688,0 15,6.70313 15,15c0,8.29688 -6.70312,15 -15,15c-8.29687,0 -15,-6.70312 -15,-15c0,-8.29687 6.70313,-15 15,-15z">
-                        </path>
-                      </g>
-=======
 <html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Links para os estilos (CSS) -->
-  <link rel="stylesheet" href="css/logo.css">
-  <link rel="stylesheet" href="css/style-lastNews.css">
-  <link rel="stylesheet" href="css/style-podcasts.css">
-  <link rel="stylesheet" href="css/style-evento.css">
-  <link rel="stylesheet" href="css/style-cultura.css">
+  <link rel="stylesheet" href="css/Pasta_home_css/style-lastNews.css">
+  <link rel="stylesheet" href="css/Pasta_home_css/style-podcasts.css">
+  <link rel="stylesheet" href="css/Pasta_home_css/style-evento.css">
+  <link rel="stylesheet" href="css/Pasta_home_css/style-cultura.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     integrity="sha512-UJfAaOlIRtdR+0P6C3KUoTDAxVTuy3lnSXLyLKlHYJlcSU8Juge/mjeaxDNMlw9LgeIotgz5FP8eUQPhX1q10A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/Pasta_home_css/style.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/styleMediaView.css">
-
-
-  <title>nav bar</title>
+  <link rel="stylesheet" href="css/Pasta_home_css/styleMediaView.css">
+  <title>TEC Notícias</title>
 </head>
 
-<body class="container-fluid">
+<body class="tec-noticias">
   <header>
 
     <nav class="nav-extended cor-nav">
       <div class="nav-wrapper" data-aos="fade-down" data-aos-duration="500">
-        <img class="brand-logo" src="img/logo.png" alt="logo" data-aos="fade-rght" data-aos-duration="1100" />
+        <img class="brand-logo" src="img/Pasta_home_img/" alt="logo" data-aos="fade-rght" data-aos-duration="1100" />
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">MENU</i></a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li class="links-nav"><a href="sass.html" class="actived">INICIO</a></li>
-          <li class="links-nav"><a href="sass.html">NOTICIAS</a></li>
-          <li class="links-nav"><a href="collapsible.html">PODCASTS</a></li>
-          <li class="links-nav"><a href="collapsible.html">EVENTOS</a></li>
-          <li class="links-nav"><a href="collapsible.html">CULTURA</a></li>
+          <li class="links-nav"><a href="index.html" class="actived">INICIO</a></li>
+          <li class="links-nav"><a href="src/noticias.html">NOTICIAS</a></li>
+          <li class="links-nav"><a href="src/podcasts.html">PODCASTS</a></li>
+          <li class="links-nav"><a href="src/eventos.html">EVENTOS</a></li>
+          <li class="links-nav"><a href="src/cultura.html">CULTURA</a></li>
           <!-- formulario para pesquisar -->
           <li>
             <form>
@@ -97,9 +53,8 @@
                     <g transform="scale(5.12,5.12)">
                       <path
                         d="M21,3c-9.37891,0 -17,7.62109 -17,17c0,9.37891 7.62109,17 17,17c3.71094,0 7.14063,-1.19531 9.9375,-3.21875l13.15625,13.125l2.8125,-2.8125l-13,-13.03125c2.55469,-2.97656 4.09375,-6.83984 4.09375,-11.0625c0,-9.37891 -7.62109,-17 -17,-17zM21,5c8.29688,0 15,6.70313 15,15c0,8.29688 -6.70312,15 -15,15c-8.29687,0 -15,-6.70312 -15,-15c0,-8.29687 6.70313,-15 15,-15z">
-                      </
+                        </ </g>
                     </g>
-                  </g>
                 </svg></button>
             </form>
           </li>
@@ -123,7 +78,8 @@
 
       </div>
       <!-- CAROUSEL -->
-      <div class="carousel l6">
+      <div class="carousel l6" data-aos="zoom-in-center" data-aos-duration="1000" data-aos-delay="3000"
+        data-aos-offset="300" data-aos-easing="ease-in-sine">
         <a href="" class="carousel-item"><img src="https://picsum.photos/200/200?category=technology" alt="card"
             class="card-image">
           <div class="card-title tex ">
@@ -170,28 +126,108 @@
       <div class="row" id="tittle-lastNews">
         <h2>Últimas notícias</h2>
       </div>
-      <div class="row center text-center">
-        <div class="col xl4">
-          <div class="card-ultimas-noticias">
-            <img src="https://picsum.photos/350/350?category=technolgy" alt="card" class="card-image">
-            <div class="card-title-last-news">titulo</div>
-            <div class="rumo-last-news">
-              <p>oihihihihi</p>
+      <div class="row ultimas-noticias">
+
+        <div class="col s12 m12 l4">
+          <div class="card ">
+            <div class="card-content">
+              <div class="row">
+                <div class="col s12 m4 l12">
+                  <div class="card-image">
+                    <img class="responsive-img"
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF-Eb3ZXWZWwIriaRYWImO0ii3CtG1Fr5k9A&usqp=CAU">
+                  </div>
+                </div>
+                <div class="col s12 m8 l12">
+                  <a href="">
+                    <h6 class="card-title"><strong>Curso gratuito de tecnologia para mulheres tem vagas abertas em
+                        Salvador;
+                        veja como se inscrever</strong></h6>
+                    <p>Evento será realizado no Teatro SESI, no bairro do Rio Vermelho, no dia 24 de outubro. Vagas são
+                      limitadas.</p>
+                    <div class="row texto-evento">
+                      <div class="col s6">
+                        <p class="autor-evento">Por TEC Notícias</p>
+                      </div>
+                      <div class="col s6">
+                        <p class="data-evento">2 h atrás</p>
+                      </div>
+                  </a>
+                </div>
+              </div>
             </div>
-          </div> 
+          </div>
         </div>
-        <!-- linha 2 -->
+
       </div>
-      <div class="row center button-seeMore">
-        <div class="col xl12 "><a href="#">Ver mais</a></div>
+      <div class="col s12 m12 l4">
+        <div class="card">
+          <div class="card-content">
+            <div class="row">
+              <div class="col s12 m4 l12">
+                <div class="card-image">
+                  <img class="responsive-img"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF-Eb3ZXWZWwIriaRYWImO0ii3CtG1Fr5k9A&usqp=CAU">
+                </div>
+              </div>
+              <div class="col s12 m8 l12">
+                <h6 class="card-title"><strong>Curso gratuito de tecnologia para mulheres tem vagas abertas em Salvador;
+                    veja como se inscrever</strong></h6>
+                <p>Evento será realizado no Teatro SESI, no bairro do Rio Vermelho, no dia 24 de outubro. Vagas são
+                  limitadas.</p>
+                <div class="row texto-evento">
+                  <div class="col s6">
+                    <p class="autor-evento">Por TEC Notícias</p>
+                  </div>
+                  <div class="col s6">
+                    <p class="data-evento">2 h atrás</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+      <div class="col s12 m12 l4">
+        <div class="card">
+          <div class="card-content">
+            <div class="row">
+              <div class="col s12 m4 l12">
+                <div class="card-image">
+                  <img class="responsive-img"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF-Eb3ZXWZWwIriaRYWImO0ii3CtG1Fr5k9A&usqp=CAU">
+                </div>
+              </div>
+              <div class="col s12 m8 l12">
+                <h6 class="card-title"><strong>Curso gratuito de tecnologia para mulheres tem vagas abertas em Salvador;
+                    veja como se inscrever</strong></h6>
+                <p>Evento será realizado no Teatro SESI, no bairro do Rio Vermelho, no dia 24 de outubro. Vagas são
+                  limitadas.</p>
+                <div class="row texto-evento">
+                  <div class="col s6">
+                    <p class="autor-evento">Por TEC Notícias</p>
+                  </div>
+                  <div class="col s6">
+                    <p class="data-evento">2 h atrás</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="row center button-seeMore">
+      <div class="col xl12 "><a href="noticias.html">Ver mais</a></div>
     </div>
   </section>
   <!-- FIM ULTIMAS NOTICIAS -->
 
   <!-- PODCASTS -->
   <section>
-    <div class="sectio-two podcasts">
+    <div class="sectio-two podcasts" data-aos="fade-up-left" data-aos-duration="1000" data-aos-offset="300"
+      data-aos-easing="ease-in-sine">
       <div class="row" id="tittle-lastNews">
         <h2>Podcasts</h2>
       </div>
@@ -202,132 +238,183 @@
         </div>
       </div>
       <div class="row center text-center">
-        <div class="col xl4">
+        <div class="col s12 m6 l4">
           <div class="card">
-            <img src="https://picsum.photos/200/200?category=technolgy" alt="card" class="card-image">
-            <div class="card-title">olllaaaa</div>
+            <div class="card-image" style="position: relative;">
+              <!-- Adicione 'position: relative;' para permitir o posicionamento absoluto -->
+              <img src="https://picsum.photos/200/200?category=technology"> <!-- Ajuste a URL da imagem de exemplo -->
+              <a class="" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                <i class="material-icons" style="font-size: 200px; color: white;">play_arrow</i>
+              </a>
+            </div>
+
             <div class="card-content">
-              <p>oihihihihi</p>
+              <span class="card-title">Card Title of the video over here</span>
+
             </div>
           </div>
         </div>
-        <div class="col xl4">
+        <div class="col s12 m6 l4">
           <div class="card">
-            <img src="https://picsum.photos/200/200?category=technolgy" alt="card" class="card-image">
-            <div class="card-title">olllaaaa</div>
+            <div class="card-image" style="position: relative;">
+              <!-- Adicione 'position: relative;' para permitir o posicionamento absoluto -->
+              <img src="https://picsum.photos/200/200?category=technogy"> <!-- Ajuste a URL da imagem de exemplo -->
+              <a class="" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                <i class="material-icons" style="font-size: 200px; color: white;">play_arrow</i>
+              </a>
+            </div>
+
             <div class="card-content">
-              <p>oihihihihi</p>
+              <span class="card-title">Card Title of the video over here</span>
+
             </div>
           </div>
         </div>
-        <div class="col xl4">
+        <div class="col s12 m6 l4">
           <div class="card">
-            <img src="https://picsum.photos/200/200?category=technolgy" alt="card" class="card-image">
-            <div class="card-title">olllaaaa</div>
+            <div class="card-image" style="position: relative;">
+              <!-- Adicione 'position: relative;' para permitir o posicionamento absoluto -->
+              <img src="https://picsum.photos/200/200?category=technoloy"> <!-- Ajuste a URL da imagem de exemplo -->
+              <a class="" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                <i class="material-icons" style="font-size: 200px; color: white;">play_arrow</i>
+              </a>
+            </div>
+
             <div class="card-content">
-              <p>oihihihihi</p>
+              <span class="card-title">Card Title of the video over here</span>
+
             </div>
           </div>
         </div>
       </div>
       <div class="row center button-seeMore">
-        <div class="col xl12 "><a href="#">Ver mais</a></div>
+        <div class="col xl12 "><a href="podcasts.html">Ver mais</a></div>
       </div>
+  </section>
+  <!-- FIM PODCASTS https://picsum.photos/200/200?category=technolgy -->
+  <!-- EVENTOS -->
+  <section>
+    <div class="eventos" data-aos="fade-up-right" data-aos-duration="2000" data-aos-offset="300"
+      data-aos-easing="ease-in-sine">
+      <div class="row" id="tittle-lastNews">
+        <h2>Eventos</h2>
+      </div>
+      <div class="row evento">
+        <a
+          href="https://g1.globo.com/ba/bahia/blogdoemprego/noticia/2023/10/11/cursos-gratuito-de-tecnologia-para-mulheres-tem-vagas-abertas-em-salvador-veja-como-se-inscrever.ghtml">
+          <div class="col s12 m12 l12 xl12">
+            <div class="card" style="background-color: transparent;">
+              <div class="card-content">
+                <div class="row remove-align">
+                  <div class="col s12 m4 l3">
+                    <div class="card-image">
+                      <img class="responsive-img"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF-Eb3ZXWZWwIriaRYWImO0ii3CtG1Fr5k9A&usqp=CAU">
+                    </div>
+                  </div>
+                  <div class="col s12 m8 l9">
+                    <h2 class="card-title"><strong>Curso gratuito de tecnologia para mulheres tem vagas abertas em
+                        Salvador; veja como se inscrever</strong></h2>
+                    <p class="resumo-evento">Evento será realizado no Teatro SESI, no bairro do Rio Vermelho, no dia 24
+                      de outubro. Vagas são limitadas.</p>
+                    <div class="row">
+                      <div class="col s6">
+                        <p class="autor-evento">Por <strong>TEC Notícias</strong> </p>
+                      </div>
+                      <div class="col s6">
+                        <p class="data-evento">2 h atrás</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="row evento">
+        <a
+          href="https://www.em.com.br/app/noticia/internacional/2023/10/10/interna_internacional,1574660/a-tecnologia-israelense-contra-os-arsenais-heterogeneos-do-hamas-e-do-hezbo.shtml">
+          <div class="col s12 m12 l12 xl12">
+            <div class="card" style="background-color: transparent;">
+              <div class="card-content">
+                <div class="row remove-align">
+                  <div class="col s12 m4 l3">
+                    <div class="card-image">
+                      <img class="responsive-img"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF-Eb3ZXWZWwIriaRYWImO0ii3CtG1Fr5k9A&usqp=CAU">
+                    </div>
+                  </div>
+                  <div class="col s12 m8 l9">
+                    <h2 class="card-title"><strong>A tecnologia israelense contra os arsenais heterogêneos do Hamas e do
+                        Hezbollah.</strong></h2>
+                    <p class="resumo-evento">Evento será realizado no Teatro SESI, no bairro do Rio Vermelho, no dia 24
+                      de outubro. Vagas são limitadas De um lado, Israel e seu aliado americano. Do outro, o Hamas,
+                      apoiado sobretudo pelo Hezbollah.A guerra em Israel é claramente...</p>
+                    <div class="row">
+                      <div class="col s6">
+                        <p class="autor-evento">Por <strong>TEC Notícias</strong> </p>
+                      </div>
+                      <div class="col s6">
+                        <p class="data-evento">2 h atrás</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="row evento">
+        <a
+          href="https://g1.globo.com/ba/bahia/blogdoemprego/noticia/2023/10/11/cursos-gratuito-de-tecnologia-para-mulheres-tem-vagas-abertas-em-salvador-veja-como-se-inscrever.ghtml">
+          <div class="col s12 m12 l12 xl12">
+            <div class="card" style="background-color: transparent;">
+              <div class="card-content">
+                <div class="row remove-align">
+                  <div class="col s12 m4 l3">
+                    <div class="card-image">
+                      <img class="responsive-img"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF-Eb3ZXWZWwIriaRYWImO0ii3CtG1Fr5k9A&usqp=CAU">
+                    </div>
+                  </div>
+                  <div class="col s12 m8 l9">
+                    <h2 class="card-title"><strong>Tecnologia de filtragem e empilhamento a seco transforma a indústria
+                        mineral.</strong></h2>
+                    <p class="resumo-evento">A indústria mineral sul-mato-grossense está passando por uma revolução
+                      silenciosa, mas poderosa, que promete transformar a forma como o setor lida co.</p>
+                    <div class="row">
+                      <div class="col s6">
+                        <p class="autor-evento">Por <strong>TEC Notícias</strong> </p>
+                      </div>
+                      <div class="col s6">
+                        <p class="data-evento">2 h atrás</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+
+
+
+      <div class="row center button-seeMore">
+        <div class="col xl12"><a href="eventos.html">Ver mais</a></div>
+      </div>
+    </div>
     </div>
   </section>
-  <!-- FIM PODCASTS  -->
-  <!-- EVENTOS -->
-<section>
-  <div class="eventos">
-    <div class="row" id="tittle-lastNews">
-      <h2>Eventos</h2>
-    </div>
-    <div class='row card-eventos'>
-
-      <div class="col xl3">
-        <img src="https://picsum.photos/320/320?category=technolgy" alt="card" class="">
-      </div>
-      <div class='col xl8'>
-        <a href="https://g1.globo.com/ba/bahia/blogdoemprego/noticia/2023/10/11/cursos-gratuito-de-tecnologia-para-mulheres-tem-vagas-abertas-em-salvador-veja-como-se-inscrever.ghtml">          <div class=" card-text-evento">
-                <h2 class="col xl12"><strong>Curso gratuito de tecnologia para mulheres tem vagas abertas em Salvador; veja como se inscrever</strong></h2>
-                <p class="col xl12">Evento será realizado no Teatro SESI, no bairro do Rio Vermelho, no dia 24 de outubro. Vagas são limitadas. </p>
-                <span class="col xl12">Publicado por TEC Notícias</span>
-          </div>
-            
-      </div>
-      <div class="col xl1 card-text-evento ">
-           <span class="data-evento">2 h atrás</span>
-      </div>
-</a>  
-   </div>
-   <div class='row card-eventos'>
-
-    <div class="col xl3">
-      <img src="https://picsum.photos/320/320?category=tehnolgy" alt="card" class="">
-    </div>
-    <div class='col xl8'>
-      <a href="https://www.em.com.br/app/noticia/internacional/2023/10/10/interna_internacional,1574660/a-tecnologia-israelense-contra-os-arsenais-heterogeneos-do-hamas-e-do-hezbo.shtml">          <div class=" card-text-evento">
-              <h2 class="col xl12"><strong>A tecnologia israelense contra os arsenais heterogêneos do Hamas e do Hezbollah</strong></h2>
-              <p class="col xl12">De um lado, Israel e seu aliado americano. Do outro, o Hamas, apoiado sobretudo pelo Hezbollah.A guerra em Israel é claramente... </p>
-              <span class="col xl12">Publicado por TEC Notícias</span>
-        </div>
-          
-    </div>
-    <div class="col xl1 card-text-evento ">
-         <span class="data-evento">5 h atrás</span>
-    </div>
-</a>
- 
- </div>
-   <div class='row card-eventos'>
-
-    <div class="col xl3">
-      <img src="https://picsum.photos/320/320?category=tehnolgy" alt="card" class="">
-    </div>
-    <div class='col xl8'>
-      <a href="https://www.em.com.br/app/noticia/internacional/2023/10/10/interna_internacional,1574660/a-tecnologia-israelense-contra-os-arsenais-heterogeneos-do-hamas-e-do-hezbo.shtml">          <div class=" card-text-evento">
-              <h2 class="col xl12"><strong>A tecnologia israelense contra os arsenais heterogêneos do Hamas e do Hezbollah</strong></h2>
-              <p class="col xl12">De um lado, Israel e seu aliado americano. Do outro, o Hamas, apoiado sobretudo pelo Hezbollah.A guerra em Israel é claramente... </p>
-              <span class="col xl12">Publicado por TEC Notícias</span>
-        </div>
-          
-    </div>
-    <div class="col xl1 card-text-evento ">
-         <span class="data-evento">5 h atrás</span>
-    </div>
-</a>
- 
- </div>
- <div class='row card-eventos'>
-
-  <div class="col xl3">
-    <img src="https://picsum.photos/320/320?category=technlgy" alt="card" class="">
-  </div>
-  <div class='col xl8'>
-    <a href="https://diarionline.com.br/?s=noticia&id=141065">          <div class=" card-text-evento">
-            <h2 class="col xl12"><strong>Tecnologia de filtragem e empilhamento a seco transforma a indústria mineral de MS</strong></h2>
-            <p class="col xl12">A indústria mineral sul-mato-grossense está passando por uma revolução silenciosa, mas poderosa, que promete transformar a forma como o setor lida co.</p>
-            <span class="col xl12">Publicado por TEC Notícias</span>
-      </div>
-        
-  </div>
-  <div class="col xl1 card-text-evento ">
-       <span class="data-evento">2 h atrás</span>
-  </div>
-</a>
-
-</div>
-    <div class="row center button-seeMore">
-      <div class="col xl12"><a href="eventos.html">Ver mais</a></div>
-    </div>
-  </div>
-</section>
 
 
   <!-- FIM EVENTOS -->
   <!-- CULTURA -->
   <section>
-    <div class=" cultura">
+    <div class=" cultura" data-aos="zoom-in-left" data-aos-duration="3000">
       <div class="row" id="tittle-cultura">
         <h2>Cultura</h2>
       </div>
@@ -337,45 +424,45 @@
           <a href="" class="carousel-item"><img src="https://picsum.photos/200/200?category=technology" alt="card"
               class="card-image">
             <div class="card-title tex ">
-              <h3>Concorrente do node chegou</h3>
+              <h3>Educação Tecnológica</h3>
             </div>
           </a>
           <a href="" class="carousel-item"><img src="https://picsum.photos/200/200?category=technolgy" alt="card"
               class="card-image">
             <div class="card-title tex">
-              <h3>A Guerra dos Streaming</h3>
+              <h3>Cultura de Hacktivismo</h3>
             </div>
           </a>
           <a href="" class="carousel-item"><img src="https://picsum.photos/200/200?category=technolog" alt="card"
               class="card-image">
             <div class="card-title tex">
-              <h3>Lançamento do Tesla Model Y</h3>
+              <h3>Futuro da Cultura Tecnológica: </h3>
             </div>
           </a>
           <a href="" class="carousel-item"><img src="https://picsum.photos/200/200?category=technology" alt="card"
               class="card-image">
             <div class="card-title tex">
-              <h3>Avanços na Inteligência Artificial</h3>
+              <h3>Inteligência Artificial</h3>
             </div>
           </a>
           <a href="" class="carousel-item"><img src="https://picsum.photos/200/200?category=tchnology" alt="card"
               class="card-image">
             <div class="card-title ">
-              <h3>Cibersegurança em Alta</h3>
+              <h3>Segurança Cibernética</h3>
             </div>
           </a>
 
           <a href="" class="carousel-item"><img src="https://picsum.photos/200/200?category=tecology" alt="card"
               class="card-image">
             <div class="card-title tex">
-              <h3>Novo Smartphone Dobrável da Apple</h3>
+              <h3>Ética na Tecnologia: </h3>
             </div>
           </a>
         </div>
 
       </div>
       <div class="row center button-seeMore">
-        <div class="col xl12"><a href="eventos.html">Ver mais</a></div>
+        <div class=""><a class="col xl12" href="cultura.html">Ver mais</a></div>
       </div>
     </div>
   </section>
@@ -447,8 +534,8 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
-  <script src="js/textanimate.js"></script>
-  <script src="js/script.js"></script>
+  <script src="js/Pasta_home_js/script.js"></script>
+  <script src="js/Pasta_home_js/textanimate.js"></script>
 
   <!-- Scripts JavaScript para Materialize CSS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

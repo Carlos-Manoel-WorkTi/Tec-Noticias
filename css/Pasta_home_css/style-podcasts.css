@@ -3,4 +3,8 @@
         border-bottom: 2px solid white;
         margin: 5%;
     }
+    icon{
+        font-size: 200px;
+        color: white;
+    }
 }
