@@ -5,11 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Links para os estilos (CSS) -->
-  <link rel="stylesheet" href="css/logo.css">
-  <link rel="stylesheet" href="css/style-lastNews.css">
-  <link rel="stylesheet" href="css/style-podcasts.css">
-  <link rel="stylesheet" href="css/style-evento.css">
-  <link rel="stylesheet" href="css/style-cultura.css">
+  <link rel="stylesheet" href="css/Pasta_home_css/style-lastNews.css">
+  <link rel="stylesheet" href="css/Pasta_home_css/style-podcasts.css">
+  <link rel="stylesheet" href="css/Pasta_home_css/style-evento.css">
+  <link rel="stylesheet" href="css/Pasta_home_css/style-cultura.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     integrity="sha512-UJfAaOlIRtdR+0P6C3KUoTDAxVTuy3lnSXLyLKlHYJlcSU8Juge/mjeaxDNMlw9LgeIotgz5FP8eUQPhX1q10A=="
@@ -19,10 +18,10 @@
   <link rel="stylesheet" href="css/styleMediaView.css">
 
 
-  <title>nav bar</title>
+  <title>TEC Notícias</title>
 </head>
 
-<body class="container-fluid">
+<body class="tec-noticias">
   <header>
 
     <nav class="nav-extended cor-nav">
@@ -30,11 +29,11 @@
         <img class="brand-logo" src="img/TN.png" alt="logo" data-aos="fade-rght" data-aos-duration="1100" />
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">MENU</i></a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li class="links-nav"><a href="sass.html" class="actived">INICIO</a></li>
-          <li class="links-nav"><a href="sass.html">NOTICIAS</a></li>
-          <li class="links-nav"><a href="collapsible.html">PODCASTS</a></li>
-          <li class="links-nav"><a href="collapsible.html">EVENTOS</a></li>
-          <li class="links-nav"><a href="collapsible.html">CULTURA</a></li>
+          <li class="links-nav"><a href="index.html" class="actived">INICIO</a></li>
+          <li class="links-nav"><a href="src/noticias.html">NOTICIAS</a></li>
+          <li class="links-nav"><a href="src/podcasts.html">PODCASTS</a></li>
+          <li class="links-nav"><a href="src/eventos.html">EVENTOS</a></li>
+          <li class="links-nav"><a href="src/cultura.html">CULTURA</a></li>
           <!-- formulario para pesquisar -->
           <li>
             <form>
@@ -304,7 +303,7 @@
     <div class="row evento">
       <a href="https://g1.globo.com/ba/bahia/blogdoemprego/noticia/2023/10/11/cursos-gratuito-de-tecnologia-para-mulheres-tem-vagas-abertas-em-salvador-veja-como-se-inscrever.ghtml">
       <div class="col s12 m12 l12 xl12">
-        <div class="card">
+        <div class="card" style="background-color: transparent;">
           <div class="card-content">
             <div class="row remove-align">
               <div class="col s12 m4 l3">
@@ -330,11 +329,10 @@
       </div>
     </a>
     </div>
-
     <div class="row evento">
       <a href="https://www.em.com.br/app/noticia/internacional/2023/10/10/interna_internacional,1574660/a-tecnologia-israelense-contra-os-arsenais-heterogeneos-do-hamas-e-do-hezbo.shtml">
       <div class="col s12 m12 l12 xl12">
-        <div class="card">
+        <div class="card" style="background-color: transparent;">
           <div class="card-content">
             <div class="row remove-align">
               <div class="col s12 m4 l3">
@@ -344,8 +342,7 @@
               </div>
               <div class="col s12 m8 l9">
                 <h2 class="card-title"><strong>A tecnologia israelense contra os arsenais heterogêneos do Hamas e do Hezbollah.</strong></h2>
-                <p class="resumo-evento">Evento será realizado no Teatro SESI, no bairro do Rio Vermelho, no dia 24 de outubro. Vagas são limitadas  De um lado, Israel e seu aliado americano. Do outro, o Hamas, apoiado sobretudo pelo Hezbollah.A guerra em Israel é claramente...
-                </p>
+                <p class="resumo-evento">Evento será realizado no Teatro SESI, no bairro do Rio Vermelho, no dia 24 de outubro. Vagas são limitadas  De um lado, Israel e seu aliado americano. Do outro, o Hamas, apoiado sobretudo pelo Hezbollah.A guerra em Israel é claramente...</p>
                 <div class="row">
                   <div class="col s6">
                     <p class="autor-evento">Por <strong>TEC Notícias</strong> </p>
@@ -361,11 +358,10 @@
       </div>
     </a>
     </div>
-
     <div class="row evento">
       <a href="https://g1.globo.com/ba/bahia/blogdoemprego/noticia/2023/10/11/cursos-gratuito-de-tecnologia-para-mulheres-tem-vagas-abertas-em-salvador-veja-como-se-inscrever.ghtml">
       <div class="col s12 m12 l12 xl12">
-        <div class="card">
+        <div class="card" style="background-color: transparent;">
           <div class="card-content">
             <div class="row remove-align">
               <div class="col s12 m4 l3">
@@ -381,7 +377,7 @@
                     <p class="autor-evento">Por <strong>TEC Notícias</strong> </p>
                   </div>
                   <div class="col s6">
-                    <p class="data-evento">6 h atrás</p>
+                    <p class="data-evento">2 h atrás</p>
                   </div>
                 </div>
               </div>
@@ -391,6 +387,7 @@
       </div>
     </a>
     </div>
+   
 
 
     
@@ -525,8 +522,8 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
-  <script src="js/textanimate.js"></script>
-  <script src="js/script.js"></script>
+  <script src="js/Pasta_home_js/script.js"></script>
+  <script src="js/Pasta_home_js/textanimate.js"></script>
 
   <!-- Scripts JavaScript para Materialize CSS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
