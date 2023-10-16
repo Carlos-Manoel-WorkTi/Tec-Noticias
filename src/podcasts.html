@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style></style>
-    <title>Tec Noticias</title>
+    <link rel="stylesheet" href="../css/Pasta_podecasts_css/podcasts.css">
+    <title>Podcasts - Tec Noticias</title>
 </head>
 
 <body>
@@ -17,10 +17,10 @@
                 <a href="#"><i>MENU</i></a>
                 <ul>
                     <li><a href="index.html">INICIO</a></li>
-                    <li><a href="src/noticias.html">NOTICIAS</a></li>
-                    <li><a href="src/podcasts.html">PODCASTS</a></li>
-                    <li><a href="src/eventos.html">EVENTOS</a></li>
-                    <li><a href="src/cultura.html">CULTURA</a></li>
+                    <li><a href="noticias.html">NOTICIAS</a></li>
+                    <li><a href="podcasts.html">PODCASTS</a></li>
+                    <li><a href="eventos.html">EVENTOS</a></li>
+                    <li><a href="cultura.html">CULTURA</a></li>
                     <li>
                         <form>
                             <div>
@@ -56,29 +56,24 @@
 
     <main>
         <section>
-            <div>
-                <div>
+            <div class="banner">
+                <div class="banner-conteudo">
                     <h2>Podcasts</h2>
-                </div>
-                <div>
-                    <p>Fique atento ás melhores entrevista com os melhores da área tech no Brasil.</p>
+                    <p>Fique atento ás melhores entrevistas com os melhores da área tech no Brasil.</p>
                 </div>
             </div>
-            <div>
+
+            <div class="video-inicial">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/koh90HN__FY" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
-                <div>
-                    <h3>titulo do video</h3>
-                    <span>publicado em...</span>
-                    <span><a href="#">veja mais...</a></span>
-                </div>
             </div>
+
         </section>
 
-        <section>
+        <section class="podcasts">
             <div>
-                <div>
+                <div class="filtrador">
                     <label for="filtro">FILTRO:</label>
                     <select name="filtro" id="filtro">
                         <option disabled selected hidden value="">Selecione</option>
@@ -89,59 +84,55 @@
                         <option value="tendências">Tendências</option>
                     </select>
                 </div>
-                <div>
-                    <div>
+                <div class="podcast">
+                    <div class="podcast-video">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/koh90HN__FY" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
                     </div>
-                    <div>
-                        <h1>titulo</h1>
-                        <p>resumo</p>
-                        <span>data</span>
-                        <div><button><a href="#">Assistir agora</a></button></div>
+                    <div class="podcast-info">
+                        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt a cupiditate accusantium animi magnam</h1>
+                        <p><strong>Postado: </strong>12 de outubro de 2023</p>
+                        <div class="btn-assistir"><button><a href="#">Assistir agora ▶</a></button></div>
                     </div>
                 </div>
                 <hr>
-                <div>
-                    <div>
+                <div class="podcast">
+                    <div class="podcast-video">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/koh90HN__FY" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
                     </div>
-                    <div>
-                        <h1>titulo</h1>
-                        <p>resumo</p>
-                        <span>data</span>
-                        <div><button><a href="#">Assistir agora</a></button></div>
+                    <div class="podcast-info">
+                        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt a cupiditate accusantium animi magnam</h1>
+                        <p><strong>Postado: </strong>12 de outubro de 2023</p>
+                        <div class="btn-assistir"><button><a href="#">Assistir agora ▶</a></button></div>
                     </div>
                 </div>
                 <hr>
-                <div>
-                    <div>
+                <div class="podcast">
+                    <div class="podcast-video">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/koh90HN__FY" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
                     </div>
-                    <div>
-                        <h1>titulo</h1>
-                        <p>resumo</p>
-                        <span>data</span>
-                        <div><button><a href="#">Assistir agora</a></button></div>
+                    <div class="podcast-info">
+                        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt a cupiditate accusantium animi magnam</h1>
+                        <p><strong>Postado: </strong>12 de outubro de 2023</p>
+                        <div class="btn-assistir"><button><a href="#">Assistir agora ▶</a></button></div>
                     </div>
                 </div>
                 <hr>
-                <div>
-                    <div>
+                <div class="podcast">
+                    <div class="podcast-video">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/koh90HN__FY" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
                     </div>
-                    <div>
-                        <h1>titulo</h1>
-                        <p>resumo</p>
-                        <span>data</span>
-                        <div><button><a href="#">Assistir agora</a></button></div>
+                    <div class="podcast-info">
+                        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt a cupiditate accusantium animi magnam</h1>
+                        <p><strong>Postado: </strong>12 de outubro de 2023</p>
+                        <div class="btn-assistir"><button><a href="#">Assistir agora ▶</a></button></div>
                     </div>
                 </div>
                 <hr>
@@ -150,6 +141,7 @@
                 <div><button><a href="Ver mais">veja mais</a></button></div>
             </div>
         </section>
+
         <section>
             <div><a href="#"><img src="" alt="anuncio">Publicidade</a></div>
         </section>
