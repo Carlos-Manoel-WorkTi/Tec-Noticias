@@ -15,11 +15,27 @@ body {
   color: #e8eaf6;
   background-color: #01010b;
 }
+#librasButton {
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  z-index: 1000;
+  opacity: 0.8;
+}
+
+#topButton {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 1000;
+  opacity: 0.2;
+}
 
 /* Estilos da seção "show" */
 #container-sec-one{
   margin-top: 0.1%;
-  background-image: linear-gradient(to right, rgba(6, 5, 105, 0), rgba(1, 3, 10, 0.87)), url('https://img.freepik.com/fotos-premium/linhas-de-conexao-ao-redor-da-ilustracao-3d-do-plano-de-fundo-da-conectividade-internacional-global-do-globo-terrestre_89681-46.jpg');
+  background-image: linear-gradient(to right, rgba(6, 5, 105, 0), rgba(1, 4, 13, 0.87)), url('https://img.freepik.com/fotos-premium/linhas-de-conexao-ao-redor-da-ilustracao-3d-do-plano-de-fundo-da-conectividade-internacional-global-do-globo-terrestre_89681-46.jpg');
   background-size: cover;
   background-position: center;
 }

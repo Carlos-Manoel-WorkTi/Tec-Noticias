@@ -3,8 +3,9 @@
     padding: 5%;
     color: white;
     background: linear-gradient(to right,black,rgb(2, 2, 41));
+    height: 100%;
     .texto-evento {
-      margin-top: 20px;
+      margin-top: 2px;
     }
     .texto-evento{
       width: 60%;

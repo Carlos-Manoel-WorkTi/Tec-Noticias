@@ -1,8 +1,10 @@
 @media (min-width: 992px){
     .cultura{
+
         background-color: rgba(2, 1, 7, 0.931);
         padding-bottom: 30px;
         padding-top: 10px;
+      
         .button-seeMore{
           margin-top: -170px;
           height: 60px;
@@ -54,6 +56,7 @@
             font-size: 100px;       
 
         }
+        
     }
     
 }

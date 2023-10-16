@@ -1,7 +1,13 @@
 @media (min-width: 992px){
+    #section-three{
+        background: linear-gradient(to bottom,black,black,black,rgb(2, 2, 41),black);
+        padding-top: 1px;
+    }
     .podcasts{
         border-bottom: 2px solid white;
         margin: 5%;
+        margin-top: 0;
+        margin-bottom: 0;
     }
     icon{
         font-size: 200px;

@@ -5,7 +5,7 @@ body {
 }
 @media (min-width: 992px) {
   .cor-nav {
-    height: 133px !important;
+    height: 125px !important;
     padding-top: 17px;
   }
   /* Aumente a altura dos elementos internos conforme desejado */
@@ -60,6 +60,7 @@ body {
   /* section one */
   #container-sec-one {
     height: 500px;
+    margin-bottom: 0;
 
     .word {
       padding-left: 12%;

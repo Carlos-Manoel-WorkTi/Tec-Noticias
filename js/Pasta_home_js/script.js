@@ -67,3 +67,24 @@ function checkScreenSize() {
 // Execute a função quando a página carregar e quando a janela for redimensionada
 window.addEventListener("load", checkScreenSize);
 window.addEventListener("resize", checkScreenSize);
+
+// button top
+document.addEventListener('DOMContentLoaded', function() {
+    var topButton = document.getElementById('topButton');
+    topButton.style.display = 'none';
+  
+    window.addEventListener('scroll', function() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        topButton.style.display = 'block';
+      } else {
+        topButton.style.display = 'none';
+      }
+    });
+  
+    topButton.addEventListener('click', function() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    });
+  });
+  
+//   button libra
