@@ -2,7 +2,8 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:700);
 
 /* Estilos gerais */
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -15,27 +16,24 @@ body {
   color: #e8eaf6;
   background-color: #01010b;
 }
-#librasButton {
-  position: fixed;
-  top: 50%;
-  right: 20px;
-  transform: translateY(-50%);
-  z-index: 1000;
-  opacity: 0.8;
-}
 
 #topButton {
   position: fixed;
   bottom: 20px;
-  right: 30px;
+  right: 10px;
   z-index: 1000;
   opacity: 0.2;
 }
 
 /* Estilos da seção "show" */
-#container-sec-one{
+#container-sec-one {
   margin-top: 0.1%;
-  background-image: linear-gradient(to right, rgba(6, 5, 105, 0), rgba(1, 4, 13, 0.87)), url('https://img.freepik.com/fotos-premium/linhas-de-conexao-ao-redor-da-ilustracao-3d-do-plano-de-fundo-da-conectividade-internacional-global-do-globo-terrestre_89681-46.jpg');
+  background-image: linear-gradient(
+      to right,
+      rgba(6, 5, 105, 0),
+      rgba(1, 4, 13, 0.87)
+    ),
+    url("https://img.freepik.com/fotos-premium/linhas-de-conexao-ao-redor-da-ilustracao-3d-do-plano-de-fundo-da-conectividade-internacional-global-do-globo-terrestre_89681-46.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -46,7 +44,9 @@ body {
   padding-top: 20%;
   color: #ffffff;
   font: 900 normal 3em/1.5 "Montserrat", sans-serif;
-  text-shadow: 1px 1px 2px rgba(53, 8, 104, 0.5), 2px 2px 4px rgba(42, 6, 83, 0.5), 3px 3px 6px rgba(42, 6, 83, 0.5), 4px 4px 8px rgba(42, 6, 83, 0.5), 5px 5px 10px rgba(42, 6, 83, 0.578);
+  text-shadow: 1px 1px 2px rgba(53, 8, 104, 0.5),
+    2px 2px 4px rgba(42, 6, 83, 0.5), 3px 3px 6px rgba(42, 6, 83, 0.5),
+    4px 4px 8px rgba(42, 6, 83, 0.5), 5px 5px 10px rgba(42, 6, 83, 0.578);
 }
 
 /* Animação de cores */
@@ -55,10 +55,12 @@ body {
 }
 
 @keyframes colorAnimation {
-  0%, 50% {
+  0%,
+  50% {
     color: rgb(255, 255, 255); /* Branco */
   }
-  25%, 75% {
+  25%,
+  75% {
     color: #bebec0; /* Cinza */
   }
   100% {
@@ -70,21 +72,27 @@ a {
   list-style: none;
   text-decoration: none;
 }
-.button-seeMore{
-  background: linear-gradient(to bottom,rgb(147, 30, 171),rgb(79, 30, 140),rgb(12, 13, 50));
+.button-seeMore {
+  background: linear-gradient(
+    to bottom,
+    rgb(147, 30, 171),
+    rgb(79, 30, 140),
+    rgb(12, 13, 50)
+  );
   text-decoration: none;
   list-style: none;
   border-radius: 10px;
   padding: 10px 10px;
   font-size: 30px;
   width: 200px;
-  a{
-      color: rgb(255, 255, 255);
-  }}
+  a {
+    color: rgb(255, 255, 255);
+  }
+}
 .btn-login {
   width: 110%;
   color: white;
-  background: linear-gradient(to right, #00CC00, #009933);
+  background: linear-gradient(to right, #00cc00, #009933);
   padding: 10px;
   background-size: 400% 100%;
   animation: texto 10s linear infinite;
@@ -94,7 +102,7 @@ a {
 .btn-cria {
   width: 110%;
   color: white;
-  background: linear-gradient(to right, #00CC00, #009933);
+  background: linear-gradient(to right, #00cc00, #009933);
   padding: 10px;
   background-size: 400% 100%;
   animation: texto 10s linear infinite;
@@ -113,10 +121,15 @@ a {
 
 /* Estilos da barra de navegação "cor-nav" */
 .cor-nav {
-  background: linear-gradient(to bottom, #01030c, rgb(1, 4, 15), rgb(2, 5, 25), rgb(15, 7, 62));
+  background: linear-gradient(
+    to bottom,
+    #01030c,
+    rgb(1, 4, 15),
+    rgb(2, 5, 25),
+    rgb(15, 7, 62)
+  );
   padding: 10px;
 }
-
 
 /* Estilos do logo da marca */
 .brand-logo {
@@ -167,12 +180,11 @@ a {
 #search-button {
   width: 21%;
   padding: 10px;
-  background: linear-gradient(to left, #0a0232e8,#4805b36e, #5a0474a6);
+  background: linear-gradient(to left, #0a0232e8, #4805b36e, #5a0474a6);
   color: white;
   border-radius: 5%;
   border-style: hidden;
 }
-  
 
 #cancel-button {
   background-color: #00993300;
@@ -185,21 +197,21 @@ a {
   border-right: 1px solid rgba(255, 253, 250, 0.127);
   margin: 0;
   padding-right: 5px;
-  position: relative; 
-  top: -10px; 
+  position: relative;
+  top: -10px;
 }
-.icons-footer{
+.icons-footer {
   border-top: 1px solid white;
   border-bottom: 1px solid white;
   padding-bottom: 5%;
   padding-top: 10%;
 }
-.icons-footer img{
+.icons-footer img {
   width: 20%;
 }
-.text-footer{
+.text-footer {
   font-size: 40px;
 }
-#cpyright{
+#cpyright {
   font-size: 0px;
 }

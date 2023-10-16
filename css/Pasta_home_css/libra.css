@@ -1,0 +1,32 @@
+#cardDiv {
+    position: fixed;
+    right: 0px;
+    z-index: 1000;
+    min-width: 150px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Alinhe o conteúdo à direita */
+
+    img{
+        height: 150px;
+        width: 150px;
+        margin-right: 50px;
+    }
+  }
+  
+  #closeButton {
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+  #librasButton {
+    position: fixed;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    z-index: 1000;
+    opacity: 0.8;
+  }
