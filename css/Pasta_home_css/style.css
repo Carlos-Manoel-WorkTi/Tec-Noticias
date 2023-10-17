@@ -10,7 +10,19 @@ body {
 body {
   background-color: #02011a;
 }
-
+.sidenav{
+  background-color: #01010be1;
+ 
+}
+.sidenav li > a {
+  color: rgba(245, 245, 245, 0.835);
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  height: 48px;
+  line-height: 48px;
+  padding: 0 32px;
+}
 .page-footer {
   padding-top: 20px;
   color: #e8eaf6;
@@ -153,11 +165,9 @@ a {
 
 /* Estilos da área de pesquisa */
 .search-area {
-  width: 110%;
-  right: 10%;
-  margin-right: 200px;
+  width: 102%;
+  padding-top: 10px;
   background-color: #01030c71;
-  border-radius: 10%;
   overflow: hidden;
   outline: none;
 }
@@ -171,6 +181,7 @@ a {
   border: none;
   box-shadow: none;
   outline: none;
+  border-radius: 10px;
 }
 
 #search:focus {
@@ -199,6 +210,7 @@ a {
   padding-right: 5px;
   position: relative;
   top: -10px;
+  color: red;
 }
 .icons-footer {
   border-top: 1px solid white;

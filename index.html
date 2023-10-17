@@ -17,7 +17,8 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/Pasta_home_css/style.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/Pasta_home_css/styleMediaView.css">
+  <link rel="stylesheet" href="css/Pasta_home_css/styleMediaView-m.css">
+  <link rel="stylesheet" href="css/Pasta_home_css/styleMediaView-l.css">
   <title>TEC Notícias</title>
 </head>
 
@@ -26,10 +27,10 @@
 
     <nav class="nav-extended cor-nav">
       <div class="nav-wrapper" data-aos="fade-down" data-aos-duration="500">
-        <img class="brand-logo" src="img/Pasta_home_img/TN.png" alt="logo" data-aos="fade-rght"
+        <img class="brand-logo left" src="img/Pasta_home_img/TN.png" alt="logo" data-aos="fade-rght"
           data-aos-duration="1100" />
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">MENU</i></a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger right hide-on-med-and-up"><i class="material-icons ">menu</i></a>
+        <ul id="nav-mobile" class="right hide-on-small-only">
           <li class="links-nav"><a href="index.html" class="actived">INICIO</a></li>
           <li class="links-nav"><a href="src/noticias.html">NOTICIAS</a></li>
           <li class="links-nav"><a href="src/podcasts.html">PODCASTS</a></li>
@@ -44,7 +45,7 @@
                     class="material-icons right search-icon-close">close</i></button>
                 <button type="button" id="search-button" class="">Buscar</button>
               </div>
-              <!-- <i class="material-icons material-icons-outlined btn-search ">search</i> -->
+
 
               <button class="btn-search " type="button"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                   width="60" height="40" viewBox="0,0,256,256">
@@ -67,20 +68,24 @@
         </ul>
       </div>
     </nav>
-    </div>
-    </nav>
+    <ul class="sidenav right-align" id="mobile-demo">
+      <li class="links-nav"><a href="index.html" class="actived">INICIO</a></li>
+      <li class="links-nav"><a href="src/noticias.html">NOTICIAS</a></li>
+      <li class="links-nav"><a href="src/podcasts.html">PODCASTS</a></li>
+      <li class="links-nav"><a href="src/eventos.html">EVENTOS</a></li>
+      <li class="links-nav"><a href="src/cultura.html">CULTURA</a></li>
+    </ul>
   </header>
 
 
 
   <section>
-    <div id="container-sec-one" class=" row mt-2 xl12 l12" data-aos="zoom-out-up" data-aos-duration="3000">
-      <div class="col l6">
+    <div id="container-sec-one" class=" row mt-2" data-aos="zoom-out-up" data-aos-duration="3000">
+      <div class="col s4 m6 l5 xl6">
         <div class="word"></div>
-
       </div>
       <!-- CAROUSEL -->
-      <div class="carousel l6" data-aos="zoom-in-center" data-aos-duration="1000" data-aos-delay="3000"
+      <div class="carousel s7 m6 l7 xl6" data-aos="zoom-in-center" data-aos-duration="1000" data-aos-delay="3000"
         data-aos-offset="300" data-aos-easing="ease-in-sine">
         <a href="" class="carousel-item"><img src="https://picsum.photos/200/200?category=technology" alt="card"
             class="card-image">
@@ -133,7 +138,7 @@
 
   <!-- ULTIMAS NOTICIAS -->
   <section id="section-one">
-    <div class="last-news" data-aos="fade-up-right" data-aos-duration="1000" data-aos-offset="300"
+    <div class="last-news" data-aos="fade-up-right" data-aos-duration="1500" data-aos-offset="0" 
       data-aos-easing="ease-in-sine">
       <div class="row" id="tittle-lastNews">
         <h2>Últimas notícias</h2>
@@ -237,7 +242,7 @@
   <!-- FIM ULTIMAS NOTICIAS -->
   <!-- PODCASTS -->
   <section id="section-three">
-    <div class="sectio-two podcasts" data-aos="fade-up-left" data-aos-duration="1000" data-aos-offset="300"
+    <div class="sectio-two podcasts" data-aos="fade-up-left" data-aos-duration="1000" data-aos-offset="100"
       data-aos-easing="ease-in-sine">
       <div class="row" id="tittle-lastNews">
         <h2>Podcasts</h2>
@@ -312,7 +317,7 @@
   </section>
   <!-- EVENTOS -->
   <section>
-    <div class="eventos" data-aos="fade-up-right" data-aos-duration="2000" data-aos-offset="300"
+    <div class="eventos" data-aos="fade-up-right" data-aos-duration="1000" data-aos-offset="200"
       data-aos-easing="ease-in-sine">
       <div class="row" id="tittle-lastNews">
         <h2>Eventos</h2>
@@ -588,16 +593,15 @@
       }, 5000)
     });
     // Parallax
-    document.addEventListener('DOMContentLoaded', function () {
-      var elems = document.querySelectorAll('.parallax');
-      var instances = M.Parallax.init(elems, options);
-    });
-
-    // Or with jQuery
 
     $(document).ready(function () {
       $('.parallax').parallax();
     });
+    $(document).ready(function(){
+  $('.sidenav').sidenav({ edge: 'right' });
+});
+
+
   </script>
 </body>
 </body>

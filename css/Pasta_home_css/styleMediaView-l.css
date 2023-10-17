@@ -3,7 +3,7 @@ body {
   padding: 0;
   zoom: 100%;
 }
-@media (min-width: 992px) {
+@media (min-width: 1201px) {
   .cor-nav {
     height: 125px !important;
     padding-top: 17px;
@@ -126,14 +126,14 @@ body {
   }
 }
 
-@media screen and (max-width: 1220px) {
+@media screen and (max-width: 1200px) {
   .cor-nav {
     height: 125px !important;
     padding-top: 17px;
   }
   .brand-logo {
     height: 80px;
-    width: 180px;
+    width: 120px;
     margin-left: 10px;
   }
   .links-nav a {
@@ -146,6 +146,10 @@ body {
     margin: 10px -10px 0 -7px;
     height: 35px;
     background-color: rgba(35, 38, 90, 0);
+  }
+  button, html [type="button"], [type="reset"], [type="submit"] {
+    -webkit-appearance: button;
+    border: none;
   }
   .btn-login {
     font-size: 20px;

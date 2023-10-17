@@ -3,34 +3,38 @@
 
 <head>
 	<title>Login</title>
-	<link rel="stylesheet" href="css/login-style.css">
+	<link rel="stylesheet" href="..\css\Pasta_login_css\login-style.css">
 </head>
 
 <body>
 	<div class="container">
 		<!-- PARTE ESQUERDA -->
 		<div class="left">
-			<header>
-				<div>
-					<h2>LOGIN</h2>
-				</div>
-			</header>
-			<form method="post">
-				<div>
-					<label for="Email">Email:</label>
-					<input type="email" name="Email" id="Email" value="" placeholder="Digite seu email" />
-				</div>
-				<div>
-					<label for="Senha">Senha:</label>
-					<input type="password" name="Senha" id="Senha" value="" placeholder="Digite sua senha" />
-				</div>
-				<div>
-					<a href="#">Esqueceu a senha? clique aqui</a>
-				</div>
-				<div>
-					<a href="index.html"><button type="button">ENTRAR</button></a>
-				</div>
-			</form> <!-- FIM DO FORMULÁRIO -->
+			<div class="right-logo">
+				<img id="logo-top" src="../img/Pasta_login_img/TN.png" alt="Logo" />
+			</div>
+			<main>
+				<form method="post">
+					<div id="container-tittle">
+						<h2>LOGIN</h2>
+					</div>
+					<div>
+						<label for="Email">Email:</label>
+						<input type="email" name="Email" id="Email" value="" placeholder="Digite seu email" />
+					</div>
+					<div>
+						<label for="Senha">Senha:</label>
+						<input type="password" name="Senha" id="Senha" value="" placeholder="Digite sua senha" />
+					</div>
+					<div>
+						<a href="#">Esqueceu a senha? clique aqui</a>
+					</div>
+					<div>
+						<a href="../index.html"><button type="button">ENTRAR</button></a>
+						<a id="link-criar-conta" href="#">Não tem conta?clique aqui</a>
+					</div>
+				</form> <!-- FIM DO FORMULÁRIO -->
+			</main>
 		</div>
 		<!-- PARTE DIREITA -->
 		<div class="right">
@@ -39,17 +43,18 @@
 					conta.</h2>
 			</div>
 			<div>
-				<a href="index.html"><button type="button">CRIAR</button></a>
+				<a href="../index.html"><button type="button">CRIAR</button></a>
 			</div>
 			<div>
-				<img id="img-over" src="img/sobreposição.png" alt="COMPLEMENTO" />
+				<img id="img-over" src="../img/Pasta_login_img/sobreposição.png" alt="COMPLEMENTO" />
 			</div>
+
 		</div>
 		<div class="bottom">
 			<!-- PARTE INFERIOR -->
 			<div class="bottom-circle">
 				<div>
-					<img src="img/TN.png" alt="logo" id="logo" />
+					<img src="../img/Pasta_login_img/TN.png" alt="logo" id="logo" />
 				</div>
 
 			</div>
