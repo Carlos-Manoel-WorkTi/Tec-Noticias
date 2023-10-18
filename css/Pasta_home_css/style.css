@@ -154,8 +154,8 @@ a {
 
 /* Estilos da classe "actived" */
 .actived {
-  background: linear-gradient(to bottom, #0c12544e, #6400835b);
-  border-radius: 10px;
+  background: linear-gradient(to bottom, #0c125439, #64008341);
+  border-radius: 1px;
 }
 
 /* Estilos do botão de pesquisa */
@@ -168,8 +168,9 @@ a {
   width: 102%;
   padding-top: 10px;
   background-color: #01030c71;
-  overflow: hidden;
+
   outline: none;
+  padding-top: 5px;
 }
 
 #search {
@@ -187,6 +188,15 @@ a {
 #search:focus {
   border-bottom: 1px solid rgba(14, 2, 2, 0.168); /* Torna a linha transparente */
 }
+.dropdown-content{
+    background-color: #01030c84 !important;
+    left: 0px !important;
+    margin: 0 !important;
+    top: 50px !important;
+    color: red;
+    transform: scaleX(1.1);
+    width: 249px !important;
+  }
 
 #search-button {
   width: 21%;

@@ -28,19 +28,20 @@
     <nav class="nav-extended cor-nav">
       <div class="nav-wrapper" data-aos="fade-down" data-aos-duration="500">
         <img class="brand-logo left" src="img/Pasta_home_img/TN.png" alt="logo" data-aos="fade-rght"
-          data-aos-duration="1100" />
+          data-aos-duration="1100" /> 
         <a href="#" data-target="mobile-demo" class="sidenav-trigger right hide-on-med-and-up"><i class="material-icons ">menu</i></a>
-        <ul id="nav-mobile" class="right hide-on-small-only">
-          <li class="links-nav"><a href="index.html" class="actived">INICIO</a></li>
-          <li class="links-nav"><a href="src/noticias.html">NOTICIAS</a></li>
-          <li class="links-nav"><a href="src/podcasts.html">PODCASTS</a></li>
-          <li class="links-nav"><a href="src/eventos.html">EVENTOS</a></li>
-          <li class="links-nav"><a href="src/cultura.html">CULTURA</a></li>
+        <ul id="nav-mobile" class="right ">
+          <li class="links-nav hide-on-med-and-down"><a href="index.html" class="actived">INICIO</a></li>
+          <li class="links-nav hide-on-med-and-down"><a href="src/noticias.html">NOTICIAS</a></li>
+          <li class="links-nav hide-on-med-and-down"><a href="src/podcasts.html">PODCASTS</a></li>
+          <li class="links-nav hide-on-med-and-down"><a href="src/eventos.html">EVENTOS</a></li>
+          <li class="links-nav hide-on-med-and-down"><a href="src/cultura.html">CULTURA</a></li>
           <!-- formulario para pesquisar -->
           <li>
             <form>
               <div class="input-field hide search-area">
-                <input type="text" id="search" placeholder="Digite sua pesquisa...">
+                <input type="text" id="search" class="autocomplete" placeholder="Digite sua pesquisa...">
+                <label for="autocomplete-input" ></label>
                 <button type="button" id="cancel-button" class="btn "><i
                     class="material-icons right search-icon-close">close</i></button>
                 <button type="button" id="search-button" class="">Buscar</button>
@@ -62,9 +63,18 @@
                 </svg></button>
             </form>
           </li>
-          <li class="btns"><a href="collapsible.html"><button class="btn-cria">CADASTRAR</button></a></li>
+          <li class="btns"><a href="collapsible.html"><button class="btn-cria ">CADASTRAR</button></a></li>
           <li class="right"><a href="src/login.html"><button class="btn-login">ENTRAR</button></a></li>
 
+        </ul>
+      </div>
+      <div class=" hide-on-large-only">
+        <ul class="tabs tabs-transparent">
+          <li class="tab"><a href="index.html" class="actived">INICIO</a></li>
+          <li class="tab"><a href="src/noticias.html">NOTICIAS</a></li>
+          <li class="tab disabled"><a href="src/podcasts.html">PODCASTS</a></li>
+          <li class="tab"><a href="src/eventos.html">EVENTOS</a></li>
+          <li class="tab"><a href="src/cultura.html">CULTURA</a></li>
         </ul>
       </div>
     </nav>
@@ -85,7 +95,7 @@
         <div class="word"></div>
       </div>
       <!-- CAROUSEL -->
-      <div class="carousel s7 m6 l7 xl6" data-aos="zoom-in-center" data-aos-duration="1000" data-aos-delay="3000"
+      <div class="carousel s7 m6 l7 xl5" data-aos="zoom-in-center" data-aos-duration="1000" data-aos-delay="3000"
         data-aos-offset="300" data-aos-easing="ease-in-sine">
         <a href="" class="carousel-item"><img src="https://picsum.photos/200/200?category=technology" alt="card"
             class="card-image">
@@ -236,7 +246,7 @@
 
     </div>
     <div class="row center button-seeMore">
-      <div class="col xl12 "><a href="noticias.html">Ver mais</a></div>
+      <div class="col xl12 "><a href="./src/noticias.html">Ver mais</a></div>
     </div>
   </section>
   <!-- FIM ULTIMAS NOTICIAS -->
@@ -304,7 +314,7 @@
         </div>
       </div>
       <div class="row center button-seeMore">
-        <div class="col xl12 "><a href="podcasts.html">Ver mais</a></div>
+        <div class="col xl12 "><a href="./src/podcasts.html">Ver mais</a></div>
       </div>
   </section>
   <!-- FIM PODCASTS  -->
@@ -427,7 +437,7 @@
 
 
       <div class="row center button-seeMore">
-        <div class="col xl12"><a href="eventos.html">Ver mais</a></div>
+        <div class="col xl12"><a href="./src/eventos.html">Ver mais</a></div>
       </div>
     </div>
     </div>
@@ -485,9 +495,9 @@
         </div>
 
       </div>
-      <div class="row center button-seeMore">
-        <div class=""><a class="col xl12" href="cultura.html">Ver mais</a></div>
-      </div>
+    </div>
+    <div class="row center button-seeMore">
+       <a class="col xl12" href="./src/cultura.html">Ver mais</a>
     </div>
   </section>
   <!-- FIM CULTURA -->
@@ -599,7 +609,17 @@
     });
     $(document).ready(function(){
   $('.sidenav').sidenav({ edge: 'right' });
-});
+}); 
+$(document).ready(function(){
+    $('input.autocomplete').autocomplete({
+      data: {
+        "notícias": null,
+        "podcasts": null,
+        "tecnologia": null,
+        "eventos": './src/eventos.html'
+      },
+    });
+  });
 
 
   </script>
