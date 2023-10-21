@@ -168,7 +168,7 @@ a {
   width: 102%;
   padding-top: 10px;
   background-color: #01030c71;
-
+  display: flex;
   outline: none;
   padding-top: 5px;
 }
@@ -199,8 +199,7 @@ a {
   }
 
 #search-button {
-  width: 21%;
-  padding: 10px;
+  width: 25%;
   background: linear-gradient(to left, #0a0232e8, #4805b36e, #5a0474a6);
   color: white;
   border-radius: 5%;

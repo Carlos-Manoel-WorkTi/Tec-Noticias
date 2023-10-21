@@ -6,9 +6,7 @@
     height: 100%;
     .texto-evento {
       margin-top: 2px;
-    }
-    .texto-evento{
-      width: 60%;
+        width: 60%;
     }
     .card .card-content {
       background-color: rgba(242, 238, 248, 0.003);
@@ -23,6 +21,8 @@
     }
     .card-image img{
       margin-left:10px;
+      height: 150px;
+      top: -10px;
     } 
     .resumo-evento{
       color: rgb(143, 143, 155);
@@ -34,5 +34,14 @@
     .autor-evento{
       color: rgb(227, 227, 227);
     }
+    .card-title {
+      height: 25%;
+      background: transparent;
+      color: white;
+      border-bottom-right-radius: 0%;
+      overflow: hidden;
+      text-align: start;
+    }
   }
+  
 

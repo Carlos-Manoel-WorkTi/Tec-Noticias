@@ -1,182 +1,38 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style></style>
-    <title>Tec Noticias</title>
+    <meta name="viewport" content="width=all, initial-scale=1.0">
+    <title>Document</title>
 </head>
 
 <body>
-    <header>
-
-        <nav>
-            <div>
-                <img src="img/logo.png" alt="logo" />
-                <a href="#"><i>MENU</i></a>
-                <ul>
-                    <li><a href="index.html">INICIO</a></li>
-                    <li><a href="noticias.html">NOTICIAS</a></li>
-                    <li><a href="podcasts.html">PODCASTS</a></li>
-                    <li><a href="eventos.html">EVENTOS</a></li>
-                    <li><a href="cultura.html">CULTURA</a></li>
-                    <li>
-                        <form>
-                            <div>
-                                <input type="text" placeholder="Digite sua pesquisa...">
-                                <button type="button"><i>close</i></button>
-                                <button type="button">Buscar</button>
-                            </div>
-                            <button type="button"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="40"
-                                    viewBox="0,0,256,256">
-                                    <!-- SVG path data here -->
-                                </svg></button>
-                        </form>
-                    </li>
-                    <li><a href="collapsible.html"><button>CADASTRAR</button></a></li>
-                    <li><a href="login.html"><button>ENTRAR</button></a></li>
-
-                </ul>
-            </div>
-        </nav>
-    </header>
-
-    <main>
-
-        <section>
-            <div>
-                <div>
-                    <div>
-                        <h2>NOTÍCIAS</h2>
-                    </div>
-                    <div>
-                        <p>Fique atento para os melhores notícias queo surgem na área tech no Brasil.</p>
-                    </div>
-                </div>
-                <div>
-                    <label for="filtro">FILTRO:</label>
-                    <select name="filtro" id="filtro">
-                        <option disabled selected hidden value="">Selecione</option>
-                        <option value="recentes">Recentes</option>
-                        <option value="populares">Populares</option>
-                        <option value="entrevistas">Entrevistas</option>
-                        <option value="analises">Análises</option> <!-- Corrected the value attribute -->
-                        <option value="tendencias">Tendências</option> <!-- Corrected the value attribute -->
-                    </select>
-                </div>
-                 <div>
-                   <div>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/3MdGMnkxHSQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-                    </div>
-                    <div>
-                        <h1>Confira os Desafios de TI Para 2023</h1>
-                        <p>Para você que deseja crescer no mercado da tecnologia da informação, o primeiro passo é conhecer bem qual é o rumo que a TI está tomando. E nesse vídeo, você vai descobrir quais são os principais desafios para o próximo ano!</p>
-                        <span>Estreou em 16 de dez. de 2022</span>
-                        <div><button><a href="https://youtu.be/3MdGMnkxHSQ?si=NSwJRK4XHMi-dAVD">Assistir agora</a></button></div>
-                    </div>
-                </div>
-                <!-- outro evento -->
-                <hr>
-                <div>
-                    <img src="img/guide-video-playback-react.avif" alt="Imagem de capa" width="560" height="315">
-                </div>
-                <div>
-                    <h1>Desafio de React: Aprenda, Desenvolva, Vença!</h1>
-                    <p>React é uma biblioteca JavaScript popular para construção de interfaces de usuário. Uma das melhores maneiras de aprimorar suas habilidades em React é enfrentar desafios de programação. Isso não apenas aprofundará seu conhecimento, mas também o ajudará a se preparar para situações do mundo real.</p>
-                    <span>Data de transmissão: 8 outubro de 2023</span>
-                    <div><button><a href="https://www.youtube.com/live/ex12hW8cqRE?si=al4OTa0HRaqVDgS7">COMEÇAR</a></button></div>
-                </div>
-                </div>
-                <hr>
-                <!-- outro evento -->
-                <hr>
-                <div>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ex12hW8cqRE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <div>
-                    <h1>Aula Inaugural - Santander Bootcamp 2023</h1>
-                    <p>A nova edição do Santander Bootcamp conta com 6 trilhas e 75 mil bolsas de estudo para serem distribuídas a pessoas de todo o Brasil. O programa é voltado para aqueles que estão iniciando carreira em desenvolvimento de software, em transição de carreira ou que já atuam profissionalmente e buscam evoluir e conquistar melhores oportunidades no mercado de tecnologia. 
-                    </p>
-                    <span>Transmitido ao vivo em 17 de ago. de 2023</span>
-                    <div><button><a href="https://www.youtube.com/live/ex12hW8cqRE?si=al4OTa0HRaqVDgS7">Assistir agora</a></button></div>
-                </div>
-            </div>
- 
-   
-                <!-- ADD MAIS BLOCOS -->
-            </div>
-            <div>
-                <div><button><a href="Ver mais">veja mais</a></button></div>
-            </div>
-        </section>
-        <section>
-            <div><a href="#"><img src="" alt="anuncio">Publicidade</a></div>
-        </section>
-    </main>
-
-    <footer>
-        <div>
-            <div>
-                <div>
-                    <h5>Quem somos?</h5>
-                    <p>Somos a Tec Notícias, uma empresa de notícias especializada em tecnologia,
-                        trazendo as últimas novidades e análises do mundo da tecnologia para você.</p>
-                </div>
-                <div>
-                    <h5>Sobre</h5>
-                    <ul>
-                        <li><a href="#!">Sobre a Tec Notícias</a></li>
-                        <li><a href="#!">Política de Privacidade</a></li>
-                        <li><a href="#!">Contato de Suporte</a></li>
-                        <li><a href="#!">Perfil do usuário</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h5>Tecnologias</h5>
-                    <ul>
-                        <li><a href="#!">JavaScript</a></li>
-                        <li><a href="#!">Inteligência Artificial</a></li>
-                        <li><a href="#!">Ciência de Dados</a></li>
-                        <li><a href="#!">Inovações em TI</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div>
-                <div>
-                    <img style="width: 50px; height: 50px;"
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg"
-                        alt="Facebook">
-                </div>
-                <div>
-                    <img style="width: 50px; height: 50px;"
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/twitter/twitter-original.svg"
-                        alt="Twitter">
-                </div>
-                <div>
-                    <img style="width: 50px; height: 50px;"
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
-                        alt="LinkedIn">
-                </div>
-                <div>
-                    <img style="width: 50px; height: 50px;"
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-                        style="background-color: rgb(255, 255, 255);border-radius: 100%;" />
-                </div>
-            </div>
-        </div>
-        <div>
-            <div>
-                <span> © 2018 Tec Notícias - Todos os Direitos Reservados
-                    <a href="#!">Termos de Serviço</a>
-                </span>
-
-            </div>
-        </div>
-    </footer>
     <script>
+        function User(nome, senha, admin) {
+            this.name = nome;
+            this.password = senha;
+            Object.defineProperty(this, 'admin', {
+                value: admin,
+                writable: false,
+            });
+        }
+
+        let usuario1 = new User('joao', '12345', true);
+
+        console.log("Bem-vindo " + usuario1.name);
+        if (usuario1.admin) {
+            console.log("Você é um admin");
+        }
+
+
+        console.log(usuario1.admin);
+        usuario1.admin = false; // Isso não funcionará
+        if (usuario1) {
+            console.log('Impossivel alterar');
+        } 
+
+
     </script>
 </body>
 

@@ -3,6 +3,7 @@ body {
   padding: 0;
   zoom: 100%;
 }
+
 .dropdown-content {
   background-color: #fff;
   margin: 0;
@@ -17,13 +18,7 @@ body {
   -webkit-transform-origin: 0 0;
   transform-origin: 0 0;
 }
-nav .sidenav-trigger i {
-  height: 56px;
-  line-height: 56px;
-  margin-top: 9px;
-  font-size: 50px;
-  margin-right: -25px;
-}
+
 .tabs.tabs-transparent .indicator {
   background-color: #7f0ca1;
 }
@@ -31,9 +26,30 @@ nav .sidenav-trigger i {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.122), transparent);
 }
 .tabs .tab a {
-  margin-top: 8%;
+  margin-top: 4%;
+}
+.material-icons {
+  background: linear-gradient(
+    to bottom,
+    rgb(36, 4, 78),
+    rgb(81, 23, 98),
+    rgba(131, 60, 157, 0.212),
+    transparent
+  );
+  background-clip: border-box;
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-size: 180px;
+  color: transparent;
 }
 @media (min-width: 1201px) {
+  nav .sidenav-trigger i {
+    height: 56px;
+    line-height: 56px;
+    margin-top: 9px;
+    font-size: 50px;
+    margin-right: -25px;
+  }
   .cor-nav {
     padding-top: 17px;
   }
@@ -57,7 +73,7 @@ nav .sidenav-trigger i {
     margin-right: 10px;
     margin-top: 10px;
   }
- 
+
   /* Aumentar o tamanho da fonte para os elementos do formulário */
   .search-area {
     right: 10px;
@@ -212,10 +228,11 @@ nav .sidenav-trigger i {
     padding-top: 17px;
   }
   nav.nav-extended {
-    height: 110px;
+    height: 120px;
   }
+
   .brand-logo {
-    height: 90px;
+    height: 80px;
     width: 110px;
     margin-left: 0px;
     margin-top: 0;
@@ -228,9 +245,30 @@ nav .sidenav-trigger i {
     margin-right: 5px;
     margin-top: 10px;
   }
+  .search-area {
+    width: 100%;
+    padding-top: 15px;
+}
+ .search-icon-close {
+    border-right: 1px solid rgba(255, 253, 250, 0.127);
+    margin: 0;
+    padding-right: 5px;
+    position: relative;
+    top: -9px;
+    color: rgba(255, 0, 0, 0.271);
+    font-size: 35px !important;
+  }
+  .btn {
+    padding: 5px;
+  }
+  nav,nav .nav-wrapper i,nav a.sidenav-trigger,nav a.sidenav-trigger i {
+    height: 54px;
+    line-height: 54px
+}
+
   .btn-search,
   .btn-search svg {
-    margin: 10px -10px 0 -7px;
+    margin:10px -10px 0 -7px;
     height: 35px;
     background-color: rgba(35, 38, 90, 0);
   }
@@ -314,6 +352,228 @@ nav .sidenav-trigger i {
 }
 @media (max-width: 992px) {
   nav.nav-extended {
-    height: 150px;
+    height: 145px;
   }
+}
+@media (max-width: 710px) {
+  nav.nav-extended {
+    height: 130px;
+  }
+  .tabs .tab a {
+  margin-top: 4%;
+}
+  .brand-logo {
+    height: 65px;
+    width: 70px;
+  }
+  nav .sidenav-trigger i {
+    height: 80px;
+    line-height: 55px;
+    font-size: 40px;
+    margin-right: -20px;
+    margin-top: 1px;
+  }
+  .btn-cria,
+  .btn-login {
+    font-size: 10px;
+    height: 25px;
+    margin-top: 0px;
+    padding: 5px;
+  }
+  nav ul a {
+    padding: 0 5px;
+  }
+  nav {
+    color: #fff;
+    line-height: 50px;
+  }
+  .btn-search,
+  .btn-search svg {
+    margin: 31px -10px 0 -7px;
+    height: 25px;
+    background-color: rgba(35, 38, 90, 0);
+  }
+  nav form {
+    height: 90%;
+    width: 60%;
+    margin-left: 120px;
+    margin-top: -50px;
+  }
+  #search {
+    margin-right: 10px;
+    width:68%;
+    padding-left: 3px;
+    font-size: 12px;
+    margin-bottom: 0px;
+  }
+  .search-area {
+    width: 100%;
+    padding-top: 10px;
+    background-color: #01030c71;
+    outline: none;
+    top: 46px;
+    right: -20px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  #search-button {
+    width: 12%;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 5%;
+    border-style: hidden;
+    margin-top: 5px;
+
+  }
+  #search-button svg{
+    width: 20px;
+    font-size: 40px !important;
+  }
+  nav i,
+  nav [class^="mdi-"],
+  nav [class*="mdi-"],
+  nav i.material-icons {
+    height: 30px;
+    line-height: 32px;
+  }
+  .search-icon-close {
+    border-right: 1px solid rgba(255, 253, 250, 0.127);
+    margin: 0;
+    padding-right: 5px;
+    position: relative;
+    top: -1px;
+    color: rgba(255, 0, 0, 0.271);
+    font-size: 25px !important;
+  }
+  .btn {
+    padding: 0;
+  }
+  #cancel-button {
+    padding-left: 10px;
+  }
+}
+@media (max-width: 600px) {
+  nav.nav-extended {
+    height: 122px;
+  }
+
+}
+@media (max-width: 450px) {
+  .tabs {
+    display: none;
+  }
+  nav.nav-extended {
+    height: 74px;
+  }
+  .brand-logo {
+    height: 45px;
+    width: 60px;
+  }
+  nav .sidenav-trigger i {
+    height: 80px;
+    line-height: 55px;
+    font-size: 40px;
+    margin-right: -20px;
+  }
+  .btn-cria,
+  .btn-login {
+    font-size: 10px;
+    height: 25px;
+    margin-top: 0px;
+    padding: 5px;
+  }
+  nav ul a {
+    padding: 0 5px;
+  }
+  nav {
+    color: #fff;
+    line-height: 50px;
+  }
+  .btn-search,
+  .btn-search svg {
+    margin: 31px -10px 0 -7px;
+    height: 25px;
+    background-color: rgba(35, 38, 90, 0);
+  }
+  nav form {
+    height: 90%;
+    width: 60%;
+    margin-left: 120px;
+    margin-top: -50px;
+  }
+  #search {
+    color: white;
+    margin-right: 10px;
+    width: 58%;
+    padding-left: 3px;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 12px;
+    margin-bottom: 0px;
+  }
+  .search-area {
+    width: 100%;
+    padding-top: 10px;
+    background-color: #01030c71;
+    outline: none;
+    top: -10px;
+    right: 20px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  #search-button {
+    width: 12%;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 5%;
+    border-style: hidden;
+    margin-top: 5px;
+
+  }
+  #search-button svg{
+    margin-left: -5px;
+    width: 20px;
+  }
+  nav i,
+  nav [class^="mdi-"],
+  nav [class*="mdi-"],
+  nav i.material-icons {
+    height: 30px;
+    line-height: 32px;
+  }
+  .search-icon-close {
+    border-right: 1px solid rgba(255, 253, 250, 0.127);
+    margin: 0;
+    padding-right: 5px;
+    position: relative;
+    top: -1px;
+    color: rgba(255, 0, 0, 0.271);
+    font-size: 25px !important;
+  }
+  .btn {
+    padding: 0;
+  }
+  #cancel-button {
+    padding-left: 10px;
+  }
+
+}
+@media (max-width: 360px) {
+    .btn-login,.btn-cria{
+      display: none;
+    }
+    .btn-search, .btn-search svg {
+      margin: 31px -25px 0 0px;
+      height: 23px;
+      background-color: rgba(35, 38, 90, 0);
+    }
+    .search-area {
+      width: 100%;
+
+      top: -10px;
+      right: 40px;
+
+    }
 }

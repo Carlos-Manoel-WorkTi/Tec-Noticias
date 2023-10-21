@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header,
+footer {
+  background-color: red;
+}
+#section-three {
+  background: linear-gradient(to bottom, black, black, rgb(2, 2, 41), black);
+  padding-top: 1px;
+}
+.banner {
+  background-color: blue;
+  background-image: radial-gradient(#1f2563, #1b205b, #06062a);
+  height: 18rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: whitesmoke !important;
+}
+
+.banner-conteudo {
+  height: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 70px;
+}
+
+.banner-conteudo h2 {
+  font-size: 3.3rem;
+  color: white;
+}
+
+.banner-conteudo p {
+  font-size: 1.2rem;
+}
+
+.filtrador {
+  font-size: 1.2rem;
+  width: 160px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.eventos {
+  padding-left: 60px;
+  padding-top: 30px;
+  background-color: azure;
+}
+
+.card-evento {
+  display: flex;
+  margin: 30px 0;
+  width: 100vw;
+  max-width: 1100px;
+}
+
+.imagem-evento {
+  width: 250px;
+  height: 210px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagem-evento img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.texto-evento {
+  width: 800px;
+  padding-left: 30px;
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+
+.texto-evento h1,
+.texto-evento p {
+  padding-bottom: 10px;
+}
+
+.texto-evento h1 {
+  background-image: linear-gradient(to bottom, #28156d, #2b26bf);
+
+  /* Segundo passo: apagar do fundo tudo que não estiver imediatamente atrás de texto */
+  background-clip: text;
+  -webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */
+
+  /* Terceiro passo: apagar o texto, deixando apenas o fundo atrás dele */
+  -webkit-text-fill-color: transparent;
+
+  /* Cor que contraste com o degradê, caso o navegador não suporte `background-clip: text` */
+  color: black;
+}
+
+.texto-evento p {
+  font-size: 17px;
+  font-weight: lighter;
+  line-height: 24px;
+}
+
+.filtros-evento {
+  display: flex;
+  width: 380px;
+  justify-content: space-between;
+  padding-top: 5px;
+}
+
+.filtro-evento {
+  border: 1px solid black;
+  padding: 5px 15px;
+  border-radius: 5px;
+  background-image: linear-gradient(45deg, blue, darkblue, purple);
+  color: white;
+  width: 80px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.btn-eventos {
+  text-align: center;
+}
+
+.btn-eventos button {
+  background-color: aqua;
+  padding: 5px 20px;
+  border-radius: 20px;
+  font-size: 1.2rem;
+}
+
+hr {
+  width: 1100px;
+}
+#tittle-podcast{
+    background: linear-gradient(to right, rgb(36, 4, 78), rgb(151, 40, 182),violet, rgb(185, 83, 222));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent; /* Torna o texto transparente */
+    border-left: 3px solid rgb(229, 229, 229);
+    padding-left: 10px;
+    margin-left: 20px;
+    height: 60px;
+    margin-top: 30px;
+
+}
+.header-video {
+  color: white;
+  width: 100%;
+  P{
+    margin-left: 50px !important;
+    padding-bottom: 20px !important;
+  }
+  .opinar {
+    margin: 0;
+    padding-left: 100px;
+    a{
+        background: linear-gradient(to right, rgb(36, 4, 78), rgb(151, 40, 182), rgb(185, 83, 222))
+    }
+  }
+}
+.podcasts{
+  border-bottom: 2px solid white;
+  margin: 5%;
+  margin-top: 0;
+  margin-bottom: 0;
+  .card .card-content {
+      padding: 10px;
+      border-radius: 0 0 0 0;
+      background: linear-gradient(to right, rgb(36, 4, 78), rgb(81, 23, 98), rgb(131, 60, 157));
+    }
+    .card-title{
+      border-radius: 0;
+      color: white;
+    }
+    icon{
+      font-size: 200px;
+      /* background: linear-gradient(to bottom,black,black,black,rgb(2, 2, 41),black);;
+      background-clip: text;
+      -webkit-background-clip: text; */
+    }
+    .material-icons {
+      background: linear-gradient(to bottom, rgb(36, 4, 78), rgb(81, 23, 98), rgba(131, 60, 157, 0.212),transparent);;
+      background-clip: border-box;
+      background-clip: text;
+      -webkit-background-clip: text;
+      font-size: 180px;
+      color: transparent;
+    }
+}

@@ -8,9 +8,20 @@
         margin: 5%;
         margin-top: 0;
         margin-bottom: 0;
+        .card .card-content {
+            padding: 10px;
+            border-radius: 0 0 0 0;
+            background: linear-gradient(to right, rgb(36, 4, 78), rgb(81, 23, 98), rgb(131, 60, 157));
+          .card-title{
+            border-radius: 0;
+            color: white;
+          }
     }
-    icon{
-        font-size: 200px;
-        color: white;
+    .material-icons {
+        background: linear-gradient(to bottom, rgb(36, 4, 78), rgb(81, 23, 98), rgba(131, 60, 157, 0.212),transparent);;
+        background-clip: text;
+        -webkit-background-clip: text;
+        font-size:  200px;
+        color: transparent;
     }
-}
+}}

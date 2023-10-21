@@ -1,0 +1,14 @@
+@media (max-width:599px){
+    nav .sidenav-trigger i {
+        height: 56px;
+        line-height: 56px;
+        margin-top: 9px;
+        font-size: 50px;
+        margin-right: -25px;
+      }
+}
+@media (max-width:450px){
+    .tabs{
+        height: 100px !important;
+    }
+}

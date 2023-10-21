@@ -1,35 +1,58 @@
 <!DOCTYPE html>
+
 <html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style></style>
-    <title>Tec Noticias</title>
+    <!-- Links para os estilos (CSS) -->
+    <link rel="stylesheet" href="../css/Pasta_home_css/style-lastNews.css">
+    <link rel="stylesheet" href="../css/Pasta_home_css/style-podcasts.css">../
+    <link rel="stylesheet" href="../css/Pasta_home_css/style-cultura.css">
+    <link rel="stylesheet" href="../css/Pasta_home_css/libra.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+        integrity="sha512-UJfAaOlIRtdR+0P6C3KUoTDAxVTuy3lnSXLyLKlHYJlcSU8Juge/mjeaxDNMlw9LgeIotgz5FP8eUQPhX1q10A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/Pasta_home_css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/Pasta_home_css/styleMediaView-l.css">
+    <link rel="stylesheet" href="../css/Pasta_podcasts_css/podcasts.css">
+
+
+    <title>TEC Notícias</title>
 </head>
 
-<body>
+<body class="tec-noticias">
     <header>
 
-        <nav>
-            <div>
-                <img src="img/logo.png" alt="logo" />
-                <a href="#"><i>MENU</i></a>
-                <ul>
-                    <li><a href="index.html">INICIO</a></li>
-                    <li><a href="src/noticias.html">NOTICIAS</a></li>
-                    <li><a href="src/podcasts.html">PODCASTS</a></li>
-                    <li><a href="src/eventos.html">EVENTOS</a></li>
-                    <li><a href="src/cultura.html">CULTURA</a></li>
+        <nav class="nav-extended cor-nav">
+            <div class="nav-wrapper" data-aos="fade-down" data-aos-duration="500">
+                <img class="brand-logo left" src="img/Pasta_home_img/TN.png" alt="logo" data-aos="fade-rght"
+                    data-aos-duration="1100" />
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger right hide-on-med-and-up"><i
+                        class="material-icons ">menu</i></a>
+                <ul id="nav-mobile" class="right ">
+                    <li class="links-nav hide-on-med-and-down"><a href="../index.html">INICIO</a></li>
+                    <li class="links-nav hide-on-med-and-down"><a href="noticias.html">NOTICIAS</a></li>
+                    <li class="links-nav hide-on-med-and-down"><a href="podcasts.html" class="actived">PODCASTS</a></li>
+                    <li class="links-nav hide-on-med-and-down"><a href="eventos.html">EVENTOS</a></li>
+                    <li class="links-nav hide-on-med-and-down"><a href="cultura.html">CULTURA</a></li>
+                    <!-- formulario para pesquisar -->
                     <li>
                         <form>
-                            <div>
-                                <input type="text" placeholder="Digite sua pesquisa...">
-                                <button type="button"><i>close</i></button>
-                                <button type="button">Buscar</button>
+                            <div class="input-field hide search-area">
+                                <input type="text" id="search" class="autocomplete"
+                                    placeholder="Digite sua pesquisa...">
+                                <label for="autocomplete-input"></label>
+                                <button type="button" id="cancel-button" class="btn "><i
+                                        class="material-icons right search-icon-close">close</i></button>
+                                <button type="button" id="search-button" class="">Buscar</button>
                             </div>
-                            <button type="button"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="60"
-                                    height="40" viewBox="0,0,256,256">
+
+
+                            <button class="btn-search " type="button"><svg xmlns="http://www.w3.org/2000/svg" x="0px"
+                                    y="0px" width="60" height="40" viewBox="0,0,256,256">
                                     <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1"
                                         stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
                                         stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
@@ -43,179 +66,379 @@
                                 </svg></button>
                         </form>
                     </li>
-                    <li><a href="collapsible.html"><button>CADASTRAR</button></a></li>
-                    <li><a href="login.html"><button>ENTRAR</button></a></li>
+                    <li class="btns"><a href="collapsible.html"><button class="btn-cria ">CADASTRAR</button></a></li>
+                    <li class="right"><a href="src/login.html"><button class="btn-login">ENTRAR</button></a></li>
 
                 </ul>
             </div>
+            <div class=" hide-on-large-only">
+                <ul class="tabs tabs-transparent">
+                    <li class="tab"><a href="../index.html">INICIO</a></li>
+                    <li class="tab"><a href="noticias.html">NOTICIAS</a></li>
+                    <li class="tab disabled"><a href="podcasts.html" class="actived">PODCASTS</a></li>
+                    <li class="tab"><a href="eventos.html">EVENTOS</a></li>
+                    <li class="tab"><a href="cultura.html">CULTURA</a></li>
+                </ul>
+            </div>
         </nav>
-        </div>
-        </nav>
+        <ul class="sidenav right-align" id="mobile-demo">
+            <li class="links-nav"><a href="../index.html">INICIO</a></li>
+            <li class="links-nav"><a href="noticias.html">NOTICIAS</a></li>
+            <li class="links-nav"><a href="podcasts.html" class="actived">PODCASTS</a></li>
+            <li class="links-nav"><a href="eventos.html">EVENTOS</a></li>
+            <li class="links-nav"><a href="cultura.html">CULTURA</a></li>
+        </ul>
     </header>
 
 
-    <main>
-        <section>
-            <div>
-                <div>
-                    <h2>Podcasts</h2>
-                </div>
-                <div>
-                    <p>Fique atento ás melhores entrevista com os melhores da área tech no Brasil.</p>
-                </div>
-            </div>
-            <div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/koh90HN__FY" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                <div>
-                    <h3>titulo do video</h3>
-                    <span>publicado em...</span>
-                    <span><a href="#">veja mais...</a></span>
-                </div>
-            </div>
-        </section>
 
-        <section>
-            <div>
-                <div>
-                    <label for="filtro">FILTRO:</label>
-                    <select name="filtro" id="filtro">
-                        <option disabled selected hidden value="">Selecione</option>
-                        <option value="recentes">Recentes</option>
-                        <option value="populares">Populares</option>
-                        <option value="entrevistas">Entrevistas</option>
-                        <option value="notícias">Análises</option>
-                        <option value="tendências">Tendências</option>
-                    </select>
-                </div>
-                <div>
-                    <div>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/koh90HN__FY" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                    </div>
-                    <div>
-                        <h1>titulo</h1>
-                        <p>resumo</p>
-                        <span>data</span>
-                        <div><button><a href="#">Assistir agora</a></button></div>
-                    </div>
-                </div>
-                <hr>
-                <div>
-                    <div>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/koh90HN__FY" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                    </div>
-                    <div>
-                        <h1>titulo</h1>
-                        <p>resumo</p>
-                        <span>data</span>
-                        <div><button><a href="#">Assistir agora</a></button></div>
-                    </div>
-                </div>
-                <hr>
-                <div>
-                    <div>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/koh90HN__FY" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                    </div>
-                    <div>
-                        <h1>titulo</h1>
-                        <p>resumo</p>
-                        <span>data</span>
-                        <div><button><a href="#">Assistir agora</a></button></div>
-                    </div>
-                </div>
-                <hr>
-                <div>
-                    <div>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/koh90HN__FY" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                    </div>
-                    <div>
-                        <h1>titulo</h1>
-                        <p>resumo</p>
-                        <span>data</span>
-                        <div><button><a href="#">Assistir agora</a></button></div>
-                    </div>
-                </div>
-                <hr>
+    <section>
+        <div class="banner">
+            <div class="banner-conteudo">
+                <h2>PODCASTS</h2>
+                <p>Assista os melhores podcasts queos surgem na área tech no Brasil.</p>
             </div>
-            <div>
-                <div><button><a href="Ver mais">veja mais</a></button></div>
-            </div>
-        </section>
-        <section>
-            <div><a href="#"><img src="" alt="anuncio">Publicidade</a></div>
-        </section>
-    </main>
+        </div>
 
-    <footer>
-        <div>
-            <div>
-                <div>
-                    <h5>Quem somos?</h5>
-                    <p>Somos a Tec Notícias, uma empresa de notícias especializada em tecnologia,
+    </section>
+    <section>
+        <a id="librasButton" class="btn-floating btn-large purple">
+            <i class="material-icons">accessibility</i>
+        </a>
+
+        <a id="topButton" class="btn-floating btn-large blue">
+            <i class="material-icons">keyboard_arrow_up</i>
+        </a>
+    </section>../
+    <!-- PODCASTS -->
+    <section id="section-three">
+        <div class="sectio-two podcasts" data-aos="fade-up-left" data-aos-duration="1000" data-aos-offset="100"
+            data-aos-easing="ease-in-sine">
+            <div class="row" id="tittle-podcast">
+                <h2>Falando sobre tecnologias</h2>
+            </div>
+            <div class="row">
+                <div class="col s12 m12 l12 xl12 center">
+                    <iframe width="90%" height="450vh" src="https://www.youtube.com/embed/NM2BMYdD2Gk?si=GmrcoX7yWqkAc392"
+                        frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class=" s12 m12 l12 xl12 header-video">
+                    <p class="col s12 m12 l12 xl12">A tecnologia é como uma pintura em constante evolução, onde cada traço e pincelada são os avanços que moldam o futuro.</p>
+                    <div class="row center opinar">
+
+                        <div class="col s1 m2 l2 xl2"><a class="waves-effect waves-light btn like-button">gostei</a></div>
+                        <div class="col s1 m2 l2 xl2"><a class="waves-effect waves-light btn like-button">NAo curti</a></div>
+                        <div class="col xl3"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row center text-center">
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-image" style="position: relative;">
+                            <!-- Adicione 'position: relative;' para permitir o posicionamento absoluto -->
+                            <img src="https://picsum.photos/200/200?category=technology">
+                            <!-- Ajuste a URL da imagem de exemplo -->
+                            <a class=""
+                                style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                                <i class="material-icons" >play_arrow</i>
+                            </a>
+                        </div>
+
+                        <div class="card-content">
+                            <span class="card-title">Card Title of the video over here</span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-image" style="position: relative;">
+                            <!-- Adicione 'position: relative;' para permitir o posicionamento absoluto -->
+                            <img src="https://picsum.photos/200/200?category=technogy">
+                            <!-- Ajuste a URL da imagem de exemplo -->
+                            <a class=""
+                                style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                                <i class="material-icons">play_arrow</i>
+                            </a>
+                        </div>
+
+                        <div class="card-content">
+                            <span class="card-title">Card Title of the video over here</span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-image" style="position: relative;">
+                            <!-- Adicione 'position: relative;' para permitir o posicionamento absoluto -->
+                            <img src="https://picsum.photos/200/200?category=technoloy">
+                            <!-- Ajuste a URL da imagem de exemplo -->
+                            <a class=""
+                                style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                                <i class="material-icons">play_arrow</i>
+                            </a>
+                        </div>
+
+                        <div class="card-content">
+                            <span class="card-title">Card Title of the video over here</span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row center text-center">
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-image" style="position: relative;">
+                            <!-- Adicione 'position: relative;' para permitir o posicionamento absoluto -->
+                            <img src="https://picsum.photos/200/200?category=technology">
+                            <!-- Ajuste a URL da imagem de exemplo -->
+                            <a class=""
+                                style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                                <i class="material-icons">play_arrow</i>
+                            </a>
+                        </div>
+
+                        <div class="card-content">
+                            <span class="card-title">Card Title of the video over here</span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-image" style="position: relative;">
+                            <!-- Adicione 'position: relative;' para permitir o posicionamento absoluto -->
+                            <img src="https://picsum.photos/200/200?category=technogy">
+                            <!-- Ajuste a URL da imagem de exemplo -->
+                            <a class=""
+                                style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                                <i class="material-icons">play_arrow</i>
+                            </a>
+                        </div>
+
+                        <div class="card-content">
+                            <span class="card-title">Card Title of the video over here</span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-image" style="position: relative;">
+                            <!-- Adicione 'position: relative;' para permitir o posicionamento absoluto -->
+                            <img src="https://picsum.photos/200/200?category=technoloy">
+                            <!-- Ajuste a URL da imagem de exemplo -->
+                            <a class=""
+                                style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                                <i class="material-icons">play_arrow</i>
+                            </a>
+                        </div>
+
+                        <div class="card-content">
+                            <span class="card-title">Card Title of the video over here</span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="parallax-container">
+                <div class="parallax"><img
+                        src="https://img.freepik.com/fotos-gratis/3d-abstrato-baixo-poli-fundo-escuro-com-pontos-e-linhas-de-conexao_1048-12151.jpg?w=1200&t=st=1697421474~exp=1697422074~hmac=1eb100679182454ef47076e21439ab7ea55374f6209bf27b0f3e1b2e49fa2c66"
+                        alt=""></div>
+            </div>
+            <div class="row center text-center">
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-image" style="position: relative;">
+                            <!-- Adicione 'position: relative;' para permitir o posicionamento absoluto -->
+                            <img src="https://picsum.photos/200/200?category=technology">
+                            <!-- Ajuste a URL da imagem de exemplo -->
+                            <a class=""
+                                style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                                <i class="material-icons" style="">play_arrow</i>
+                            </a>
+                        </div>
+
+                        <div class="card-content">
+                            <span class="card-title">Card Title of the video over here</span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-image" style="position: relative;">
+                            <!-- Adicione 'position: relative;' para permitir o posicionamento absoluto -->
+                            <img src="https://picsum.photos/200/200?category=technogy">
+                            <!-- Ajuste a URL da imagem de exemplo -->
+                            <a class=""
+                                style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                                <i class="material-icons">play_arrow</i>
+                            </a>
+                        </div>
+
+                        <div class="card-content">
+                            <span class="card-title">Card Title of the video over here</span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-image" style="position: relative;">
+                            <!-- Adicione 'position: relative;' para permitir o posicionamento absoluto -->
+                            <img src="https://picsum.photos/200/200?category=technoloy">
+                            <!-- Ajuste a URL da imagem de exemplo -->
+                            <a class=""
+                                style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                                <i class="material-icons">play_arrow</i>
+                            </a>
+                        </div>
+
+                        <div class="card-content">
+                            <span class="card-title">Card Title of the video over here</span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row center button-seeMore">
+                <div class="col xl12 "><a href="./src/podcasts.html">Ver mais</a></div>
+            </div>
+    </section>
+    <!-- FIM PODCASTS  -->
+    <section>
+    </section>
+
+    <section>
+        <div class="parallax-container" style="height: 150px; margin-top: 10px;">
+            <div class="parallax"><img src="https://i.pinimg.com/550x/46/af/af/46afaf5dec7698a9cd44abf313c207fa.jpg">
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="page-footer">
+        <div class="data-aos" data-aos="fade-up" data-aos-duration="1000">
+            <div class="row center inf-footer">
+                <div class="col xl4 m4 left-align">
+                    <h5 class="blue-text text-lighten-6 inf-footer">Quem somos?</h5>
+                    <p class="grey-text text-footer">Somos a Tec Notícias, uma empresa de notícias especializada em
+                        tecnologia,
                         trazendo as últimas novidades e análises do mundo da tecnologia para você.</p>
                 </div>
-                <div>
-                    <h5>Sobre</h5>
+                <div class="col xl4 m5">
+                    <h5 class="blue-text text-lighten-6 inf-footer">Sobre</h5>
                     <ul>
-                        <li><a href="#!">Sobre a Tec Notícias</a></li>
-                        <li><a href="#!">Política de Privacidade</a></li>
-                        <li><a href="#!">Contato de Suporte</a></li>
-                        <li><a href="#!">Perfil do usuário</a></li>
+                        <li><a class="grey-text text-footer" href="#!">Sobre a Tec Notícias</a></li>
+                        <li><a class="grey-text text-footer" href="#!">Política de Privacidade</a></li>
+                        <li><a class="grey-text text-footer" href="#!">Contato de Suporte</a></li>
+                        <li><a class="grey-text text-footer" href="#!">Perfil do usuário</a></li>
                     </ul>
                 </div>
-                <div>
-                    <h5>Tecnologias</h5>
+                <div class="col xl4 m3 right-align">
+                    <h5 class="blue-text text-lighten-6 inf-footer">Tecnologias</h5>
                     <ul>
-                        <li><a href="#!">JavaScript</a></li>
-                        <li><a href="#!">Inteligência Artificial</a></li>
-                        <li><a href="#!">Ciência de Dados</a></li>
-                        <li><a href="#!">Inovações em TI</a></li>
+                        <li><a class="grey-text text-footer" href="#!">JavaScript</a></li>
+                        <li><a class="grey-text text-footer" href="#!">Inteligência Artificial</a></li>
+                        <li><a class="grey-text text-footer" href="#!">Ciência de Dados</a></li>
+                        <li><a class="grey-text text-footer" href="#!">Inovações em TI</a></li>
                     </ul>
                 </div>
             </div>
-
-            <div>
-                <div>
-                    <img style="width: 50px; height: 50px;"
+            <!-- Ícones de redes sociais coloridos do Google Material Icons -->
+            <div class="row center-align pt2 icons-footer">
+                <div class="col s3">
+                    <img class="responsive-img"
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg"
                         alt="Facebook">
                 </div>
-                <div>
-                    <img style="width: 50px; height: 50px;"
+                <div class="col s3">
+                    <img class="responsive-img"
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/twitter/twitter-original.svg"
                         alt="Twitter">
                 </div>
-                <div>
-                    <img style="width: 50px; height: 50px;"
+                <div class="col s3">
+                    <img class="responsive-img"
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
                         alt="LinkedIn">
                 </div>
-                <div>
-                    <img style="width: 50px; height: 50px;"
+                <div class="col s3">
+                    <img class="responsive-img"
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
                         style="background-color: rgb(255, 255, 255);border-radius: 100%;" />
                 </div>
             </div>
+            <!-- Adicionar uma linha -->
         </div>
-        <div>
-            <div>
-                <span> © 2018 Tec Notícias - Todos os Direitos Reservados
-                    <a href="#!">Termos de Serviço</a>
-                </span>
+        <div class="footer-copyright inf-footer">
+            <span class="copyright">© 2018 Tec Notícias - Todos os Direitos Reservados</span>
 
-            </div>
+            <a class="grey-text text-lighten-4 right" href="#!">Termos de Serviço</a>
         </div>
     </footer>
+
+
+
+
+    <!-- Scripts JavaScript para texto animado -->
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="./script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="..//Pasta_home_js/script.js"></script>
+    <script src="../js/Pasta_home_js/textanimate.js"></script>
+    <script src="../js/Pasta_home_js/libra.js"></script>
+
+    <!-- Scripts JavaScript para Materialize CSS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"
+        integrity="sha512-NiWqa2rceHnN3Z5j6mSAvbwwg3tiwVNxiAQaaSMSXnRRDh5C2mk/+sKQRw8qjV1vN4nf8iK2a0b048PnHbyx+Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Script para animação de entrada (AOS) -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
     <script>
+        // Inicialização da animação de entrada com AOS
+        AOS.init();
+
+        // materialize 
+        M.AutoInit();
+
+        // Configuração do carousel
+        $(document).ready(function () {
+            $('.carousel').carousel({
+                indicators: true
+            });
+            setInterval(function () {
+                $('.carousel').carousel('next')
+            }, 5000)
+        });
+        // Parallax
+
+        $(document).ready(function () {
+            $('.parallax').parallax();
+        });
+        $(document).ready(function () {
+            $('.sidenav').sidenav({ edge: 'right' });
+        });
+        $(document).ready(function () {
+            $('input.autocomplete').autocomplete({
+                data: {
+                    "notícias": null,
+                    "podcasts": null,
+                    "tecnologia": null,
+                    "eventos": './src/eventos.html'
+                },
+            });
+        });
+
+
     </script>
 </body>
 </body>
