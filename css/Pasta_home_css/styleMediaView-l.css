@@ -409,6 +409,9 @@ body {
   }
 }
 @media (max-width: 600px) {
+  html{
+    max-width: 600px;
+  }
   .word {
     text-align: center;
     padding-left: 0;
@@ -495,6 +498,9 @@ body {
   }
 }
 @media (max-width: 450px) {
+  html{
+    max-width: 450px;
+  }
   .word {
     text-align: center;
     padding-left: 0;
@@ -589,8 +595,78 @@ body {
     color: #fff;
     line-height: 50px;
   }
+   /* LAST news */
+   .last-news {
+    margin-top: 0;
+    #tittle-lastNews {
+      color: white;
+      font-size: 1.8rem;
+      line-height: 110%;
+      margin: 0 0 0 0.4em;
+      border-left: 1px solid violet;
+      padding-left: 0.3em;
+    }
+    .card {
+      width:100%; /* Defina a largura desejada para dois cards na mesma linha */
+      margin: 1%; /* Adicione margem para espaçamento entre os cards */
+    }
+    .card-content{
+      padding: 0;
+    }
+    .card-conteudo{
+      background: rgb(6, 6, 19);
+    }
+    .card-title {
+      font-size: 0.9rem; /* Tamanho do título do card */
+      margin: 0;
+      background: rgb(6, 6, 19);
+      border-radius: 0;
+      white-space: normal;
+    }
+    .card .card-content .responsive-img{
+      height: 11em;
+    }
+    .card .card-content .card-title {
+      line-height: 1em;
+      text-align: start;
+    }
+    .card .card-content p{
+      font-size: 0.7em;
+      color: rgb(155, 153, 153);
+      margin: 0 0 9px 0;
+      padding: 0;
+    }
+    .card .card-content .autor-noticia{
+      color: white;
+      font-size: 0.7em;
+      width: 130%;
+    }
+    .card .card-content .data-noticia{
+      color: rgba(255, 255, 255, 0.813);
+      font-size: 0.7em;
+      margin-left: 10px;
+    }
+    
+      .button-seeMore-lastNews{
+        background: linear-gradient( to bottom, rgb(147, 30, 171), rgb(79, 30, 140), rgb(12, 13, 50) );
+        text-decoration: none;
+        list-style: none;
+        border-radius: 10px;
+        padding: 5px;
+        font-size: 1em;
+        width: 100px;
+        margin-top: 0;
+    }
+    .button-seeMore-lastNews div a{
+        color: white;
+        margin-left: 10px;
+    }
+  }
 }
 @media (max-width: 395px) {
+  html{
+    max-width: 395px;
+  }
   .word {
     text-align: center;
     padding-left: 0;
@@ -716,6 +792,9 @@ body {
     }
 }
 @media (max-width: 360px) {
+  html{
+    max-width: 360px;
+  }
   .word {
     height: 60px;
     font: 90 normal 1.3em/1.5 "Montserrat", sans-serif;
