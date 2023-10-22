@@ -4,6 +4,10 @@ body {
   zoom: 100%;
 }
 
+.row.header {
+  margin-bottom: 0 !important;
+}
+
 .dropdown-content {
   background-color: #fff;
   margin: 0;
@@ -43,6 +47,9 @@ body {
   color: transparent;
 }
 @media (min-width: 1201px) {
+  #autocomplete-input {
+    font-size: 25px;
+  }
   nav .sidenav-trigger i {
     height: 56px;
     line-height: 56px;
@@ -51,7 +58,7 @@ body {
     margin-right: -25px;
   }
   .cor-nav {
-    padding-top: 17px;
+    padding-top: 19px;
   }
   nav.nav-extended {
     height: 130px;
@@ -69,29 +76,22 @@ body {
     margin-right: 15px;
   }
   .links-nav a {
-    font-size: 15px;
+    font-size: 20px;
     margin-right: 10px;
     margin-top: 10px;
   }
 
-  /* Aumentar o tamanho da fonte para os elementos do formulário */
-  .search-area {
-    right: 10px;
-    background-color: #01030c71;
-    border-radius: 10%;
-    overflow: hidden;
-    outline: none;
-    margin-right: 900pc;
+
+  nav .input-field {
+    margin: 0;
+    margin-top: 0px;
+    height: 100%;
+    margin-top: 12px;
   }
   input[type="text"] {
     font-size: 300px; /* Ajuste o tamanho da fonte conforme necessário */
   }
-  .btn-search,
-  .btn-search svg {
-    margin: 10px -7px 0 -5px;
-    border: none;
-    background-color: rgba(35, 38, 90, 0);
-  }
+
   .btn-login {
     font-size: 20px;
     height: 60px;
@@ -138,11 +138,15 @@ body {
       border-top-left-radius: 20px;
     }
     .indicators {
-      top: 390px;
-      left: 25px;
+      top: 400px;
+      left: 14px;
     }
     .carousel .indicators .indicator-item.active {
       background-color: #6c0583;
+    }
+    .carousel .indicators .indicator-item {
+      height: 16px;
+      width: 16px;
     }
     .card-title {
       height: 45%;
@@ -177,9 +181,22 @@ body {
   .footer-copyright {
     font-size: 14px;
   }
+  #search-button {
+    background: none; /* Remove o background */
+    border: none; /* Remove a borda, se houver */
+    outline: none; /* Remove o contorno, se houver */
+    margin-top: 20px; /*  Aplicar margem para baixo */
+  }
+  #search-button svg {
+    width: 40px; /* Ajuste a largura desejada */
+    height: 40px; /* Ajuste a altura desejada */
+  }
 }
 
 @media screen and (max-width: 1200px) {
+  #autocomplete-input {
+    font-size: 23px;
+  }
   .word {
     padding-left: 10%;
     padding-top: 20%;
@@ -228,7 +245,7 @@ body {
     padding-top: 17px;
   }
   nav.nav-extended {
-    height: 120px;
+    height: 110px;
   }
 
   .brand-logo {
@@ -241,100 +258,77 @@ body {
     left: 0rem;
   }
   .links-nav a {
-    font-size: 13px;
+    font-size: 18px;
     margin-right: 5px;
     margin-top: 10px;
   }
-  .search-area {
-    width: 100%;
-    padding-top: 15px;
-}
- .search-icon-close {
-    border-right: 1px solid rgba(255, 253, 250, 0.127);
-    margin: 0;
-    padding-right: 5px;
-    position: relative;
-    top: -9px;
-    color: rgba(255, 0, 0, 0.271);
-    font-size: 35px !important;
+  #search-button {
+    background: none; /* Remove o background */
+    border: none; /* Remove a borda, se houver */
+    outline: none; /* Remove o contorno, se houver */
+    margin-top: 20px; /*  Aplicar margem para baixo */
   }
-  .btn {
-    padding: 5px;
+  #search-button svg {
+    width: 35px; /* Ajuste a largura desejada */
+    height: 35px; /* Ajuste a altura desejada */
   }
-  nav,nav .nav-wrapper i,nav a.sidenav-trigger,nav a.sidenav-trigger i {
-    height: 54px;
-    line-height: 54px
-}
 
-  .btn-search,
-  .btn-search svg {
-    margin:10px -10px 0 -7px;
-    height: 35px;
-    background-color: rgba(35, 38, 90, 0);
+  nav,
+  nav .nav-wrapper i,
+  nav a.sidenav-trigger,
+  nav a.sidenav-trigger i {
+    height: 54px;
+    line-height: 54px;
   }
-  button,
-  html [type="button"],
-  [type="reset"],
-  [type="submit"] {
-    border: none;
-  }
+
   .btn-login {
     font-size: 20px;
     height: 50px;
     margin-top: 15px;
   }
   .btn-cria {
-    font-size: 16px;
+    font-size: 20px;
     height: 50px;
     margin-top: 15px;
   }
   .page-footer {
     font-size: 2px;
   }
+  #autocomplete-input {
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    vertical-align: middle;
+    height: 100%;
+    min-height: 35px;
+    color: #fff;
+    font-size: 21px;
+  }
 }
 
 @media (max-width: 1050px) {
-  /* .carousel {
-      width: 600px;
-      height: 650px;
-      perspective: 450px;
-      margin: 0 20px 0 20px;
-    }
-    .carousel .carousel-item {
-      width: 240px;
-      top: -130px;
-      background-size: cover;
-    }
-    .carousel .carousel-item img {
-      width: 100%;
-      height: 65%;
-      border-top-right-radius: 20px;
-      border-top-left-radius: 20px;
-    }
-    .indicators {
-      top: 1309px;
-    }
-    .card-title {
-      height: 45%;
-      background: linear-gradient(to right, #0c1254, #640083);
-      color: white;
-      border-bottom-right-radius: 40%;
-      overflow: hidden;
-      text-align: center;
-    }
-    .card-title h3 {
-      font-size: 20px;
-      margin-top: 10px;
-      padding: 5%;
-    } */
+  #autocomplete-input {
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    vertical-align: middle;
+    height: 100%;
+    min-height: 35px;
+    color: #fff;
+    font-size: 25px;
+  }
+  .input-field {
+    flex-grow: 1;
+    margin: 0;
+    margin-left: 35%;
+    margin-right: 0%;
+  }
   .btn-cria {
-    font-size: 14px;
-    height: 40px;
+    font-size: 20px;
+    height: 45px;
     margin-top: 20px;
   }
   .btn-login {
-    font-size: 14px;
-    height: 40px;
+    font-size: 20px;
+    height: 45px;
     margin-top: 20px;
   }
   .cor-nav {
@@ -345,7 +339,7 @@ body {
     height: 100px;
   }
   .links-nav a {
-    font-size: 12px;
+    font-size: 19px;
     margin-right: 0px;
     margin-top: 10px;
   }
@@ -354,14 +348,25 @@ body {
   nav.nav-extended {
     height: 145px;
   }
+  .tabs .tab a {
+    font-size: 20px;
+  }
 }
 @media (max-width: 710px) {
+  #autocomplete-input {
+    font-size: 18px;
+  }
+  .input-field {
+    margin-left: 25%;
+  }
   nav.nav-extended {
-    height: 130px;
+    height: 140px;
+    padding-bottom: 0px !important;
   }
   .tabs .tab a {
-  margin-top: 4%;
-}
+    margin-top: 4%;
+    font-size: 15px;
+  }
   .brand-logo {
     height: 65px;
     width: 70px;
@@ -375,10 +380,15 @@ body {
   }
   .btn-cria,
   .btn-login {
-    font-size: 10px;
-    height: 25px;
-    margin-top: 0px;
-    padding: 5px;
+    font-size: 15px;
+    height: 35px;
+    margin-top: 10;
+    padding: 10px;
+    margin-right: 0px;
+  }
+  .btns a {
+    display: flex;
+    gap: 20px;
   }
   nav ul a {
     padding: 0 5px;
@@ -387,100 +397,190 @@ body {
     color: #fff;
     line-height: 50px;
   }
-  .btn-search,
-  .btn-search svg {
-    margin: 31px -10px 0 -7px;
-    height: 25px;
-    background-color: rgba(35, 38, 90, 0);
-  }
-  nav form {
-    height: 90%;
-    width: 60%;
-    margin-left: 120px;
-    margin-top: -50px;
-  }
-  #search {
-    margin-right: 10px;
-    width:68%;
-    padding-left: 3px;
-    font-size: 12px;
-    margin-bottom: 0px;
-  }
-  .search-area {
-    width: 100%;
-    padding-top: 10px;
-    background-color: #01030c71;
-    outline: none;
-    top: 46px;
-    right: -20px;
-    display: flex;
-    justify-content: space-evenly;
-  }
-  #search-button {
-    width: 12%;
-    height: 30px;
-    background-color: transparent;
-    border-radius: 5%;
-    border-style: hidden;
-    margin-top: 5px;
 
+  #search-button {
+    background: none; /* Remove o background */
+    border: none; /* Remove a borda, se houver */
+    outline: none; /* Remove o contorno, se houver */
+    margin-top: 20px; /*  Aplicar margem para baixo */
   }
-  #search-button svg{
-    width: 20px;
-    font-size: 40px !important;
-  }
-  nav i,
-  nav [class^="mdi-"],
-  nav [class*="mdi-"],
-  nav i.material-icons {
-    height: 30px;
-    line-height: 32px;
-  }
-  .search-icon-close {
-    border-right: 1px solid rgba(255, 253, 250, 0.127);
-    margin: 0;
-    padding-right: 5px;
-    position: relative;
-    top: -1px;
-    color: rgba(255, 0, 0, 0.271);
-    font-size: 25px !important;
-  }
-  .btn {
-    padding: 0;
-  }
-  #cancel-button {
-    padding-left: 10px;
+  #search-button svg {
+    width: 40px; /* Ajuste a largura desejada */
   }
 }
 @media (max-width: 600px) {
-  nav.nav-extended {
-    height: 122px;
+  .word {
+    text-align: center;
+    padding-left: 0;
+    padding-top: 5%;
+    height: 10vh;
+    font: 90 normal 1.9em/1.5 "Montserrat", sans-serif;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.429);
   }
-
+  /* carousel */
+  .carousel {
+    width: 100%;
+    height: 400px;
+    perspective: 100;
+  }
+  .carousel .carousel-item {
+    width: 220px;
+    height: 260px;
+    top: -40px;
+  }
+  .carousel .carousel-item img {
+    width: 100%;
+    height: 90%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+  }
+  .indicators {
+    top: 330px;
+    right: 16px;
+  }
+  .carousel .indicators .indicator-item {
+    height: 13px;
+    width: 13px;
+  }
+  .carousel .indicators .indicator-item.active {
+    background-color: #6c0583;
+  }
+  .card-title {
+    height: 25%;
+    background: linear-gradient(to right, #0c1254, #640083);
+    color: white;
+    border-bottom-right-radius: 40%;
+    overflow: hidden;
+    text-align: center;
+  }
+  .card-title h3 {
+    font-size: 15px;
+    margin-top: 5px;
+    padding: 5%;
+  }
+  .input-field {
+    margin-left: 15%;
+  }
+  nav.nav-extended {
+    height: 129px;
+  }
+  .brand-logo {
+    bottom: 1px;
+  }
+  #search-button {
+    background: none; /* Remove o background */
+    border: none; /* Remove a borda, se houver */
+    outline: none; /* Remove o contorno, se houver */
+    margin-top: 10px; /*  Aplicar margem para baixo */
+  }
+  #search-button svg {
+    width: 25px; /* Ajuste a largura desejada */
+  }
+  .btn-cria,
+  .btn-login {
+    font-size: 15px;
+    height: 32px;
+    margin-top: 1rem;
+    padding: 10px;
+  }
+  nav .sidenav-trigger i {
+    height: 80px;
+    line-height: 65px;
+    font-size: 50px;
+    margin-right: -20px;
+    margin-top: 3px;
+  }
+  #search-button {
+    margin-right: -0px;
+  }
 }
 @media (max-width: 450px) {
+  .word {
+    text-align: center;
+    padding-left: 0;
+    padding-top: 5%;
+    height: 70px;
+    font: 90 normal 1.7em/1.5 "Montserrat", sans-serif;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.429);
+  }
+  /* carousel */
+  .carousel {
+    width: 100%;
+    height: 400px;
+    perspective: 300px;
+  }
+  .carousel .carousel-item {
+    width: 200px;
+    height: 255px;
+    top: -25px;
+  }
+  .carousel .carousel-item img {
+    width: 100%;
+    height: 90%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+  }
+  .indicators {
+    top: 340px;
+    right: 17px;
+  }
+  .carousel .indicators .indicator-item {
+    height: 13px;
+    width: 13px;
+  }
+  .carousel .indicators .indicator-item.active {
+    background-color: #6c0583;
+  }
+  .card-title {
+    height: 25%;
+    background: linear-gradient(to right, #0c1254, #640083);
+    color: white;
+    border-bottom-right-radius: 40%;
+    overflow: hidden;
+    text-align: center;
+  }
+  .card-title h3 {
+    font-size: 15px;
+    margin-top: 5px;
+    padding: 5%;
+  }
+  #autocomplete-input {
+    font-size: 19px;
+  }
+  .input-field {
+    margin-left: -30px;
+  }
+  #search-button {
+    margin-top: 8px; /*  Aplicar margem para baixo */
+  }
+  #search-button svg {
+    width: 25px; /* Ajuste a largura desejada */
+  }
   .tabs {
     display: none;
   }
   nav.nav-extended {
-    height: 74px;
+    height: 78px;
   }
   .brand-logo {
-    height: 45px;
-    width: 60px;
+    height: 55px;
+    width: 70px;
   }
   nav .sidenav-trigger i {
     height: 80px;
-    line-height: 55px;
+    line-height: 65px;
     font-size: 40px;
     margin-right: -20px;
   }
   .btn-cria,
   .btn-login {
-    font-size: 10px;
-    height: 25px;
-    margin-top: 0px;
+    font-size: 16px;
+    height: 8;
+    margin-top: 14px;
     padding: 5px;
+  }
+  #search-button {
+    margin-top: 10px;
   }
   nav ul a {
     padding: 0 5px;
@@ -489,91 +589,190 @@ body {
     color: #fff;
     line-height: 50px;
   }
-  .btn-search,
-  .btn-search svg {
-    margin: 31px -10px 0 -7px;
-    height: 25px;
-    background-color: rgba(35, 38, 90, 0);
+}
+@media (max-width: 395px) {
+  .word {
+    text-align: center;
+    padding-left: 0;
+    padding-top: 5%;
+    height: 60px;
+    font: 90 normal 1.5em/1.5 "Montserrat", sans-serif;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.429);
   }
-  nav form {
-    height: 90%;
-    width: 60%;
-    margin-left: 120px;
-    margin-top: -50px;
-  }
-  #search {
-    color: white;
-    margin-right: 10px;
-    width: 58%;
-    padding-left: 3px;
-    border: none;
-    box-shadow: none;
-    outline: none;
-    border-radius: 10px;
-    font-size: 12px;
-    margin-bottom: 0px;
-  }
-  .search-area {
+  /* carousel */
+  .carousel {
     width: 100%;
-    padding-top: 10px;
-    background-color: #01030c71;
-    outline: none;
-    top: -10px;
-    right: 20px;
-    display: flex;
-    justify-content: space-evenly;
+    height: 400px;
+    perspective: 330px;
   }
-  #search-button {
-    width: 12%;
-    height: 30px;
-    background-color: transparent;
-    border-radius: 5%;
-    border-style: hidden;
+  .carousel .carousel-item {
+    width: 200px;
+    height: 250px;
+    top: -40px;
+  }
+  .carousel .carousel-item img {
+    width: 100%;
+    height: 85%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+  }
+  .indicators {
+    top: 320px;
+    right: 10px;
+  }
+  .carousel .indicators .indicator-item {
+    height: 13px;
+    width: 13px;
+  }
+  .carousel .indicators .indicator-item.active {
+    background-color: #6c0583;
+  }
+  .card-title {
+    height: 25%;
+    background: linear-gradient(to right, #0c1254, #640083);
+    color: white;
+    border-bottom-right-radius: 40%;
+    overflow: hidden;
+    text-align: center;
+  }
+  .card-title h3 {
+    font-size: 15px;
     margin-top: 5px;
-
+    padding: 5%;
   }
-  #search-button svg{
-    margin-left: -5px;
-    width: 20px;
+  .btn-cria,
+  .btn-login {
+    font-size: 12px;
+    height: 7;
+    margin-top: 13px;
+    padding: 5px;
   }
-  nav i,
-  nav [class^="mdi-"],
-  nav [class*="mdi-"],
-  nav i.material-icons {
-    height: 30px;
-    line-height: 32px;
-  }
-  .search-icon-close {
-    border-right: 1px solid rgba(255, 253, 250, 0.127);
-    margin: 0;
-    padding-right: 5px;
-    position: relative;
-    top: -1px;
-    color: rgba(255, 0, 0, 0.271);
-    font-size: 25px !important;
-  }
-  .btn {
-    padding: 0;
-  }
-  #cancel-button {
-    padding-left: 10px;
-  }
-
+    /* LAST news */
+    .last-news {
+      margin-top: 0;
+      #tittle-lastNews {
+        color: white;
+        font-size: 1.8rem;
+        line-height: 110%;
+        margin: 0 0 0 0.4em;
+        border-left: 1px solid violet;
+        padding-left: 0.3em;
+      }
+      .card {
+        width:100%; /* Defina a largura desejada para dois cards na mesma linha */
+        margin: 1%; /* Adicione margem para espaçamento entre os cards */
+      }
+      .card-content{
+        padding: 0;
+      }
+      .card-conteudo{
+        background: rgb(6, 6, 19);
+      }
+      .card-title {
+        font-size: 0.9rem; /* Tamanho do título do card */
+        margin: 0;
+        background: rgb(6, 6, 19);
+        border-radius: 0;
+        white-space: normal;
+      }
+      .card .card-content .responsive-img{
+        height: 11em;
+      }
+      .card .card-content .card-title {
+        line-height: 1em;
+        text-align: start;
+      }
+      .card .card-content p{
+        font-size: 0.7em;
+        color: rgb(155, 153, 153);
+        margin: 0 0 9px 0;
+        padding: 0;
+      }
+      .card .card-content .autor-noticia{
+        color: white;
+        font-size: 0.7em;
+        width: 130%;
+      }
+      .card .card-content .data-noticia{
+        color: rgba(255, 255, 255, 0.813);
+        font-size: 0.7em;
+        margin-left: 10px;
+      }
+      
+        .button-seeMore-lastNews{
+          background: linear-gradient( to bottom, rgb(147, 30, 171), rgb(79, 30, 140), rgb(12, 13, 50) );
+          text-decoration: none;
+          list-style: none;
+          border-radius: 10px;
+          padding: 5px;
+          font-size: 1em;
+          width: 100px;
+          margin-top: 0;
+      }
+      .button-seeMore-lastNews div a{
+          color: white;
+          margin-left: 10px;
+      }
+    }
 }
 @media (max-width: 360px) {
-    .btn-login,.btn-cria{
-      display: none;
-    }
-    .btn-search, .btn-search svg {
-      margin: 31px -25px 0 0px;
-      height: 23px;
-      background-color: rgba(35, 38, 90, 0);
-    }
-    .search-area {
-      width: 100%;
+  .word {
+    height: 60px;
+    font: 90 normal 1.3em/1.5 "Montserrat", sans-serif;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.429);
+  }
+  .carousel {
+    width: 100%;
+    height: 400px;
+    perspective: 200px;
+  }
+  .btn-login,
+  .btn-cria {
+    display: none;
+  }
+  #search-button {
+    margin-right: -50px;
+  }
+  #autocomplete-input {
+    font-size: 17px;
+  }
 
-      top: -10px;
-      right: 40px;
-
+  /* LAsr news */
+  .last-news {
+    #tittle-lastNews {
+      color: white;
+      font-size: 1.5rem;
+      line-height: 110%;
+      margin: 0 0 0 0.4em;
+      border-left: 1px solid violet;
+      padding-left: 0.3em;
     }
+    .card {
+      width:100%; /* Defina a largura desejada para dois cards na mesma linha */
+      margin: 1%; /* Adicione margem para espaçamento entre os cards */
+    }
+    .card-content{
+      padding: 0;
+    }
+    .card-conteudo{
+      background: rgb(6, 6, 18);
+    }
+    .card-title {
+      font-size: 0.9rem; /* Tamanho do título do card */
+      margin: 0;
+      background: rgb(6, 6, 18);
+      border-radius: 0;
+      white-space: normal;
+    }
+    .card .card-content .card-title {
+      line-height: 1em;
+      text-align: start;
+    }
+    p{
+      font-size: 0.7em;
+      color: gray;
+      margin: 0;
+      padding: 0;
+    }
+  }
 }

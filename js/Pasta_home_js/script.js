@@ -1,24 +1,22 @@
 document.addEventListener('DOMContentLoaded', function () {
     
     // Obtenção dos elementos HTML
-    const searchInput = document.getElementById('search');
+    const searchInput = document.getElementById('autocomplete-input');
     const searchIcon = document.querySelector('.btn-search');
     const searchArea = document.querySelector('.search-area');
     const btn_search = document.querySelector('.btn-search')
     const searchButton = document.getElementById('search-button');
     const cancelButton = document.getElementById('cancel-button');
-    const links_nav = document.querySelectorAll('.links-nav');
 
     // Evento de clique no ícone de pesquisa
-    searchIcon.addEventListener('click', () => {
-        console.log('clicou');
+    searchButton.addEventListener('click', () => {
+        console.log(searchInput);
         // Alternar a visibilidade da área de pesquisa
         searchArea.classList.toggle('hide');
-        btn_search.classList.toggle('hide')
+        searchButton.classList.toggle('hide')
         // Focar no campo de pesquisa
         searchInput.focus();
-        // Alternar a visibilidade dos elementos com a classe 'links-nav'
-        links_nav.forEach(x => x.classList.toggle('hide'));
+       
     });
 
     // Evento de clique no botão de pesquisa (com ícone)
@@ -39,11 +37,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Função para cancelar a pesquisa
     function cancelarPesquisa() {
-        // Alternar a visibilidade dos elementos com a classe 'links-nav'
-        links_nav.forEach(x => x.classList.toggle('hide'));
-        btn_search.classList.toggle('hide')
         // Ocultar a área de pesquisa
-        searchArea.classList.add('hide');
+        searchArea.classList.toggle('hide');
+        // Ative o button de pesquisa novamente
+        searchButton.classList.toggle('hide')
         // Limpar o valor do campo de pesquisa
         searchInput.value = '';
     }

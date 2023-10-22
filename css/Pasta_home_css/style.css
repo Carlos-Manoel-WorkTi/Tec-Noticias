@@ -2,18 +2,67 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:700);
 
 /* Estilos gerais */
-html,
-body {
-  height: 100%;
-}
+
 
 body {
-  background-color: #02011a;
+  background-color: rgb(6, 6, 18); 
+}
+#section-one{
+background: linear-gradient(to bottom,black,blue);
+}  
+#apresentar{
+  background: linear-gradient(to bottom,rgba(0, 0, 0, 0.927),rgb(6, 6, 18));
+  border-bottom: 0.1em solid rgba(131, 127, 127, 0.498);
+}
+/* Estilos para o botão de pesquisa */
+#search-in-button{
+  background: none; border: none; outline: none; margin-top: 3px; border-left: 1px solid rgb(56, 31, 100);
+}
+
+/* Estilos para o ícone do botão de pesquisa */
+#search-in-button .material-icons {
+  font-size: 40px;
+
+}
+
+/* Estilos para o botão de cancelar */
+#cancel-button {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+/* Estilos para o ícone do botão de cancelar */
+#cancel-button .material-icons {
+  font-size: 30px;
+  background-color: red;
+}
+
+/* Estilos para a área de pesquisa */
+.search-area {
+  background-color: rgba(6, 6, 6, 0.941); height:50px;padding-bottom:20px; min-height: 45px;top: -5px; display: flex; align-items: center; position: relative; color:white
+}
+
+/* Estilos para o campo de pesquisa */
+#autocomplete-input {
+  border: none; border-bottom: 1px solid #460d80; vertical-align: middle; height: 100%; min-height: 35px; color: #fff
+}
+.input-field{
+  flex-grow: 1; margin: 0; margin-left: 45%; margin-right: 0%;
+}
+#form_pesquisa{
+  width: 80%; max-width: 80%; position: absolute; top: 5px; right: 0; z-index: 999; display: flex; align-items: center; justify-content: flex-end
 }
 .sidenav{
   background-color: #01010be1;
  
 }
+/* Remover a borda de foco padrão */
+a:focus {
+  outline: none;
+}
+
+
 .sidenav li > a {
   color: rgba(245, 245, 245, 0.835);
   display: block;
@@ -27,6 +76,7 @@ body {
   padding-top: 20px;
   color: #e8eaf6;
   background-color: #01010b;
+
 }
 
 #topButton {
@@ -34,12 +84,20 @@ body {
   bottom: 20px;
   right: 10px;
   z-index: 1000;
-  opacity: 0.2;
+  opacity: 0.6;
 }
 
 /* Estilos da seção "show" */
-#container-sec-one {
-  margin-top: 0.1%;
+#section-noticias {
+  background: rgb(6, 6, 18); 
+  padding-top: 20px;
+}
+.ultimas-noticias{
+  margin-bottom:0px
+}
+#container-section-init {
+  margin: 0;
+  padding-top: 20px;
   background-image: linear-gradient(
       to right,
       rgba(6, 5, 105, 0),
@@ -156,70 +214,6 @@ a {
 .actived {
   background: linear-gradient(to bottom, #0c125439, #64008341);
   border-radius: 1px;
-}
-
-/* Estilos do botão de pesquisa */
-.btn-search {
-  margin-top: 0px;
-}
-
-/* Estilos da área de pesquisa */
-.search-area {
-  width: 102%;
-  padding-top: 10px;
-  background-color: #01030c71;
-  display: flex;
-  outline: none;
-  padding-top: 5px;
-}
-
-#search {
-  color: white;
-  margin-left: 10px;
-  margin-right: 10px;
-  width: 60%;
-  padding-left: 3px;
-  border: none;
-  box-shadow: none;
-  outline: none;
-  border-radius: 10px;
-}
-
-#search:focus {
-  border-bottom: 1px solid rgba(14, 2, 2, 0.168); /* Torna a linha transparente */
-}
-.dropdown-content{
-    background-color: #01030c84 !important;
-    left: 0px !important;
-    margin: 0 !important;
-    top: 50px !important;
-    color: red;
-    transform: scaleX(1.1);
-    width: 249px !important;
-  }
-
-#search-button {
-  width: 25%;
-  background: linear-gradient(to left, #0a0232e8, #4805b36e, #5a0474a6);
-  color: white;
-  border-radius: 5%;
-  border-style: hidden;
-}
-
-#cancel-button {
-  background-color: #00993300;
-  width: 5%; /* Use 'auto' para ajustar automaticamente à largura do conteúdo */
-  height: 40px; /* Defina uma altura adequada para o botão */
-  position: relative; /* Defina a posição como relativa */
-}
-
-.search-icon-close {
-  border-right: 1px solid rgba(255, 253, 250, 0.127);
-  margin: 0;
-  padding-right: 5px;
-  position: relative;
-  top: -10px;
-  color: red;
 }
 .icons-footer {
   border-top: 1px solid white;
