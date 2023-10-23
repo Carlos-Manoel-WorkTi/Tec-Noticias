@@ -53,6 +53,16 @@ margin-top: -5px;
   color: transparent;
 }
 @media (min-width: 1201px) {
+  #apresentar{
+    background-image: linear-gradient(
+      to right,
+      rgba(6, 5, 105, 0),
+      rgba(1, 4, 13, 0.87)
+    ),
+    url("https://img.freepik.com/fotos-premium/linhas-de-conexao-ao-redor-da-ilustracao-3d-do-plano-de-fundo-da-conectividade-internacional-global-do-globo-terrestre_89681-46.jpg");
+  background-size: cover;
+  background-position: center;
+  }
   #autocomplete-input {
     font-size: 25px;
   }
@@ -438,6 +448,16 @@ h
   html {
     max-width: 600px;
   }
+  #apresentar{
+      background-image: linear-gradient(
+      to right,
+      rgba(6, 5, 105, 0),
+      rgba(1, 4, 13, 0.87)
+    ),
+    url("/img/Pasta_home_img/Rectangle 19.png");
+  background-size: cover;
+  background-position: center;
+  }
   .word {
     text-align: center;
     padding-left: 0;
@@ -738,21 +758,24 @@ h
         padding: 0;
       }
       .card-conteudo {
-        background: rgb(6, 6, 19);
+        background: rgb(2, 1, 8);
       }
       .card-title {
         font-size: 0.9rem; /* Tamanho do título do card */
         margin: 0;
-        background: rgb(6, 6, 19);
+        background: rgb(2, 1, 8);
         border-radius: 0;
         white-space: normal;
       }
       .card .card-content .responsive-img {
         height: 11em;
+        
       }
+      
       .card .card-content .card-title {
         line-height: 1em;
         text-align: start;
+        margin-top: 6px;
       }
       .card .card-content p {
         font-size: 0.7em;
@@ -929,18 +952,16 @@ h
       .card-content {
         padding: 0;
       }
-      .card-conteudo {
-        background: rgb(6, 6, 19);
-      }
+      
       .card-title {
         font-size: 0.9rem; /* Tamanho do título do card */
-        margin: 0;
-        background: rgb(6, 6, 19);
+        margin: 5px 0 0 0;
         border-radius: 0;
         white-space: normal;
       }
       .card .card-content .responsive-img {
         height: 11em;
+        border-radius: 10px;
       }
       .card .card-content .card-title {
         line-height: 1em;
