@@ -6,11 +6,11 @@ body {
 
 .row.header {
   margin-bottom: 0 !important;
-height: 110px;
+height: 100px;
 margin-top: -5px;
 }
 .cor-nav{
-  position: fixed;
+  position: fixed; 
 
   z-index: 999999;
 }
@@ -368,6 +368,13 @@ h
   nav.nav-extended {
     height: 145px;
   }
+  #librasButton {
+    top: 44%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+  }
 
   .tabs .tab a {
     font-size: 20px;
@@ -445,9 +452,7 @@ h
   }
 }
 @media (max-width: 600px) {
-  html {
-    max-width: 600px;
-  }
+  
   #apresentar{
       background-image: linear-gradient(
       to right,
@@ -461,10 +466,9 @@ h
   .word {
     text-align: center;
     padding-left: 0;
-    padding-top: 5%;
+    padding-top: 10%;
     height: 10vh;
     font: 90 normal 1.9em/1.5 "Montserrat", sans-serif;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.429);
   }
   /* carousel */
   .carousel {
@@ -610,10 +614,7 @@ h
     }
   }
   @media (max-width: 450px) {
-    html {
-      max-width: 450px;
-      box-sizing: border-box;
-    }
+ 
     .row.header {
       height: 70px;
       margin-top: -5px;
@@ -769,13 +770,10 @@ h
       }
       .card .card-content .responsive-img {
         height: 11em;
-        
       }
-      
       .card .card-content .card-title {
         line-height: 1em;
         text-align: start;
-        margin-top: 6px;
       }
       .card .card-content p {
         font-size: 0.7em;
@@ -844,10 +842,8 @@ h
     }
   }
   @media (max-width: 395px) {
-    html {
-      max-width: 395px;
-      box-sizing: border-box;
-    }
+  
+  
     .row.header {
     height: 75px;
     margin-top: -15px;
@@ -952,16 +948,18 @@ h
       .card-content {
         padding: 0;
       }
-      
+      .card-conteudo {
+        background: rgb(6, 6, 19);
+      }
       .card-title {
         font-size: 0.9rem; /* Tamanho do título do card */
-        margin: 5px 0 0 0;
+        margin: 0;
+        background: rgb(6, 6, 19);
         border-radius: 0;
         white-space: normal;
       }
       .card .card-content .responsive-img {
         height: 11em;
-        border-radius: 10px;
       }
       .card .card-content .card-title {
         line-height: 1em;
