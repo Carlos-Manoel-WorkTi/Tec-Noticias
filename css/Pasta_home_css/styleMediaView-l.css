@@ -214,6 +214,36 @@ h
 }
 
 @media screen and (max-width: 1200px) {
+  #form_pesquisa {
+    width: 100vw;
+    max-width: 80%;
+    position: relative;
+    top: 25px;
+    right: 0;
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+  .search-area {
+    background-color: rgba(5, 4, 4, 0.972);
+    height: 80px;
+    padding-bottom: 20px;
+    min-height: 45px;
+    top: 10vh;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    color: white;
+    z-index: 9999;
+    right: 0;
+    margin-left: 6%;
+  }
+  .input-field {
+    flex-grow: 1;
+    margin: 0;
+    margin-left: 45%;
+  }
   #autocomplete-input {
     font-size: 23px;
   }
@@ -324,8 +354,13 @@ h
     font-size: 21px;
   }
 }
-
 @media (max-width: 1050px) {
+  #form_pesquisa {
+    top: 20px;
+  }
+  #search-area{
+    top: 10px;
+  }
   #autocomplete-input {
     border: none;
     border-bottom: 1px solid #ffffff;
@@ -333,7 +368,7 @@ h
     height: 100%;
     min-height: 35px;
     color: #fff;
-    font-size: 25px;
+    font-size: 20px;
   }
   .input-field {
     flex-grow: 1;
@@ -365,6 +400,12 @@ h
   }
 }
 @media (max-width: 992px) {
+  #form_pesquisa {
+    top: 2vh;
+  }
+  .search-area{
+    top:14vh;
+  }
   nav.nav-extended {
     height: 145px;
   }
@@ -396,11 +437,22 @@ h
   }
 }
 @media (max-width: 710px) {
+  #form_pesquisa {
+    top: 7vh;
+  }
+  .search-area{
+    top:13vh;
+    padding-top: 25px;
+    padding-bottom: 0px;
+  }
   #autocomplete-input {
     font-size: 18px;
   }
   .input-field {
     margin-left: 25%;
+  }
+  #form_pesquisa{
+    top: 1px;
   }
   nav.nav-extended {
     height: 140px;
@@ -452,7 +504,20 @@ h
   }
 }
 @media (max-width: 600px) {
-  
+  #form_pesquisa {
+    top: 5vh;
+  }
+  .search-area{
+    top:12vh;
+    padding-top: 25px;
+    padding-bottom: 80px;
+  }
+  #autocomplete-input {
+    font-size: 17px;
+  }
+  .input-field {
+    margin-left: 45%;
+  }
   #apresentar{
       background-image: linear-gradient(
       to right,
@@ -614,7 +679,26 @@ h
     }
   }
   @media (max-width: 450px) {
- 
+    #form_pesquisa {
+      top: vh;
+    }
+    #search-in-button .material-icons {
+      font-size: 30px;
+    }
+    .search-area{
+      top:9vh;
+      padding-top: 25px;
+      padding-bottom: 0px;
+    }
+    #autocomplete-input {
+      font-size: 20px;
+      width: 55vw;
+    }
+    .input-field {
+    }
+    #form_pesquisa{
+      top: 1px;
+    }
     .row.header {
       height: 70px;
       margin-top: -5px;
@@ -625,7 +709,7 @@ h
       padding-top: 5%;
       height: 70px;
       font: 90 normal 1.7em/1.5 "Montserrat", sans-serif;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.429);
+  
     }
     /* carousel */
     .carousel {
@@ -712,6 +796,19 @@ h
     nav {
       color: #fff;
       line-height: 50px;
+    }
+    /* pesquisa */
+    #search-area{
+      top: 10px;
+    }
+    #search-in-button .material-icons {
+      font-size: 50px;
+    }
+    #autocomplete-input{
+      font-size: 15px;
+    }
+    .input-field{
+      flex-grow: 1; margin: 0; margin-left: 10%; margin-right: 0%;
     }
        /* cultura */
    .cultura{
@@ -842,7 +939,23 @@ h
     }
   }
   @media (max-width: 395px) {
-  
+    #form_pesquisa {
+      top: 5vh;
+    }
+    .search-area{
+      top:7vh;
+      padding-top: 10px;
+      padding-bottom: 0px;
+    }
+    #autocomplete-input {
+      font-size: 17px;
+    }
+    .input-field {
+      margin-left: 45%;
+    }
+    #form_pesquisa{
+      top: 1px;
+    }
   
     .row.header {
     height: 75px;

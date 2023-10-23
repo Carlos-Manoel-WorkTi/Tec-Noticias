@@ -61,7 +61,9 @@ background: linear-gradient(to bottom,black,blue);
 
 /* Estilos para a área de pesquisa */
 .search-area {
-  background-color: rgba(6, 6, 6, 0.941); height:50px;padding-bottom:20px; min-height: 45px;top: -5px; display: flex; align-items: center; position: relative; color:white
+  background-color: rgba(5, 4, 4, 0.972); height:70px;padding-bottom:20px; min-height: 45px;top: 120px; display: flex; align-items: center; position: fixed; color:white; z-index: 9999;
+  right: 0;
+  justify-content: end;
 }
 
 /* Estilos para o campo de pesquisa */
@@ -72,7 +74,7 @@ background: linear-gradient(to bottom,black,blue);
   flex-grow: 1; margin: 0; margin-left: 45%; margin-right: 0%;
 }
 #form_pesquisa{
-  width: 80%; max-width: 80%; position: absolute; top: 5px; right: 0; z-index: 999; display: flex; align-items: center; justify-content: flex-end
+  width: 100vw; max-width: 80%; position: relative; top: 20px; right: 0; z-index: 99999; display: flex; align-items: center; justify-content: flex-end; 
 }
 .sidenav{
   background-color: #01010be1;
