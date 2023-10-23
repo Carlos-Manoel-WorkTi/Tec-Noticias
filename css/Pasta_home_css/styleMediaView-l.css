@@ -6,8 +6,14 @@ body {
 
 .row.header {
   margin-bottom: 0 !important;
+height: 110px;
+margin-top: -5px;
 }
+.cor-nav{
+  position: fixed;
 
+  z-index: 999999;
+}
 .dropdown-content {
   background-color: #fff;
   margin: 0;
@@ -50,7 +56,11 @@ body {
   #autocomplete-input {
     font-size: 25px;
   }
-
+  
+.row.header {
+  height: 110px;
+}
+h
   nav .sidenav-trigger i {
     height: 56px;
     line-height: 56px;
@@ -582,8 +592,12 @@ body {
   @media (max-width: 450px) {
     html {
       max-width: 450px;
+      box-sizing: border-box;
     }
-  
+    .row.header {
+      height: 70px;
+      margin-top: -5px;
+      }
     .word {
       text-align: center;
       padding-left: 0;
@@ -809,6 +823,11 @@ body {
   @media (max-width: 395px) {
     html {
       max-width: 395px;
+      box-sizing: border-box;
+    }
+    .row.header {
+    height: 75px;
+    margin-top: -15px;
     }
     .word {
       text-align: center;
