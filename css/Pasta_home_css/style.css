@@ -14,6 +14,27 @@ background: linear-gradient(to bottom,black,blue);
   background: linear-gradient(to bottom,rgba(0, 0, 0, 0.927),rgb(6, 6, 18));
   border-bottom: 0.1em solid rgba(131, 127, 127, 0.498);
 }
+#section-three {
+  background: linear-gradient(to bottom,black,black,black,rgb(2, 2, 41),black);
+  padding-top: 1px;
+  .video-podcast{
+    height: 33em;
+  }
+}
+#tittle-section{
+  color: white;
+  border-left: 2px solid violet;
+  padding-left: 10px;
+  height: 60px;
+  margin-top: 10px;
+}
+  .last-news{
+    margin: 0px;
+    padding: 20px;
+    margin-top: -20px;
+    background-color: rgb(2, 1, 8);
+    
+}
 /* Estilos para o botão de pesquisa */
 #search-in-button{
   background: none; border: none; outline: none; margin-top: 3px; border-left: 1px solid rgb(56, 31, 100);

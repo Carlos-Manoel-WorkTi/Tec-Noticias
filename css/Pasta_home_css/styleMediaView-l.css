@@ -50,6 +50,7 @@ body {
   #autocomplete-input {
     font-size: 25px;
   }
+
   nav .sidenav-trigger i {
     height: 56px;
     line-height: 56px;
@@ -80,7 +81,6 @@ body {
     margin-right: 10px;
     margin-top: 10px;
   }
-
 
   nav .input-field {
     margin: 0;
@@ -348,8 +348,24 @@ body {
   nav.nav-extended {
     height: 145px;
   }
+
   .tabs .tab a {
     font-size: 20px;
+  }
+  #section-three {
+    background: linear-gradient(
+      to bottom,
+      black,
+      black,
+      black,
+      rgb(2, 2, 41),
+      black
+    );
+    padding-top: 1px;
+
+    .video-podcast {
+      height: 25em;
+    }
   }
 }
 @media (max-width: 710px) {
@@ -409,7 +425,7 @@ body {
   }
 }
 @media (max-width: 600px) {
-  html{
+  html {
     max-width: 600px;
   }
   .word {
@@ -496,265 +512,226 @@ body {
   #search-button {
     margin-right: -0px;
   }
-}
-@media (max-width: 450px) {
-  html{
-    max-width: 450px;
-  }
-  /* .video-container {
-    position: relative;
-    padding-bottom: 56.25%; 
-    padding-top: 30px;
-    height: 0;
-    overflow: hidden;
-  }
-  
-  .video-podcast {
-    width: 100%;
-    height: 100%;
-  }
-   */
-  .word {
-    text-align: center;
-    padding-left: 0;
-    padding-top: 5%;
-    height: 70px;
-    font: 90 normal 1.7em/1.5 "Montserrat", sans-serif;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.429);
-  }
-  /* carousel */
-  .carousel {
-    width: 100%;
-    height: 400px;
-    perspective: 300px;
-  }
-  .carousel .carousel-item {
-    width: 200px;
-    height: 255px;
-    top: -25px;
-  }
-  .carousel .carousel-item img {
-    width: 100%;
-    height: 90%;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-  }
-  .indicators {
-    top: 340px;
-    right: 17px;
-  }
-  .carousel .indicators .indicator-item {
-    height: 13px;
-    width: 13px;
-  }
-  .carousel .indicators .indicator-item.active {
-    background-color: #6c0583;
-  }
-  .card-title {
-    height: 25%;
-    background: linear-gradient(to right, #0c1254, #640083);
-    color: white;
-    border-bottom-right-radius: 40%;
-    overflow: hidden;
-    text-align: center;
-  }
-  .card-title h3 {
-    font-size: 15px;
-    margin-top: 5px;
-    padding: 5%;
-  }
-  #autocomplete-input {
-    font-size: 19px;
-  }
-  .input-field {
-    margin-left: -30px;
-  }
-  #search-button {
-    margin-top: 8px; /*  Aplicar margem para baixo */
-  }
-  #search-button svg {
-    width: 25px; /* Ajuste a largura desejada */
-  }
-  .tabs {
-    display: none;
-  }
-  nav.nav-extended {
-    height: 78px;
-  }
-  .brand-logo {
-    height: 55px;
-    width: 70px;
-  }
-  nav .sidenav-trigger i {
-    height: 80px;
-    line-height: 65px;
-    font-size: 40px;
-    margin-right: -20px;
-  }
-  .btn-cria,
-  .btn-login {
-    font-size: 16px;
-    height: 8;
-    margin-top: 14px;
-    padding: 5px;
-  }
-  #search-button {
-    margin-top: 10px;
-  }
-  nav ul a {
-    padding: 0 5px;
-  }
-  nav {
-    color: #fff;
-    line-height: 50px;
-  }
-   /* LAST news */
-   .last-news {
+     /* cultura */
+     .cultura{
+      text-align: center;
+      #tittle-cultura{
+        margin: 0 10px;
+        border-bottom: 0.2em solid rgb(27, 3, 44);
+        background: linear-gradient(to right,rgb(6, 6, 130),purple);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+    }
+    .button-seeMore-cultura{
+      display: flex;
+      justify-content: center;
+      margin: -20px 20px 20px 20px;
+      border-bottom: 2px solid rgb(27, 3, 44);
+      a{
+        background: linear-gradient( to bottom,rgb(147, 30, 171),rgb(79, 30, 140),rgb(12, 13, 50));
+        padding: 40px;
+        font-size: 17px;
+        color: white;
+        border-radius: 10px;
+        margin: 10px;
+      }
+    }
+  /* LAST news */
+  .last-news {
     margin-top: 0;
-    #tittle-lastNews {
-      color: white;
-      font-size: 1.8rem;
-      line-height: 110%;
-      margin: 0 0 0 0.4em;
-      border-left: 1px solid violet;
+    #tittle-section {
+      font-size: 2rem;
+      line-height: 120%;
+      margin: 0 0 0 0em;
       padding-left: 0.3em;
     }
-    .card {
-      width:100%; /* Defina a largura desejada para dois cards na mesma linha */
-      margin: 1%; /* Adicione margem para espaçamento entre os cards */
+    #tittle-section {
+      height: 37px;
     }
-    .card-content{
-      padding: 0;
+    #librasButton {
+      top: 44%;
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
     }
-    .card-conteudo{
-      background: rgb(6, 6, 19);
+    #topButton{
+      width: 36px;
+      height: 36px;
+      display: flex;
+      i{
+        font-size: 30px;
+      margin-top: -10px;
+      }
+    }
+    .page-footer {
+      line-height: 1.1;
+    }
+    .inf-footer {
+      font-size: 20px;
+    }
+    .text-footer {
+      font-size: 0.6em;
+    }
+    .quem-somos {
+      font-size: 0.7em;
+      line-height: 1em;
+      margin-top: 2.1em;
+    }
+    .copyright {
+      font-size: 10px;
+    }
+    .termos {
+      font-size: 10px;
+    }
+  }
+  @media (max-width: 450px) {
+    html {
+      max-width: 450px;
+    }
+  
+    .word {
+      text-align: center;
+      padding-left: 0;
+      padding-top: 5%;
+      height: 70px;
+      font: 90 normal 1.7em/1.5 "Montserrat", sans-serif;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.429);
+    }
+    /* carousel */
+    .carousel {
+      width: 100%;
+      height: 400px;
+      perspective: 300px;
+    }
+    .carousel .carousel-item {
+      width: 200px;
+      height: 255px;
+      top: -25px;
+    }
+    .carousel .carousel-item img {
+      width: 100%;
+      height: 90%;
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
+    }
+    .indicators {
+      top: 340px;
+      right: 17px;
+    }
+    .carousel .indicators .indicator-item {
+      height: 13px;
+      width: 13px;
+    }
+    .carousel .indicators .indicator-item.active {
+      background-color: #6c0583;
     }
     .card-title {
-      font-size: 0.9rem; /* Tamanho do título do card */
-      margin: 0;
-      background: rgb(6, 6, 19);
-      border-radius: 0;
-      white-space: normal;
-    }
-    .card .card-content .responsive-img{
-      height: 11em;
-    }
-    .card .card-content .card-title {
-      line-height: 1em;
-      text-align: start;
-    }
-    .card .card-content p{
-      font-size: 0.7em;
-      color: rgb(155, 153, 153);
-      margin: 0 0 9px 0;
-      padding: 0;
-    }
-    .card .card-content .autor-noticia{
+      height: 25%;
+      background: linear-gradient(to right, #0c1254, #640083);
       color: white;
-      font-size: 0.7em;
-      width: 130%;
+      border-bottom-right-radius: 40%;
+      overflow: hidden;
+      text-align: center;
     }
-    .card .card-content .data-noticia{
-      color: rgba(255, 255, 255, 0.813);
-      font-size: 0.7em;
-      margin-left: 10px;
+    .card-title h3 {
+      font-size: 15px;
+      margin-top: 5px;
+      padding: 5%;
     }
-    
-      .button-seeMore-lastNews{
-        background: linear-gradient( to bottom, rgb(147, 30, 171), rgb(79, 30, 140), rgb(12, 13, 50) );
-        text-decoration: none;
-        list-style: none;
-        border-radius: 10px;
-        padding: 5px;
-        font-size: 1em;
-        width: 100px;
-        margin-top: 0;
+    #autocomplete-input {
+      font-size: 19px;
     }
-    .button-seeMore-lastNews div a{
-        color: white;
-        margin-left: 10px;
+    .input-field {
+      margin-left: -30px;
     }
-  }
-}
-@media (max-width: 395px) {
-  html{
-    max-width: 395px;
-  }
-  .word {
+    #search-button {
+      margin-top: 8px; /*  Aplicar margem para baixo */
+    }
+    #search-button svg {
+      width: 25px; /* Ajuste a largura desejada */
+    }
+    .tabs {
+      display: none;
+    }
+    nav.nav-extended {
+      height: 78px;
+    }
+    .brand-logo {
+      height: 55px;
+      width: 70px;
+    }
+    nav .sidenav-trigger i {
+      height: 80px;
+      line-height: 65px;
+      font-size: 40px;
+      margin-right: -20px;
+    }
+    .btn-cria,
+    .btn-login {
+      font-size: 16px;
+      height: 8;
+      margin-top: 14px;
+      padding: 5px;
+    }
+    #search-button {
+      margin-top: 10px;
+    }
+    nav ul a {
+      padding: 0 5px;
+    }
+    nav {
+      color: #fff;
+      line-height: 50px;
+    }
+       /* cultura */
+   .cultura{
     text-align: center;
-    padding-left: 0;
-    padding-top: 5%;
-    height: 60px;
-    font: 90 normal 1.5em/1.5 "Montserrat", sans-serif;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.429);
+    #tittle-cultura{
+      margin: 0 10px;
+      border-bottom: 0.2em solid rgb(27, 3, 44);
+      background: linear-gradient(to right,rgb(6, 6, 130),purple);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
   }
-  /* carousel */
-  .carousel {
-    width: 100%;
-    height: 400px;
-    perspective: 330px;
-  }
-  .carousel .carousel-item {
-    width: 200px;
-    height: 250px;
-    top: -40px;
-  }
-  .carousel .carousel-item img {
-    width: 100%;
-    height: 85%;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-  }
-  .indicators {
-    top: 320px;
-    right: 10px;
-  }
-  .carousel .indicators .indicator-item {
-    height: 13px;
-    width: 13px;
-  }
-  .carousel .indicators .indicator-item.active {
-    background-color: #6c0583;
-  }
-  .card-title {
-    height: 25%;
-    background: linear-gradient(to right, #0c1254, #640083);
-    color: white;
-    border-bottom-right-radius: 40%;
-    overflow: hidden;
-    text-align: center;
-  }
-  .card-title h3 {
-    font-size: 15px;
-    margin-top: 5px;
-    padding: 5%;
-  }
-  .btn-cria,
-  .btn-login {
-    font-size: 12px;
-    height: 7;
-    margin-top: 13px;
-    padding: 5px;
+  .button-seeMore-cultura{
+    display: flex;
+    justify-content: center;
+    margin: -20px 20px 20px 20px;
+    border-bottom: 2px solid rgb(27, 3, 44);
+    a{
+      background: linear-gradient( to bottom,rgb(147, 30, 171),rgb(79, 30, 140),rgb(12, 13, 50));
+      padding: 40px;
+      font-size: 17px;
+      color: white;
+      border-radius: 10px;
+      margin: 10px;
+    }
   }
     /* LAST news */
     .last-news {
       margin-top: 0;
-      #tittle-lastNews {
-        color: white;
+      #tittle-section {
         font-size: 1.8rem;
-        line-height: 110%;
+        line-height: 120%;
         margin: 0 0 0 0.4em;
-        border-left: 1px solid violet;
         padding-left: 0.3em;
       }
+      #tittle-section {
+        height: 37px;
+      }
       .card {
-        width:100%; /* Defina a largura desejada para dois cards na mesma linha */
+        width: 100%; /* Defina a largura desejada para dois cards na mesma linha */
         margin: 1%; /* Adicione margem para espaçamento entre os cards */
       }
-      .card-content{
+      .card-content {
         padding: 0;
       }
-      .card-conteudo{
+      .card-conteudo {
         background: rgb(6, 6, 19);
       }
       .card-title {
@@ -764,107 +741,419 @@ body {
         border-radius: 0;
         white-space: normal;
       }
-      .card .card-content .responsive-img{
+      .card .card-content .responsive-img {
         height: 11em;
       }
       .card .card-content .card-title {
         line-height: 1em;
         text-align: start;
       }
-      .card .card-content p{
+      .card .card-content p {
         font-size: 0.7em;
         color: rgb(155, 153, 153);
         margin: 0 0 9px 0;
         padding: 0;
       }
-      .card .card-content .autor-noticia{
+      .card .card-content .autor-noticia {
         color: white;
         font-size: 0.7em;
         width: 130%;
       }
-      .card .card-content .data-noticia{
+      .card .card-content .data-noticia {
         color: rgba(255, 255, 255, 0.813);
         font-size: 0.7em;
         margin-left: 10px;
       }
-      
-        .button-seeMore-lastNews{
-          background: linear-gradient( to bottom, rgb(147, 30, 171), rgb(79, 30, 140), rgb(12, 13, 50) );
-          text-decoration: none;
-          list-style: none;
-          border-radius: 10px;
-          padding: 5px;
-          font-size: 1em;
-          width: 100px;
-          margin-top: 0;
-      }
-      .button-seeMore-lastNews div a{
-          color: white;
-          margin-left: 10px;
-      }
-    }
-}
-@media (max-width: 360px) {
-  html{
-    max-width: 360px;
-  }
-  .word {
-    height: 60px;
-    font: 90 normal 1.3em/1.5 "Montserrat", sans-serif;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.429);
-  }
-  .carousel {
-    width: 100%;
-    height: 400px;
-    perspective: 200px;
-  }
-  .btn-login,
-  .btn-cria {
-    display: none;
-  }
-  #search-button {
-    margin-right: -50px;
-  }
-  #autocomplete-input {
-    font-size: 17px;
-  }
 
-  /* LAsr news */
-  .last-news {
-    #tittle-lastNews {
-      color: white;
-      font-size: 1.5rem;
-      line-height: 110%;
-      margin: 0 0 0 0.4em;
-      border-left: 1px solid violet;
-      padding-left: 0.3em;
+      .button-seeMore-lastNews {
+        background: linear-gradient(
+          to bottom,
+          rgb(147, 30, 171),
+          rgb(79, 30, 140),
+          rgb(12, 13, 50)
+        );
+        text-decoration: none;
+        list-style: none;
+        border-radius: 10px;
+        padding: 5px;
+        font-size: 1em;
+        width: 100px;
+        margin-top: 0;
+      }
+      .button-seeMore-lastNews div a {
+        color: white;
+        margin-left: 10px;
+      }
     }
-    .card {
-      width:100%; /* Defina a largura desejada para dois cards na mesma linha */
-      margin: 1%; /* Adicione margem para espaçamento entre os cards */
+    #librasButton {
+      top: 44%;
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
     }
-    .card-content{
-      padding: 0;
+    #topButton{
+      width: 36px;
+      height: 36px;
+      display: flex;
     }
-    .card-conteudo{
-      background: rgb(6, 6, 18);
+    .page-footer {
+      line-height: 1.1;
+    }
+    .inf-footer {
+      font-size: 20px;
+    }
+    .text-footer {
+      font-size: 0.6em;
+    }
+    .quem-somos {
+      font-size: 0.7em;
+      line-height: 1em;
+      margin-top: 2.1em;
+    }
+    .copyright {
+      font-size: 10px;
+    }
+    .termos {
+      font-size: 10px;
+    }
+  }
+  @media (max-width: 395px) {
+    html {
+      max-width: 395px;
+    }
+    .word {
+      text-align: center;
+      padding-left: 0;
+      padding-top: 5%;
+      height: 60px;
+      font: 90 normal 1.5em/1.5 "Montserrat", sans-serif;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.429);
+    }
+    /* carousel */
+    .carousel {
+      width: 100%;
+      height: 400px;
+      perspective: 330px;
+    }
+    .carousel .carousel-item {
+      width: 200px;
+      height: 250px;
+      top: -40px;
+    }
+    .carousel .carousel-item img {
+      width: 100%;
+      height: 85%;
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
+    }
+    .indicators {
+      top: 320px;
+      right: 10px;
+    }
+    .carousel .indicators .indicator-item {
+      height: 13px;
+      width: 13px;
+    }
+    .carousel .indicators .indicator-item.active {
+      background-color: #6c0583;
     }
     .card-title {
-      font-size: 0.9rem; /* Tamanho do título do card */
-      margin: 0;
-      background: rgb(6, 6, 18);
-      border-radius: 0;
-      white-space: normal;
+      height: 25%;
+      background: linear-gradient(to right, #0c1254, #640083);
+      color: white;
+      border-bottom-right-radius: 40%;
+      overflow: hidden;
+      text-align: center;
     }
-    .card .card-content .card-title {
-      line-height: 1em;
-      text-align: start;
+    .card-title h3 {
+      font-size: 15px;
+      margin-top: 5px;
+      padding: 5%;
     }
-    p{
+    .btn-cria,
+    .btn-login {
+      font-size: 12px;
+      height: 7;
+      margin-top: 13px;
+      padding: 5px;
+    }
+       /* cultura */
+   .cultura{
+    text-align: center;
+    #tittle-cultura{
+      margin: 0 10px;
+      border-bottom: 0.2em solid rgb(27, 3, 44);
+      background: linear-gradient(to right,rgb(6, 6, 130),purple);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+  }
+  .button-seeMore-cultura{
+    display: flex;
+    justify-content: center;
+    margin: -20px 20px 20px 20px;
+    border-bottom: 2px solid rgb(27, 3, 44);
+    a{
+      background: linear-gradient( to bottom,rgb(147, 30, 171),rgb(79, 30, 140),rgb(12, 13, 50));
+      padding: 40px;
+      font-size: 17px;
+      color: white;
+      border-radius: 10px;
+      margin: 10px;
+    }
+  }
+    /* LAST news */
+    .last-news {
+      margin-top: 0;
+      #tittle-section {
+        color: white;
+        font-size: 1.8rem;
+        line-height: 110%;
+        margin: 0 0 0 0.4em;
+        border-left: 1px solid violet;
+        padding-left: 0.3em;
+      }
+      .card {
+        width: 100%; /* Defina a largura desejada para dois cards na mesma linha */
+        margin: 1%; /* Adicione margem para espaçamento entre os cards */
+      }
+      .card-content {
+        padding: 0;
+      }
+      .card-conteudo {
+        background: rgb(6, 6, 19);
+      }
+      .card-title {
+        font-size: 0.9rem; /* Tamanho do título do card */
+        margin: 0;
+        background: rgb(6, 6, 19);
+        border-radius: 0;
+        white-space: normal;
+      }
+      .card .card-content .responsive-img {
+        height: 11em;
+      }
+      .card .card-content .card-title {
+        line-height: 1em;
+        text-align: start;
+      }
+      .card .card-content p {
+        font-size: 0.7em;
+        color: rgb(155, 153, 153);
+        margin: 0 0 9px 0;
+        padding: 0;
+      }
+      .card .card-content .autor-noticia {
+        color: white;
+        font-size: 0.7em;
+        width: 130%;
+      }
+      .card .card-content .data-noticia {
+        color: rgba(255, 255, 255, 0.813);
+        font-size: 0.7em;
+        margin-left: 10px;
+      }
+
+      .button-seeMore-lastNews {
+        background: linear-gradient(
+          to bottom,
+          rgb(147, 30, 171),
+          rgb(79, 30, 140),
+          rgb(12, 13, 50)
+        );
+        text-decoration: none;
+        list-style: none;
+        border-radius: 10px;
+        padding: 5px;
+        font-size: 1em;
+        width: 100px;
+        margin-top: 0;
+      }
+      .button-seeMore-lastNews div a {
+        color: white;
+        margin-left: 10px;
+      }
+    }
+    #librasButton {
+      top: 44%;
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+    }
+    #topButton{
+      width: 36px;
+      height: 36px;
+      display: flex;
+      text-align: c;
+      i{
+        font-size: 30px;
+      margin-top: 0px;
+      }
+    }
+    .page-footer {
+      line-height: 1.1;
+    }
+    .inf-footer {
+      font-size: 20px;
+    }
+    .text-footer {
+      font-size: 0.6em;
+    }
+    .quem-somos {
       font-size: 0.7em;
-      color: gray;
-      margin: 0;
-      padding: 0;
+      line-height: 1em;
+      margin-top: 2.1em;
     }
+    .copyright {
+      font-size: 10px;
+    }
+    .termos {
+      font-size: 10px;
+    }
+  }
+  @media (max-width: 360px) {
+    html {
+      max-width: 360px;
+    }
+    .word {
+      height: 60px;
+      font: 90 normal 1.3em/1.5 "Montserrat", sans-serif;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.429);
+    }
+    .carousel {
+      width: 100%;
+      height: 400px;
+      perspective: 200px;
+    }
+    .btn-login,
+    .btn-cria {
+      display: none;
+    }
+    #search-button {
+      margin-right: -50px;
+    }
+    #autocomplete-input {
+      font-size: 17px;
+    }
+    /* Podcasts */
+    #section-three {
+      #tittle-section {
+        color: white;
+        font-size: 1.3rem;
+        height: 26px;
+        margin: 0 0 0.8em 0.6em;
+        border-left: 1px solid violet;
+        padding-left: 0.3em;
+        h2 {
+          font-size: 1.3em;
+        }
+      }
+    }
+    /* cultura */
+    .cultura{
+      text-align: center;
+      #tittle-cultura{
+        margin: 0 10px;
+        border-bottom: 0.2em solid rgb(27, 3, 44);
+        background: linear-gradient(to right,rgb(6, 6, 130),purple);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+    }
+    .button-seeMore-cultura{
+      display: flex;
+      justify-content: center;
+      margin: -20px 20px 20px 20px;
+      border-bottom: 2px solid rgb(27, 3, 44);
+      a{
+        background: linear-gradient( to bottom,rgb(147, 30, 171),rgb(79, 30, 140),rgb(12, 13, 50));
+        padding: 40px;
+        font-size: 17px;
+        color: white;
+        border-radius: 10px;
+        margin: 10px;
+      }
+    }
+    /* LAsr news */
+    .last-news {
+      #tittle-section {
+        color: white;
+        font-size: 1.5rem;
+        line-height: 100%;
+        height: 26px;
+        margin: 0 0 0 0em;
+        border-left: 1px solid violet;
+        padding-left: 0.3em;
+      }
+      .card {
+        width: 100%; /* Defina a largura desejada para dois cards na mesma linha */
+        margin: 1%; /* Adicione margem para espaçamento entre os cards */
+      }
+      .card-content {
+        padding: 0;
+      }
+      .card-conteudo {
+        background: rgb(6, 6, 18);
+      }
+      .card-title {
+        font-size: 0.9rem; /* Tamanho do título do card */
+        margin: 0;
+        background: rgb(6, 6, 18);
+        border-radius: 0;
+        white-space: normal;
+      }
+      .card .card-content .card-title {
+        line-height: 1em;
+        text-align: start;
+      }
+      p {
+        font-size: 0.7em;
+        color: gray;
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+  #librasButton {
+    top: 44%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+  }
+  #topButton{
+    width: 36px;
+    height: 6px;
+    padding-bottom: 40px;
+    padding-top: 0;
+
+    .material-icons{
+      font-size: 27px;
+      top: -20px;
+    }
+  }
+  .page-footer {
+    line-height: 1.1;
+  }
+  .inf-footer {
+    font-size: 20px;
+  }
+  .text-footer {
+    font-size: 0.6em;
+  }
+  .quem-somos {
+    font-size: 0.7em;
+    line-height: 1em;
+    margin-top: 2.1em;
+  }
+  .copyright {
+    font-size: 10px;
+  }
+  .termos {
+    font-size: 10px;
   }
 }
