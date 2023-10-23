@@ -74,7 +74,7 @@
       </div>
     </nav>
     
-    <ul class="sidenav right-align" id="mobile-demo">
+    <ul class="sidenav left-align" id="mobile-demo">
       <li class="links-nav"><a href="index.html" class="actived">INICIO</a></li>
       <li class="links-nav"><a href="src/noticias.html">NOTICIAS</a></li>
       <li class="links-nav"><a href="src/podcasts.html">PODCASTS</a></li>
@@ -154,14 +154,20 @@
   </section>
   <section>
     
-      <a  id="librasButton" class="btn-floating btn-large purple">
+      <a  id="librasButton" class="librasButton btn-floating btn-large purple">
       <i class="material-icons">accessibility</i>
     </a>
 
-    <a  id="topButton" class="btn-floating btn-large blue">
-      <i  class="material-icons btn-top">arrow_upward
-      </i>
-    </a>
+  
+      
+        <div class="topButton">
+
+          <a style="top: 90%;" id="librasButton" class=" btn-floating btn-large blue">
+            <i class=" material-icons">keyboard_arrow_up</i>
+          </a>
+        </div>
+  
+    
   </section>
 
   <!-- ULTIMAS NOTICIAS -->
@@ -670,7 +676,7 @@
       $('.parallax').parallax();
     });
     $(document).ready(function(){
-  $('.sidenav').sidenav({ edge: 'right' });
+  $('.sidenav').sidenav({ edge: 'left' });
 }); 
 $(document).ready(function(){
     $('input.autocomplete').autocomplete({

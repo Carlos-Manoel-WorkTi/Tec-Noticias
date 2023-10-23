@@ -100,7 +100,7 @@ a:focus {
 
 }
 
-#topButton {
+.topButton {
   position: fixed;
   bottom: 20px;
   right: 10px;

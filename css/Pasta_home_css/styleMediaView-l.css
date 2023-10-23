@@ -557,15 +557,7 @@ body {
       display: flex;
       align-items: center;
     }
-    #topButton{
-      width: 36px;
-      height: 36px;
-      display: flex;
-      i{
-        font-size: 30px;
-      margin-top: -10px;
-      }
-    }
+    
     .page-footer {
       line-height: 1.1;
     }
@@ -792,11 +784,7 @@ body {
       display: flex;
       align-items: center;
     }
-    #topButton{
-      width: 36px;
-      height: 36px;
-      display: flex;
-    }
+  
     .page-footer {
       line-height: 1.1;
     }
@@ -983,16 +971,6 @@ body {
       display: flex;
       align-items: center;
     }
-    #topButton{
-      width: 36px;
-      height: 36px;
-      display: flex;
-      text-align: c;
-      i{
-        font-size: 30px;
-      margin-top: 0px;
-      }
-    }
     .page-footer {
       line-height: 1.1;
     }
@@ -1125,17 +1103,7 @@ body {
     display: flex;
     align-items: center;
   }
-  #topButton{
-    width: 36px;
-    height: 6px;
-    padding-bottom: 40px;
-    padding-top: 0;
-
-    .material-icons{
-      font-size: 27px;
-      top: -20px;
-    }
-  }
+ 
   .page-footer {
     line-height: 1.1;
   }

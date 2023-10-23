@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const librasButton = document.getElementById("librasButton");
-  const topButton = document.getElementById("topButton");
+  const topButton = document.querySelector(".topButton");
   let cardVisible = false; // Variável de estado para controlar a visibilidade do card
 
   librasButton.addEventListener("click", function () {

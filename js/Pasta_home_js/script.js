@@ -71,7 +71,7 @@ window.addEventListener("resize", checkScreenSize);
 
 // button top
 document.addEventListener('DOMContentLoaded', function() {
-    let topButton = document.getElementById('topButton');
+    let topButton = document.querySelector('.topButton');
     topButton.style.display = 'none';
   
     window.addEventListener('scroll', function() {
