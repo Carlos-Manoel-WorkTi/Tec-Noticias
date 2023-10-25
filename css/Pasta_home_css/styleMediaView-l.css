@@ -7,7 +7,7 @@ body {
 .row.header {
   margin-bottom: 0 !important;
 height: 100px;
-margin-top: -5px;
+margin-top: -8px;
 }
 .cor-nav{
   position: fixed; 
@@ -218,16 +218,16 @@ h
     width: 100vw;
     max-width: 80%;
     position: relative;
-    top: 25px;
+    top: 45px;
     right: 0;
     z-index: 99999;
     display: flex;
     align-items: center;
     justify-content: end;
+    background-color: transparent;
   }
   .search-area {
-    background-color: rgba(5, 4, 4, 0.972);
-    height: 80px;
+    height: 20vh;
     padding-bottom: 20px;
     min-height: 45px;
     top: 10vh;
@@ -356,19 +356,7 @@ h
 }
 @media (max-width: 1050px) {
   #form_pesquisa {
-    top: 20px;
-  }
-  #search-area{
-    top: 10px;
-  }
-  #autocomplete-input {
-    border: none;
-    border-bottom: 1px solid #ffffff;
-    vertical-align: middle;
-    height: 100%;
-    min-height: 35px;
-    color: #fff;
-    font-size: 20px;
+    top: 43px;
   }
   .input-field {
     flex-grow: 1;
@@ -401,10 +389,11 @@ h
 }
 @media (max-width: 992px) {
   #form_pesquisa {
-    top: 2vh;
+    top: 60px;
   }
-  .search-area{
-    top:14vh;
+  .search-area {
+    background-color: rgba(5, 4, 4, 0.972);
+    height: 150px;
   }
   nav.nav-extended {
     height: 145px;
@@ -438,21 +427,19 @@ h
 }
 @media (max-width: 710px) {
   #form_pesquisa {
-    top: 7vh;
+    top: 5vh;
   }
   .search-area{
     top:13vh;
     padding-top: 25px;
     padding-bottom: 0px;
+    height: 130px;
   }
   #autocomplete-input {
     font-size: 18px;
   }
   .input-field {
     margin-left: 25%;
-  }
-  #form_pesquisa{
-    top: 1px;
   }
   nav.nav-extended {
     height: 140px;
@@ -505,19 +492,28 @@ h
 }
 @media (max-width: 600px) {
   #form_pesquisa {
-    top: 5vh;
+    top: 9vh;
+    height: 40px;
+  }
+  #search-in-button .material-icons {
+    font-size: 30px;
   }
   .search-area{
-    top:12vh;
-    padding-top: 25px;
-    padding-bottom: 80px;
-  }
-  #autocomplete-input {
-    font-size: 17px;
+    top:19vh;
+    padding-top: 16px;
+    padding-bottom: 0px;
+    height: 70px;
+    
   }
   .input-field {
     margin-left: 45%;
+    margin-bottom: -2px;
+}
+  #autocomplete-input {
+    font-size: 20px;
+    width: 55vw;
   }
+
   #apresentar{
       background-image: linear-gradient(
       to right,
@@ -680,7 +676,7 @@ h
   }
   @media (max-width: 450px) {
     #form_pesquisa {
-      top: vh;
+      top: 10vh;
     }
     #search-in-button .material-icons {
       font-size: 30px;
@@ -694,11 +690,7 @@ h
       font-size: 20px;
       width: 55vw;
     }
-    .input-field {
-    }
-    #form_pesquisa{
-      top: 1px;
-    }
+
     .row.header {
       height: 70px;
       margin-top: -5px;
@@ -909,6 +901,33 @@ h
         margin-left: 10px;
       }
     }
+    .button-seeeMore-podcast{
+      
+      color: white;
+      background-color: blueviolet;
+      height: 20px;
+    }
+      .podcasts{
+        .card{
+          background-color: rgba(0, 0, 0, 0.641);
+        }
+        .card .card-image {
+         height: 120px;
+      }
+        .card .card-content {
+          padding:04px; 
+          border-radius: 0 0 2px 2px;
+          background-color: transparent;
+      }
+      .card-title {
+        height: 35%;
+        background:transparent;
+        color: rgb(134, 31, 181);
+        border-bottom-right-radius: 40%;
+        overflow: hidden;
+        text-align: center;
+    }
+    }
     #librasButton {
       top: 44%;
       width: 36px;
@@ -939,14 +958,8 @@ h
     }
   }
   @media (max-width: 395px) {
-    #form_pesquisa {
-      top: 5vh;
-    }
-    .search-area{
-      top:7vh;
-      padding-top: 10px;
-      padding-bottom: 0px;
-    }
+ }
+   
     #autocomplete-input {
       font-size: 17px;
     }
@@ -1147,6 +1160,27 @@ h
     html {
       max-width: 360px;
     }
+    #form_pesquisa {
+      top: 9vh;
+    }
+    .search-area{
+      height: 90px;
+      top:5vh;
+      padding-top: 0px;
+      padding-bottom: 60px;
+    }
+    #autocomplete-input {
+      font-size: 10px;
+    }
+    .input-field {
+      left:10%;
+    }
+    #autocomplete-input {
+      font-size: 10px;
+    }
+    .input-field {
+      margin-left: 15%;
+    }
     .word {
       height: 60px;
       font: 90 normal 1.3em/1.5 "Montserrat", sans-serif;
@@ -1275,4 +1309,4 @@ h
   .termos {
     font-size: 10px;
   }
-}
+

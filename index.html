@@ -32,7 +32,7 @@
           data-aos-duration="1100"/> 
         <a href="#" data-target="mobile-demo" class="sidenav-trigger right hide-on-med-and-up"><i class="material-icons button-menu-mobile">menu</i></a>
         <ul id="nav-mobile" class="right ">
-          <li class="links-nav hide-on-med-and-down"><a href="index.html" class="actived">INICIO</a></li>
+          <li class="links-nav hide-on-med-and-down"><a href="index.html" class="active">INICIO</a></li>
           <li class="links-nav hide-on-med-and-down"><a href="src/noticias.html">NOTICIAS</a></li>
           <li class="links-nav hide-on-med-and-down"><a href="src/podcasts.html">PODCASTS</a></li>
           <li class="links-nav hide-on-med-and-down"><a href="src/eventos.html">EVENTOS</a></li>
@@ -64,24 +64,33 @@
       
 
       <div class=" nav-two hide-on-large-only">
-        <ul class="tabs tabs-transparent">
-          <li class="tab"><a href="index.html" class="actived">INICIO</a></li>
-          <li class="tab"><a href="src/noticias.html">NOTICIAS</a></li>
-          <li class="tab disabled"><a href="src/podcasts.html">PODCASTS</a></li>
-          <li class="tab"><a href="src/eventos.html">EVENTOS</a></li>
-          <li class="tab"><a href="src/cultura.html">CULTURA</a></li>
-        </ul>
+        <div class="row">
+          <div class="col s12">
+            <ul class="tabs tabs-transparent">
+              <li class="tab col s3"><a class="active" href="index.html" target="_self" >INICIO</a></li>
+              <li class="tab col s3"><a href="src/noticias.html" target="_self" >NOTÍCIAS</a></li>
+              <li class="tab col s3"><a href="src/eventos.html" target="_self" >EVENTOS</a></li>
+              <li class="tab col s3 "><a href="src/podcasts.html" target="_self" >PODCASTS</a></li>
+              <li class="tab col s3"><a href="src/cultura.html" target="_self" >CULTURA</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </nav>
     
-    <ul class="sidenav left-align" id="mobile-demo" style="top: 10vh;">
-      <li class="links-nav"><a href="index.html" class="actived">INICIO</a></li>
+    
+    <ul class="sidenav left-align" id="mobile-demo" style="top: 0; width: 60%;">
+      <li style="height: 13%; padding: 0; margin: 0; border-bottom: 1px solid white; " class="links-nav"><a href="index.html" ><img style="width: 50%; margin-left: 20%; " src="./img/Pasta_home_img/TN.png" alt=""></a></li>
+      <li class="links-nav"><a href="index.html" class="active">INICIO</a></li>
       <li class="links-nav"><a href="src/noticias.html">NOTICIAS</a></li>
       <li class="links-nav"><a href="src/podcasts.html">PODCASTS</a></li>
       <li class="links-nav"><a href="src/eventos.html">EVENTOS</a></li>
       <li class="links-nav"><a href="src/cultura.html">CULTURA</a></li>
+      <li class="links-nav"><a href="#">PERFIL</a></li>
+      <li class="links-nav"><a href="#">CONFIGURAÇÔES</a></li>
+      <li class="links-nav"><a href="#">SOBRE</a></li>
     </ul>
-
+  </nav>
+  
     <div class="hide search-area s12 m6 l6 xl6" >
       <!-- Conteúdo atual -->
     
@@ -107,7 +116,7 @@
 
   <section id="apresentar">
     <div id="container-sec-one" class=" row mt-2" data-aos="zoom-out-up" data-aos-duration="3000">
-      <div class="col s12 m6 l5 xl6">
+      <div class="col s12 m4 l5 xl6">
         <div class="word"></div>
       </div>
       <!-- CAROUSEL -->
@@ -152,22 +161,16 @@
         </a>
       </div>
   </section>
-  <section>
-    
+  <section> 
       <a  id="librasButton" class="librasButton btn-floating btn-large purple">
       <i class="material-icons">accessibility</i>
-    </a>
-
-  
-      
+    </a>    
         <div class="topButton">
 
           <a style="top: 90%;" id="librasButton" class=" btn-floating btn-large blue">
             <i class=" material-icons">keyboard_arrow_up</i>
           </a>
         </div>
-  
-    
   </section>
 
   <!-- ULTIMAS NOTICIAS -->
@@ -320,6 +323,7 @@
     </div>
   </section>
   <!-- FIM ULTIMAS NOTICIAS -->
+
   <!-- PODCASTS -->
   <section id="section-three">
     <div class="sectio-two podcasts" data-aos="" data-aos-duration="1000" data-aos-offset="100"
@@ -332,7 +336,7 @@
             frameborder="0" allowfullscreen></iframe>
       </div>
       <div class="row center text-center">
-        <div class="col s12 m6 l4">
+        <div class="col s4 m6 l4">
           <div class="card">
             <div class="card-image" style="position: relative;">
               <!-- Adicione 'position: relative;' para permitir o posicionamento absoluto -->
@@ -343,12 +347,12 @@
             </div>
 
             <div class="card-content">
-              <span class="card-title">Card Title of the video over here</span>
+              <span class="card-title">Card Title</span>
 
             </div>
           </div>
         </div>
-        <div class="col s12 m6 l4">
+        <div class="col s4 m6 l4">
           <div class="card">
             <div class="card-image" style="position: relative;">
               <!-- Adicione 'position: relative;' para permitir o posicionamento absoluto -->
@@ -359,12 +363,12 @@
             </div>
 
             <div class="card-content">
-              <span class="card-title">Card Title of the video over here</span>
+              <span class="card-title">Card Title</span>
 
             </div>
           </div>
         </div>
-        <div class="col s12 m6 l4">
+        <div class="col s4 m6 l4">
           <div class="card">
             <div class="card-image" style="position: relative;">
               <!-- Adicione 'position: relative;' para permitir o posicionamento absoluto -->
@@ -375,21 +379,24 @@
             </div>
 
             <div class="card-content">
-              <span class="card-title">Card Title of the video over here</span>
+              <span class="card-title">Card Title</span>
 
             </div>
           </div>
         </div>
+        
+          <div class="col xl12 s12 m12 " style=" color: white; height: 50px; padding: 1px; margin: 7px;" >
+            <a style="background-color: blueviolet; color: white; height: 90px; padding: 0px; margin-top: 20px;"  class="button-seeMore-lastNews" href="./src/podcasts.html">Ver mais</a>
+          </div>
+      
       </div>
-      <div class="row center button-seeMore">
-        <div class="col xl12 "><a href="./src/podcasts.html">Ver mais</a></div>
-      </div>
+    </div>
   </section>
   <!-- FIM PODCASTS  -->
   <section>
-    <div class="parallax-container">
-      <div class="parallax"><img
-          src="https://img.freepik.com/fotos-gratis/3d-abstrato-baixo-poli-fundo-escuro-com-pontos-e-linhas-de-conexao_1048-12151.jpg?w=1200&t=st=1697421474~exp=1697422074~hmac=1eb100679182454ef47076e21439ab7ea55374f6209bf27b0f3e1b2e49fa2c66"
+    <div class="parallax-container" style="height:30vh;">
+      <div class="parallax" ><img
+          src="https://respostas.sebrae.com.br/wp-content/uploads/2020/06/tecnology-806x440.jpg"
           alt=""></div>
     </div>
   </section>
@@ -688,7 +695,9 @@ $(document).ready(function(){
       },
     });
   });
-
+  $(document).ready(function(){
+    $('.tabs').tabs();
+  });
 
   </script>
 </body>

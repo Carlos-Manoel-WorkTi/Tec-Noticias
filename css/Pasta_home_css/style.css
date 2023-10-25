@@ -161,9 +161,10 @@ a:focus {
   }
 }
 /* Estilos do botão de login */
-a {
+#btn-login{
   list-style: none;
   text-decoration: none;
+  color: white;
 }
 .button-seeMore {
   background: linear-gradient(
@@ -234,10 +235,10 @@ a {
 }
 
 /* Estilos da classe "actived" */
-.actived {
+/* .actived {
   background: linear-gradient(to bottom, #0c125439, #64008341);
   border-radius: 1px;
-}
+} */
 .icons-footer {
   border-top: 1px solid white;
   border-bottom: 1px solid white;
