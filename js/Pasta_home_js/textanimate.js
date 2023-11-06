@@ -7,7 +7,7 @@ var
   forwards = true,
   skip_count = 0,
   skip_delay = 20,
-  speed = 100;
+  speedd = 100;
 
 var wordflick = function(){
   
@@ -46,7 +46,7 @@ var wordflick = function(){
         }
       }
     	$('.word').text(part);
-  },speed);
+  },speedd);
 };
 
 $(document).ready(function(){
