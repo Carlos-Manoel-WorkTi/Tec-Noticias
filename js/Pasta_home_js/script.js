@@ -1,3 +1,5 @@
+
+
 // document.addEventListener('DOMContentLoaded', function () {
 
 //     // Obtenção dos elementos HTML
@@ -190,3 +192,55 @@ video_container.addEventListener('click',e => {
   video_container.innerHTML = ` <iframe class="col s12 xl12 l12 video-podcast" src="https://www.youtube.com/embed/7XX-ZwIYnV4?rel=0" frameborder="0" allowfullscreen ></iframe>`
 
 })
+
+function verificarPosicao() {
+    const elemento = document.querySelector('.news-title');
+ 
+  
+    // Verifica a posição em relação à largura da janela (width)
+    if (window.innerWidth < 600) {
+        
+        elemento.style.display = 'none'; // Torna o elemento invisível
+        document.querySelector('.news-button').style.position = 'absolute'
+        document.querySelector('.news-button').style.top = 310 + 'px'
+    }
+    else {
+        elemento.style.display = 'block' // Torna o elemento visível
+        document.querySelector('.news-button').style.position = 'relative'
+        document.querySelector('.news-button').style.top = 0
+    }
+
+    if(window.innerWidth < 400){
+        console.log(document.querySelector('.hide-450'));
+        document.querySelector('.hide-450').style.display = "none"
+    }else{
+        document.querySelector('.hide-450').style.display = "block"
+    }
+}
+window.addEventListener("resize", verificarPosicao);
+
+const container = document.querySelector(".logo-container");
+const logos = document.querySelectorAll(".logos");
+const logoWidth = logos[0].offsetWidth +1200; // Largura da logo com margem
+
+let scrollPosition = -logoWidth; // Iniciar próximo ao primeiro logotipo
+const speed = 1.2; // Velocidade do scroll
+
+// Configurar a posição inicial do contêiner
+container.style.transform = `translateX(${scrollPosition}px)`;
+
+function scroll() {
+  scrollPosition -= speed;
+  container.style.transform = `translateX(${scrollPosition + 0}px)`;
+
+  if (scrollPosition <= -logoWidth) {
+    // Mova o primeiro elemento ao final da lista
+    const firstLogo = container.firstElementChild;
+    container.appendChild(firstLogo);
+    scrollPosition += logoWidth; // Ajuste a posição para manter a suavidade da rolagem
+  }
+
+  requestAnimationFrame(scroll);
+}
+
+scroll();

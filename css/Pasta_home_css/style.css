@@ -11,8 +11,9 @@ body {
 background: linear-gradient(to bottom,black,blue);
 }  
 #apresentar{
-  background: linear-gradient(to bottom,rgba(0, 0, 0, 0.927),rgb(0, 0, 0));
-  border-bottom: 0.1em solid rgba(242, 242, 242, 0.498);
+  background: linear-gradient(to right,rgb(0, 0, 0),rgb(0, 0, 4),rgb(9, 2, 37));
+
+ 
 }
 #section-three {
   background: linear-gradient(to bottom,black,black,black,rgb(2, 2, 41),black);
@@ -21,8 +22,21 @@ background: linear-gradient(to bottom,black,blue);
     height: 33em;
   }
 }
-
-
+#logos{
+  background-color: rgb(255, 255, 255); overflow-y: hidden;
+}
+.logo-container{
+  display: flex;
+  justify-content: end;
+  overflow-x: hidden;
+  width: 100%;
+  align-items: center;
+  max-width: 100%;
+}
+.logos {
+  display: inline-block;
+  margin-right: 70px; /* Espaço entre as logos */
+}
 /* Estilos para o botão de pesquisa */
 #search-in-button{
   background: none; border: none; outline: none; margin-top: 3px; border-left: 1px solid rgb(56, 31, 100);
@@ -125,7 +139,6 @@ a:focus {
   padding-top: 20%;
   color: #ffffff;
   font: 900 normal 3em/1.5 'Roboto Mono', monospace;
-  
   text-shadow: 1px 1px 2px rgba(53, 8, 104, 0.5),
     2px 2px 4px rgba(42, 6, 83, 0.5), 3px 3px 6px rgba(42, 6, 83, 0.5),
     4px 4px 8px rgba(42, 6, 83, 0.5), 5px 5px 10px rgba(42, 6, 83, 0.578);
@@ -204,18 +217,6 @@ a:focus {
 
 /* Estilos da barra de navegação "cor-nav" */
 .cor-nav {
-  /* background: linear-gradient(
-    to bottom,
-    #01030c,
-    rgb(1, 4, 15),
-    rgb(2, 5, 25),
-    rgb(15, 7, 62)
-  ); */
-  /* background: linear-gradient(
-    to bottom,
-    #000000,
-    rgba(24, 3, 50, 0.749)
-  ); */
   background: linear-gradient(to right,rgb(0, 0, 0),rgb(0, 0, 4),rgb(9, 2, 37));
   border-bottom: 1px solid rgba(38, 3, 78, 0.509);
   padding: 10px;
@@ -226,27 +227,55 @@ a:focus {
   background-color: #281bb200;
   width: 10%;
   height: 80%;
-  margin-top: 10px;
+  margin-top: 1px;
   margin-left: 4px;
 }
 
-/* Estilos da classe "actived" */
-/* .actived {
-  background: linear-gradient(to bottom, #0c125439, #64008341);
-  border-radius: 1px;
-} */
-.icons-footer {
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
-  padding-bottom: 5%;
-  padding-top: 10%;
+/* FOOTER */
+.page-footer {
+  background-color: rgb(1, 1, 14);
 }
-.icons-footer img {
-  width: 20%;
-}
-.text-footer {
+
+.quem-somos {
+  margin-top: 0px;
   font-size: 40px;
 }
-#cpyright {
-  font-size: 0px;
+
+.logo-footer {
+  height: 200px;
+}
+
+.footer-canais {
+  height: 200px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.icon-rede {
+  height: 60px;
+}
+
+.icon-contato {
+  height: 40px;
+}
+
+.contatos-text h4 {
+  font-size: 30px;
+}
+
+.footer-contatos {
+  display: flex;
+  gap: 20px;
+  margin-top: 5px;
+}
+
+.copyright {
+  background-color: black;
+  margin-bottom: 0;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  
 }

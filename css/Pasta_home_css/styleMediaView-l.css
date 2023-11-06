@@ -53,6 +53,9 @@ margin-top: -8px;
   color: transparent;
 }
 @media (min-width: 1201px) {
+  .page-footer{
+    
+  }
   #apresentar{
     background: linear-gradient(to right,rgb(0, 0, 0),rgb(0, 0, 4),rgb(9, 2, 37));
     /* background-image: linear-gradient(
@@ -71,7 +74,7 @@ margin-top: -8px;
 .row.header {
   height: 110px;
 }
-h
+
   nav .sidenav-trigger i {
     height: 56px;
     line-height: 56px;
@@ -131,7 +134,7 @@ h
   #container-sec-one {
     height: 500px;
     margin-bottom: 0;
-
+    
     .word {
       padding-left: 12%;
       padding-top: 19%;
@@ -159,8 +162,8 @@ h
       border-top-left-radius: 20px;
     }
     .indicators {
-      top: 400px;
-      left: 14px;
+      top: 410px;
+      left: 10px;
     }
     .carousel .indicators .indicator-item.active {
       background-color: #6c0583;
@@ -168,6 +171,7 @@ h
     .carousel .indicators .indicator-item {
       height: 16px;
       width: 16px;
+      background-color: white;
     }
     .card-title {
       height: 45%;
@@ -225,10 +229,14 @@ h
 }
 
 /* NOTICIAS */
+.linhaRoxa{
+  position:absolute;margin-top: -50px; height: 40px; width: 100%;
+}
 #noticias{
-  background-color: transparent;padding-top: 10vh; padding-bottom: 5vh;
+  background-color: transparent;padding-top: 1vh; padding-bottom: 15vh;
   background: linear-gradient(to right,rgb(0, 0, 0),rgb(0, 0, 4),rgb(9, 2, 37));
 
+  
   #tittle-section{
     font-size: 4em; background-clip: text; color: transparent; background: linear-gradient(to right,rgb(97, 17, 172),rgba(132, 58, 216, 0.672),rgba(92, 0, 128, 0.672)); -webkit-background-clip: text;
     background-size: 200% 100%;
@@ -242,7 +250,7 @@ h
   .news-title {
     font-size: 2.5em;
     color: white;
-    width: 29vw;
+    width: 26vw;
     font-family: 'Roboto Mono', monospace;
     /* border-left: 1px solid rgb(43, 10, 89); */
     border-left: 1px solid transparent; /* Tornar a borda esquerda transparente */
@@ -251,7 +259,7 @@ h
     padding-left: 10px;
     margin-bottom: 0;
     padding-bottom: 2vh;
-    padding-top: 20vh;
+    padding-top: 80px;
     margin-top: -3.8vh;
 }
 
@@ -274,13 +282,13 @@ h
 }
 
   .news-card{
-    max-width: 250px; background-color: #0b011d22; height: 50vh; color: #ffffff; margin: 10px 2px; padding: 1px; border-radius: 10px;box-shadow: 4px 4px 6px rgba(63, 0, 118, 0.226); display: flex; flex-direction: column; align-items: start; text-align: center; justify-content: center; 
+    max-width: 250px; background-color: #0b011d22; height: 350px; color: #ffffff; margin: 20px 2px; padding: 1px; border-radius: 10px;box-shadow: 4px 4px 6px rgba(63, 0, 118, 0.226); display: flex; flex-direction: column; align-items: start; text-align: center; justify-content: center; 
   }
   .news-card img{
     width: 100%; height: 24vh; object-fit: cover; border-radius: 10px 0px 0px 0px; margin:  0;
   }
   .news-content{
-    flex: 1; padding: 10px; text-align: start;
+    flex: 1; padding: 10px; text-align: start; padding-left: 1px; padding-right: 0px;
   }
   .news-content h3 {
     font-size: 20px; margin: 0 0 10px; color: rgb(144, 22, 231);
@@ -289,7 +297,7 @@ h
     font-size: 14px;color: rgba(177, 177, 177, 0.835); margin: 0 0 10px 0;
   }
   .inf-podcast{
-    display: flex; justify-content: space-between; width: 100%; padding: 10px; padding-bottom: 20px;
+    display: flex; justify-content: space-between; width: 100%; padding: 10px; 
   }
   .autor-podcast{font-size: 12px; margin: 0; }
   .data-podcast{font-size: 12px; margin: 0; color: rgb(255, 255, 255);}
@@ -299,13 +307,14 @@ h
   #podcasts{
     
       will-change: transform;
-    margin-bottom: 10vh;
-    background: linear-gradient(to right,rgba(0, 0, 0, 0.664),rgb(9, 2, 37));
+    padding-bottom: 5vh;
+    background: linear-gradient(to right,rgb(0, 0, 0),rgb(0, 0, 4),rgb(9, 2, 37));
     padding-top: 20px;
+    margin-left: -4.4%;
     .video-podcast{
       height: 45vh;
       width: 100%;
-      margin-left: 2%;
+      margin-left: -2%;
       margin-top:2vh;
       border: 3px solid #13021b16; box-shadow: 1px 10px 10px rgba(56, 19, 95, 0.231);
       transition: 1s ease-in-out;
@@ -318,6 +327,9 @@ h
       border: 3px solid #13021b16; box-shadow: 12px 10px 10px rgba(56, 19, 95, 0.3);
 
     }
+    #tittle-section-podcast{
+      border-left: 2px solid rgb(49, 13, 105); padding-left: 10px;
+    }
     #t{
       font-size: 4em; background-clip: text; color: transparent; background: linear-gradient(to right,rgb(97, 17, 172),rgba(132, 58, 216, 0.672),rgba(92, 0, 128, 0.672)); -webkit-background-clip: text;
       background-size: 200% 100%;
@@ -326,10 +338,12 @@ h
     .texto-podcasts-titulo{
       font-size: 3em; width: 85%;
       color: white; font-family: 'Roboto Mono', monospace;
+      border-left: 1px solid rgb(49, 13, 105);
+      padding:2em 0 0em 0.3em; margin:-0.43em 0 0.6em -0.246em; height: 7.25em;
     }
     .button-seeMore-podcasts{
       background: linear-gradient(to right,rgb(29, 5, 57),rgb(54, 15, 116)); color: white; padding: 10px 20px; text-align: center; max-width: 200px; border-radius:0  10px 10px 10px; overflow: hidden; margin-left: 0; width: 60vw;background-size: 400% 100%;
-      animation: texto 10s linear infinite;
+      animation: texto 10s linear infinite; margin: -3em 0 0 -0.885em;
     }
     .ver-mais-podcasts{
       color: white; height: 50px; padding: 1px; margin: 7px; display: flex; justify-content: start; align-items: center;  font-size: 1.5em; font-family: 'Roboto Mono', monospace; 
@@ -338,6 +352,9 @@ h
 }
 
 @media screen and (max-width: 1200px) {
+  .linhaRoxa{
+    position:absolute;margin-top: -40px; height: 17px; width: 100%;
+  }
   #form_pesquisa {
     width: 100vw;
     max-width: 80%;
@@ -378,8 +395,9 @@ h
   }
   .carousel {
     width: 55%;
-    height: 400px;
+    height: 500px;
     perspective: 300px;
+    top: -20px;
   }
   .carousel .carousel-item {
     width: 200px;
@@ -392,12 +410,15 @@ h
     border-top-left-radius: 20px;
   }
   .indicators {
-    top: 350px;
-    right: 10px;
+    top: 425px;
+    right: -20px; 
   }
+  
   .carousel .indicators .indicator-item {
-    height: 6px;
-    width: 6px;
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    left: -20px;
   }
   .carousel .indicators .indicator-item.active {
     background-color: #6c0583;
@@ -479,6 +500,9 @@ h
   }
 }
 @media (max-width: 1050px) {
+  .linhaRoxa{
+    position:absolute;margin-top: -20px; height: 17px; width: 100%;
+  }
   #form_pesquisa {
     top: 43px;
   }
@@ -512,6 +536,80 @@ h
   }
 }
 @media (max-width: 992px) {
+ 
+  /* NOTICIAS */
+#noticias{
+  
+  background-color: transparent;padding-top: 10vh; padding-bottom: 5vh;
+  background: linear-gradient(to right,rgb(0, 0, 0),rgb(0, 0, 4),rgb(9, 2, 37));
+  
+  .img-noticias{
+    height: 20em;width: 30em;
+  }
+  #tittle-section{
+    font-size: 4em; background-clip: text; color: transparent; background: linear-gradient(to right,rgb(97, 17, 172),rgba(132, 58, 216, 0.672),rgba(92, 0, 128, 0.672)); -webkit-background-clip: text;
+    background-size: 200% 100%;
+    animation: texto 10s ease-in-out infinite;
+    padding: 10px 5px;
+    border-left: 1px solid rgb(255, 255, 255);
+  }
+  .button-seeMore-noticias{
+    padding-left: 0; padding-bottom: 2vh;
+  }
+  .news-title {
+    font-size: 2.5em;
+    color: white;
+    width: 29vw;
+    font-family: 'Roboto Mono', monospace;
+    /* border-left: 1px solid rgb(43, 10, 89); */
+    border-left: 1px solid transparent; /* Tornar a borda esquerda transparente */
+    border-image: linear-gradient(to bottom, rgb(190, 184, 202),rgba(96, 38, 196, 0.755), rgba(97, 15, 190, 0.672),rgb(43, 10, 89)) 1;
+    border-image-slice: 1; /* Define a largura da borda afetada pelo gradiente */
+    padding-left: 10px;
+    margin-bottom: 0;
+    padding-bottom: 2vh;
+    padding-top: 20vh;
+    margin-top: -3.8vh;
+}
+
+.news-title {
+  font-size: 2em;
+  color: white;
+  width: 31vw;
+  border-image: linear-gradient(to bottom, rgb(190, 184, 202),rgba(96, 38, 196, 0.755), rgba(97, 15, 190, 0.672),rgb(43, 10, 89)) 1;
+  border-image-slice: 1;
+  padding-left: 10px;
+  margin-bottom: 0;
+  padding-bottom: 2vh;
+  padding-top: 150px;
+  margin-top: -3.8vh;
+}
+
+  .news-card{
+    max-width: 250px; background-color: #0b011d22; height: 340px; color: #ffffff; margin: 10px 2px; padding: 1px; border-radius: 10px;box-shadow: 4px 4px 6px rgba(63, 0, 118, 0.226); display: flex; flex-direction: column; align-items: start; text-align: center; justify-content: center; 
+  }
+  .align-mobile{
+    display: block;
+  }
+  .news-card img{
+    width: 100%; height: 24vh; object-fit: cover; border-radius: 10px 0px 0px 0px; margin:  0;
+  }
+  .news-content{
+    flex: 1; padding: 10px; text-align: start;
+  }
+  .news-content h3 {
+    font-size: 20px; margin: 0 0 10px; color: rgb(144, 22, 231);
+  }
+  .resumo-podcast{
+    font-size: 14px;color: rgba(177, 177, 177, 0.835); margin: 0 0 10px 0;
+  }
+  .inf-podcast{
+    display: flex; justify-content: space-between; width: 100%; padding: 10px; padding-bottom: 20px;
+  }
+  .autor-podcast{font-size: 12px; margin: 0; }
+  .data-podcast{font-size: 12px; margin: 0; color: rgb(255, 255, 255);}
+}
+
   #form_pesquisa {
     top: 60px;
   }
@@ -549,7 +647,126 @@ h
     }
   }
 }
-@media (max-width: 710px) {
+@media (max-width:790px){
+  #noticias{
+    .news-title {
+      width: 36vw;
+    }
+    .news-title {
+      padding-top: 120px;
+    }
+    .news-content h3 {
+      font-size: 18px;
+  }
+  .news-card{
+    max-width: 180px; background-color: #0b011d22; height: 50vh; color: #ffffff; margin: 10px 2px; padding: 1px; border-radius: 10px;box-shadow: 4px 4px 6px rgba(63, 0, 118, 0.226); 
+  }
+  .align-mobile{
+    display: flex;
+    justify-content: end;
+  }
+  .news-card img{
+    width: 100%; height: 20vh; object-fit: cover; border-radius: 10px 0px 0px 0px; margin:  0;
+  }
+  .news-content{
+    flex: 1; padding: 10px; text-align: start;
+  }
+  .news-content h3 {
+    font-size: 17px; margin: 0 0 10px; color: rgb(144, 22, 231);
+  }
+  .resumo-podcast{
+    font-size: 13px;color: rgba(177, 177, 177, 0.835); margin: 0 0 10px 0;
+  }
+  .inf-podcast{
+    display: flex; justify-content: space-between; width: 100%; padding: 5px; padding-bottom: 10px;
+  }
+  .autor-podcast{font-size: 10px; margin: 0; }
+  .data-podcast{font-size: 9px; margin: 0; color: rgb(255, 255, 255);}
+}
+  
+  }
+
+@media (max-width: 600px) {
+  /* NOTICIAS */
+#noticias{
+  
+  background-color: transparent;padding-top: 10vh; padding-bottom: 5vh;
+  background: linear-gradient(to right,rgb(0, 0, 0),rgb(0, 0, 4),rgb(9, 2, 37));
+  
+  .img-noticias{
+    height: 15em;width: 20em;
+  }
+  #tittle-section{
+    font-size: 3em; background-clip: text; color: transparent; background: linear-gradient(to right,rgb(97, 17, 172),rgba(132, 58, 216, 0.672),rgba(92, 0, 128, 0.672)); -webkit-background-clip: text;
+    background-size: 200% 100%;
+    animation: texto 10s ease-in-out infinite;
+    padding: 10px 5px;
+    border-left: 1px solid rgb(255, 255, 255);
+    height: 50px;
+    margin-left: 0px;
+  }
+  .button-seeMore-noticias{
+    padding-left: 0; padding-bottom: 2vh;
+  }
+  .news-title {
+    font-size: 1.5em;
+    color: white;
+    width: 31vw;
+    font-family: 'Roboto Mono', monospace;
+    /* border-left: 1px solid rgb(43, 10, 89); */
+    border-left: 1px solid transparent; /* Tornar a borda esquerda transparente */
+    border-image: linear-gradient(to bottom, rgb(190, 184, 202),rgba(96, 38, 196, 0.755), rgba(97, 15, 190, 0.672),rgb(43, 10, 89)) 1;
+    border-image-slice: 1; /* Define a largura da borda afetada pelo gradiente */
+    padding-left: 10px;
+    margin-bottom: 0;
+    padding-bottom: 2vh;
+    padding-top: 9;
+    margin-top: -3.8vh;
+}
+
+.news-button {
+    background: linear-gradient(to right, rgb(29, 5, 57), rgb(54, 15, 116));
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    max-width: 200px;
+    border-radius: 0 10px 10px 10px;
+    overflow: hidden;
+    margin-left: 0;
+    width: 50vw;
+    height: 8vh;
+    background-size: 400% 100%;
+    font-size: 1.5em;
+    font-family: 'Roboto Mono', monospace;
+    animation: texto 10s linear infinite;
+    border: none;
+}
+
+  .news-card{
+    max-width: 180px; background-color: #0b011d22; height: 50vh; color: #ffffff; margin: 10px 2px; padding: 1px; border-radius: 10px;box-shadow: 4px 4px 6px rgba(63, 0, 118, 0.226); 
+  }
+  .align-mobile{
+    display: flex;
+    justify-content: end;
+  }
+  .news-card img{
+    width: 100%; height: 20vh; object-fit: cover; border-radius: 10px 0px 0px 0px; margin:  0;
+  }
+  .news-content{
+    flex: 1; padding: 10px; text-align: start;
+  }
+  .news-content h3 {
+    font-size: 17px; margin: 0 0 10px; color: rgb(144, 22, 231);
+  }
+  .resumo-podcast{
+    font-size: 12px;color: rgba(177, 177, 177, 0.835); margin: 0 0 10px 0;
+  }
+  .inf-podcast{
+    display: flex; justify-content: space-between; width: 100%; padding: 5px; padding-bottom: 10px;
+  }
+  .autor-podcast{font-size: 10px; margin: 0; }
+  .data-podcast{font-size: 9px; margin: 0; color: rgb(255, 255, 255);}
+}
   #form_pesquisa {
     top: 5vh;
   }
@@ -799,6 +1016,81 @@ h
       font-size: 10px;
     }
   }
+  @media (max-width:600px){
+    #noticias{
+      .news-button {
+        padding: 1px 10px;
+        width: 30vw;
+        height: 6.5vh;
+        font-size: 1.2em;
+  
+    }
+      .news-card {
+      height: 230px;
+    }
+    .news-card img {
+      width: 100%;
+      height: 15vh;
+  }
+  .news-content{
+    padding-left: 2px;
+    padding-right: 1px;
+  }
+  .news-content h3 {
+    font-size: 14px;
+  }
+  .resumo-podcast {
+    font-size: 11px;
+  }
+
+  .autor-podcast{
+    font-size: 9px;
+  }
+  .data-podcast{
+    font-size: 8px;
+  }
+}
+}
+@media (max-width:510px){
+  #noticias{
+    .news-button {
+      padding: 1px 5px;
+      width: 30vw;
+      height: 6vh;
+      font-size: 1em;
+
+  }
+    .news-card {
+    height: 230px;
+  }
+  .news-card img {
+    width: 100%;
+    height: 100px;
+} 
+.news-content{
+  padding-left: 2px;
+  padding-right: 1px;
+}.news-content h3 {
+  font-size: 12px;
+}
+.resumo-podcast {
+  font-size: 9px;
+}
+.inf-podcast{
+  padding: 1px;
+  padding-bottom: 4px;
+  
+}
+.autor-podcast{
+  font-size: 8px;
+}
+.data-podcast{
+  font-size: 7px;
+  padding-top: 1px;
+}
+}
+}
+
   @media (max-width: 450px) {
     #form_pesquisa {
       top: 10vh;
@@ -1081,6 +1373,53 @@ h
     .termos {
       font-size: 10px;
     }
+  }
+  @media (max-width:400px){
+    #noticias{
+      .row .col.s4 {
+        width: 45.3333333333%;
+
+    }
+    .news-button {
+      padding: 1px 5px;
+      width: 30vw;
+      height: 4vh;
+      font-size: 1em;
+
+  }
+    #tittle-section {
+      font-size: 2.5em;
+      height: 50px;
+    }
+      .news-card {
+      height: 230px;
+    }
+    .news-card img {
+      width: 100%;
+      height: 100px;
+  } 
+  .news-content{
+    padding-left: 1px;
+    padding-right: 1px;
+  }.news-content h3 {
+    font-size: 12px;
+  }
+  .resumo-podcast {
+    font-size: 9px;
+  }
+  .inf-podcast{
+    padding: 1px;
+    padding-bottom: 4px;
+    
+  }
+  .autor-podcast{
+    font-size: 8px;
+  }
+  .data-podcast{
+    font-size: 7px;
+    padding-top: 1px;
+  }
+  }
   }
   @media (max-width: 395px) {
  }
@@ -1367,7 +1706,7 @@ h
       }
     }
     /* LAsr news */
-    .last-news {
+    /* .last-news {
       #tittle-section {
         color: white;
         font-size: 1.5rem;
@@ -1378,8 +1717,8 @@ h
         padding-left: 0.3em;
       }
       .card {
-        width: 100%; /* Defina a largura desejada para dois cards na mesma linha */
-        margin: 1%; /* Adicione margem para espaçamento entre os cards */
+        width: 100%; 
+        margin: 1%; 
       }
       .card-content {
         padding: 0;
@@ -1388,7 +1727,7 @@ h
         background: rgb(6, 6, 18);
       }
       .card-title {
-        font-size: 0.9rem; /* Tamanho do título do card */
+        font-size: 0.9rem; 
         margin: 0;
         background: rgb(6, 6, 18);
         border-radius: 0;
@@ -1413,25 +1752,6 @@ h
     display: flex;
     align-items: center;
   }
- 
-  .page-footer {
-    line-height: 1.1;
-  }
-  .inf-footer {
-    font-size: 20px;
-  }
-  .text-footer {
-    font-size: 0.6em;
-  }
-  .quem-somos {
-    font-size: 0.7em;
-    line-height: 1em;
-    margin-top: 2.1em;
-  }
-  .copyright {
-    font-size: 10px;
-  }
-  .termos {
-    font-size: 10px;
-  }
+  */
 
+  }
