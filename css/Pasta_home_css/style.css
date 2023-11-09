@@ -63,7 +63,7 @@ background: linear-gradient(to bottom,black,blue);
 
 /* Estilos para a área de pesquisa */
 .search-area {
-  background-color: rgba(5, 4, 4, 0.972); height:70px;padding-bottom:20px; min-height: 45px;top: 120px; display: flex; align-items: center; position: fixed; color:white; z-index: 9999;
+  background-color: rgb(1 1 1 / 67%); height:70px;padding-bottom:20px; min-height: 45px;top: 120px; display: flex; align-items: center; position: fixed; color:white; z-index: 9999;
   right: 0;
   justify-content: end;
 }
@@ -278,4 +278,18 @@ a:focus {
   display: flex;
   align-items: center;
   
+}
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
+  color: #8c40ff;
+  margin-right: 24px;
+  -webkit-transition: color .3s ease;
+  transition: color .3s ease;
+  text-transform: uppercase;
+}
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating):hover {
+  color: rgb(36, 16, 125);
+}
+.card .card-action {
+  background-color: rgb(255, 255, 255);
+  color: blue;
 }

@@ -23,7 +23,11 @@
         font-size:  200px;
         color: transparent;
     }
+ 
 }}
+.resumo-podcast{
+  margin-left: 20px;
+}
 @media (max-width:992px){
     /* PODCAST */
   #podcasts{

@@ -1,193 +1,464 @@
 <!DOCTYPE html>
+
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style></style>
-    <title>Tec Noticias</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Links para os estilos (CSS) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    integrity="sha512-UJfAaOlIRtdR+0P6C3KUoTDAxVTuy3lnSXLyLKlHYJlcSU8Juge/mjeaxDNMlw9LgeIotgz5FP8eUQPhX1q10A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="../css/Pasta_home_css/libra.css">
+  <link rel="stylesheet" href="../css/Pasta_eventos_css/evento.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="../css/Pasta_home_css/style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/Pasta_home_css/styleMediaView-l.css">
+  <link rel="icon" href="../img/favicon.png" type="image/x-icon">
+  <title>TEC Notícias - cultura</title>
 </head>
 
-<body>
-    <header>
+<body class="tec-noticias">
+  <header class="row header ">
 
-        <nav>
-            <div>
-                <img src="img/logo.png" alt="logo" />
-                <a href="#"><i>MENU</i></a>
-                <ul>
-                    <li><a href="index.html">INICIO</a></li>
-                    <li><a href="src/noticias.html">NOTICIAS</a></li>
-                    <li><a href="src/podcasts.html">PODCASTS</a></li>
-                    <li><a href="src/eventos.html">EVENTOS</a></li>
-                    <li><a href="src/cultura.html">CULTURA</a></li>
-                    <li>
-                        <form>
-                            <div>
-                                <input type="text" placeholder="Digite sua pesquisa...">
-                                <button type="button"><i>close</i></button>
-                                <button type="button">Buscar</button>
-                            </div>
-                            <button type="button"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="40"
-                                    viewBox="0,0,256,256">
-                                    <!-- SVG path data here -->
-                                </svg></button>
-                        </form>
-                    </li>
-                    <li><a href="collapsible.html"><button>CADASTRAR</button></a></li>
-                    <li><a href="login.html"><button>ENTRAR</button></a></li>
+    <nav class="nav-extended cor-nav ">
+      <div class="nav-wrapper" data-aos="fade-down" data-aos-duration="500">
+        <img class="brand-logo left" src="../img/Pasta_home_img/TN.png" alt="logo" data-aos="fade-rght"
+          data-aos-duration="1100"/> 
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger right hide-on-med-and-up"><i class="material-icons button-menu-mobile">menu</i></a>
+        <ul id="nav-mobile" class="right ">
+          <li class="links-nav hide-on-med-and-down"><a href="../index.html" class="active">INICIO</a></li>
+          <li class="links-nav hide-on-med-and-down"><a href="noticias.html">NOTICIAS</a></li>
+          <li class="links-nav hide-on-med-and-down"><a href="podcasts.html">PODCASTS</a></li>
+          <li class="links-nav hide-on-med-and-down"><a href="eventos.html">EVENTOS</a></li>
+          <li class="links-nav hide-on-med-and-down"><a href="cultura.html" style="color: rgb(255, 255, 255); background-color: rgb(30, 4, 62); border-radius: 10px;">CULTURA</a></li>
+          <!-- formulario para pesquisar -->
+          <li>
+            <button type="button" id="search-button" ><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+              width="40"  viewBox="0,0,256,256">
+              <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                style="mix-blend-mode: normal">
+                <g transform="scale(5.12,5.12)">
+                  <path
+                    d="M21,3c-9.37891,0 -17,7.62109 -17,17c0,9.37891 7.62109,17 17,17c3.71094,0 7.14063,-1.19531 9.9375,-3.21875l13.15625,13.125l2.8125,-2.8125l-13,-13.03125c2.55469,-2.97656 4.09375,-6.83984 4.09375,-11.0625c0,-9.37891 -7.62109,-17 -17,-17zM21,5c8.29688,0 15,6.70313 15,15c0,8.29688 -6.70312,15 -15,15c-8.29687,0 -15,-6.70312 -15,-15c0,-8.29687 6.70313,-15 15,-15z">
+                  </path>
+                </g>
+              </g>
+            </svg></button>
+          
+          </li> 
+          <li class="btns"><a href="collapsible.html"><button class="btn-cria ">CADASTRAR</button></a></li>
+          <li class="right"><a href="src/login.html"><button class="btn-login">ENTRAR</button></a></li>
 
-                </ul>
+        </ul>
+      </div>
+      
+ 
+      
+
+      <div class=" nav-two hide-on-large-only">
+        <div class="row">
+          <div class="col s12">
+            <ul class="tabs tabs-transparent">
+              <li class="tab col s3"><a  href="../index.html" target="_self" >INICIO</a></li>
+              <li class="tab col s3"><a href="noticias.html" target="_self" >NOTÍCIAS</a></li>
+              <li class="tab col s3"><a href="eventos.html" target="_self" >EVENTOS</a></li>
+              <li class="tab col s3 "><a class="active" href="podcasts.html" target="_self" >PODCASTS</a></li>
+              <li class="tab col s3"><a href="cultura.html" target="_self" >CULTURA</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+    
+    <ul class="sidenav left-align" id="mobile-demo" style="width: 60%; top: 0;">
+      <li style="height: 13%; padding: 0; margin: 0; border-bottom: 1px solid white; " class="links-nav"><a href="../index.html" ><img style="width: 50%; margin-left: 20%; " src="../img/Pasta_home_img/TN.png" alt=""></a></li>
+      <li class="links-nav"><a href="../index.html" >INICIO</a></li>
+      <li class="links-nav"><a href="noticias.html">NOTICIAS</a></li>
+      <li class="links-nav"><a class="active" href="podcasts.html">PODCASTS</a></li>
+      <li class="links-nav"><a href="eventos.html">EVENTOS</a></li>
+      <li class="links-nav"><a href="cultura.html">CULTURA</a></li>
+      <li class="links-nav"><a href="#">PERFIL</a></li>
+      <li class="links-nav"><a href="#">CONFIGURAÇÔES</a></li>
+      <li class="links-nav"><a href="#">SOBRE</a></li>
+    </ul>
+  </nav>
+  
+    <div class="hide search-area s12 m6 l6 xl6" >
+      <!-- Conteúdo atual -->
+    
+      <!-- Formulário de pesquisa que se sobrepõe -->
+      <form action="" id="form_pesquisa">
+        <div class="input-field" >
+          <input placeholder="Digite sua pesquisa..." type="text" id="autocomplete-input" class="autocomplete">
+          <!-- <label for="autocomplete-input" style="color: #000; margin: 0;">Pesquise</label> -->
+        </div>
+        <button type="button" id="cancel-button" class="btn">
+          <i class="material-icons">close</i>
+        </button>
+        <button type="button" id="search-in-button" class="btn">
+          <i class="material-icons">search</i>
+        </button>
+      </form>
+    </div>   
+  </header>
+<section>
+  <main>
+
+    <section>
+        <div class="banner">
+            <div class="banner-conteudo">
+                <h2>CULTURA</h2>
+                <p>Assista os melhores podcast sobre a area de tecnologia</p>
             </div>
-        </nav>
-    </header>
+        </div>
+    </section>
+    <section> 
+      <a  id="librasButton" class="librasButton btn-floating btn-large purple">
+      <i class="material-icons">accessibility</i>
+    </a>    
+        <div class="topButton">
 
-    <main>
+          <a style="top: 90%;" id="librasButton" class=" btn-floating btn-large blue">
+            <i class=" material-icons">keyboard_arrow_up</i>
+          </a>
+        </div>
+  </section>
+    <section>
+      
+        <!--Começo dos Eventos-->
+        <div class="eventos">
+            <div class="filtrador">
+                <label for="filtro">FILTRO:</label>
+                <select name="filtro" id="filtro" style="top:0;">
+                    <option disabled selected hidden value="" >Selecione</option>
+                    <option value="cursos">Cursos</option>
+                    <option value="hackatons">Hackatons</option>
+                    <option value="bootcamps">Bootcamp</option>
+                    <option value="online">Online</option>
+                    <option value="presencial">Presencial</option> <!-- Corrected the value attribute -->
+                    <option value="gratuito">Gratuito</option> <!-- Corrected the value attribute -->
+                    <option value="privado">Privado</option>
+                </select>
+            </div>
 
-        <section>
-            <div>
+            <!--Card de Evento-->
+            <div class="card-evento">
+                <div class="imagem-evento">
+                    <img src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="FOTO QUE REPRESENTA O EVENTO">
+                </div>
                 <div>
-                    <div>
-                        <h2>CULTURA</h2>
+                    <div class="texto-evento">
+                        <h1 class="tiitle-eventos">Confira os Desafios de TI Para 2023</h1>
+                        <p>Para você que deseja crescer no mercado da tecnologia da informação, o primeiro passo é conhecer bem qual é o rumo que a TI está tomando. E nesse vídeo, você vai descobrir quais são os principais desafios para o próximo ano!</p>
+                        <p><strong>Postado:</strong> 16 de dez. de 2022</p>
+                        <div class="filtros-evento">
+                            <div class="filtro-evento">Bootcamp</div>
+                            <div class="filtro-evento">Gratuito</div>
+                            <div class="filtro-evento">Online</div>
+                        </div>
                     </div>
-                    <div>
-                        <p>Fique por dentro de tudo sobre a cultura tech no Brasil.</p>
-                    </div>
-                </div>
-                <div>
-                    <label for="filtro">FILTRO:</label>
-                    <select name="filtro" id="filtro">
-                        <option disabled selected hidden value="">Selecione</option>
-                        <option value="recentes">Recentes</option>
-                        <option value="populares">Populares</option>
-                        <option value="entrevistas">Jogos</option>
-                        <option value="analises">hardwares</option> <!-- Corrected the value attribute -->
-                    </select>
-                </div>
-                <div>
-                    <div>
-                        <img style="height: 300px; width: 570px;" src="img/cultura-da-inovacao.jpg" alt="" srcset="">
-                    </div>
-                    <div>
-                        <h1>Cultura da Tecnologia: Explorando o Mundo da Inovação</h1>
-                        <p>Para entender plenamente a cultura da tecnologia e sua influência na inovação e sociedade, é
-                            crucial estar atualizado com as últimas tendências. Neste vídeo, mergulhe no fascinante
-                            mundo da cultura da tecnologia e descubra o que está por vir no próximo ano!</p>
-                        </p>
-                        <span>Estreou em 19 de dez. de 3</span>
-                        <div><button><a href="https://youtu.be/3MdGMnkxHSQ?si=NSwJRK4XHMi-dAVD">Assistir
-                                    agora</a></button></div>
-                    </div>
-                </div>
-                <!-- outro evento -->
-                <hr>
-                <div>
-                    <img src="img/img-artigo-cultura-de-inovação.png" alt="Imagem de capa" width="560" height="315">
-                </div>
-                <div>
-                    <h1>Explorando a Cultura Tecnológica</h1>
-                    <p>A cultura tecnológica é uma parte essencial do nosso mundo em constante evolução. Ela molda nossa
-                        sociedade, influencia nossa maneira de viver e impulsiona inovações surpreendentes. Neste vídeo,
-                        mergulhe fundo na cultura tecnológica e descubra como ela está moldando o nosso futuro.</p>
-                    <span>Data de publicação: 8 de outubro de 2023</span>
-                    <div><button><a href="https://www.youtube.com/live/ex12hW8cqRE?si=al4OTa0HRaqVDgS7">ASSISTIR
-                                AGORA</a></button></div>
-                </div>
-                <hr>
-                <!-- outro evento -->
-                <div>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/EAoAEcACMk0?si=U2Rnhf3oi-qdlD7x"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
 
                 </div>
+            </div>
+            <!-- outro evento -->
+            <hr>       
+            <!--Card de Evento-->
+            <div class="card-evento">
+                <div class="imagem-evento">
+                    <img src="https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDN8fHRlY2hub2xvZ3l8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="FOTO QUE REPRESENTA O EVENTO">
+                </div>
                 <div>
-                    <h1>Descobrindo a Inovação na Tecnologia</h1>
-                    <p>Neste vídeo, mergulhe no emocionante mundo da inovação tecnológica. Explore as últimas
-                        tendências, descubra as tecnologias revolucionárias e saiba como elas estão moldando o futuro.
-                        Não perca esta oportunidade de se manter atualizado com as mais recentes novidades tecnológicas.
-                    </p>
-                    <span>Data de publicação: 20 de setembro de 2023</span>
-                    <div><button><a href="https://youtu.be/EAoAEcACMk0?si=U2Rnhf3oi-qdlD7x">ASSISTIR AGORA</a></button>
+                    <div class="texto-evento">
+                        <h1 class="tiitle-eventos">Desafio de React: Aprenda, Desenvolva, Vença!</h1>
+                        <p>React é uma biblioteca JavaScript popular para construção de interfaces de usuário. Uma das melhores maneiras de aprimorar suas habilidade...</p>
+                        <p><strong>Postado:</strong> 8 outubro de 2023</p>
+                        <div class="filtros-evento">
+                            <div class="filtro-evento">Curso</div>
+                            <div class="filtro-evento">Privado</div>
+                            <div class="filtro-evento">Presencial</div>
+                        </div>
                     </div>
+
                 </div>
             </div>
             <hr>
+            <!--Card de Evento-->
+            <div class="card-evento">
+                <div class="imagem-evento">
+                    <img src="https://images.unsplash.com/photo-1455165814004-1126a7199f9b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTB8fHRlY2hub2xvZ3l8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="FOTO QUE REPRESENTA O EVENTO">
+                </div>
+                <div>
+                    <div class="texto-evento">
+                        <h1 class="tiitle-eventos">Aula Inaugural - Santander Bootcamp 2023</h1>
+                        <p>A nova edição do Santander Bootcamp conta com 6 trilhas e 75 mil bolsas de estudo para serem distribuídas a pessoas de todo o Brasil....</p>
+                        <p><strong>Postado:</strong> 17 de ago. de 2023</p>
+                        <div class="filtros-evento">
+                            <div class="filtro-evento">Hackaton</div>
+                            <div class="filtro-evento">Gratuito</div>
+                            <div class="filtro-evento">Online</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!-- ADD MAIS BLOCOS -->
+            <div class="btn-eventos"><button>Ver mais eventos</button></div>
 
-            <!-- ADD MAIS BLOCOS -->
-            </div>
-            <div>
-                <div><button><a href="Ver mais">veja mais</a></button></div>
-            </div>
-        </section>
+        </div>
         <section>
-            <div><a href="#"><img src="" alt="anuncio">Publicidade</a></div>
+          <div class="parallax-container" style="height:30vh;">
+            <div class="parallax" ><img
+                src="https://respostas.sebrae.com.br/wp-content/uploads/2020/06/tecnology-806x440.jpg"
+                alt=""></div>
+          </div>
         </section>
-    </main>
+        
+    </section>
 
-    <footer>
-        <div>
-            <div>
-                <div>
-                    <h5>Quem somos?</h5>
-                    <p>Somos a Tec Notícias, uma empresa de notícias especializada em tecnologia,
-                        trazendo as últimas novidades e análises do mundo da tecnologia para você.</p>
+    
+</main>
+</section>
+  <!--
+  <section>
+    <div class="eventos" data-aos="fade-up-right" data-aos-duration="1000" data-aos-offset="200"
+      data-aos-easing="ease-in-sine">
+      <div class="row" id="tittle-lastNews">
+        <h2>Eventos</h2>
+      </div>
+      <div class="row evento">
+        <a
+          href="https://g1.globo.com/ba/bahia/blogdoemprego/noticia/2023/10/11/cursos-gratuito-de-tecnologia-para-mulheres-tem-vagas-abertas-em-salvador-veja-como-se-inscrever.ghtml">
+          <div class="col s12 m12 l12 xl12">
+            <div class="card" style="background-color: transparent;">
+              <div class="card-content">
+                <div class="row remove-align">
+                  <div class="col s12 m4 l3">
+                    <div class="card-image">
+                      <img class="responsive-img"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF-Eb3ZXWZWwIriaRYWImO0ii3CtG1Fr5k9A&usqp=CAU">
+                    </div>
+                  </div>
+                  <div class="col s12 m8 l9">
+                    <h2 class="card-title"><strong>Curso gratuito de tecnologia para mulheres tem vagas abertas em
+                        Salvador; veja como se inscrever</strong></h2>
+                    <p class="resumo-evento">Evento será realizado no Teatro SESI, no bairro do Rio Vermelho, no dia 24
+                      de outubro. Vagas são limitadas.</p>
+                    <div class="row">
+                      <div class="col s6">
+                        <p class="autor-evento">Por <strong>TEC Notícias</strong> </p>
+                      </div>
+                      <div class="col s6">
+                        <p class="data-evento">2 h atrás</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div>
-                    <h5>Sobre</h5>
-                    <ul>
-                        <li><a href="#!">Sobre a Tec Notícias</a></li>
-                        <li><a href="#!">Política de Privacidade</a></li>
-                        <li><a href="#!">Contato de Suporte</a></li>
-                        <li><a href="#!">Perfil do usuário</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h5>Tecnologias</h5>
-                    <ul>
-                        <li><a href="#!">JavaScript</a></li>
-                        <li><a href="#!">Inteligência Artificial</a></li>
-                        <li><a href="#!">Ciência de Dados</a></li>
-                        <li><a href="#!">Inovações em TI</a></li>
-                    </ul>
-                </div>
+              </div>
             </div>
+          </div>
+        </a>
+      </div>
+      
+      <div class="row evento">
+        <a
+          href="https://www.em.com.br/app/noticia/internacional/2023/10/10/interna_internacional,1574660/a-tecnologia-israelense-contra-os-arsenais-heterogeneos-do-hamas-e-do-hezbo.shtml">
+          <div class="col s12 m12 l12 xl12">
+            <div class="card" style="background-color: transparent;">
+              <div class="card-content">
+                <div class="row remove-align">
+                  <div class="col s12 m4 l3">
+                    <div class="card-image">
+                      <img class="responsive-img"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF-Eb3ZXWZWwIriaRYWImO0ii3CtG1Fr5k9A&usqp=CAU">
+                    </div>
+                  </div>
+                  <div class="col s12 m8 l9">
+                    <h2 class="card-title"><strong>A tecnologia israelense contra os arsenais heterogêneos do Hamas e do
+                        Hezbollah.</strong></h2>
+                    <p class="resumo-evento">Evento será realizado no Teatro SESI, no bairro do Rio Vermelho, no dia 24
+                      de outubro. Vagas são limitadas De um lado, Israel e seu aliado americano. Do outro, o Hamas,
+                      apoiado sobretudo pelo Hezbollah.A guerra em Israel é claramente...</p>
+                    <div class="row">
+                      <div class="col s6">
+                        <p class="autor-evento">Por <strong>TEC Notícias</strong> </p>
+                      </div>
+                      <div class="col s6">
+                        <p class="data-evento">2 h atrás</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="row evento">
+        <a
+          href="https://g1.globo.com/ba/bahia/blogdoemprego/noticia/2023/10/11/cursos-gratuito-de-tecnologia-para-mulheres-tem-vagas-abertas-em-salvador-veja-como-se-inscrever.ghtml">
+          <div class="col s12 m12 l12 xl12">
+            <div class="card" style="background-color: transparent;">
+              <div class="card-content">
+                <div class="row remove-align">
+                  <div class="col s12 m4 l3">
+                    <div class="card-image">
+                      <img class="responsive-img"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF-Eb3ZXWZWwIriaRYWImO0ii3CtG1Fr5k9A&usqp=CAU">
+                    </div>
+                  </div>
+                  <div class="col s12 m8 l9">
+                    <h2 class="card-title"><strong>Tecnologia de filtragem e empilhamento a seco transforma a indústria
+                        mineral.</strong></h2>
+                    <p class="resumo-evento">A indústria mineral sul-mato-grossense está passando por uma revolução
+                      silenciosa, mas poderosa, que promete transformar a forma como o setor lida co.</p>
+                    <div class="row">
+                      <div class="col s6">
+                        <p class="autor-evento">Por <strong>TEC Notícias</strong> </p>
+                      </div>
+                      <div class="col s6">
+                        <p class="data-evento">2 h atrás</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
 
-            <div>
-                <div>
-                    <img style="width: 50px; height: 50px;"
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg"
-                        alt="Facebook">
-                </div>
-                <div>
-                    <img style="width: 50px; height: 50px;"
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/twitter/twitter-original.svg"
-                        alt="Twitter">
-                </div>
-                <div>
-                    <img style="width: 50px; height: 50px;"
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
-                        alt="LinkedIn">
-                </div>
-                <div>
-                    <img style="width: 50px; height: 50px;"
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-                        style="background-color: rgb(255, 255, 255);border-radius: 100%;" />
-                </div>
-            </div>
+
+
+
+      <div class="row center button-seeMore">
+        <div class="col xl12"><a href="./src/eventos.html">Ver mais</a></div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+ -->
+  <!-- FOOTER -->
+  <footer class="page-footer">
+    <div class="data-aos" data-aos="fade-up" data-aos-duration="1000">
+      <div class="row center inf-footer">
+        <div class="col xl4 m4 left-align">
+          <h5 class="blue-text text-lighten-6 inf-footer">Quem somos?</h5>
+          <p class="grey-text text-footer">Somos a Tec Notícias, uma empresa de notícias especializada em tecnologia,
+            trazendo as últimas novidades e análises do mundo da tecnologia para você.</p>
         </div>
-        <div>
-            <div>
-                <span> © 2018 Tec Notícias - Todos os Direitos Reservados
-                    <a href="#!">Termos de Serviço</a>
-                </span>
-
-            </div>
+        <div class="col xl4 m5">
+          <h5 class="blue-text text-lighten-6 inf-footer">Sobre</h5>
+          <ul>
+            <li><a class="grey-text text-footer" href="#!">Sobre a Tec Notícias</a></li>
+            <li><a class="grey-text text-footer" href="#!">Política de Privacidade</a></li>
+            <li><a class="grey-text text-footer" href="#!">Contato de Suporte</a></li>
+            <li><a class="grey-text text-footer" href="#!">Perfil do usuário</a></li>
+          </ul>
         </div>
-    </footer>
-    <script>
-    </script>
+        <div class="col xl4 m3 right-align">
+          <h5 class="blue-text text-lighten-6 inf-footer">Tecnologias</h5>
+          <ul>
+            <li><a class="grey-text text-footer" href="#!">JavaScript</a></li>
+            <li><a class="grey-text text-footer" href="#!">Inteligência Artificial</a></li>
+            <li><a class="grey-text text-footer" href="#!">Ciência de Dados</a></li>
+            <li><a class="grey-text text-footer" href="#!">Inovações em TI</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- Ícones de redes sociais coloridos do Google Material Icons -->
+      <div class="row center-align pt2 icons-footer">
+        <div class="col s3">
+          <img class="responsive-img"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg" alt="Facebook">
+        </div>
+        <div class="col s3">
+          <img class="responsive-img"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/twitter/twitter-original.svg" alt="Twitter">
+        </div>
+        <div class="col s3">
+          <img class="responsive-img"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn">
+        </div>
+        <div class="col s3">
+          <img class="responsive-img"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+            style="background-color: rgb(255, 255, 255);border-radius: 100%;" />
+        </div>
+      </div>
+      <!-- Adicionar uma linha -->
+    </div>
+    <div class="footer-copyright inf-footer">
+      <span class="copyright">© 2018 Tec Notícias - Todos os Direitos Reservados</span>
+
+      <a class="grey-text text-lighten-4 right" href="#!">Termos de Serviço</a>
+    </div>
+  </footer>
+
+
+
+
+  <!-- Scripts JavaScript para texto animado -->
+  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src="./script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="../js/Pasta_home_js/script.js"></script>
+  <script src="../js/Pasta_home_js/libra.js"></script>
+
+  <!-- Scripts JavaScript para Materialize CSS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"
+    integrity="sha512-NiWqa2rceHnN3Z5j6mSAvbwwg3tiwVNxiAQaaSMSXnRRDh5C2mk/+sKQRw8qjV1vN4nf8iK2a0b048PnHbyx+Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- Script para animação de entrada (AOS) -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+  <script>
+    // Inicialização da animação de entrada com AOS
+    AOS.init();
+
+    // materialize 
+    M.AutoInit();
+
+    // Configuração do carousel
+    $(document).ready(function () {
+      $('.carousel').carousel({
+        indicators: true
+      });
+      setInterval(function () {
+        $('.carousel').carousel('next')
+      }, 5000)
+    });
+    // Parallax
+
+    $(document).ready(function () {
+      $('.parallax').parallax();
+    });
+    $(document).ready(function(){
+  $('.sidenav').sidenav({ edge: 'left' });
+}); 
+$(document).ready(function(){
+    $('input.autocomplete').autocomplete({
+      data: {
+        "notícias": null,
+        "podcasts": null,
+        "tecnologia": null,
+        "eventos": './src/eventos.html'
+      },
+    });
+  });
+
+
+  </script>
+</body>
 </body>
 
 </html>

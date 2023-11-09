@@ -60,7 +60,7 @@ header, footer{
 .eventos{
     padding-left: 60px;
     padding-top: 30px;
-    background-color: azure;
+    background-color: rgb(1, 1, 11);
 }
 
 .card-evento{
@@ -96,7 +96,12 @@ header, footer{
 .texto-evento h1, .texto-evento p{
     padding-bottom: 10px;
 }
-
+.texto-evento p {
+    font-size: 17px;
+    font-weight: lighter;
+    line-height: 24px;
+    color: white;
+}
 .tiitle-eventos{
     background-image: linear-gradient(to bottom, #28156d , #2B26BF );
    font-size: 2.2em;
