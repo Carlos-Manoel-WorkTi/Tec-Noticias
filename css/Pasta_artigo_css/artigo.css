@@ -1,0 +1,80 @@
+.container-artigo{
+    color: rgb(0, 0, 0);
+    margin-top: 0px;
+    background-color: white;
+}
+.titulo-artigo{
+    color: rgb(0, 0, 0);
+    font-size: 2.7em;
+    margin-top: 40px;
+}
+/* .autor-artigo{
+
+}
+.data-artigo{
+
+} */
+
+.artigo{
+    background-color: white;
+}
+.img-artigo img{
+    width: 98%;
+    height: 400px;
+}
+.acessibilidade{
+    margin-top: 20px;
+    padding: 0;
+    background:linear-gradient(to right,rgb(1, 1, 11),rgb(9, 2, 37));
+    height:1200px;
+    
+}
+.audio{
+    margin-top: 140px;
+    position: fixed;
+}
+.adsAll{
+    background-color: white;
+    
+}
+.ads1 {
+    width: 90%;
+    max-width: 400px; /* Define uma largura máxima para garantir responsividade */
+    margin: 40px 0; /* Centraliza a publicidade na tela */
+    border: 1px solid #ddd; /* Cor da borda */
+    border-radius: 8px; /* Borda arredondada */
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 10px;
+    background-color: white;
+  }
+  
+  
+  .ads1 img {
+    width: 100%;
+    height: 150px;
+    display: block;
+  }
+  
+  .ads1 span {
+    display: block;
+    background-color: #f4f4f4; /* Cor de fundo para o texto 'Publicidade' */
+    color: rgb(80, 23, 118); /* Cor do texto */
+    padding: 1px;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .icon-rede{
+ width: 40px;
+ height: 40px;
+ margin-top: 23px;
+  }
+  .redes{
+    display: flex;
+    justify-content: space-around;
+  }
+  .select-wrapper .caret {
+
+    fill: rgba(253, 253, 253, 0.87);
+}

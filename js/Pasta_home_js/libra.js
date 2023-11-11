@@ -5,8 +5,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   librasButton.addEventListener("click", function () {
     if (!cardVisible) {
-      createCard(); // Chama a função para criar o card
-      cardVisible = true; // Define o estado como visível
+      // createCard(); // Chama a função para criar o card
+      // cardVisible = true; // Define o estado como visível
+      
     }
   });
 
