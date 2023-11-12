@@ -1,34 +1,40 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const librasButton = document.getElementById("librasButton");
+  const librasButton = document.querySelector(".option-libra")
   const topButton = document.querySelector(".topButton");
+  const campo_tema = document.querySelector(".theme")
+  const font_size = document.querySelector(".size-font")
+  
   let cardVisible = false; // Variável de estado para controlar a visibilidade do card
 
   librasButton.addEventListener("click", function () {
     if (!cardVisible) {
-      // createCard(); // Chama a função para criar o card
-      // cardVisible = true; // Define o estado como visível
+      librasButton.classList.toggle("hide")
+     campo_tema.classList.toggle("hide")
+     font_size.classList.toggle("hide")
+      createCard(); // Chama a função para criar o card
+      cardVisible = true; // Define o estado como visível
       
     }
   });
 
   function createCard() {
     // Oculta o botão de Libras
-    librasButton.style.display = "none";
-    topButton.style.left = "5px";
+    // librasButton.style.display = "none";
+    // topButton.style.left = "5px";
 
     // Crie a div do card
     const cardDiv = document.createElement("div");
     cardDiv.id = "cardDiv";
     cardDiv.classList.add("card", "white");
     cardDiv.style.position = "fixed";
-    cardDiv.style.bottom = "20px";
-    cardDiv.style.right = "20px";
+    cardDiv.style.bottom = "60px";
+    cardDiv.style.right = "70px";
     cardDiv.style.zIndex = "1000";
     cardDiv.style.minWidth = "200px";
 
     // Conteúdo do card
     cardDiv.innerHTML = `
-      <div class="card-content" style="position: relative;">
+      <div class="card-content " style="position: relative;">
         <a id="feedbackButton" class="btn-floating btn-small waves-effect waves-light green right" style="position: absolute; top: 0; right: 40px;">
           <i class="material-icons">feedback</i>
         </a>
@@ -57,6 +63,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Adicione um evento de clique para fechar o card
     closeButton.addEventListener("click", function () {
+      librasButton.classList.toggle("hide")
+      campo_tema.classList.toggle("hide")
+      font_size.classList.toggle("hide")
       topButton.style.left = "";
       // Remove o card
       document.body.removeChild(cardDiv);

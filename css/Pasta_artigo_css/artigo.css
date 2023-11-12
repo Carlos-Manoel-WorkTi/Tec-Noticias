@@ -14,28 +14,81 @@
 .data-artigo{
 
 } */
-
+@keyframes slidein {
+  from {
+      transform: translateX(100%);
+  }
+  to {
+      transform: translateX(0%);
+  }
+}
+@keyframes slideout {
+  from {
+      transform: translateX(0%);
+  }
+  to {
+      transform: translateX(100%);
+  }
+}
+.slide-efect {
+  transition: 3s ease;
+  animation: slidein 4s ease; /* Ajuste o nome da animação aqui */
+}
+.slide-efect-out {
+  transition: 3s ease;
+  animation: slideout 4s ease; /* Ajuste o nome da animação aqui */
+}
 .artigo{
     background-color: white;
-}
-.img-artigo img{
-    width: 98%;
-    height: 400px;
 }
 .acessibilidade{
     margin-top: 20px;
     padding: 0;
-    background:linear-gradient(to right,rgb(1, 1, 11),rgb(9, 2, 37));
+    /* background:linear-gradient(to right,rgb(1, 1, 11),rgb(9, 2, 37)); */
+    background-color: rgb(254, 254, 254);
     height:1200px;
-    
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease; /* Adiciona uma transição suave à opacidade */
+    animation: slidein 0.2s linear;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-left : 1px solid rgb(255, 255, 255);
+}
+.acessibilidade.slide-efect {
+  opacity: 1;
+  visibility: visible;
+}
+.theme a{
+  color: white; position: fixed;margin: 310px 0 0 10px; background-color: transparent; padding: 5px 15px; width: 21%; border-radius: 10px; border: 2px solid rgb(48, 19, 123);  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+label {
+  font-size: .9rem;
+  color: #030101;
+}
+.option-libra a{
+  color: rgb(8, 7, 7); position: fixed;margin: 230px 0 0 10px; background-color: transparent; padding: 20px; width: 21%; border-radius: 10px;border: 2px solid rgb(48, 19, 123);  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  font-size: 1.2em;
+}
+/* .size-font{} */
+.img-artigo img{
+    width: 98%;
+    height: 400px;
 }
 .audio{
     margin-top: 140px;
     position: fixed;
+    background-color:rgb(164, 164, 212);
+    padding-top: 50px;
+ 
 }
+audio {
+  display: inline-block;
+  margin: 10px;
+}
+
 .adsAll{
-    background-color: white;
-    
+    /* background-color: white; */
+    background-color: black;
+    background-color: transparent;
 }
 .ads1 {
     width: 90%;
@@ -47,6 +100,7 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
     padding: 10px;
     background-color: white;
+    
   }
   
   
@@ -54,6 +108,7 @@
     width: 100%;
     height: 150px;
     display: block;
+   
   }
   
   .ads1 span {
@@ -73,8 +128,10 @@
   .redes{
     display: flex;
     justify-content: space-around;
+    
   }
   .select-wrapper .caret {
 
     fill: rgba(253, 253, 253, 0.87);
 }
+

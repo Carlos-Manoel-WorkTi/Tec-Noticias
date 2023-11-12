@@ -16,9 +16,9 @@ window.addEventListener('scroll', function() {
 
   // Atualiza a posição do elemento de áudio com base no limite
   if (containerRect.top < (-940)) {
-    area_acessibilidade.style.display = 'none'; 
+    // area_acessibilidade.classList.toggle("hide")
   } else {
-    area_acessibilidade.style.display = 'block'; // Exibe o áudio
+    // area_acessibilidade.classList.toggle("hide")
   
   }
 });
@@ -28,11 +28,18 @@ window.addEventListener('scroll', function() {
 librasButton.addEventListener("click", function () {
     area_acessibilidade.classList.toggle("hide")
     librasButton.classList.toggle("hide")
+    area_acessibilidade.classList.remove("slide-efect"); // Remove a classe antes de adicioná-la novamente
+    setTimeout(() => {
+      area_acessibilidade.classList.add("slide-efect");
+    }, 10);
+    // area_acessibilidade.classList.toggle("slide-efect")
     
 });
 close_area.addEventListener("click", e => {
     area_acessibilidade.classList.toggle("hide")
     librasButton.classList.toggle("hide")
+    area_acessibilidade.classList.toggle("slide-efect")
+    
 })
 backButton.addEventListener("click", function () {
   window.history.back();
