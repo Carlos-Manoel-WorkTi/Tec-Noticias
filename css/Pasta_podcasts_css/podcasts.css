@@ -109,8 +109,8 @@ footer {
   padding-top: 1px;
 }
 .banner {
-  background-color: blue;
-  background-image: radial-gradient(#1f2563, #1b205b, #06062a);
+
+  background-image: radial-gradient(#701793, #2a0340, #010014);
   height: 18rem;
   display: flex;
   flex-direction: column;

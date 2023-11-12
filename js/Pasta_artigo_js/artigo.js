@@ -3,7 +3,7 @@ const librasButton = document.getElementById("librasButton");
 const area_acessibilidade = document.querySelector(".acessibilidade")
 const close_area = document.querySelector(".close-area")
 const backButton = document.querySelector(".back-step");
-var audioContainer = document.getElementById('audioContainer');
+
 var acessibilidadeContainer = document.getElementById('acessibilidadeContainer');
 
 // Adiciona um ouvinte de evento para o evento de rolagem

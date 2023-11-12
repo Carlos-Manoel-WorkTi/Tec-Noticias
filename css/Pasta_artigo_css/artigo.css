@@ -66,7 +66,7 @@ label {
   color: #030101;
 }
 .option-libra a{
-  color: rgb(8, 7, 7); position: fixed;margin: 230px 0 0 10px; background-color: transparent; padding: 20px; width: 21%; border-radius: 10px;border: 2px solid rgb(48, 19, 123);  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  font-size: 1.2em;
+  color: rgb(8, 7, 7); position: fixed;margin: 230px 0 0 10px; background-color: transparent; padding: 18px; width: 21%; border-radius: 10px;border: 2px solid rgb(48, 19, 123);  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  font-size: 1.2em;
 }
 /* .size-font{} */
 .img-artigo img{

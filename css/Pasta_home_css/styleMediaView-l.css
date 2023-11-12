@@ -328,17 +328,19 @@ margin-top: -8px;
 
     }
     #tittle-section-podcast{
-      border-left: 2px solid rgb(49, 13, 105); padding-left: 10px;
+      border-left: 1px solid rgb(49, 13, 105); padding-left: 10px;
+      border-image: linear-gradient(to bottom, white,rgb(134, 121, 157)) 1; /* 1 é a largura da imagem da borda */
     }
     #t{
-      font-size: 4em; background-clip: text; color: transparent; background: linear-gradient(to right,rgb(247, 247, 247),rgba(132, 58, 216, 0.672),rgba(92, 0, 128, 0.672)); -webkit-background-clip: text;
+      font-size: 4.7em; background-clip: text; color: transparent; background: linear-gradient(to right,rgb(247, 247, 247),rgba(132, 58, 216, 0.672),rgba(92, 0, 128, 0.672)); -webkit-background-clip: text;
       background-size: 200% 100%;
       animation: texto 10s ease-in-out infinite;
     }
     .texto-podcasts-titulo{
       font-size: 3em; width: 85%;
       color: white; font-family: 'Roboto Mono', monospace;
-      border-left: 1px solid rgb(49, 13, 105);
+      border-left: 1px solid;
+      border-image: linear-gradient(to bottom,rgb(134, 121, 157),rgb(49, 13, 105),rgb(49, 13, 105)) 1; /* 1 é a largura da imagem da borda */
       padding:2em 0 0em 0.3em; margin:-0.43em 0 0.6em -0.246em; height: 7.25em;
     }
     .button-seeMore-podcasts{
@@ -520,12 +522,15 @@ margin-left: -4.4%;
 }
 .div-video{
   
-  border: 3px solid #13021b16; box-shadow: 12px 10px 10px rgba(56, 19, 95, 0.3);
+  border: 1px solid #13021b16; box-shadow: 12px 10px 10px rgba(56, 19, 95, 0.3);
 
 }
-#tittle-section-podcast{
-  border-left: 2px solid rgb(49, 13, 105); padding-left: 10px;
+#tittle-section-podcast {
+  padding-left: 10px;
+  border-left: 1px solid;
+  border-image: linear-gradient(to bottom, white,rgb(49, 13, 105)) 1; /* 1 é a largura da imagem da borda */
 }
+
 #t{
   font-size: 4em; background-clip: text; color: transparent; background: linear-gradient(to right,rgb(97, 17, 172),rgba(132, 58, 216, 0.672),rgba(92, 0, 128, 0.672)); -webkit-background-clip: text;
   background-size: 200% 100%;

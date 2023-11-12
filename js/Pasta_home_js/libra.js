@@ -3,11 +3,12 @@ document.addEventListener("DOMContentLoaded", function () {
   const topButton = document.querySelector(".topButton");
   const campo_tema = document.querySelector(".theme")
   const font_size = document.querySelector(".size-font")
-  
+  const audioContainer = document.getElementById('audioContainer');
   let cardVisible = false; // Variável de estado para controlar a visibilidade do card
 
   librasButton.addEventListener("click", function () {
     if (!cardVisible) {
+      audioContainer.classList.toggle("hide")
       librasButton.classList.toggle("hide")
      campo_tema.classList.toggle("hide")
      font_size.classList.toggle("hide")
@@ -28,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
     cardDiv.classList.add("card", "white");
     cardDiv.style.position = "fixed";
     cardDiv.style.bottom = "60px";
-    cardDiv.style.right = "70px";
+    cardDiv.style.right = "35px";
     cardDiv.style.zIndex = "1000";
     cardDiv.style.minWidth = "200px";
 
@@ -63,6 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Adicione um evento de clique para fechar o card
     closeButton.addEventListener("click", function () {
+      audioContainer.classList.toggle("hide")
       librasButton.classList.toggle("hide")
       campo_tema.classList.toggle("hide")
       font_size.classList.toggle("hide")

@@ -1,6 +1,6 @@
 #cardDiv {
     position: fixed;
-    right: 80px;
+    right: -110px;
     z-index: 3;
     min-width: 150px;
     background-color: white;
