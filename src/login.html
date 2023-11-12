@@ -2,108 +2,105 @@
 <html>
 
 <head>
-	<title>Login</title>
-	<link rel="stylesheet" href="..\css\Pasta_login_css\login-style.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="../css/Pasta_login_css/login.css">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TEC notícias - login</title>
 </head>
 
 <body>
-	<div class="container">
-		<!-- PARTE ESQUERDA -->
-		<div class="left">
-			<div class="right-logo">
-				<img id="logo-top" src="../img/Pasta_login_img/TN.png" alt="Logo" />
-			</div>
-			<main>
-				<form method="post">
-					<div id="container-tittle">
-						<h2>LOGIN</h2>
-					</div>
-					<div>
-						<label for="Email">Email:</label>
-						<input type="email" name="Email" id="Email" value="" placeholder="Digite seu email" />
-					</div>
-					<div>
-						<label for="Senha">Senha:</label>
-						<input type="password" name="Senha" id="Senha" value="" placeholder="Digite sua senha" />
-					</div>
-					<div>
-						<a href="#">Esqueceu a senha? clique aqui</a>
-					</div>
-					<div>
-						<a href="../index.html"><button type="button">ENTRAR</button></a>
-						<a id="link-criar-conta" href="#">Não tem conta?clique aqui</a>
-					</div>
-					<div style="margin: 20px;">
-						<h4 style="color: rgb(71, 71, 71);">entre com:</h4>
-						<div style="display: flex; gap:10px; margin-top: 20%;">
-							<h6><img style="width: 30px;" src="../img/Pasta_home_img/Instagram (icon — Colour).svg" alt=""></h6>
-							<h6><img style="width: 30px;" src="../img/Pasta_home_img/Facebook (icon — Colour).svg" alt=""></h6>
-							<h6><img style="width: 30px;" src="../img/Pasta_home_img/google.png" alt=""></h6>
-						</div>
-						
-					</div>
-				</form> <!-- FIM DO FORMULÁRIO -->
-			</main>
-		</div>
-		<!-- PARTE DIREITA -->
-		<div class="right">
-			<div>
-				<h2>Seja bem-vindo ao <span id="titulo">Tec Notícias</span>, faça login ou clique aqui para criar sua
-					conta.</h2>
-			</div>
-			<div>
-				<a href="../index.html"><button type="button">CRIAR</button></a>
-			</div>
-			<div>
-				<img id="img-over" src="../img/Pasta_login_img/sobreposição.png" alt="COMPLEMENTO" />
-			</div>
+    <div class="container">
+        <div class="row row-main">
+            <!-- top to mobile -->
+            <div class="col s12 m12 l12 xl12 container-bottom center hide-on-med-and-up">
+                <div>
+                    <img style="  width: 95%; 
+                     " src="../img/Pasta_login_img/show-empresa.png" alt="logo" id="logo" />
+                </div>
+            </div>
+            <!-- left -->
+            <div class="col m6 l6 xl6 container-left">
+                <div class="center">
+                    <h2 id="login-titulo">LOGIN</h2>
+                </div>
 
-		</div>
-		<div class="bottom">
-			<!-- PARTE INFERIOR -->
-			<div class="bottom-circle">
-				<div>
-						<img src="../img/Pasta_login_img/TN.png" alt="logo" id="logo" />
-				</div>
+                <form action="" class="form-dados">
+                    <div >
+                        <label for="Email">Email:</label>
+                        <input type="email" name="Email" id="Email" value="" placeholder="Digite seu email" />
+                    </div>
+                    <div>
+                        <label for="Senha">Senha:</label>
+                        <input type="password" name="Senha" id="Senha" value="" placeholder="Digite sua senha" />
+                    </div>
+                </form>
+                <!-- link esqueceu senha -->
+                <div class="center container-link-conta">
+                    <a class="link-conta" href="#">Esqueceu a senha? clique aqui</a>
+                </div>
+                <!-- entrar -->
+                <div class="center container-link-conta">
+                    <a href="../index.html"><button type="button" class="btn-efect">ENTRAR</button></a>
+                </div>
+           
+                <div class="row login-api">
+                    <div class=" col s12 m12 l12 xl12 center">
+                        <label for="">Entre com</label>
+                    </div>
 
-			</div>
+                    <div class="col s12 m12 l12 xl12" id="other-way-login" >
+                        <h6><img class="other-way-login-img" src="../img/Pasta_home_img/Instagram (icon — Colour).svg" alt="">
+                        </h6>
+                        <h6><img class="other-way-login-img" src="../img/Pasta_home_img/Facebook (icon — Colour).svg" alt=""></h6>
+                        <h6><img style="width: 30px;" class="other-way-login-img" src="../img/Pasta_home_img/google.png" alt=""></h6>
+                    </div>
+                </div>
+                     <!-- cria conta -->
+                     <div class="center hide-on-med-and-up" style="margin-bottom: 20px;">
+                        <a id="link-criar-conta" class="link-conta" href="#">Não tem conta?clique aqui</a>
+                    </div>
+            </div>
+            <!-- right -->
+            <div class="col m6 l6 xl6 container-right hide-on-small-only center">
+                <div class="left-align">
+                       <h4>Seja bem-vindo ao <span id="titulo">Tec Notícias</span>, faça login ou clique aqui para criar sua
+                    conta.</h4>
+                </div>
+             
+                <!-- CRIAR CONTA -->
+                <div class="center" style="margin-top: 30PX;">
+                    <a href="../index.html"><button class="btn-efect" type="button">CRIAR</button></a>
+                </div>
+                <!-- IMAGEM -->
+                <div class="center">
+                    <img style="  width: 80%; 
+                        margin-top: -30px; " id="img-over" src="../img/Pasta_login_img/sobreposição.png"
+                        alt="COMPLEMENTO" />
+                </div>
+            </div>
+            <!-- bottom -->
+            <div class="col s12 m12 l12 xl12 container-bottom center hide-on-small-only">
+                <div>
+                    <img style="  width: 40%;
+                    margin-top: -10px; " src="../img/Pasta_login_img/show-empresa.png" alt="logo" id="logo" />
+                </div>
+            </div>
+        </div>
 
-		</div>
-		<!-- <div class="image">
-   
-			<div id="container-wave">
-			 
-			<svg  
-				 x="0px"
-				 y="0px" 
-				 viewBox="0 0 3841 100"
-				 style="overflow:scroll;enable-background:new 0 0 3841 208.5;" 
-				 xml:space="preserve">
-			<defs>
-			</defs>
-			
-			<path style="fill:purple;
-						 stroke-miterlimit:10;" 
-						d="M3360.5,97.739c-242,0-480-48.375-480-48.375
-							S2647.5,0.5,2400.5,0.5s-480,48.375-480,48.375s-238,48.864-480,48.864s-480-48.375-480-48.375S727.5,0.5,480.5,0.5
-							S0.5,48.875,0.5,48.875V108h1920h1920V48.875C3840.5,48.875,3602.5,97.739,3360.5,97.739z"/>
-						</svg>
-			
-			</div>
-			</div>
-	
-			<div class="roxo">
-		
-			</div> -->
-	</div>
-	<!-- FOOTER -->
-	<footer>
-		<ul>
-			<li><a href="#">Termos</a></li>
-			<li><a href="#">Brasil</a></li>
-			<li><a href="#">Sobre</a></li>
-		</ul>
-	</footer>
+    </div>
+
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+
+    </script>
 </body>
 
 </html>
