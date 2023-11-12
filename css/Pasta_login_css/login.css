@@ -102,6 +102,10 @@ textarea.materialize-textarea:focus:not([readonly]) {
   }
 }
 @media (max-width: 600px) {
+    .row .col.s12 {
+        width: 100%;
+        margin-left: 0px;
+    }
   .container-left {
     border-right: none;
   }
@@ -117,7 +121,7 @@ textarea.materialize-textarea:focus:not([readonly]) {
   .form-dados {
     display: flex;
     flex-direction: column;
-    margin: 10px 0 0 18%;
+    margin: 10px 0 0 5%;
   }
   .btn-efect {
     font-size: 14px;
