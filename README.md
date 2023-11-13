@@ -1,5 +1,5 @@
 
-# **Tec Notícias** <img src="https://hackmd.io/_uploads/SkCFx-e4p.png" width="100px">
+# **Tec Notícias** <img src="./img/Pasta_home_img/TN.png"" width="100px">
 <img src="./img/Pasta_home_img/Line 1.png">
 
 ## Integrantes: 
