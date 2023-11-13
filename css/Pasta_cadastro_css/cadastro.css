@@ -1,0 +1,108 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background: linear-gradient(to bottom, rgb(0, 0, 4), rgb(7, 1, 25), rgb(84, 3, 102));
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    min-width: 320px;
+}
+
+.menu {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.menu ul {
+    display: flex;
+    list-style-type: none;
+    margin: auto;
+}
+
+.menu li {
+    color: white;
+    background-color: rgb(36, 216, 42);
+    width: 90px;
+    height: 30px;
+    font-size: 25px;
+    text-align: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    width: 100px;
+}
+
+.register {
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-size: 25px;
+}
+
+h1 {
+    font-family: "Montserrat";
+}
+
+.fieldset {
+    margin-top: 20px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    border: solid snow;
+    align-items: center;
+    font-size: 20px;
+}
+
+input,
+select {
+    display: block;
+    margin-top: 5px;
+    width: 200px;
+    height: 25px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+input[type="checkbox"] {
+    display: inline;
+    margin: 5px;
+    width: 30px;
+    height: 15px;
+}
+
+.terms {
+    color: white;
+}
+
+.terms:hover {
+    color: gray;
+}
+
+button{
+    margin-top: 20px;
+    width: 90px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: rgb(36, 216, 42);
+    color: white;
+    font-family: "Montserrat";
+    font-size: 15px;
+}
+
+button:hover{
+    cursor: pointer;
+}
