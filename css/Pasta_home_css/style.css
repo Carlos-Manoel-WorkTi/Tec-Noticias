@@ -1,0 +1,295 @@
+/* Importando a fonte Montserrat */
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
+
+/* Estilos gerais */
+
+
+body {
+  background-color: rgb(1, 1, 11); 
+}
+#section-one{
+background: linear-gradient(to bottom,black,blue);
+}  
+#apresentar{
+  background: linear-gradient(to right,rgb(0, 0, 0),rgb(0, 0, 4),rgb(9, 2, 37));
+
+ 
+}
+#section-three {
+  background: linear-gradient(to bottom,black,black,black,rgb(2, 2, 41),black);
+  padding-top: 1px;
+  .video-podcast{
+    height: 33em;
+  }
+}
+#logos{
+  background-color: rgb(255, 255, 255); overflow-y: hidden;
+}
+.logo-container{
+  display: flex;
+  justify-content: end;
+  overflow-x: hidden;
+  width: 100%;
+  align-items: center;
+  max-width: 100%;
+}
+.logos {
+  display: inline-block;
+  margin-right: 70px; /* Espaço entre as logos */
+}
+/* Estilos para o botão de pesquisa */
+#search-in-button{
+  background: none; border: none; outline: none; margin-top: 3px; border-left: 1px solid rgb(56, 31, 100);
+}
+
+/* Estilos para o ícone do botão de pesquisa */
+#search-in-button .material-icons {
+  font-size: 40px;
+
+}
+
+/* Estilos para o botão de cancelar */
+#cancel-button {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+/* Estilos para o ícone do botão de cancelar */
+#cancel-button .material-icons {
+  font-size: 30px;
+  background-color: red;
+}
+
+/* Estilos para a área de pesquisa */
+.search-area {
+  background-color: rgb(1 1 1 / 67%); height:70px;padding-bottom:20px; min-height: 45px;top: 120px; display: flex; align-items: center; position: fixed; color:white; z-index: 9999;
+  right: 0;
+  justify-content: end;
+}
+
+/* Estilos para o campo de pesquisa */
+#autocomplete-input {
+  border: none; border-bottom: 1px solid #460d80; vertical-align: middle; height: 100%; min-height: 35px; color: #fff
+}
+.input-field{
+  flex-grow: 1; margin: 0; margin-left: 45%; margin-right: 0%;
+}
+#form_pesquisa{
+  width: 100vw; max-width: 80%; position: relative; top: 20px; right: 0; z-index: 99999; display: flex; align-items: center; justify-content: flex-end; 
+}
+.sidenav{
+  background-color: #01010be1;
+ 
+}
+/* Remover a borda de foco padrão */
+a:focus {
+  outline: none;
+}
+
+
+.sidenav li > a {
+  color: rgba(245, 245, 245, 0.835);
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  height: 48px;
+  line-height: 48px;
+  padding: 0 32px;
+}
+.page-footer {
+  padding-top: 20px;
+  color: #e8eaf6;
+  background-color: #01010b;
+
+}
+
+.topButton {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  z-index: 1000;
+  opacity: 0.6;
+}
+
+/* Estilos da seção "show" */
+#section-noticias {
+  background: rgb(6, 6, 18); 
+  padding-top: 0px;
+}
+.ultimas-noticias{
+  margin-bottom:0px
+}
+#container-section-init {
+  margin: 0;
+  padding-top: 20px;
+  background-image: linear-gradient(
+      to right,
+      rgba(6, 5, 105, 0),
+      rgba(1, 4, 13, 0.87)
+    ),
+    url("https://img.freepik.com/fotos-premium/linhas-de-conexao-ao-redor-da-ilustracao-3d-do-plano-de-fundo-da-conectividade-internacional-global-do-globo-terrestre_89681-46.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Estilos da classe "word" */
+.word {
+  padding-left: 20%;
+  padding-top: 20%;
+  color: #ffffff;
+  font: 900 normal 3em/1.5 'Roboto Mono', monospace;
+  text-shadow: 1px 1px 2px rgba(53, 8, 104, 0.5),
+    2px 2px 4px rgba(42, 6, 83, 0.5), 3px 3px 6px rgba(42, 6, 83, 0.5),
+    4px 4px 8px rgba(42, 6, 83, 0.5), 5px 5px 10px rgba(42, 6, 83, 0.578);
+}
+
+/* Animação de cores */
+.animate {
+  animation: colorAnimation 2s linear;
+}
+
+@keyframes colorAnimation {
+  0%,
+  50% {
+    color: rgb(255, 255, 255); /* Branco */
+  }
+  25%,
+  75% {
+    color: #bebec0; /* Cinza */
+  }
+  100% {
+    color: #ffffff; /* Branco */
+  }
+}
+/* Estilos do botão de login */
+#btn-login{
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
+.button-seeMore {
+  background: linear-gradient(
+    to bottom,
+    rgb(147, 30, 171),
+    rgb(79, 30, 140),
+    rgb(12, 13, 50)
+  );
+  text-decoration: none;
+  list-style: none;
+  border-radius: 10px;
+  padding: 10px 10px;
+  font-size: 30px;
+  width: 200px;
+  a {
+    color: rgb(255, 255, 255);
+  }
+}
+.btn-login {
+  width: 110%;
+  color: white;
+  background: linear-gradient(to right, #00cc00, #009933);
+  padding: 10px;
+  background-size: 400% 100%;
+  animation: texto 10s linear infinite;
+  border: #009933;
+  border-radius: 10px;
+}
+.btn-cria {
+  width: 110%;
+  color: white;
+  background: linear-gradient(to right, #00cc00, #009933);
+  padding: 10px;
+  background-size: 400% 100%;
+  animation: texto 10s linear infinite;
+  border: #009933;
+  border-radius: 10px;
+}
+
+@keyframes texto {
+  0% {
+    background-position-x: 400%;
+  }
+  100% {
+    background-position: 0%;
+  }
+}
+
+/* Estilos da barra de navegação "cor-nav" */
+.cor-nav {
+  background: linear-gradient(to right,rgb(0, 0, 0),rgb(0, 0, 4),rgb(9, 2, 37));
+  border-bottom: 1px solid rgba(38, 3, 78, 0.509);
+  padding: 10px;
+}
+
+/* Estilos do logo da marca */
+.brand-logo {
+  background-color: #281bb200;
+  width: 10%;
+  height: 80%;
+  margin-top: 1px;
+  margin-left: 4px;
+}
+
+/* FOOTER */
+.page-footer {
+  background-color: rgb(1, 1, 14);
+}
+
+.quem-somos {
+  margin-top: 0px;
+  font-size: 40px;
+}
+
+.logo-footer {
+  height: 200px;
+}
+
+.footer-canais {
+  height: 200px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.icon-rede {
+  height: 60px;
+}
+
+.icon-contato {
+  height: 40px;
+}
+
+.contatos-text h4 {
+  font-size: 30px;
+}
+
+.footer-contatos {
+  display: flex;
+  gap: 20px;
+  margin-top: 5px;
+}
+
+.copyright {
+  background-color: black;
+  margin-bottom: 0;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  
+}
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
+  color: #8c40ff;
+  margin-right: 24px;
+  -webkit-transition: color .3s ease;
+  transition: color .3s ease;
+  text-transform: uppercase;
+}
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating):hover {
+  color: rgb(36, 16, 125);
+}
+.card .card-action {
+  background-color: rgb(255, 255, 255);
+  color: blue;
+}
