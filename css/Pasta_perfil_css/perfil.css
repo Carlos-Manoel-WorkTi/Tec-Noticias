@@ -1,0 +1,189 @@
+html {
+  max-width: 100vw;
+
+  margin: 0;
+  overflow-x: hidden;
+  color: black;
+}
+nav {
+  background: linear-gradient(to right, black, #000099);
+}
+.row {
+  margin-bottom: 0;
+}
+.back-page{
+    color: black !important;
+    font-size: 3.7em !important;
+}
+.close-page{
+    font-size: 3.7em !important;
+}
+.tabs .tab .col .s12 .active {
+  color: blue;
+}
+/*
+  *{
+    border:1px solid red;
+  }*/
+.img-perfil {
+  height: 370px;
+  width: 100%;
+  border-radius: 50%;
+}
+.edit-icon {
+  margin-top: 25px;
+  color: blue;
+}
+label {
+  margin-bottom: -10px;
+  color: black;
+}
+input {
+  color: gray;
+}
+
+#nome,
+#email,
+#senha,
+#numero {
+  border-bottom: 1px solid gray;
+  color: gray;
+}
+
+#teste3 {
+  background: linear-gradient(to right 10%, black, dimgrey);
+}
+.container-img-favoritos {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  padding-top: 4px;
+}
+.card-favoritos {
+  max-height: 170px;
+  height: 170px;
+  background-color: white;
+  color: black;
+}
+.resumo-fav {
+  height: 60px;
+  max-width: 97%;
+  overflow: hidden;
+  margin-bottom: 8px;
+  color: gray;
+}
+.card-favorito {
+  max-height: 170px;
+  overflow-y: hidden;
+  height: 170px;
+  max-width: 110%;
+  margin-top: 20px;
+}
+.titulo-fav {
+  color: black;
+  height: 75px;
+}
+.filtro {
+  background: gray;
+  padding: 8px;
+  border-radius: 2px;
+  color: white;
+  padding-left: 0;
+  margin-left: -48px;
+}
+.filtro-salvos {
+  background: black;
+}
+.container {
+  background-color: #f4f4f4; /* Fundo cinza claro */
+  padding: 20px;
+}
+
+.carousel {
+  background-color: #fff; /* Fundo branco para o carousel */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra embaixo */
+  border-radius: 5px; /* Cantos arredondados */
+  max-width: 800px; /* Largura máxima desejada */
+  margin: 0 0; /* Centraliza o carousel na página */
+  border-left: none;
+  width: 100%;
+  border: none;
+  padding: 20px;
+  height: 320px;
+}
+
+.carousel .carousel-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px; /* Cantos arredondados para cada item */
+  width: 200px; /* Largura do item do carousel */
+}
+
+.carousel .carousel-item img {
+  width: 200px; /* Largura da imagem */
+  height: 200px; /* Altura da imagem */
+  border-radius: 50%; /* Transforma a imagem em um círculo */
+  object-fit: cover; /* Garante que a imagem preencha o círculo */
+}
+
+.carousel .carousel-item h5 {
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.carousel .carousel-item p {
+  font-size: 14px;
+}
+@media (min-width: 994px) {
+
+  .container-left {
+    border-right: 1px solid purple;
+  }
+  .img-xl {
+    height: 370px;
+    margin-top: 5%;
+  }
+  .areas-perfil {
+    color: black !important;
+  }
+  .tabs .tab a:hover,
+  .tabs .tab a.active {
+    background-color: transparent;
+    color: rgb(128, 0, 128);
+  }
+  .tabs .indicator {
+    background-color: rgb(128, 0, 128);
+  }
+  .container {
+    background-color: #d2baba00;
+    padding: 20px;
+  }
+  .divider {
+    background-color: transparent;
+  }
+  .input-field>label:not(.label-icon).active {
+    margin-top: 5px;
+}
+.card .card-content .card-title i {
+    line-height: 1em;
+    background: rgb(255, 255, 255);
+    color: black;
+    font-size: 1.5em;
+}
+nav.nav-extended {
+    height: 130px;
+    margin-top: -20px;
+}
+.tabs .tab a:hover, .tabs .tab a.active {
+    background-color: #b0282800;
+    color: rgb(128, 0, 128);
+    margin: 0;
+    font-size: 2.6em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+}
