@@ -7,23 +7,23 @@
 }
 
 html {
-    background: linear-gradient(to bottom, rgb(0, 0, 4), rgb(7, 1, 25), rgb(84, 3, 102));
-    display: flex;
+    background: rgb(53, 26, 108);
+    /* display: flex; */
     height: 100vh;
-    justify-content: center;
+    /* justify-content: center; */
     min-width: 320px;
 }
 
 .menu {
     margin: auto;
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
 }
 
 .menu ul {
     display: flex;
     list-style-type: none;
-    margin: auto;
+    margin: 15px 30px;
 }
 
 .menu li {
@@ -33,7 +33,6 @@ html {
     height: 30px;
     font-size: 25px;
     text-align: center;
-    align-items: center;
     border-radius: 20px;
 }
 
@@ -44,6 +43,11 @@ html {
 
 .logo {
     width: 100px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
 }
 
 .register {
@@ -92,7 +96,7 @@ input[type="checkbox"] {
     color: gray;
 }
 
-button{
+button {
     margin-top: 20px;
     width: 90px;
     height: 30px;
@@ -103,6 +107,94 @@ button{
     font-size: 15px;
 }
 
-button:hover{
+button:hover {
     cursor: pointer;
+    background-color: rgb(33, 181, 38);
+}
+
+@media (min-width:412px) {
+
+    input,
+    select {
+        display: block;
+        margin-top: 5px;
+        width: 300px;
+        height: 25px;
+        border-radius: 20px;
+        text-align: center;
+    }
+
+    .fieldset {
+        margin-top: 20px;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        border: solid snow;
+        align-items: center;
+        font-size: 30px;
+    }
+}
+
+@media (min-width:700px) {
+
+    input,
+    select {
+        display: block;
+        margin-top: 10px;
+        width: 500px;
+        height: 25px;
+        border-radius: 20px;
+        text-align: center;
+    }
+
+    .fieldset {
+        margin-top: 20px;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        border: solid snow;
+        align-items: center;
+        font-size: 35px;
+    }
+}
+
+@media (min-width:1000px) {
+
+    .menu li {
+        width: 120px;
+        height: 35px;
+        font-size: 30px;
+    }
+
+    input,
+    select {
+        display: block;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        width: 600px;
+        height: 35px;
+        border-radius: 20px;
+        text-align: center;
+    }
+
+    .fieldset {
+        margin-top: 25px;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        border: solid snow;
+        align-items: center;
+        font-size: 35px;
+    }
+
+    button {
+        margin-top: 20px;
+        width: 120px;
+        height: 35px;
+        border-radius: 20px;
+        background-color: rgb(36, 216, 42);
+        color: white;
+        font-family: "Montserrat";
+        font-size: 20px;
+    }
 }
