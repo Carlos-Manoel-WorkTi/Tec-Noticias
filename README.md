@@ -1,5 +1,5 @@
 
-# <img src="./img/Pasta_home_img/TN.png" width="100px"> **Tec Notícias**
+# <img src="./img/Pasta_home_img/TN.png" width="100px"><span >Tec Notícias</span>
 <img src="./img/Pasta_home_img/Line 1.png">
 
 ## Integrantes: 
