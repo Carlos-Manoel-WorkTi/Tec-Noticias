@@ -7,8 +7,21 @@
 body{
   background: linear-gradient(to bottom,black,rgb(1, 1, 11));
 }
+.select-wrapper input.select-dropdown {
+  color: rgb(243, 243, 243);
+}
+.input-field.col label {
+  left: 0.5rem;
+}
+.dropdown-content li>a, .dropdown-content li>span {
+  font-size: 26px;
+  color: rgb(93, 21, 117);
+  display: block;
+  line-height: 22px;
+  padding: 14px 16px;
+}
 .custom-row {
-  margin: 70px;
+  margin: 60px;
   margin-bottom: 0;
   padding: 50px;
   display: flex;
@@ -127,7 +140,7 @@ footer {
 }
 
 .banner-conteudo h2 {
-  font-size: 3.3rem;
+  font-size: 4rem;
   color: white;
 }
 

@@ -1,0 +1,68 @@
+#carousel-opt{
+    margin-top: 40px;
+}
+.carousel {
+    background-color: rgba(19, 18, 18, 0.953);
+    background: linear-gradient(to left,rgb(4, 4, 4),rgb(19, 19, 19),rgb(4, 4, 4));
+    padding: 2px;
+    width: 80%;
+    margin: auto;
+    height: 250px !important;
+    margin-bottom: 4%;
+  }
+
+  /* Custom styles for the carousel cards */
+  .carousel-item {
+    text-align: center;
+    color: #ffffff;
+    padding: 20px; /* Espaçamento menor */
+    border-radius: 8px;
+    background-color: #ffffff00;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+  }
+
+.chip{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(244, 241, 251);
+    color: blueviolet;
+}
+.cor{
+    color: rgb(255, 255, 255); 
+}
+.opt-choose{
+    margin-top: 20px;
+}
+.input-field {
+    flex-grow: 1;
+    margin: 0;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+.material-icons {
+    background: linear-gradient( to bottom, rgb(220, 16, 16), transparent );
+    background-clip: border-box;
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-size: 180px;
+    color: transparent;
+}
+.chips .input {
+
+    color: rgba(244, 242, 242, 0.6);
+ 
+}
+.chips.focus {
+    border-bottom: 1px solid #9C27B0;
+    -webkit-box-shadow:none;
+    box-shadow: none;
+}
+.card .card-action {
+    background-color: rgb(61 23 195);
+    color: rgb(252, 252, 255);
+     background:linear-gradient(to right,rgba(34, 7, 73, 0.824),rgba(78, 17, 159, 0.824));
+  }
+  .card .card-action a{
+    color: white !important ;
+  }

@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="../css/Pasta_home_css/style.css">
   <link rel="stylesheet" href="../css/Pasta_home_css/styleMediaView-l.css">
   <link rel="stylesheet" href="../css/Pasta_podcasts_css/podcasts.css">
+  <link rel="stylesheet" href="../css/Pasta_cultura_css/cultura.css">
   <link rel="icon" href="../img/favicon.png" type="image/x-icon">
   <title>Tec notícias - podcasts</title>
 </head>
@@ -31,9 +32,10 @@
         <ul id="nav-mobile" class="right ">
           <li class="links-nav hide-on-med-and-down"><a href="../index.html" class="active">INICIO</a></li>
           <li class="links-nav hide-on-med-and-down"><a href="noticias.html">NOTICIAS</a></li>
-          <li class="links-nav hide-on-med-and-down"><a href="podcasts.html" style="color: rgb(255, 255, 255); background-color: rgb(30, 4, 62); border-radius: 10px;">PODCASTS</a></li>
+          <li class="links-nav hide-on-med-and-down"><a href="podcasts.html">PODCASTS</a></li>
           <li class="links-nav hide-on-med-and-down"><a href="eventos.html">EVENTOS</a></li>
-          <li class="links-nav hide-on-med-and-down"><a href="cultura.html">CULTURA</a></li>
+          <li class="links-nav hide-on-med-and-down"><a href="cultura.html"
+              style="color: rgb(255, 255, 255); background-color: rgb(30, 4, 62); border-radius: 10px;">CULTURA</a></li>
           <!-- formulario para pesquisar -->
           <li>
             <button type="button" id="search-button"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40"
@@ -125,53 +127,159 @@
     </div>
   </section>
   <!-- PODCASTS -->
-  <section id="section-three">
-    <div class="sectio-two podcasts" data-aos="fade-up-left" data-aos-duration="1000" data-aos-offset="100"
-      data-aos-easing="ease-in-sine">
-      <div class="row" id="tittle-podcast">
-        <h2>Falando sobre tecnologias</h2>
-      </div>
-      <div class="container-video row" style="width: 90%; margin: 0 5%;">
-        <div class=" col s12 m12 l12 xl12">
-          <iframe width="90%" height="450vh" src="https://www.youtube.com/embed/7XX-ZwIYnV4"
-            frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div class="col s11 m11 l11 xl11" id="resumo-assitir-podcast" style="color: white; font-size: 20px;">
-          <span>A tecnologia é como uma pintura em constante evolução, onde cada traço e pincelada são os avanços que
-            moldam o futuro</span>
-        </div>
-        <div class="col s12 m12 l12 xl12" id="views-assistir"
-          style="color: rgba(255, 255, 255, 0.575); margin: 1% 0; display: flex; justify-content: space-between; width: 40%;">
-          <span>Por tec noticias</span><span>1,2 M Visualizações</span><span>10/10/2023</span>
-        </div>
-        <div class="col s12 m12 l12 xl12" id="btn-assistir-podcast" style="color: white; margin-bottom: 2%;">
-          <a href=""
-            style="background-color: rgba(255, 255, 255, 0); padding: 7px; display: flex; width: 16%; border-radius: 10%;">
-            <i class="material-icons" style="font-size: 40px; padding-top:10px; background-color: purple; ">thumb_up</i>
-            <i class="material-icons"
-              style="font-size: 40px; padding-top:10px; background-color: purple; margin-left: 20px;">thumb_down</i>
-          </a>
-
+  <section id="carousel-opt">
+    <div class="carousel carousel-slider center" data-duration="500" data-dist="-150" data-shift="0" data-padding="20"
+      data-numVisible="3" data-fullWidth="false" data-indicators="true" data-noWrap="false">
+      <!-- Card for Hackathon -->
+      <div class="row carousel-item card-hackathon">
+        <div class="col s12 m6">
+          <div class="card purple darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">
+                <h5>História da Tecnologia</h5>
+              </span>
+              <p>Explore marcos importantes na história da tecnologia que moldaram o mundo moderno.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">ver</a>
+            </div>
+          </div>
         </div>
       </div>
-      <!-- <div class="row">
-            <div class="col s12 m12 l12 xl12 center">
-                <iframe width="90%" height="450vh" src="https://www.youtube.com/embed/NM2BMYdD2Gk?si=GmrcoX7yWqkAc392"
-                    frameborder="0" allowfullscreen></iframe>
-            </div>
-            <div class=" s12 m12 l12 xl12 header-video">
-                <p class="col s12 m12 l12 xl12 resumo-podcast">A tecnologia é como uma pintura em constante evolução, onde cada traço e pincelada são os avanços que moldam o futuro.</p>
-                <div class="row center opinar">
 
-                    <div class="col s1 m2 l2 xl2"><a class="waves-effect waves-light btn like-button">gostei</a></div>
-                    <div class="col s1 m2 l2 xl2"><a class="waves-effect waves-light btn like-button">NAo curti</a></div>
-                    <div class="col xl3"></div>
-                </div>
+      <div class="row carousel-item card-hackathon">
+        <div class="col s12 m6">
+          <div class=" card blue darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">
+                <h5>Cultura Hacker</h5>
+              </span>
+              <p>Explore a cultura hacker e seu papel na comunidade de tecnologia</p>
             </div>
-        </div> -->
+            <div class="card-action">
+              <a href="#">ver</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row carousel-item card-hackathon">
+        <div class="col s12 m6">
+          <div class=" card green darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">
+                <h5>Inteligência Artificial</h5>
+              </span>
+              <p>Apresente casos de uso e implicações éticas da inteligência artificialDescription of hackathon culture
+              </p>
+            </div>
+            <div class="card-action">
+              <a href="#">ver</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row carousel-item card-hackathon">
+        <div class="col s12 m6">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">
+                <h5>Tecnologia na Educação</h5>
+              </span>
+              <p>Apresente inovações tecnológicas que estão transformando a educação.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">ver</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row carousel-item card-hackathon">
+        <div class="col s12 m6">
+          <div class="card blue darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">
+                <h5>Cultura Open Source </h5>
+              </span>
+              <p>Destaque a importância da cultura open source na comunidade de desenvolvimento</p>
+            </div>
+            <div class="card-action">
+              <a href="#">ver</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row carousel-item card-hackathon">
+        <div class="col s12 m6">
+          <div class="card red darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">
+                <h5>Robótica</h5>
+              </span>
+              <p>Apresente avanços e aplicações emocionantes na área de robótica.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">ver</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
-  <!-- <img style="width: 100%; height: 30px; margin-top: -15px;" src="../img/Pasta_home_img/lroxa.png" alt=""> -->
-  <section class="container"></section>
+
+  <section class="container-opt">
+
+
+    <div class="container" style="background-color: transparent;">
+      <div class="chip cor" style="background-color: rgb(30, 4, 62); border: 2px solid #602ecc; ">
+        All
+      </div>
+      <div class="chip cor" style="background-color: #2ecc71;">
+        Robótica
+      </div>
+      <div class="chip cor" style="background-color: #2ebfcc;">
+        Inteligência Artificial
+      </div>
+      <div class="chip cor" style="background-color: #cc2e2e;">
+        Cibersegurança
+      </div>
+      <div class="chip cor" style="background-color: rgb(193, 204, 46);">
+        Ética na Tecnologia
+      </div>
+      <div class="chip cor" style="background-color: #b42ecc;">
+        Desenvolvimento Sustentável
+      </div>
+      <div class="chip cor" style="background-color: #2ecc71;">
+        História da Tecnologia
+      </div>
+      <div class="chip cor" style="background-color: #2e68cc;">
+        Inovação Tecnológica
+      </div>
+      <div class="chip cor" style="background-color: #cc2e82;">
+        Empreendedorismo Tecnológico
+      </div>
+      <div class="chip cor " style="background-color: #cc9d2e;">
+        Transformação Digital
+      </div>
+      <div class="chip cor" style="background-color: #602ecc;">
+        Mobilidade Urbana
+      </div>
+      <div class="chip cor" style="background-color: rgb(4, 107, 90);">
+        Frameworks
+      </div>
+      <div class="chip cor" style="background-color: #2e68cc;">
+        Designs
+      </div>
+   
+
+    <div class="opt-choose">
+
+      <div class="chips chips-initial"></div>
+
+    </div>
+  </div>
+  </section>
   <div class="row text-center custom-row">
     <div class="col s12 m6 l4 xl4 custom-col">
       <div class="card left-align">
@@ -294,7 +402,7 @@
       </div>
     </div>
   </div>
-  
+
   <div class="parallax-container">
     <div class="parallax"><img src="../img/Pasta_home_img/parallaxx.png" alt=""></div>
   </div>
@@ -359,10 +467,10 @@
         </div>
       </div>
     </div>
- 
+
   </div>
   <div class=" row center" style="margin: 0;">
-    <div class="col xl12" >
+    <div class="col xl12">
       <a href="Ver mais"><i class="material-icons">arrow_drop_down</i></a>
     </div>
   </div>
@@ -382,54 +490,67 @@
       </ul>
     </div>
     <div class="row" style="width: 50%; display: flex; align-self: center;">
-    <div id="test1" class="col s12">
-      <div style="display: flex; justify-content: center;" class="row">
-        <div class="col s12 m6" style="width: 100%;">
-          <div class="card blue-grey darken-1">
-            <div class="card-content white-text">
-              <span class="card-title">PLANO BASICO</span>
-              <p>Introduza o seu público ao mundo das notícias de maneira simples e eficaz com o nosso Plano Básico. Com uma estrutura fácil de usar, um design responsivo e uma variedade de categorias de notícias, seu site de notícias estará pronto para ação. Perfeito para começar a compartilhar informações com o seu público-alvo. Os assinantes deste plano terão acesso a notícias exclusivas por um mês.</p>
-            </div>
-            <div class="card-action center">
-              <a href="#">ASSINAR</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="test2" class="col s12">
-      <div style="width: 100%;" class="row">
-        <div style="width: 100%;" class="col s12 m6" >
-          <div class="card green darken-1">
-            <div class="card-content white-text">
-              <span class="card-title">PLANO PADRÂO</span>
-              <p>Eleve a sua presença online com o nosso Plano Padrão. Além de uma estrutura aprimorada, oferecemos um design personalizado que cria uma identidade de marca distinta para o seu site de notícias. Conte com redatores experientes para entregar conteúdo de alta qualidade e integração de mídias sociais para aumentar o engajamento. Explore oportunidades de monetização e expanda sua influência online. Assinantes deste plano terão acesso exclusivo a notícias por um ano, notificações de notícias e uma área VIP em seus perfis para salvar seus favoritos.</p>
-            </div>
-            <div class="card-action center">
-              <a href="#">ASSINAR</a>
+      <div id="test1" class="col s12">
+        <div style="display: flex; justify-content: center;" class="row">
+          <div class="col s12 m6" style="width: 100%;">
+            <div class="card blue-grey darken-1">
+              <div class="card-content white-text">
+                <span class="card-title">PLANO BASICO</span>
+                <p>Introduza o seu público ao mundo das notícias de maneira simples e eficaz com o nosso Plano Básico.
+                  Com uma estrutura fácil de usar, um design responsivo e uma variedade de categorias de notícias, seu
+                  site de notícias estará pronto para ação. Perfeito para começar a compartilhar informações com o seu
+                  público-alvo. Os assinantes deste plano terão acesso a notícias exclusivas por um mês.</p>
+              </div>
+              <div class="card-action center">
+                <a href="#">ASSINAR</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div id="test3" class="col s12">
-      <div class="row" style="width: 100%;">
-        <div class="col s12 m6" style="width: 100%;">
-          <div class="card blue darken-1">
-            <div class="card-content white-text">
-              <span class="card-title">PADRÃO AVANÇADO</span>
-              <p>Para a mais alta qualidade e impacto, nosso Plano Completo é a escolha perfeita. Com uma estrutura avançada, um design de alta qualidade e conteúdo multimídia envolvente, seu site de notícias irá se destacar. Personalize a experiência do usuário, ofereça assinaturas premium e vá além com um aplicativo móvel dedicado. Com a nossa equipe de marketing, você alcançará uma audiência maior e mais engajada. Assinantes deste plano desfrutam de notificações de notícias, acesso a notícias exclusivas e uma área VIP para salvar favoritos durante todo o ano.</p>
-            </div>
-            <div class="card-action center">
-              <a href="#">ASSINAR</a>
+      <div id="test2" class="col s12">
+        <div style="width: 100%;" class="row">
+          <div style="width: 100%;" class="col s12 m6">
+            <div class="card green darken-1">
+              <div class="card-content white-text">
+                <span class="card-title">PLANO PADRÂO</span>
+                <p>Eleve a sua presença online com o nosso Plano Padrão. Além de uma estrutura aprimorada, oferecemos um
+                  design personalizado que cria uma identidade de marca distinta para o seu site de notícias. Conte com
+                  redatores experientes para entregar conteúdo de alta qualidade e integração de mídias sociais para
+                  aumentar o engajamento. Explore oportunidades de monetização e expanda sua influência online.
+                  Assinantes deste plano terão acesso exclusivo a notícias por um ano, notificações de notícias e uma
+                  área VIP em seus perfis para salvar seus favoritos.</p>
+              </div>
+              <div class="card-action center">
+                <a href="#">ASSINAR</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+      <div id="test3" class="col s12">
+        <div class="row" style="width: 100%;">
+          <div class="col s12 m6" style="width: 100%;">
+            <div class="card blue darken-1">
+              <div class="card-content white-text">
+                <span class="card-title">PADRÃO AVANÇADO</span>
+                <p>Para a mais alta qualidade e impacto, nosso Plano Completo é a escolha perfeita. Com uma estrutura
+                  avançada, um design de alta qualidade e conteúdo multimídia envolvente, seu site de notícias irá se
+                  destacar. Personalize a experiência do usuário, ofereça assinaturas premium e vá além com um
+                  aplicativo móvel dedicado. Com a nossa equipe de marketing, você alcançará uma audiência maior e mais
+                  engajada. Assinantes deste plano desfrutam de notificações de notícias, acesso a notícias exclusivas e
+                  uma área VIP para salvar favoritos durante todo o ano.</p>
+              </div>
+              <div class="card-action center">
+                <a href="#">ASSINAR</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
   </section>
-  <section id="logos" > 
+  <section id="logos">
 
     <div class="logo-container">
       <div class="logos"><img src="../img/Pasta_home_img/icons8-figma-48.png" alt="Logo 1"></div>
@@ -445,8 +566,8 @@
       <div class="logos"><img src="../img/Pasta_home_img/icons8-dinâmica-365-48.png" alt="Logo 1"></div>
       <div class="logos"><img src="../img/Pasta_home_img/icons8-logotipo-duolingo-48.png" alt="Logo 1"></div>
       <div class="logos"><img src="../img/Pasta_home_img/icons8-logo-da-huawei-64.png" alt="Logo 1"></div>
-   </div>
-</section>
+    </div>
+  </section>
 
   <!-- FOOTER -->
   <footer class="page-footer">
@@ -606,6 +727,49 @@
       $('.tabs').tabs();
     });
 
+
+    $('.chips').chips();
+    $('.chips-initial').chips({
+      data: [{
+        tag: 'All',
+      }, {
+        tag: 'Robótica',
+      }],
+    });
+    $('.chips-placeholder').chips({
+      placeholder: 'Enter a tag',
+      secondaryPlaceholder: '+Tag',
+    });
+    $('.chips-autocomplete').chips({
+      autocompleteOptions: {
+        data: {
+          'All': null,
+          'Robótica': null,
+        },
+        limit: Infinity,
+        minLength: 1
+      }
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var options = {
+        duration: 3500,
+        dist: -100,
+        shift: -10,
+        padding: 10, /* Espaçamento menor */
+        numVisible: 1,
+        fullWidth: true,
+        indicators: false,
+        noWrap: false
+      };
+
+      var carousel = $('.carousel').carousel(options);
+
+      setInterval(function () {
+        carousel.carousel('next');
+      }, options.duration);
+    });
   </script>
 </body>
 </body>

@@ -128,11 +128,22 @@
           </a>
         </div>
   </section>
+  <section class="container">
+    <div class="input-field col s12 xl3" style="margin-left: -90px; margin-top:60px; width: 80%;">
+      <select>
+        <option value="" disabled selected>Qual tipo de conteudo vc deseja?</option>
+        <option value="1">cibersegurança</option>
+        <option value="2">intelig~encia artificial</option>
+        <option value="3">pogramaçãp</option>
+      </select>
+      <label>Filtro eventos</label>
+    </div>
+  </section>
     <section>
       
         <!--Começo dos Eventos-->
         <div class="eventos">
-            <div class="filtrador">
+            <!-- <div class="filtrador">
                 <label for="filtro">FILTRO:</label>
                 <select name="filtro" id="filtro" style="top:0;">
                     <option disabled selected hidden value="" >Selecione</option>
@@ -144,7 +155,7 @@
                     <option value="gratuito">Gratuito</option> <!-- Corrected the value attribute -->
                     <option value="privado">Privado</option>
                 </select>
-            </div>
+            </div> -->
 
             <!--Card de Evento-->
             <div class="card-evento">
@@ -206,144 +217,27 @@
                 </div>
             </div>
              <!-- ADD MAIS BLOCOS -->
-            <div class="btn-eventos"><button>Ver mais eventos</button></div>
+             <div class="container center" style="margin-top: 0px; margin-bottom: 100px; color: white;">
+              <ul class="pagination">
+                <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                <li class="active"><a href="#!" style="background-color: purple ;">1</a></li>
+                <li class="waves-effect"><a style="color: rgb(223, 222, 222);" href="#!">2</a></li>
+                <li class="waves-effect"><a  style="color: rgb(223, 222, 222);" href="#!">3</a></li>
+                <li class="waves-effect"><a style="color: rgb(223, 222, 222);" href="#!">4</a></li>
+                <li class="waves-effect"><a style="color: rgb(223, 222, 222);" href="#!">5</a></li>
+                <li class="waves-effect"><a style="color: rgb(223, 222, 222);" href="#!"><i class="material-icons">chevron_right</i></a></li>
+              </ul>
+            </div>
 
         </div>
-        <section>
-          <div class="parallax-container" style="height:30vh;">
-            <div class="parallax" ><img
-                src="https://respostas.sebrae.com.br/wp-content/uploads/2020/06/tecnology-806x440.jpg"
-                alt=""></div>
-          </div>
-        </section>
+  
         
     </section>
 
     
 </main>
 </section>
-  <!--
-  <section>
-    <div class="eventos" data-aos="fade-up-right" data-aos-duration="1000" data-aos-offset="200"
-      data-aos-easing="ease-in-sine">
-      <div class="row" id="tittle-lastNews">
-        <h2>Eventos</h2>
-      </div>
-      <div class="row evento">
-        <a
-          href="https://g1.globo.com/ba/bahia/blogdoemprego/noticia/2023/10/11/cursos-gratuito-de-tecnologia-para-mulheres-tem-vagas-abertas-em-salvador-veja-como-se-inscrever.ghtml">
-          <div class="col s12 m12 l12 xl12">
-            <div class="card" style="background-color: transparent;">
-              <div class="card-content">
-                <div class="row remove-align">
-                  <div class="col s12 m4 l3">
-                    <div class="card-image">
-                      <img class="responsive-img"
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF-Eb3ZXWZWwIriaRYWImO0ii3CtG1Fr5k9A&usqp=CAU">
-                    </div>
-                  </div>
-                  <div class="col s12 m8 l9">
-                    <h2 class="card-title"><strong>Curso gratuito de tecnologia para mulheres tem vagas abertas em
-                        Salvador; veja como se inscrever</strong></h2>
-                    <p class="resumo-evento">Evento será realizado no Teatro SESI, no bairro do Rio Vermelho, no dia 24
-                      de outubro. Vagas são limitadas.</p>
-                    <div class="row">
-                      <div class="col s6">
-                        <p class="autor-evento">Por <strong>TEC Notícias</strong> </p>
-                      </div>
-                      <div class="col s6">
-                        <p class="data-evento">2 h atrás</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-      
-      <div class="row evento">
-        <a
-          href="https://www.em.com.br/app/noticia/internacional/2023/10/10/interna_internacional,1574660/a-tecnologia-israelense-contra-os-arsenais-heterogeneos-do-hamas-e-do-hezbo.shtml">
-          <div class="col s12 m12 l12 xl12">
-            <div class="card" style="background-color: transparent;">
-              <div class="card-content">
-                <div class="row remove-align">
-                  <div class="col s12 m4 l3">
-                    <div class="card-image">
-                      <img class="responsive-img"
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF-Eb3ZXWZWwIriaRYWImO0ii3CtG1Fr5k9A&usqp=CAU">
-                    </div>
-                  </div>
-                  <div class="col s12 m8 l9">
-                    <h2 class="card-title"><strong>A tecnologia israelense contra os arsenais heterogêneos do Hamas e do
-                        Hezbollah.</strong></h2>
-                    <p class="resumo-evento">Evento será realizado no Teatro SESI, no bairro do Rio Vermelho, no dia 24
-                      de outubro. Vagas são limitadas De um lado, Israel e seu aliado americano. Do outro, o Hamas,
-                      apoiado sobretudo pelo Hezbollah.A guerra em Israel é claramente...</p>
-                    <div class="row">
-                      <div class="col s6">
-                        <p class="autor-evento">Por <strong>TEC Notícias</strong> </p>
-                      </div>
-                      <div class="col s6">
-                        <p class="data-evento">2 h atrás</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="row evento">
-        <a
-          href="https://g1.globo.com/ba/bahia/blogdoemprego/noticia/2023/10/11/cursos-gratuito-de-tecnologia-para-mulheres-tem-vagas-abertas-em-salvador-veja-como-se-inscrever.ghtml">
-          <div class="col s12 m12 l12 xl12">
-            <div class="card" style="background-color: transparent;">
-              <div class="card-content">
-                <div class="row remove-align">
-                  <div class="col s12 m4 l3">
-                    <div class="card-image">
-                      <img class="responsive-img"
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF-Eb3ZXWZWwIriaRYWImO0ii3CtG1Fr5k9A&usqp=CAU">
-                    </div>
-                  </div>
-                  <div class="col s12 m8 l9">
-                    <h2 class="card-title"><strong>Tecnologia de filtragem e empilhamento a seco transforma a indústria
-                        mineral.</strong></h2>
-                    <p class="resumo-evento">A indústria mineral sul-mato-grossense está passando por uma revolução
-                      silenciosa, mas poderosa, que promete transformar a forma como o setor lida co.</p>
-                    <div class="row">
-                      <div class="col s6">
-                        <p class="autor-evento">Por <strong>TEC Notícias</strong> </p>
-                      </div>
-                      <div class="col s6">
-                        <p class="data-evento">2 h atrás</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
 
-
-
-
-      <div class="row center button-seeMore">
-        <div class="col xl12"><a href="./src/eventos.html">Ver mais</a></div>
-      </div>
-    </div>
-    </div>
-  </section>
-
- -->
-  <!-- FOOTER -->
- 
 
   <section class="row" style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
     <div class="nav-content " style="display: flex;">

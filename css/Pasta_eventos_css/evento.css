@@ -27,31 +27,25 @@ header, footer{
 }
 
 .banner-conteudo h2{
-    font-size: 3.3rem;
+    font-size: 4rem;
 }
 
 .banner-conteudo p{
     font-size: 1.2rem;
 }
 
-.filtrador{
-    font-size: 1.2rem;
-    width: 160px;
-    display: flex;
-    justify-content: space-between;
-}
-.filtrador label{
-    font-size: 1.4em;
-}
+
 .select-wrapper input.select-dropdown {
-    font-size: 1.5em;
-    padding: 0 0.4em;
-    margin-top: -6px;
-    width: 200px !important;
-}
+    color: rgb(243, 243, 243);
+    width: 35%;
+  }
+  .input-field.col label {
+    left: 0.5rem;
+  }
+
 .dropdown-content li>a, .dropdown-content li>span {
     font-size: 26px;
-    color: #26a69a;
+    color: rgb(31, 21, 117);
     display: block;
     line-height: 22px;
     padding: 14px 16px;
