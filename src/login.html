@@ -16,6 +16,10 @@
 
 <body>
     <div class="container">
+        <div class="blue darken-1" id="preloader">
+            <div class="indeterminate blue lighten-4"></div>
+        </div>
+        
         <div class="row row-main">
             <!-- top to mobile -->
             <div class="col s12 m12 l12 xl12 container-bottom center hide-on-med-and-up">
@@ -32,23 +36,24 @@
 
                 <form action="" class="form-dados">
                     <div >
-                        <label for="Email">Email:</label>
-                        <input type="email" name="Email" id="Email" value="" placeholder="Digite seu email" />
+                        <label for="Email" id="label_Email">Email:</label>
+                        <input  type="text" name="Email" id="Email" value="" placeholder="Digite seu email"/>
                     </div>
                     <div>
-                        <label for="Senha">Senha:</label>
-                        <input type="password" name="Senha" id="Senha" value="" placeholder="Digite sua senha" />
+                        <label for="Senha" id="label_Senha">Senha:</label>
+                        <input  type="password" name="Senha" id="Senha" value="" placeholder="Digite sua senha" />
                     </div>
-                </form>
+                
                 <!-- link esqueceu senha -->
                 <div class="center container-link-conta">
                     <a class="link-conta" href="#">Esqueceu a senha? clique aqui</a>
                 </div>
                 <!-- entrar -->
                 <div class="center container-link-conta">
-                    <a href="../index.html"><button type="button" class="btn-efect">ENTRAR</button></a>
+                    <button type="submit" class="btn-efect" id="btn_submit">ENTRAR</button>
+                    
                 </div>
-           
+           </form>
                 <div class="row login-api">
                     <div class=" col s12 m12 l12 xl12 center">
                         <label for="">Entre com</label>
@@ -75,7 +80,7 @@
              
                 <!-- CRIAR CONTA -->
                 <div class="center" style="margin-top: 30PX;">
-                    <a href="../index.html"><button class="btn-efect" type="button">CRIAR</button></a>
+                    <a href="../src/cadastro.html"><button class="btn-efect" type="button">CRIAR</button></a>
                 </div>
                 <!-- IMAGEM -->
                 <div class="center">
@@ -92,15 +97,14 @@
                 </div>
             </div>
         </div>
-
+        
     </div>
 
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script>
+    <script src="../js/Pasta_login_js/script.js"></script>
 
-    </script>
 </body>
 
 </html>

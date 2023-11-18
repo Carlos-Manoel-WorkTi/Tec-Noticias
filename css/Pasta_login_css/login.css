@@ -5,6 +5,10 @@ html {
   background-color: rgb(234, 232, 232);
   margin-top: 2%;
 }
+/* Estilo do placeholder */
+.placeholder-red::placeholder {
+  color: rgb(199, 145, 145);
+}
 
 /* left */
 .container-left {
@@ -126,4 +130,15 @@ textarea.materialize-textarea:focus:not([readonly]) {
   .btn-efect {
     font-size: 14px;
   }
+}
+.toast-centered {
+  /* Define o posicionamento absoluto */
+  width: 100%;
+  top: 30%;
+  left: -200%;
+  right: 30%;
+  /* transform: translate(-50%, -50%); */
+  /* Define outras propriedades de estilo (pode personalizar conforme necessário) */
+  background-color: #c81616;
+  color: #fff;
 }
