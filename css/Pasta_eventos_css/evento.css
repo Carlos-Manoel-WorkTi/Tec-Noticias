@@ -9,7 +9,8 @@ header, footer{
 }
 
 .banner{
-    background-image: radial-gradient(#333fc4, #0c103d, #000000);
+    background-color: blue;
+    background-image: radial-gradient(#1F2563, #1B205B, #06062A);
     height: 18rem;
     display: flex;
     flex-direction: column;
@@ -33,24 +34,18 @@ header, footer{
     font-size: 1.2rem;
 }
 
-.filtrador{
-    font-size: 1.2rem;
-    width: 160px;
-    display: flex;
-    justify-content: space-between;
-}
-.filtrador label{
-    font-size: 1.4em;
-}
+
 .select-wrapper input.select-dropdown {
-    font-size: 1.5em;
-    padding: 0 0.4em;
-    margin-top: -6px;
-    width: 200px !important;
-}
+    color: rgb(243, 243, 243);
+    width: 35%;
+  }
+  .input-field.col label {
+    left: 0.5rem;
+  }
+
 .dropdown-content li>a, .dropdown-content li>span {
     font-size: 26px;
-    color: #26a69a;
+    color: rgb(31, 21, 117);
     display: block;
     line-height: 22px;
     padding: 14px 16px;
@@ -59,7 +54,7 @@ header, footer{
 .eventos{
     padding-left: 60px;
     padding-top: 30px;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(1, 1, 11);
 }
 
 .card-evento{
@@ -136,19 +131,17 @@ header, footer{
     border-radius: 5px;
     background-image: linear-gradient(45deg, blue, darkblue, purple);
     color: white;
-    width: 30%;
+    width: 100%;
     text-align: center;
     font-weight: bolder;
 }
 
 .btn-eventos{
     text-align: center;
-    width: 90%;
 }
 
 .btn-eventos button{
-    background-color: rgb(0, 72, 255);
-    color:white ;
+    background-color: aqua;
     padding: 5px 20px;
     border-radius: 20px;
     font-size: 1.2rem;

@@ -1,13 +1,12 @@
-
+/* 
   .eventos {
     padding: 5%;
     color: white;
     background: linear-gradient(to right,black,rgb(2, 2, 41));
+    height: 100%;
     .texto-evento {
-      margin-top: 20px;
-    }
-    .texto-evento{
-      width: 60%;
+      margin-top: 2px;
+        width: 60%;
     }
     .card .card-content {
       background-color: rgba(242, 238, 248, 0.003);
@@ -22,6 +21,8 @@
     }
     .card-image img{
       margin-left:10px;
+      height: 150px;
+      top: -10px;
     } 
     .resumo-evento{
       color: rgb(143, 143, 155);
@@ -33,5 +34,508 @@
     .autor-evento{
       color: rgb(227, 227, 227);
     }
+    .card-title {
+      height: 25%;
+      background: transparent;
+      color: white;
+      border-bottom-right-radius: 0%;
+      overflow: hidden;
+      text-align: start;
+    }
+  }
+  
+ */
+ .container-eventos {
+  width: 100%;
+  height: 660px;
+  background: linear-gradient(90deg, #000000, rgb(1, 1, 11));
+  padding-top: 20px;
+}
+
+.line1 {
+  width: 120px;
+  height: 0px;
+  left: 463px;
+  top: 378px;
+  position: absolute;
+  transform: rotate(90deg);
+  transform-origin: 0 0;
+  border: 1px #702789 solid;
+}
+
+.title-eventos {
+  width: 285px;
+  height: 69px;
+  left: 47px;
+  top: 130px;
+  position: absolute;
+  font-weight: 400;
+  word-wrap: break-word;
+  font-size: 4em; background-clip: text; color: transparent; background: linear-gradient(to right,rgb(108, 41, 171),rgba(118, 36, 211, 0.672),rgba(92, 0, 128, 0.672)); -webkit-background-clip: text;
+  background-size: 200% 100%;
+  animation: texto 10s ease-in-out infinite;
+}
+
+.line-left-eventos {
+  width: 397px;
+  height: 0px;
+  left: 33px;
+  top: 133px;
+  position: absolute;
+  transform: rotate(90.21deg);
+  transform-origin: 0 0;
+  border: 1px #702789 solid;
+}
+
+.ver-mais-eventos {
+ 
+  left: 1.1em;
+  top: 530px;
+  background:linear-gradient(to right,#702789,#47055d);
+  position: absolute;
+  color: white;
+  padding: 0.2em;
+  padding-left: 2em;
+  padding-right: 2em;
+  font-size: 26.80px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 20px;
+  font-weight: 400;
+  word-wrap: break-word;
+  background-size: 400% 100%;
+      animation: texto 10s linear infinite;
+      font-family: 'Roboto Mono', monospace;
+}
+
+.text11 {
+  width: 257.03px;
+  height: 220.72px;
+  left: 47px;
+  top: 239px;
+  position: absolute;
+  color: white;
+  font-size: 2.2em;
+  font-weight: 400;
+  line-height: 53.15px;
+  word-wrap: break-word;
+  font-family: 'Roboto Mono', monospace;
+}
+
+
+
+
+.linha-com-efeito {
+  display: flex;
+  height: 44.70px;
+}
+
+.bordar-central {
+  width: 60px;
+  height: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid #702789;
+  transform: rotate(44deg);
+  padding: 0;
+  margin-top: 1.1em;
+  margin-right: -0.5em;
+  margin-left: -0.55em;
+}
+
+.borda-superior {
+  width: 50%;
+  border-top: 1px solid #702789;
+  margin-top: -0.3em;
+}
+
+.borda-inferior {
+  width: 25%;
+  border-bottom: 1px solid #702789;
+  height: 2.6em;
+  margin-left: -0.04em;
+}
+
+.line-bottom-eventos {
+  width: 100%;
+  height: 44.70px;
+  left: 90%;
+  top: 568.79px;
+  position: absolute;
+  transform: rotate(180deg);
+  transform-origin: 0 0;
+}
+
+.card-evento {
+  height: 26%;
+  border-bottom: 2px solid rgb(81, 8, 101);
+  margin-left: 37.5vw;
+  width: 50vw;
+  margin-top: 20.9vh;
+  display: flex;
+  justify-content: start;
+  text-align: start;
+  flex-direction: row;
+  padding: 10px;
+  padding-left: 2%;
+
+  .container-img {
+    display: flex;
+    margin: 0%;
+    padding: 10px 0;
+    border-right: 0.0 1em solid rgb(81, 8, 101);
+  }
+}
+
+
+.card-evento-2 {
+  margin-top: 0;
+  border-bottom: none;
+}
+
+.card-inf {
+  color: white;
+  padding-left: 0.5em;
+
+  .title-card-evento {
+    margin-bottom: 0;
+    padding-left: 0em;
+    margin-top:
+      1%;
+    color: white;
+    font-size: 1.8em;
+    width: 100%;
+    margin-bottom: 0.4em;
   }
 
+}
+
+.resumo-evento {
+  margin-top: -10px;
+  color: rgb(213, 213, 213);
+  max-height: 54.5px;
+  overflow-y: hidden;
+  font-size: 1.2em;
+}
+
+.autor-and-data {
+  width: 100%;
+  display: flex;
+}
+
+.autor-evento {
+  width: 50%;
+}
+
+.data-evento {
+  color: rgb(250, 250, 250);
+}
+
+@media screen and (max-width:992px) {
+  .card-evento {
+    height: 23%;
+    margin-left: 43.05vw;
+    width: 50vw;
+    margin-top: 12em;
+  }
+
+  .card-evento-2 {
+    margin-top: 0;
+  }
+
+  .container-img {
+    display: flex;
+    margin: 0%;
+    padding: 18px;
+    padding-bottom: 0;
+    border-right: 0.0 1em solid rgb(81, 8, 101);
+  }
+
+  .card-inf {
+    color: white;
+    padding-left: 0.5em;
+
+    .title-card-evento {
+
+      padding-left: 0em;
+      margin-top: 2%;
+      font-size: 1.3em;
+      margin-bottom: 0.3em;
+    }
+
+  }
+
+  .resumo-evento {
+    margin-top: 0;
+    max-height: 54px;
+    font-size: 0.84em;
+  }
+
+  .autor-and-data {
+    width: 100%;
+  }
+
+  .autor-evento {
+    font-size: 0.8em;
+  }
+
+  .data-evento {
+    font-size: 0.7em;
+  }
+
+  .linha-com-efeito {
+    display: flex;
+    height: 44.70px;
+  }
+
+  .bordar-central {
+    width: 60px;
+    height: 0px;
+    margin-top: 1.3em;
+    margin-right: -0.5em;
+    margin-left: -0.55em;
+  }
+
+  .borda-superior {
+    width: 50%;
+  }
+
+  .borda-inferior {
+    width: 25%;
+    height: 2.6em;
+    margin-left: -0.04em;
+  }
+
+  .line-bottom-eventos {
+    width: 100%;
+    height: 44.70px;
+    left: 99.5%;
+  }
+}
+
+@media (max-width:790px) {
+  .card-evento {
+    margin-left: 48.05vw;
+    width: 50vw;
+    height: 22%;
+    padding-left: 0;
+    margin-top: 13.8em;
+
+    .container-img {
+      padding: 4% 0 0 0;
+      height: 7em;
+    }
+  }
+
+  .card-evento-2 {
+    margin-top: 0;
+  }
+
+  .card-inf {
+
+
+    .title-card-evento {
+      margin-top: 3%;
+      margin-bottom: 0.3em;
+      font-size: 1.2em;
+    }
+
+  }
+
+  .resumo-evento {
+    margin-top: 0;
+    max-height: 3.4em;
+    font-size: 0.84em;
+  }
+}
+
+@media (max-width:600px) {
+  .text11 {
+    display: none;
+  }
+
+  .card-evento {
+    height: 23%;
+    margin-left: 10.05vw;
+    padding-left: 0;
+    width: 80vw;
+
+  }
+
+  .card-evento-2 {
+    margin-top: 0;
+  }
+
+  .container-eventos .container-img {
+    display: flex;
+    margin: 0%;
+    padding-left: 0;
+  }
+
+  .card-inf {
+    color: white;
+    padding-left: 0.5em;
+    padding-bottom: 0em;
+
+    .title-card-evento {
+      font-size: 1.05em;
+      padding-left: 0em;
+      margin-top: 4%;
+      margin-bottom: 0.3em;
+    }
+
+  }
+
+  .resumo-evento {
+    margin-top: 0;
+    max-height: 3.5em;
+    font-size: 0.84em;
+  }
+
+  .autor-and-data {
+    width: 100%;
+  }
+
+  .autor-evento {
+    font-size: 0.8em;
+    width: 70%;
+  }
+
+  .data-evento {
+    font-size: 0.7em;
+  }
+
+  .linha-com-efeito {
+    display: flex;
+    height: 44.70px;
+  }
+
+  .bordar-central {
+    width: 0px;
+    height: 0px;
+    ;
+  }
+
+  .borda-superior {
+    width: 90%;
+  }
+
+  .borda-inferior {
+    width: 0%;
+    height: 2.6em;
+    margin-left: -0.04em;
+  }
+
+  .line-bottom-eventos {
+    width: 90%;
+    height: 30.70px;
+    left: 97.8%;
+    margin-top: 1.5em;
+  }
+
+  .ver-mais-eventos {
+    margin-top: 1.5em;
+    width: 4em;
+    height: 2em;
+    font-size: 1em;
+    margin-left: 0.7em;
+    display: flex;
+    align-items: center;
+    border-top-right-radius: 30px;
+  }
+
+  .line-left-eventos {
+    width: 450px;
+  }
+}
+
+@media screen and (max-width:460px) {
+  .card-evento .title-card-evento {
+
+    margin-top: 6%;
+    font-size: 0.98em;
+    margin-bottom: 0.3em;
+  }
+
+  .autor-evento {
+    font-size: 0.8em;
+    width: 70%;
+  }
+
+  .data-evento {
+    font-size: 0.8em;
+  }
+
+  .line-left-eventos {
+    width: 427px;
+    left: 21px;
+    top: 133px;
+  }
+
+  .ver-mais-eventos {
+    margin-top: 1.5em;
+    width: 4em;
+    height: 2em;
+    font-size: 1em;
+    margin-left: 0em;
+
+    border-bottom-right-radius: 0px;
+  }
+}
+
+
+@media screen and (max-width:390px) {
+  .card-evento .title-card-evento {
+
+    margin-top: 6%;
+    font-size: 1.1em;
+    margin-bottom: 0.3em;
+  }
+
+  .card-evento {
+    padding-bottom: 0;
+
+    .title-card-evento {
+      font-size: 0.9em;
+
+    }
+  }
+
+  .resumo-evento {
+    margin-top: 0;
+    max-height: 3.5em;
+    margin-left: 0.6em;
+    font-size: 0.77em;
+    margin-left: 0;
+  }
+
+  .autor-and-data {
+    width: 100%;
+  }
+
+  .autor-evento {
+    font-size: 0.68em;
+    width: 70%;
+  }
+
+  .data-evento {
+    font-size: 0.7em;
+  }
+}
+
+@media screen and (max-width:330px) {
+  .card-evento {
+    padding-bottom: 0;
+
+    .title-card-evento {
+      font-size: 0.8em;
+
+    }
+  }
+
+  .resumo-evento {
+    margin-top: 0;
+    max-height: 3.5em;
+    margin-left: 0;
+    font-size: 0.7em;
+  }
+
+}

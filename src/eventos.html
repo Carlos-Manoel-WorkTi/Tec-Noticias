@@ -1,15 +1,16 @@
 <!DOCTYPE html>
+
 <html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/Pasta_eventos_css/eventos.css">
+    <style></style>
     <title>Tec Noticias</title>
 </head>
 
-<body>
-    <header>
+<body class="tec-noticias">
+  <header class="row header ">
 
         <nav>
             <div>
@@ -17,10 +18,10 @@
                 <a href="#"><i>MENU</i></a>
                 <ul>
                     <li><a href="index.html">INICIO</a></li>
-                    <li><a href="noticias.html">NOTICIAS</a></li>
-                    <li><a href="podcasts.html">PODCASTS</a></li>
-                    <li><a href="eventos.html">EVENTOS</a></li>
-                    <li><a href="cultura.html">CULTURA</a></li>
+                    <li><a href="src/noticias.html">NOTICIAS</a></li>
+                    <li><a href="src/podcasts.html">PODCASTS</a></li>
+                    <li><a href="src/eventos.html">EVENTOS</a></li>
+                    <li><a href="src/cultura.html">CULTURA</a></li>
                     <li>
                         <form>
                             <div>
@@ -37,105 +38,128 @@
                     <li><a href="collapsible.html"><button>CADASTRAR</button></a></li>
                     <li><a href="collapsible.html"><button>ENTRAR</button></a></li>
 
-                </ul>
-            </div>
-        </nav>
-    </header>
+        </ul>
+      </div>
+      
+ 
+      
 
-    <main>
+      <div class=" nav-two hide-on-large-only">
+        <div class="row">
+          <div class="col s12">
+            <ul class="tabs tabs-transparent">
+              <li class="tab col s3"><a  href="../index.html" target="_self" >INICIO</a></li>
+              <li class="tab col s3"><a href="noticias.html" target="_self" >NOTÍCIAS</a></li>
+              <li class="tab col s3"><a href="eventos.html" target="_self" >EVENTOS</a></li>
+              <li class="tab col s3 "><a class="active" href="podcasts.html" target="_self" >PODCASTS</a></li>
+              <li class="tab col s3"><a href="cultura.html" target="_self" >CULTURA</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+    
+    <ul class="sidenav left-align" id="mobile-demo" style="width: 60%; top: 0;">
+      <li style="height: 13%; padding: 0; margin: 0; border-bottom: 1px solid white; " class="links-nav"><a href="../index.html" ><img style="width: 50%; margin-left: 20%; " src="../img/Pasta_home_img/TN.png" alt=""></a></li>
+      <li class="links-nav"><a href="../index.html" >INICIO</a></li>
+      <li class="links-nav"><a href="noticias.html">NOTICIAS</a></li>
+      <li class="links-nav"><a class="active" href="podcasts.html">PODCASTS</a></li>
+      <li class="links-nav"><a href="eventos.html">EVENTOS</a></li>
+      <li class="links-nav"><a href="cultura.html">CULTURA</a></li>
+      <li class="links-nav"><a href="#">PERFIL</a></li>
+      <li class="links-nav"><a href="#">CONFIGURAÇÔES</a></li>
+      <li class="links-nav"><a href="#">SOBRE</a></li>
+    </ul>
+  </nav>
+  
+    <div class="hide search-area s12 m6 l6 xl6" >
+      <!-- Conteúdo atual -->
+    
+      <!-- Formulário de pesquisa que se sobrepõe -->
+      <form action="" id="form_pesquisa">
+        <div class="input-field" >
+          <input placeholder="Digite sua pesquisa..." type="text" id="autocomplete-input" class="autocomplete">
+          <!-- <label for="autocomplete-input" style="color: #000; margin: 0;">Pesquise</label> -->
+        </div>
+        <button type="button" id="cancel-button" class="btn">
+          <i class="material-icons">close</i>
+        </button>
+        <button type="button" id="search-in-button" class="btn">
+          <i class="material-icons">search</i>
+        </button>
+      </form>
+    </div>   
+  </header>
+<section>
+  <main>
 
         <section>
-            <div class="banner">
-                <div class="banner-conteudo">
-                    <h2>EVENTOS</h2>
-                    <p>Fique atento para os melhores os eventos queos surgem na área tech no Brasil.</p>
+            <div>
+                <div>
+                    <div>
+                        <h2>EVENTOS</h2>
+                    </div>
+                    <div>
+                        <p>Fique atento para os melhores os eventos queos surgem na área tech no Brasil.</p>
+                    </div>
                 </div>
-            </div>
-
-            <!--Começo dos Eventos-->
-            <div class="eventos">
-                <div class="filtrador">
+                <div>
                     <label for="filtro">FILTRO:</label>
                     <select name="filtro" id="filtro">
                         <option disabled selected hidden value="">Selecione</option>
-                        <option value="cursos">Cursos</option>
-                        <option value="hackatons">Hackatons</option>
-                        <option value="bootcamps">Bootcamp</option>
-                        <option value="online">Online</option>
-                        <option value="presencial">Presencial</option> <!-- Corrected the value attribute -->
-                        <option value="gratuito">Gratuito</option> <!-- Corrected the value attribute -->
-                        <option value="privado">Privado</option>
+                        <option value="recentes">Recentes</option>
+                        <option value="populares">Populares</option>
+                        <option value="entrevistas">Entrevistas</option>
+                        <option value="analises">Análises</option> <!-- Corrected the value attribute -->
+                        <option value="tendencias">Tendências</option> <!-- Corrected the value attribute -->
                     </select>
                 </div>
+                 <div>
+                   <div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/3MdGMnkxHSQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-                <!--Card de Evento-->
-                <div class="card-evento">
-                    <div class="imagem-evento">
-                        <img src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="FOTO QUE REPRESENTA O EVENTO">
                     </div>
                     <div>
-                        <div class="texto-evento">
-                            <h1>Confira os Desafios de TI Para 2023</h1>
-                            <p>Para você que deseja crescer no mercado da tecnologia da informação, o primeiro passo é conhecer bem qual é o rumo que a TI está tomando. E nesse vídeo, você vai descobrir quais são os principais desafios para o próximo ano!</p>
-                            <p><strong>Postado:</strong> 16 de dez. de 2022</p>
-                            <div class="filtros-evento">
-                                <div class="filtro-evento">Bootcamp</div>
-                                <div class="filtro-evento">Gratuito</div>
-                                <div class="filtro-evento">Online</div>
-                            </div>
-                        </div>
-
+                        <h1>Confira os Desafios de TI Para 2023</h1>
+                        <p>Para você que deseja crescer no mercado da tecnologia da informação, o primeiro passo é conhecer bem qual é o rumo que a TI está tomando. E nesse vídeo, você vai descobrir quais são os principais desafios para o próximo ano!</p>
+                        <span>Estreou em 16 de dez. de 2022</span>
+                        <div><button><a href="https://youtu.be/3MdGMnkxHSQ?si=NSwJRK4XHMi-dAVD">Assistir agora</a></button></div>
                     </div>
                 </div>
                 <!-- outro evento -->
                 <hr>
-
-                <!--Card de Evento-->
-                <div class="card-evento">
-                    <div class="imagem-evento">
-                        <img src="https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDN8fHRlY2hub2xvZ3l8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="FOTO QUE REPRESENTA O EVENTO">
-                    </div>
-                    <div>
-                        <div class="texto-evento">
-                            <h1>Desafio de React: Aprenda, Desenvolva, Vença!</h1>
-                            <p>React é uma biblioteca JavaScript popular para construção de interfaces de usuário. Uma das melhores maneiras de aprimorar suas habilidades em React é enfrentar desafios de programação. Isso não apenas aprofundará seu conhecimento, mas também o ajudará a se preparar para situações do mundo real.</p>
-                            <p><strong>Postado:</strong> 8 outubro de 2023</p>
-                            <div class="filtros-evento">
-                                <div class="filtro-evento">Curso</div>
-                                <div class="filtro-evento">Privado</div>
-                                <div class="filtro-evento">Presencial</div>
-                            </div>
-                        </div>
-
-                    </div>
+                <div>
+                    <img src="img/guide-video-playback-react.avif" alt="Imagem de capa" width="560" height="315">
+                </div>
+                <div>
+                    <h1>Desafio de React: Aprenda, Desenvolva, Vença!</h1>
+                    <p>React é uma biblioteca JavaScript popular para construção de interfaces de usuário. Uma das melhores maneiras de aprimorar suas habilidades em React é enfrentar desafios de programação. Isso não apenas aprofundará seu conhecimento, mas também o ajudará a se preparar para situações do mundo real.</p>
+                    <span>Data de transmissão: 8 outubro de 2023</span>
+                    <div><button><a href="https://www.youtube.com/live/ex12hW8cqRE?si=al4OTa0HRaqVDgS7">COMEÇAR</a></button></div>
+                </div>
                 </div>
                 <hr>
                 <!-- outro evento -->
                 <hr>
-                <!--Card de Evento-->
-                <div class="card-evento">
-                    <div class="imagem-evento">
-                        <img src="https://images.unsplash.com/photo-1455165814004-1126a7199f9b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTB8fHRlY2hub2xvZ3l8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="FOTO QUE REPRESENTA O EVENTO">
-                    </div>
-                    <div>
-                        <div class="texto-evento">
-                            <h1>Aula Inaugural - Santander Bootcamp 2023</h1>
-                            <p>A nova edição do Santander Bootcamp conta com 6 trilhas e 75 mil bolsas de estudo para serem distribuídas a pessoas de todo o Brasil. O programa é voltado para aqueles que estão iniciando carreira em desenvolvimento de software, em transição de carreira ou que já atuam profissionalmente e buscam ...</p>
-                            <p><strong>Postado:</strong> 17 de ago. de 2023</p>
-                            <div class="filtros-evento">
-                                <div class="filtro-evento">Hackaton</div>
-                                <div class="filtro-evento">Gratuito</div>
-                                <div class="filtro-evento">Online</div>
-                            </div>
-                        </div>
-                    </div>
+                <div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ex12hW8cqRE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-                 <!-- ADD MAIS BLOCOS -->
-                <div class="btn-eventos"><button>Ver mais eventos</button></div>
+                <div>
+                    <h1>Aula Inaugural - Santander Bootcamp 2023</h1>
+                    <p>A nova edição do Santander Bootcamp conta com 6 trilhas e 75 mil bolsas de estudo para serem distribuídas a pessoas de todo o Brasil. O programa é voltado para aqueles que estão iniciando carreira em desenvolvimento de software, em transição de carreira ou que já atuam profissionalmente e buscam evoluir e conquistar melhores oportunidades no mercado de tecnologia. 
+                    </p>
+                    <span>Transmitido ao vivo em 17 de ago. de 2023</span>
+                    <div><button><a href="https://www.youtube.com/live/ex12hW8cqRE?si=al4OTa0HRaqVDgS7">Assistir agora</a></button></div>
+                </div>
+            </div>
  
+   
+                <!-- ADD MAIS BLOCOS -->
+            </div>
+            <div>
+                <div><button><a href="Ver mais">veja mais</a></button></div>
             </div>
         </section>
-
         <section>
             <div><a href="#"><img src="" alt="anuncio">Publicidade</a></div>
         </section>
@@ -158,51 +182,103 @@
                         <li><a href="#!">Perfil do usuário</a></li>
                     </ul>
                 </div>
-                <div>
-                    <h5>Tecnologias</h5>
-                    <ul>
-                        <li><a href="#!">JavaScript</a></li>
-                        <li><a href="#!">Inteligência Artificial</a></li>
-                        <li><a href="#!">Ciência de Dados</a></li>
-                        <li><a href="#!">Inovações em TI</a></li>
-                    </ul>
+                <div class="col s12 m12 l12 xl12">
+                  <p>Tec notícias</p>
+                  <p>privacidade</p>
+                  <p>suporte</p>
+                  <p>usuario</p>
                 </div>
+              </div>
             </div>
+            <div class="col s4 m4 l4 xl4">
+              <div class="row">
+                <div class="col s12 m12 l12 xl12">
+                  <h5>Conteudos</h5>
+                </div>
+                <div class="col s12 m12 l12 xl12">
+                  <p>Tecnologias</p>
+                  <p>Eventos</p>
+                  <p>Podcasts</p>
+                  <p>Cultura</p>
+                </div>
+              </div>
+            </div>
+            <div class="col s4 m4 l4 xl4">
+              <div class="row">
+                <div class="col s12 m12 l12 xl12">
+                  <h5>Colaboradores</h5>
+                </div>
+                <div class="col s12 m12 l12 xl12">
+                  <p>Carlos Manoel</p>
+                  <p>Gabriel Meiki</p>
+                  <p>Alexnder Pereira</p>
 
-            <div>
-                <div>
-                    <img style="width: 50px; height: 50px;"
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg"
-                        alt="Facebook">
                 </div>
-                <div>
-                    <img style="width: 50px; height: 50px;"
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/twitter/twitter-original.svg"
-                        alt="Twitter">
-                </div>
-                <div>
-                    <img style="width: 50px; height: 50px;"
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
-                        alt="LinkedIn">
-                </div>
-                <div>
-                    <img style="width: 50px; height: 50px;"
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-                        style="background-color: rgb(255, 255, 255);border-radius: 100%;" />
-                </div>
+              </div>
             </div>
+          </div>
         </div>
-        <div>
-            <div>
-                <span> © 2018 Tec Notícias - Todos os Direitos Reservados
-                    <a href="#!">Termos de Serviço</a>
-                </span>
 
-            </div>
-        </div>
-    </footer>
-    <script>
-    </script>
+      </div>
+    </div>
+    <div class="row copyright">
+      <div class="col s8 m8 l8 xl8">©2018 Tec Notícias - Todos os Direitos Reservados</div>
+      <div class="col s4 m4 l4 xl4">termos de serviço</div>
+    </div>
+  </footer>
+
+
+
+
+  <!-- Scripts JavaScript para texto animado -->
+  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src="../js/Pasta_home_js/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="../js/Pasta_home_js/script.js"></script>
+  <script src="../js/Pasta_home_js/textanimate.js"></script>
+  <script src="../js/Pasta_home_js/libra.js"></script>
+
+  <!-- Scripts JavaScript para Materialize CSS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"
+    integrity="sha512-NiWqa2rceHnN3Z5j6mSAvbwwg3tiwVNxiAQaaSMSXnRRDh5C2mk/+sKQRw8qjV1vN4nf8iK2a0b048PnHbyx+Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- Script para animação de entrada (AOS) -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    // Inicialização da animação de entrada com AOS
+    AOS.init();
+
+    // materialize 
+    M.AutoInit();
+
+    // Configuração do carousel
+    $(document).ready(function () {
+      $('.parallax').parallax();
+    });
+    $(document).ready(function () {
+      $('.sidenav').sidenav({ edge: 'left' });
+    });
+    $(document).ready(function () {
+      $('input.autocomplete').autocomplete({
+        data: {
+          "notícias": null,
+          "podcasts": null,
+          "tecnologia": null,
+          "eventos": './src/eventos.html'
+        },
+      });
+    });
+    $(document).ready(function () {
+      $('.tabs').tabs();
+    });
+
+  </script>
+</body>
 </body>
 
 </html>

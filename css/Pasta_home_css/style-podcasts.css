@@ -1,10 +1,78 @@
 @media (min-width: 992px){
+    #section-three{
+        background: linear-gradient(to bottom,black,black,black,rgb(2, 2, 41),black);
+        padding-top: 1px;
+    }
     .podcasts{
-        border-bottom: 2px solid white;
         margin: 5%;
+        margin-top: 0;
+        margin-bottom: 0;
+        .card .card-content {
+            padding: 10px;
+            border-radius: 0 0 0 0;
+            background: linear-gradient(to right, rgb(36, 4, 78), rgb(81, 23, 98), rgb(131, 60, 157));
+          .card-title{
+            border-radius: 0;
+            color: white;
+          }
     }
-    icon{
-        font-size: 200px;
-        color: white;
+    .material-icons {
+        background: linear-gradient(to bottom, rgb(36, 4, 78), rgb(81, 23, 98), rgba(131, 60, 157, 0.212),transparent);;
+        background-clip: text;
+        -webkit-background-clip: text;
+        font-size:  200px;
+        color: transparent;
     }
+ 
+}}
+.resumo-podcast{
+  margin-left: 20px;
+}
+@media (max-width:992px){
+    /* PODCAST */
+  #podcasts{
+    
+
+  margin-bottom: 10vh;
+  background: linear-gradient(to right,rgba(0, 0, 0, 0.664),rgb(9, 2, 37));
+  padding-top: 20px;
+  margin-left: 1%;
+  .video-podcast{
+    height: 45vh;
+    width: 100%;
+    margin-left: -2%;
+    margin-top:2vh;
+    border: 3px solid #13021b16; box-shadow: 1px 10px 10px rgba(56, 19, 95, 0.231);
+    transition: 1s ease-in-out;
+  }
+  .float{
+    animation: float 3s infinite ease-in;
+  }
+  .div-video{
+    
+    border: 3px solid #13021b16; box-shadow: 12px 10px 10px rgba(56, 19, 95, 0.3);
+
+  }
+  #tittle-section-podcast{
+    border-left: 2px solid rgb(49, 13, 105); padding-left: 10px;
+  }
+  #t{
+    font-size: 4em; background-clip: text; color: transparent; background: linear-gradient(to right,rgb(97, 17, 172),rgba(132, 58, 216, 0.672),rgba(92, 0, 128, 0.672)); -webkit-background-clip: text;
+    background-size: 200% 100%;
+    animation: texto 10s ease-in-out infinite;
+  }
+  .texto-podcasts-titulo{
+    font-size: 3em; width: 85%;
+    color: white; font-family: 'Roboto Mono', monospace;
+    border-left: 1px solid rgb(49, 13, 105);
+    padding:2em 0 0em 0.3em; margin:-0.43em 0 0.6em -0.246em; height: 7.25em;
+  }
+  .button-seeMore-podcasts{
+    background: linear-gradient(to right,rgb(29, 5, 57),rgb(54, 15, 116)); color: white; padding: 10px 20px; text-align: center; max-width: 200px; border-radius:0  10px 10px 10px; overflow: hidden; margin-left: 0; width: 60vw;background-size: 400% 100%;
+    animation: texto 10s linear infinite; margin: -3em 0 0 -0.885em;
+  }
+  .ver-mais-podcasts{
+    color: white; height: 50px; padding: 1px; margin: 7px; display: flex; justify-content: start; align-items: center;  font-size: 1.5em; font-family: 'Roboto Mono', monospace; 
+  }
+}
 }
