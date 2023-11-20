@@ -1,279 +1,475 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="../css/Pasta_perfil_css/perfil.css">
-  ç
-  <link rel="stylesheet" href="../css/Pasta_home_css/style.css">
-  <link rel="stylesheet" href="../css/Pasta_home_css/styleMediaView-l.css">
-  <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
-  <title>TEC noticias - Perfil</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Links para os estilos (CSS) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+        integrity="sha512-UJfAaOlIRtdR+0P6C3KUoTDAxVTuy3lnSXLyLKlHYJlcSU8Juge/mjeaxDNMlw9LgeIotgz5FP8eUQPhX1q10A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="../css/Pasta_home_css/libra.css">
+    <link rel="stylesheet" href="../css/Pasta_eventos_css/evento.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../css/Pasta_perfil_css/perfil.css">
+    <link rel="stylesheet" href="../css/Pasta_home_css/style.css">
+    <link rel="stylesheet" href="../css/Pasta_home_css/styleMediaView-l.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="icon" href="../img/favicon.png" type="image/x-icon">
+    <title>TEC Notícias - eventos</title>
 </head>
 
-<body>
-
+<body class="tec-noticias">
     <header class="row header ">
 
         <nav class="nav-extended cor-nav ">
-          <div class="nav-wrapper" data-aos="fade-down" data-aos-duration="500">
-            <img class="brand-logo left" src="../img/Pasta_home_img/TN.png" alt="logo" data-aos="fade-rght"
-              data-aos-duration="1100"/> 
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger right hide-on-med-and-up"><i class="material-icons button-menu-mobile">menu</i></a>
-            <ul id="nav-mobile" class="right ">
-              <li class="links-nav hide-on-med-and-down"><a href="../index.html">INICIO</a></li>
-              <li class="links-nav hide-on-med-and-down"><a href="noticias.html">NOTICIAS</a></li>
-              <li class="links-nav hide-on-med-and-down"><a href="podcasts.html">PODCASTS</a></li>
-              <li class="links-nav hide-on-med-and-down"><a href="eventos.html">EVENTOS</a></li>
-              <li class="links-nav hide-on-med-and-down"><a href="cultura.html">CULTURA</a></li>
-              <!-- formulario para pesquisar -->
-              <li>
-                <button type="button" id="search-button" ><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                  width="40"  viewBox="0,0,256,256">
-                  <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
-                    stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
-                    font-family="none" font-weight="none" font-size="none" text-anchor="none"
-                    style="mix-blend-mode: normal">
-                    <g transform="scale(5.12,5.12)">
-                      <path
-                        d="M21,3c-9.37891,0 -17,7.62109 -17,17c0,9.37891 7.62109,17 17,17c3.71094,0 7.14063,-1.19531 9.9375,-3.21875l13.15625,13.125l2.8125,-2.8125l-13,-13.03125c2.55469,-2.97656 4.09375,-6.83984 4.09375,-11.0625c0,-9.37891 -7.62109,-17 -17,-17zM21,5c8.29688,0 15,6.70313 15,15c0,8.29688 -6.70312,15 -15,15c-8.29687,0 -15,-6.70312 -15,-15c0,-8.29687 6.70313,-15 15,-15z">
-                      </path>
-                    </g>
-                  </g>
-                </svg></button>
-              
-              </li> 
-              <li class="btns"><a href="collapsible.html"><button class="btn-cria hide ">CADASTRAR</button></a></li>
-              <li class="right"><a href="src/login.html"><button class="btn-login hide">ENTRAR</button></a></li>
-              <i style="background:transparent;color: white;font-size: 50px;margin: 10px 20px;" class="material-icons ">
-                <p style="font-size: 0.3em; position: absolute;margin-left: 50.7%; width: 30px;margin-top: -43px;">JOAO</p>
-                <img style="background:transparent;color: white;font-size: 50px;margin: 0px 20px; width: 60px; border-radius: 50%;" src="https://picsum.photos/300/300?=profile" alt="" srcset=""></i>
-    
-            </ul>
-          </div>
-          
-     
-          
-    
-          <div class=" nav-two hide-on-large-only">
-            <div class="row">
-              <div class="col s12">
-                <ul class="tabs tabs-transparent">
-                  <li class="tab col s3"><a  href="../index.html" target="_self" >INICIO</a></li>
-                  <li class="tab col s3"><a href="noticias.html" target="_self" >NOTÍCIAS</a></li>
-                  <li class="tab col s3"><a href="eventos.html" target="_self" >EVENTOS</a></li>
-                  <li class="tab col s3 "><a class="active" href="podcasts.html" target="_self" >PODCASTS</a></li>
-                  <li class="tab col s3"><a href="cultura.html" target="_self" >CULTURA</a></li>
+            <div class="nav-wrapper" data-aos="fade-down" data-aos-duration="500">
+                <img class="brand-logo left" src="../img/Pasta_home_img/TN.png" alt="logo" data-aos="fade-rght"
+                    data-aos-duration="1100" />
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger right hide-on-med-and-up"><i
+                        class="material-icons button-menu-mobile">menu</i></a>
+                <ul id="nav-mobile" class="right ">
+                    <li class="links-nav hide-on-med-and-down"><a href="../index.html" class="active">INICIO</a></li>
+                    <li class="links-nav hide-on-med-and-down"><a href="noticias.html">NOTICIAS</a></li>
+                    <li class="links-nav hide-on-med-and-down"><a href="podcasts.html">PODCASTS</a></li>
+                    <li class="links-nav hide-on-med-and-down"><a href="eventos.html">EVENTOS</a>
+                    </li>
+                    <li class="links-nav hide-on-med-and-down"><a href="cultura.html">CULTURA</a></li>
+                    <!-- formulario para pesquisar -->
+                    <li>
+                        <button type="button" id="search-button"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                width="40" viewBox="0,0,256,256">
+                                <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                    stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                    stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+                                    font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                                    <g transform="scale(5.12,5.12)">
+                                        <path
+                                            d="M21,3c-9.37891,0 -17,7.62109 -17,17c0,9.37891 7.62109,17 17,17c3.71094,0 7.14063,-1.19531 9.9375,-3.21875l13.15625,13.125l2.8125,-2.8125l-13,-13.03125c2.55469,-2.97656 4.09375,-6.83984 4.09375,-11.0625c0,-9.37891 -7.62109,-17 -17,-17zM21,5c8.29688,0 15,6.70313 15,15c0,8.29688 -6.70312,15 -15,15c-8.29687,0 -15,-6.70312 -15,-15c0,-8.29687 6.70313,-15 15,-15z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg></button>
+
+                    </li>
+                    <!-- <li class="btns"><a href="perfil.html"><button class="btn-cria ">CADASTRAR</button></a></li>
+                    <li class="right"><a href="login.html"><button class="btn-login">ENTRAR</button></a></li> -->
+
+                    <li class="right"><a href="login.html"
+                            style="display: flex; flex-direction: column; text-align: center;">
+                            <img src="https://picsum.photos/300/300?=profile" alt=""
+                                style="width: 70px;height: 70px; border-radius: 50%; border: 3px solid rgb(61, 11, 121)">
+                            <span style="margin-top: -1.4em;">jose</span>
+                        </a></li>
+
                 </ul>
-              </div>
             </div>
-          </div>
-        
-        
-        <ul class="sidenav left-align" id="mobile-demo" style="width: 60%; top: 0;">
-          <li style="height: 13%; padding: 0; margin: 0; border-bottom: 1px solid white; " class="links-nav"><a href="../index.html" ><img style="width: 50%; margin-left: 20%; " src="../img/Pasta_home_img/TN.png" alt=""></a></li>
-          <li class="links-nav"><a href="../index.html" >INICIO</a></li>
-          <li class="links-nav"><a href="noticias.html">NOTICIAS</a></li>
-          <li class="links-nav"><a class="active" href="podcasts.html">PODCASTS</a></li>
-          <li class="links-nav"><a href="eventos.html">EVENTOS</a></li>
-          <li class="links-nav"><a href="cultura.html">CULTURA</a></li>
-          <li class="links-nav"><a href="#">PERFIL</a></li>
-          <li class="links-nav"><a href="#">CONFIGURAÇÔES</a></li>
-          <li class="links-nav"><a href="#">SOBRE</a></li>
-        </ul>
-      </nav>
-      
-        <div class="hide search-area s12 m6 l6 xl6" >
-          <!-- Conteúdo atual -->
-        
-          <!-- Formulário de pesquisa que se sobrepõe -->
-          <form action="" id="form_pesquisa">
-            <div class="input-field" >
-              <input placeholder="Digite sua pesquisa..." type="text" id="autocomplete-input" class="autocomplete">
-              <!-- <label for="autocomplete-input" style="color: #000; margin: 0;">Pesquise</label> -->
+
+
+
+
+            <div class=" nav-two hide-on-large-only">
+                <div class="row">
+                    <div class="col s12">
+                        <ul class="tabs tabs-transparent">
+                            <li class="tab col s3"><a href="../index.html" target="_self">INICIO</a></li>
+                            <li class="tab col s3"><a href="noticias.html" target="_self">NOTÍCIAS</a></li>
+                            <li class="tab col s3"><a href="eventos.html" target="_self">EVENTOS</a></li>
+                            <li class="tab col s3 "><a class="active" href="podcasts.html" target="_self">PODCASTS</a>
+                            </li>
+                            <li class="tab col s3"><a href="cultura.html" target="_self">CULTURA</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <button type="button" id="cancel-button" class="btn">
-              <i class="material-icons">close</i>
-            </button>
-            <button type="button" id="search-in-button" class="btn">
-              <i class="material-icons">search</i>
-            </button>
-          </form>
-        </div>   
-      </header>
-  
-  <div class="row" >
-    <div class="col s12 m12 l12 xl12">
-      <ul class="tabs">
-        <li class="tab col s3 l12 xl12"><a class="active" href="#test1">Perfil</a></li>
-        <li class="tab col s3"><a href="#test2">Dados</a></li>
-        <li class="tab col s3"><a href="#test3">Favoritos</a></li>
-        <li class="tab col s3"><a href="#test4">Configurações</a></li>
-      </ul>
-    
-    
-    
-    <div id="test1" class="tab s12 m12 l12 xl12" style="background-color: white;"  >
-      <div class="row">
-         <!-- <div class=" col s12 m5 l6 xl4 "></div>
+
+
+            <ul class="sidenav left-align" id="mobile-demo" style="width: 60%; top: 0;">
+                <li style="height: 13%; padding: 0; margin: 0; border-bottom: 1px solid white; " class="links-nav"><a
+                        href="../index.html"><img style="width: 50%; margin-left: 20%; "
+                            src="../img/Pasta_home_img/TN.png" alt=""></a></li>
+                <li class="links-nav"><a href="../index.html">INICIO</a></li>
+                <li class="links-nav"><a href="noticias.html">NOTICIAS</a></li>
+                <li class="links-nav"><a class="active" href="podcasts.html">PODCASTS</a></li>
+                <li class="links-nav"><a href="eventos.html">EVENTOS</a></li>
+                <li class="links-nav"><a href="cultura.html">CULTURA</a></li>
+                <li class="links-nav"><a href="#">PERFIL</a></li>
+                <li class="links-nav"><a href="#">CONFIGURAÇÔES</a></li>
+                <li class="links-nav"><a href="#">SOBRE</a></li>
+            </ul>
+        </nav>
+
+        <div class="hide search-area s12 m6 l6 xl6">
+            <!-- Conteúdo atual -->
+
+            <!-- Formulário de pesquisa que se sobrepõe -->
+            <form action="" id="form_pesquisa">
+                <div class="input-field">
+                    <input placeholder="Digite sua pesquisa..." type="text" id="autocomplete-input"
+                        class="autocomplete">
+                    <!-- <label for="autocomplete-input" style="color: #000; margin: 0;">Pesquise</label> -->
+                </div>
+                <button type="button" id="cancel-button" class="btn">
+                    <i class="material-icons">close</i>
+                </button>
+                <button type="button" id="search-in-button" class="btn">
+                    <i class="material-icons">search</i>
+                </button>
+            </form>
+        </div>
+    </header>
+
+
+    <main>
+        <section>
+
+            <div class="row" style="margin-top: 20px;">
+                <div class="col s12 m12 l12 xl12">
+                    <ul class="tabs">
+                        <li class="tab col s3 l12 xl12"><a class="active" href="#test1">Perfil</a></li>
+                        <li class="tab col s3"><a href="#test2">Dados</a></li>
+                        <li class="tab col s3"><a href="#test3">Favoritos</a></li>
+                        <li class="tab col s3"><a href="#test4">Configurações</a></li>
+                    </ul>
+
+
+
+                    <div id="test1" class="tab s12 m12 l12 xl12" style="background-color: white;">
+                        <div class="row">
+                            <!-- <div class=" col s12 m5 l6 xl4 "></div>
          <img src="https://picsum.photos/300/300?=profile" class="img-perfil col s12 m5 l6 xl4 offset-xl1">
          </img> -->
-         <div class="col xl6">
+                            <div class="col xl6">
 
-          <div class="row container-left">
-            <div class="col xl6">
-              <i class="back-page material-icons">keyboard_backspace           
-                </i>
-            </div>
-            <!-- img -->
-            <img src="https://picsum.photos/300/300?=profile" class="img-perfil col l6 xl8 offset-xl2 img-xl">
-            <!-- info -->
-            <div class="input-field  col s12 m5 l6 xl8 offset-xl2">
-              <input  disabled id="last_name" type="text" class="validate" value="João">
-              <label style="color: rgb(11, 7, 7);" for="last_name">Nome</label>
-            </div>
-            <div class="divider"></div>
-        
-            <div class="input-field  col s12 m5 l6 xl8 offset-xl2">
-              <input id="last_name" type="text" class="validate" disabled>
-              <label class="areas-perfil" for="last_name">Dados</label>
-            </div>
-            <div class="divider"></div>
-            <div class="input-field  col s12 m5 l6 xl8 offset-xl2">
-              <input id="last_name" type="text" class="validate" disabled>
-              <label class="areas-perfil" for="last_name">Favoritos</label>
-            </div>
-            <div class="divider"></div>
-            <div class="input-field  col s12 m5 l6 xl8 offset-xl2">
-              <input id="last_name" type="text" class="validate" disabled>
-              <label class="areas-perfil" for="last_name">Segurança</label>
-            </div>
-            <div class="divider"></div>
-            <div class="input-field  col s12 m5 l6 xl8 offset-xl2">
-              <input id="last_name" type="text" class="validate" disabled>
-              <label class="areas-perfil" for="last_name">Recentes</label>
-            </div>
-            <div class="divider"></div>
-            
-            <!-- Assinatura -->
-            <div class="row">
-              <div class="col s12 m6 l6 xl8 offset-xl2">
-                <div class="card blue-grey darken-1">
-                  <div class="card-content white-text">
-                    <span class="card-title">Assinatura</span>
-                    <p>Voce possui 30 dias de assinatura restantes,renove e aproveite por mais tempo</p>
-                  </div>
-                  <div class="card-action">
-                    <a href="#">Renovar</a>
-                    <a href="#">cancelar</a>
-                  </div>
-                </div>
-              </div>
-            </div></div>
-              </div>
-<!-- right -->
-              <div class="col xl6">
-                <div class="row container-right">
-                  <div class="container">
-                    <div class="col xl6">
-                      <i class=" back-page material-icons">keyboard_backspace           
-                        </i>
-                    </div>
-                    <div class="col xl6 right-align">
-                      <i class="material-icons red-text text-darken-4 close-page">close          
-                        </i>
-                    </div>
-                  <h3 class="col  l12 xl12 center blue-text text-darken-2">DADOS</h3>
-                  <form class="col s12">
-                    <div class="area-dados">
-                    <div class="row">
-                      <div class="input-field col s6">
-                        <input placeholder="Placeholder" value="João" id="first_name" type="text" class="validate">
-                        <label for="first_name">Nome</label>
-                      </div>
-                      <div class="input-field col s6">
-                        <input id="last_name" value="Santos" type="text" class="validate">
-                        <label for="last_name">Sobrenome</label>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="input-field col s12">
-                        <input  value="+55 99 99999999" type="text" class="validate">
-                        <label for="disabled">Telefone</label>
-                      </div>
-                    </div>
+                                <div class="row container-left">
+                                    <div class="col xl6">
+                                        <a href="../index.html"><i class=" back-page material-icons">keyboard_backspace
+                                        </i></a>
+                                    </div>
+                                    <!-- img -->
+                                    <img src="https://picsum.photos/300/300?=profile"
+                                        class="img-perfil col l6 xl8 offset-xl2 img-xl">
+                                    <!-- info -->
+                                    <div class="input-field  col s12 m5 l6 xl8 offset-xl2">
+                                        <input disabled id="last_name" type="text" class="validate" value="João">
+                                        <label style="color: rgb(11, 7, 7);" for="last_name">Nome</label>
+                                    </div>
+                                    <div class="divider"></div>
 
-                    <div class="row">
-                      <div class="input-field col s12">
-                        <input id="password" type="email" value="joao34255@gmail.com" class="validate">
-                        <label for="password">Email</label>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="input-field col s12">
-                        <input id="password" type="text" value="Rio azul" class="validate">
-                        <label for="password">Cidade</label>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="input-field col s12">
-                        <input id="password" type="text" value="roseiras" class="validate">
-                        <label for="password">Bairro</label>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="input-field col s12">
-                        <input id="password" type="text" value="99" class="validate">
-                        <label for="password">N° da residencia</label>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="input-field col s12">
-                        <input id="password" type="text" value="Ver..." class="validate">
-                        <label for="password">Dados sensiveis</label>
-                      </div>
-                    </div>
-                    <div class="row center">
-                      <a class="waves-effect waves-light btn">SALVAR </a>
-                    </div>
-                    <div class="row">
-                      <div class="card">
-                        <div class="card-image waves-effect waves-block waves-light">
-                          <img class="activator" src="https://i0.wp.com/www.phdvirtual.com.br/wp-content/uploads/2019/12/Quanto-Custa-Anunciar-no-Google-Facebook-e-Instagram-Ads.jpg?resize=1080%2C480&ssl=1">
-                        </div>
-                        <div class="card-content">
-                          <span class="card-title activator grey-text text-darken-4"><i class="material-icons right">more_vert</i></span>
-                          <p><a href="#">Publicidade</a></p>
-                        </div>
-                        <div class="card-reveal">
-                          <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                          <p>Para remover faça a assinatura</p>
-                          <div class="row">
-                            <div class="col s12 m5">
-                              <div class="card-panel teal">
-                                <span class="white-text center">
-                                  <a href="" style="color: white; font-size: 1.2em; text-align: center;">Assinar</a>
-                                </span>
-                              </div>
+                                    <div class="input-field  col s12 m5 l6 xl8 offset-xl2">
+                                        <input id="dados" type="text" class="validate" disabled>
+                                        <label id="btn-dados" class="areas-perfil" for="dados">Dados Pessoais</label>
+                                    </div>
+                                    <div class="divider"></div>
+                                    <div class="input-field  col s12 m5 l6 xl8 offset-xl2">
+                                        <input id="favoritos" type="text" class="validate" disabled>
+                                        <label id="btn-favoritos" class="areas-perfil" for="favoritos">Favoritos</label>
+                                    </div>
+                                    <div class="divider"></div>
+                                    <div class="input-field  col s12 m5 l6 xl8 offset-xl2">
+                                        <input id="segurança" type="text" class="validate" disabled>
+                                        <label id="btn-segurança" class="areas-perfil" for="segurança">Segurança</label>
+                                    </div>
+                                    <div class="divider"></div>
+                                    <div class="input-field  col s12 m5 l6 xl8 offset-xl2">
+                                        <input id="recentes" type="text" class="validate" disabled>
+                                        <label class="areas-perfil" for="recentes">Recentes</label>
+                                    </div>
+                                    <div class="divider"></div>
+                                    <div class="input-field  col s12 m5 l6 xl8 offset-xl2">
+                                        <input id="recentes" type="text" class="validate" disabled>
+                                        <label class="areas-perfil" for="recentes">Suporte</label>
+                                    </div>
+                                    <div class="divider"></div>
+                                    <!-- Assinatura -->
+                                    <div class="row">
+                                        <div class="col s12 m6 l6 xl8 offset-xl2">
+                                            <div class="card blue-grey darken-1">
+                                                <div class="card-content white-text">
+                                                    <span class="card-title">Assinatura</span>
+                                                    <p>Voce possui 30 dias de assinatura restantes,renove e aproveite
+                                                        por mais tempo</p>
+                                                </div>
+                                                <div class="card-action">
+                                                    <a href="#">Renovar</a>
+                                                    <a href="#">cancelar</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                          </div>
+
+                            <!-- right -->
+                            <div class="col xl6 containe-right ">
+
+                                <div class="dados hide">
+                                    <div class="col xl6 hide-on-small-only">
+                                        <i class=" back-page material-icons">keyboard_backspace
+                                        </i>
+                                    </div>
+                                    <div class="col xl6 right-align hide-on-small-onl">
+                                        <i class="material-icons red-text text-darken-4 close-page">close
+                                        </i>
+                                    </div>
+                                    <div class="header">
+                                        <h3 class="center">Dados Pessoais</h3>
+                                    </div>
+
+                                    <div class="container dados-area">
+                                        <form class="col s12">
+                                            <div class="row form-input">
+                                                <div class="input-field col s6">
+                                                    <input placeholder=" " id="first_name" type="text" class="validate"
+                                                        value="João">
+                                                    <label for="first_name">Nome</label>
+                                                </div>
+                                                <div class="input-field col s6">
+                                                    <input id="last_name" type="text" class="validate" value="Santos">
+                                                    <label for="last_name">Sobrenome</label>
+                                                </div>
+                                            </div>
+                                            <div class="row form-input">
+                                                <div class="input-field col s12">
+                                                    <input id="disabled" type="text" class="validate"
+                                                        value="+55 99 99999999">
+                                                    <label for="disabled">Telefone</label>
+                                                </div>
+                                            </div>
+                                            <div class="row form-input">
+                                                <div class="input-field col s12">
+                                                    <input id="email" type="email" class="validate"
+                                                        value="exemplo@email.com">
+                                                    <label for="email">E-mail</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="row form-input">
+                                                <div class="input-field col s12">
+                                                    <input id="city" type="text" class="validate" value="São Paulo">
+                                                    <label for="city">Cidade</label>
+                                                </div>
+                                            </div>
+                                            <div class="row form-input">
+                                                <div class="input-field col s12">
+                                                    <input id="address" type="text" class="validate"
+                                                        value="Rua Exemplo, 123">
+                                                    <label for="address">Endereço</label>
+                                                </div>
+                                            </div>
+                                            <div class="row form-input">
+                                                <div class="input-field col s12">
+                                                    <a href="#"
+                                                        class="waves-effect waves-light purple-text lighten-5">Ver
+                                                        Mais</a>
+
+
+                                                </div>
+                                            </div>
+
+                                            <!-- Outros campos do formulário aqui -->
+
+                                            <div class="row center">
+                                                <button class="btn btn-salvar waves-effect waves-light  purple darken-4"
+                                                    type="submit">SALVAR</button>
+                                            </div>
+                                        </form>
+
+                                    </div>
+                                    <div class="col xl12">
+                                        <div class="container">
+                                            <div class="row container-right">
+                                                <div class="row">
+                                                    <div class="card">
+                                                        <div class="card-image waves-effect waves-block waves-light">
+                                                            <img class="activator"
+                                                                src="https://i0.wp.com/www.phdvirtual.com.br/wp-content/uploads/2019/12/Quanto-Custa-Anunciar-no-Google-Facebook-e-Instagram-Ads.jpg?resize=1080%2C480&ssl=1">
+                                                        </div>
+                                                        <div class="card-content">
+                                                            <span class="card-title activator grey-text text-darken-4"><i
+                                                                    class="material-icons right">more_vert</i></span>
+                                                            <p><a href="#">Publicidade</a></p>
+                                                        </div>
+                                                        <div class="card-reveal">
+                                                            <span class="card-title grey-text text-darken-4">Card Title<i
+                                                                    class="material-icons right">close</i></span>
+                                                            <p>Para remover faça a assinatura</p>
+                                                            <div class="row">
+                                                                <div class="col s12 m5">
+                                                                    <div class="card-panel teal">
+                                                                        <span class="white-text center">
+                                                                            <a href=""
+                                                                                style="color: white; font-size: 1.2em; text-align: center;">Assinar</a>
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="favoritos">
+                                    <div class="col xl6 hide-on-small-onl">
+                                        <i class=" back-page material-icons">keyboard_backspace
+                                        </i>
+                                    </div>
+                                    <div class="col xl6 right-align hide-on-small-onl">
+                                        <i class="material-icons red-text text-darken-4 close-page">close
+                                        </i>
+                                    </div>
+
+                                    <div class="favoritos-area">
+
+
+                                    </div>
+                                </div>
+
+                                <div class="segurança hide">
+
+
+                                    <div class="segurança_area">
+                                        <h4 class="center">Opções de Segurança</h4>
+                                        <div class="row">
+                                            <div class="col s12">
+                                                <ul class="collapsible">
+                                                    <!-- Opção 1: Ativar autenticação de dois fatores -->
+                                                    <li>
+                                                        <div class="collapsible-header">Ativar Autenticação de Dois
+                                                            Fatores</div>
+                                                        <div class="collapsible-body">
+                                                            <p>Ative a autenticação de dois fatores para aumentar a
+                                                                segurança da sua conta.</p>
+                                                            <div class="switch">
+                                                                <label>
+                                                                    Desativado
+                                                                    <input type="checkbox">
+                                                                    <span class="lever"></span>
+                                                                    Ativado
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+                                                    <!-- Opção 2: Configurações de senha -->
+                                                    <li>
+                                                        <div class="collapsible-header">Configurações de Senha</div>
+                                                        <div class="collapsible-body">
+                                                            <p>Gerencie as configurações de senha da sua conta.</p>
+                                                            <div class="row">
+                                                                <a href="#!"
+                                                                    class="waves-effect waves-light col xl12">Alterar
+                                                                    Senha</a>
+
+                                                                <a href="#!"
+                                                                    class="waves-effect waves-light col xl12">Esqueci
+                                                                    minha Senha</a>
+                                                                <a href="#!"
+                                                                    class="waves-effect waves-light col xl12 red-text">Excluir
+                                                                    Conta</a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+                                                    <!-- Adicione mais opções conforme necessário -->
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col xl12">
+                                        <div class="container">
+                                            <div class="row container-right">
+                                                <div class="row">
+                                                    <div class="card">
+                                                        <div class="card-image waves-effect waves-block waves-light">
+                                                            <img class="activator"
+                                                                src="https://i0.wp.com/www.phdvirtual.com.br/wp-content/uploads/2019/12/Quanto-Custa-Anunciar-no-Google-Facebook-e-Instagram-Ads.jpg?resize=1080%2C480&ssl=1">
+                                                        </div>
+                                                        <div class="card-content">
+                                                            <span class="card-title activator grey-text text-darken-4"><i
+                                                                    class="material-icons right">more_vert</i></span>
+                                                            <p><a href="#">Publicidade</a></p>
+                                                        </div>
+                                                        <div class="card-reveal">
+                                                            <span class="card-title grey-text text-darken-4">Card Title<i
+                                                                    class="material-icons right">close</i></span>
+                                                            <p>Para remover faça a assinatura</p>
+                                                            <div class="row">
+                                                                <div class="col s12 m5">
+                                                                    <div class="card-panel teal">
+                                                                        <span class="white-text center">
+                                                                            <a href=""
+                                                                                style="color: white; font-size: 1.2em; text-align: center;">Assinar</a>
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col xl12">
+                                        <div class="container">
+                                            <div class="row container-right">
+                                                <div class="row">
+                                                    <div class="card">
+                                                        <div class="card-image waves-effect waves-block waves-light">
+                                                            <img class="activator"
+                                                                src="https://i0.wp.com/www.phdvirtual.com.br/wp-content/uploads/2019/12/Quanto-Custa-Anunciar-no-Google-Facebook-e-Instagram-Ads.jpg?resize=1080%2C480&ssl=1">
+                                                        </div>
+                                                        <div class="card-content">
+                                                            <span class="card-title activator grey-text text-darken-4"><i
+                                                                    class="material-icons right">more_vert</i></span>
+                                                            <p><a href="#">Publicidade</a></p>
+                                                        </div>
+                                                        <div class="card-reveal">
+                                                            <span class="card-title grey-text text-darken-4">Card Title<i
+                                                                    class="material-icons right">close</i></span>
+                                                            <p>Para remover faça a assinatura</p>
+                                                            <div class="row">
+                                                                <div class="col s12 m5">
+                                                                    <div class="card-panel teal">
+                                                                        <span class="white-text center">
+                                                                            <a href=""
+                                                                                style="color: white; font-size: 1.2em; text-align: center;">Assinar</a>
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+
                         </div>
-                      </div>
-                    </div>     
+
+
+
+
+
+           
                     </div>
 
-                  </form>
-                </div>
-              </div>  
-              </div>
-            </div>
-                      
-          </div>
-        <!-- </img> -->
-         </div>
 
 
 
@@ -281,411 +477,177 @@
 
 
 
+        </section>
+    </main>
 
 
 
 
+    <section id="logos">
 
+        <div class="logo-container">
+            <div class="logos"><img src="../img/Pasta_home_img/icons8-figma-48.png" alt="Logo 1"></div>
+            <div class="logos"><img src="..//Pasta_home_img/icons8-dinâmica-365-48.png" alt="Logo 1"></div>
+            <div class="logos"><img src="../img/Pasta_home_img/icons8-logotipo-duolingo-48.png" alt="Logo 1"></div>
+            <div class="logos"><img src="../img/Pasta_home_img/icons8-logo-da-huawei-64.png" alt="Logo 1"></div>
+            <div class="logos"><img src="../img/Pasta_home_img/icons8-magento-64.png" alt="Logo 1"></div>
+            <div class="logos"><img src="../img/Pasta_home_img/icons8-monzo-50.png" alt="Logo 1"></div>
+            <div class="logos"><img src="../img/Pasta_home_img/icons8-restaurado-48.png" alt="Logo 1"></div>
+            <div class="logos"><img src="../img/Pasta_home_img/icons8-dinâmica-365-48.png" alt="Logo 1"></div>
+            <div class="logos"><img src="../img/Pasta_home_img/icons8-teradata-48.png" alt="Logo 1"></div>
+            <div class="logos"><img src="../img/Pasta_home_img/icons8-figma-48.png" alt="Logo 1"></div>
+            <div class="logos"><img src="../img/Pasta_home_img/icons8-dinâmica-365-48.png" alt="Logo 1"></div>
+            <div class="logos"><img src="../img/Pasta_home_img/icons8-logotipo-duolingo-48.png" alt="Logo 1"></div>
+            <div class="logos"><img src="../img/Pasta_home_img/icons8-logo-da-huawei-64.png" alt="Logo 1"></div>
+        </div>
+    </section>
 
-         <div class="col s12 m6 l6 xl6">         
-         <!-- <div class="container hide-on-large-only" style="background: white">
-           <div class="row" style="background: white">
-             <label class="col s12 m12 l12 xl12" for="">Nome</label>
-             <input disabled class="col s12 m10 l6 xl6 " type="text" value="João">
-             <label class="col s12 m12 l12 xl12" for="">Sobrenome</label>
-             <input disabled class="col s12 m10 l6 xl6 " type="text" value="Santos">
-             <label class="col s12 m12 l12 xl12" for="">Email</label>
-             <input disabled class="col s12 m10 l6 xl6 " type="text" value="João@gmail.com">
-              <label class="col s12 m12 l12 xl12" for="">Telefone</label>
-              <input disabled class="col s12 m10 l6 xl6 " type="text" value="+55 99 999999999">
-               <label class="col s12 m12 l12 xl12" for="">Cidade</label>
-               <input disabled class="col s12 m10 l6 xl6 " type="text" value="Rio Azul">
-                <label class="col s12 m12 l12 xl12" for="">Assinatura </label>
-                <input disabled class="col s12 m10 l6 xl6 " type="text" value="Ativa">
-           </div>
-         </div>
-        </div> -->
-        
-        
-       <!-- Visto recentes -->
-          <!-- <div class="col s12 m12 l6 xl6" >
+    <!-- FOOTER -->
+    <footer class="page-footer">
         <div class="container">
-          
-        
-      
-        <h4 style="font-family: Arial, Helvetica, sans-serif">Visto recentes</h4>
-            <div class="carousel">
-              <a class="carousel-item" href="#one!">
-                <img src="https://picsum.photos/100/100">
-                <h5>Título da Notícia 1</h5>
-                <p>Descrição da Notícia 1.</p>
-               </a>
-                <a class="carousel-item" href="#two!">
-                  <img src="https://picsum.photos/100/100">
-                  <h5>monra</h5>
-                  <p>Descrição da Notícia 2.</p>
-                </a>
-    
-           </div>
+            <div class="row">
+                <div class="col s5 m5 l5 xl5">
+                    <h2 class=" quem-somos white-text">Quem somos?</h2>
+                </div>
+                <div class="col s6 m6 l6 xl6">
+                    <p>
+                        A TEC notícias é uma empresa de notícias
+                        especializada em tecnologia, trazendo as
+                        últimas novidades e análises do mundo da
+                        tecnologia para você.
+                    </p>
+                </div>
+            </div>
         </div>
-      </div> -->
-<!--      
-      </div>
-    </div>
-    
-    <div id="test2" class="col s12 m12">
-     
-      
-        <div class="">
-          <div class="row containe-img">
-            <div class="col s12 m12 l12 xl12">
-              <h5>Dados</h5>
-              <hr>
-            </div>
-            <div class="col s12 center">
-                 <img src="https://picsum.photos/300/300?=profile" class="col s12 m12 l12 xl12 offset-m1 img-perfil">
-                 </img>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col s12">
-              <label style="font-size: 20px;" for="nome">Nome:</label>
-              <div class="input-field col s11">
-                <input  id="nome" type="text" value="Carlos" disabled>
-              </div>
-              <div class="col s1">
-                <i class="material-icons prefix edit-icon">edit</i>
-              </div>
-            </div>
-            <div class="col s12">
-              <label style="font-size: 20px;" for="email">Email:</label>
-              <div class="input-field col s11">
-                <input id="email" type="email" value="Carlos@gmail.com" disabled>
-              </div>
-              <div class="col s1">
-                <i class="material-icons prefix edit-icon">edit</i>
-              </div>
-            </div>
-            <div class="col s12">
-              <label style="font-size: 20px;" for="senha">Senha:</label>
-              <div class="input-field col s11">
-                <input id="senha" type="password" value="********" disabled>
-              </div>
-              <div class="col s1">
-                <i class="material-icons prefix edit-icon">edit</i>
-              </div>
-            </div>
-            <div class="col s12">
-              <label style="font-size: 20px;" for="numero">Telefone:</label>
-              <div class="input-field col s11">
-                <input id="numero" type="text" value="+55 75 9882848493" disabled>
-              </div>
-              <div class="col s1">
-                <i class="material-icons prefix edit-icon">edit</i>
-              </div>
-            </div>
-          </div>
-        </div>
-      
-    </div> -->
-    
-    <!--FAVORITOS-->
-    <div id="test3" class="col s12 active">
-    <!-- Conteúdo da página -->
-    <div class=" favoritos">
-        <h3>Favoritos</h3>
-        <div class="row" style="border-bottom: 1px solid white; padding: 7px;margin: 50px 0px 0px 20px">
-          <div class="col s8"> <span class="filtro">Filtro:10/10/2023</span></div>
-          <span class="col s4 salvos">Salvos: 3</span>
-        </div>
-        <div class="card">
-          
-        
-        <div class="row card-favorito">
-            
-            <div class="col s12">
-              <div class="row card-favoritos">
-                
-               
-                 <img class="col s4" src="ig.jpg" alt="Imagem Aleatória" style="height: 100%; margin:0;padding:0;">
-               
-               <div class="col s8">
-                 <div class="row">
-                   <div class="col s10 titulo-fav">
-                     <h5 >o melhor dogddo mundo</h5>
-                   </div>
-                   <div class="col s1">
-                     <i style="color:red" class="material-icons prefix edit-icon">delete</i>
-                   </div>
-                   <div class="col s12 resumo-fav">
-                     <span>resumotedjdjdjrnrbdjdndnrrjdjdnfnsisjndrnrnrnrndndnddnndndndnddndndnsnsnsnsnsnsnsnsdkdkrkd resumotedjdjdjrnrbdjdndnrrjdjdnfnsisjndrnrnrnrndndnddnndndndnddndndnsnsnsnsnsnsnsnsnsnsnsnsnsnstk j k  k k k k kk  k ke</span>
-                   </div>
-                   <div class="col s11">
-                    <div class="row">
-                      <div class="col s8">
-                        <span>Por: tec notícias</span>
-                      </div>
-                      <div class="col s4">
-                        <span>10/10/2023</span>
-                      </div>
+        <img style="width: 100%; height: 30px; margin-top: -15px;" src="../img/Pasta_home_img/Line-footer-up.png"
+            class="linhaRoxa" alt="">
+        <div class="container">
+            <div style="margin-bottom: 0;" class="row">
+                <div class="col s5 m5 l5 xl5"><img class="logo-footer" src="../img/Pasta_home_img/TN.png" alt=""></div>
+                <div class="col s6 m6 l6 xl6">
+                    <div class="row footer-canais">
+                        <div class=" s2 m2 l2 xl2 "><img class="icon-rede"
+                                src="../img/Pasta_home_img/Facebook (icon — Colour).svg" alt=""></div>
+                        <div class="col s2 m2 l2 xl2 "><img class="icon-rede"
+                                src="../img/Pasta_home_img/GitHub (icon — Colour).svg" alt=""></div>
+                        <div class="col s2 m2 l2 xl2 "><img class="icon-rede"
+                                src="../img/Pasta_home_img/Instagram (icon — Colour).svg" alt=""></div>
+                        <div class="col s2 m2 l2 xl2 "><img class="icon-rede"
+                                src="../img/Pasta_home_img/Twitter (icon — Colour).svg" alt=""></div>
+                        <div class="col s2 m2 l2  x12 "><img class="icon-rede"
+                                src="../img/Pasta_home_img/YouTube (icon — Colour).svg" alt=""></div>
+
+
                     </div>
-                   </div>
-                 </div>
-               </div>
-      
+                </div>
             </div>
-            
-            
-            <!-- Repita esse bloco para cada postagem salva -->
         </div>
-        
-        
-        
-        
-        
-    </div> 
-      
-    </div>
-      
-             <div class="card">
-          
-        
-        <div class="row card-favorito">
-            
-            <div class="col s12">
-              <div class="row card-favoritos">
-                
-               
-                 <img class="col s4" src="ig.jpg" alt="Imagem Aleatória" style="height: 100%; margin:0;padding:0;">
-               
-               <div class="col s8">
-                 <div class="row">
-                   <div class="col s10 titulo-fav">
-                     <h5 >o melhor dogddo mundo</h5>
-                   </div>
-                   <div class="col s1">
-                     <i style="color:red" class="material-icons prefix edit-icon">delete</i>
-                   </div>
-                   <div class="col s12 resumo-fav">
-                     <span>resumotedjdjdjrnrbdjdndnrrjdjdnfnsisjndrnrnrnrndndnddnndndndnddndndnsnsnsnsnsnsnsnsdkdkrkd resumotedjdjdjrnrbdjdndnrrjdjdnfnsisjndrnrnrnrndndnddnndndndnddndndnsnsnsnsnsnsnsnsnsnsnsnsnsnstk j k  k k k k kk  k ke</span>
-                   </div>
-                   <div class="col s11">
-                    <div class="row">
-                      <div class="col s8">
-                        <span>Por: tec notícias</span>
-                      </div>
-                      <div class="col s4">
-                        <span>10/10/2023</span>
-                      </div>
-                    </div>
-                   </div>
-                 </div>
-               </div>
-      
-            </div>
-            
-            
-            <!-- Repita esse bloco para cada postagem salva -->
-        </div>
-        
-        
-        
-        
-        
-    </div> 
-      
-    </div>        
-      
-        <div class="card">
-      
-      
-                <div class="row card-favorito">
-      
-                  <div class="col s12">
-                    <div class="row card-favoritos">
-      
-      
-                      <img class="col s4" src="ig.jpg" alt="Imagem Aleatória" style="height: 100%; margin:0;padding:0;">
-      
-                      <div class="col s8">
-                        <div class="row">
-                          <div class="col s10 titulo-fav">
-                            <h5>o melhor dogddo mundo</h5>
-                          </div>
-                          <div class="col s1">
-                            <i style="color:red" class="material-icons prefix edit-icon">delete</i>
-                          </div>
-                          <div class="col s12 resumo-fav">
-                            <span>resumotedjdjdjrnrbdjdndnrrjdjdnfnsisjndrnrnrnrndndnddnndndndnddndndnsnsnsnsnsnsnsnsdkdkrkd resumotedjdjdjrnrbdjdndnrrjdjdnfnsisjndrnrnrnrndndnddnndndndnddndndnsnsnsnsnsnsnsnsnsnsnsnsnsnstk j k k k k k kk k ke</span>
-                          </div>
-                          <div class="col s11">
-                            <div class="row">
-                              <div class="col s8">
-                                <span>Por: tec notícias</span>
-                              </div>
-                              <div class="col s4">
-                                <span>10/10/2023</span>
-                              </div>
-                            </div>
-                          </div>
+        <div style="background-color: rgb(30, 5, 89); height: 2px; width: 100%;"></div>
+        <div class="container">
+            <div class="row" style="margin-bottom: 0;">
+                <div class="col xl4" style="border-right: 1px solid rgb(22, 2, 52); margin-top: 10px; height: 200px;">
+                    <div class="row ">
+                        <div class="col s12 m12 l12 xl12 contatos-text">
+                            <h4>Contatos</h4>
                         </div>
-                      </div>
-      
+                        <div class="col s12 m12 l12 xl12 footer-contatos">
+                            <img class="icon-contato" src="../img/Pasta_home_img/Telegram (icon — Colour).svg" alt="">
+                            <img class="icon-contato" src="../img/Pasta_home_img/mail.svg" alt="">
+                            <img class="icon-contato" src="../img/Pasta_home_img/zap.svg" alt="">
+                            <img class="icon-contato" src="../img/Pasta_home_img/fone.svg" alt="">
+                        </div>
                     </div>
-      
-      
-                    <!-- Repita esse bloco para cada postagem salva -->
-                  </div>
-      
-      
-      
-      
-      
                 </div>
-      
-              </div>
-    </div>
-   
-  </div>
-  
-     <div id="test4" class="container">
-    <div class="row">
-      <ul class="collection with-header">
-        <li class="collection-header"><h4>Configurações</h4></li>
-        <li class="collection-item"><a href="#">Conta</a></li>
-        <li class="collection-item"><a href="privacidade">Privacidade</a></li>
-        <li class="collection-item">Segurança</li>
-        <li class="collection-item"><a href="Tema">Tema</a></li>
-        <li class="collection-item"><a href="Suporte">Suporte</a></li>
-        <li class="collection-item"><a href="Ajuda">Ajuda</a></li>
-      </ul>
-    </div>
-  </div>
-   
-  </div>
-  <div></div>
-  <!-- FOOTER -->
-<footer class="page-footer" >
-    <div  class="container">
-      <div class="row" style="width: 90%; margin-bottom: 0;margin-top: 50px;">
-        <div class="col s5 m5 l5 xl10 left">
-          <h2 style="margin-bottom: -160px;" class=" quem-somos white-text">Quem somos?</h2>
-        </div>
-        <div class="col s6 m6 l6 xl6 right">
-          <p>
-            A TEC notícias é uma empresa de notícias
-            especializada em tecnologia, trazendo as
-            últimas novidades e análises do mundo da
-            tecnologia para você.
-          </p>
-        </div>
-      </div>
-    </div>
-    <img style="width: 100%; height: 30px; margin-top: -15px;" src="../img/Pasta_home_img/Line-footer-up.png"
-      class="linhaRoxa" alt="">
-    <div class="container">
-      <div style="margin-bottom: 0;" class="row">
-        <div class="col s5 m5 l5 xl5"><img class="logo-footer" src="../img/Pasta_home_img/TN.png" alt=""></div>
-        <div class="col s6 m6 l6 xl6">
-          <div class="row footer-canais">
-            <div class=" s2 m2 l2 xl2 "><img class="icon-rede" src="../img/Pasta_home_img/Facebook (icon — Colour).svg"
-                alt=""></div>
-            <div class="col s2 m2 l2 xl2 "><img class="icon-rede" src="../img/Pasta_home_img/GitHub (icon — Colour).svg"
-                alt=""></div>
-            <div class="col s2 m2 l2 xl2 "><img class="icon-rede"
-                src="../img/Pasta_home_img/Instagram (icon — Colour).svg" alt=""></div>
-            <div class="col s2 m2 l2 xl2 "><img class="icon-rede"
-                src="../img/Pasta_home_img/Twitter (icon — Colour).svg" alt=""></div>
-            <div class="col s2 m2 l2  x12 "><img class="icon-rede"
-                src="../img/Pasta_home_img/YouTube (icon — Colour).svg" alt=""></div>
-  
-  
-          </div>
-        </div>
-      </div>
-    </div>
-    <div style="background-color: rgb(30, 5, 89); height: 2px; width: 100%;"></div>
-    <div class="container">
-      <div class="row" style="margin-bottom: 0;">
-        <div class="col xl4" style="border-right: 1px solid rgb(22, 2, 52); margin-top: 10px; height: 200px;">
-          <div class="row ">
-            <div class="col s12 m12 l12 xl12 contatos-text">
-              <h4>Contatos</h4>
+                <div class="col s8 m8 l8 xl8">
+                    <div class="row" style="margin-bottom: 0;">
+                        <div class="col s4 m4 l4 xl4">
+                            <div class="row">
+                                <div class="col s12 m12 l12 xl12">
+                                    <h5>Sobre</h5>
+                                </div>
+                                <div class="col s12 m12 l12 xl12">
+                                    <p>Tec notícias</p>
+                                    <p>privacidade</p>
+                                    <p>suporte</p>
+                                    <p>usuario</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s4 m4 l4 xl4">
+                            <div class="row">
+                                <div class="col s12 m12 l12 xl12">
+                                    <h5>Conteudos</h5>
+                                </div>
+                                <div class="col s12 m12 l12 xl12">
+                                    <p>Tecnologias</p>
+                                    <p>Eventos</p>
+                                    <p>Podcasts</p>
+                                    <p>Cultura</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s4 m4 l4 xl4">
+                            <div class="row">
+                                <div class="col s12 m12 l12 xl12">
+                                    <h5>Colaboradores</h5>
+                                </div>
+                                <div class="col s12 m12 l12 xl12">
+                                    <p>Carlos Manoel</p>
+                                    <p>Gabriel Meiki</p>
+                                    <p>Alexnder Pereira</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <div class="col s12 m12 l12 xl12 footer-contatos">
-              <img class="icon-contato" src="../img/Pasta_home_img/Telegram (icon — Colour).svg" alt="">
-              <img class="icon-contato" src="../img/Pasta_home_img/mail.svg" alt="">
-              <img class="icon-contato" src="../img/Pasta_home_img/zap.svg" alt="">
-              <img class="icon-contato" src="../img/Pasta_home_img/fone.svg" alt="">
-            </div>
-          </div>
         </div>
-        <div class="col s8 m8 l8 xl8">
-          <div class="row" style="margin-bottom: 0;">
-            <div class="col s4 m4 l4 xl4">
-              <div class="row">
-                <div class="col s12 m12 l12 xl12">
-                  <h5>Sobre</h5>
-                </div>
-                <div class="col s12 m12 l12 xl12">
-                  <p>Tec notícias</p>
-                  <p>privacidade</p>
-                  <p>suporte</p>
-                  <p>usuario</p>
-                </div>
-              </div>
-            </div>
-            <div class="col s4 m4 l4 xl4">
-              <div class="row">
-                <div class="col s12 m12 l12 xl12">
-                  <h5>Conteudos</h5>
-                </div>
-                <div class="col s12 m12 l12 xl12">
-                  <p>Tecnologias</p>
-                  <p>Eventos</p>
-                  <p>Podcasts</p>
-                  <p>Cultura</p>
-                </div>
-              </div>
-            </div>
-            <div class="col s4 m4 l4 xl4">
-              <div class="row">
-                <div class="col s12 m12 l12 xl12">
-                  <h5>Colaboradores</h5>
-                </div>
-                <div class="col s12 m12 l12 xl12">
-                  <p>Carlos Manoel</p>
-                  <p>Gabriel Meiki</p>
-                  <p>Alexnder Pereira</p>
-  
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="row copyright">
+            <div class="col s8 m8 l8 xl8">©2018 Tec Notícias - Todos os Direitos Reservados</div>
+            <div class="col s4 m4 l4 xl4">termos de serviço</div>
         </div>
-  
-      </div>
-    </div>
-    <div class="row copyright">
-      <div class="col s8 m8 l8 xl8">©2018 Tec Notícias - Todos os Direitos Reservados</div>
-      <div class="col s4 m4 l4 xl4">termos de serviço</div>
-    </div>
-  </footer> 
-  
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      $('.sidenav').sidenav();
-      $('.tabs').tabs()
-    });
-    $(document).ready(function(){
-    $('.carousel').carousel(); // Inicializa o carousel
-    setInterval(function() {
-      $('.carousel').carousel('next'); // Avança para o próximo item a cada 5 segundos (ou o tempo desejado)
-    }, 5000); // 5000 milissegundos = 5 segundos
-  });
-  </script>
+    </footer>
+
+
+
+
+    <!-- Scripts JavaScript para texto animado -->
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="../js/Pasta_perfil_js.js/script.js"></script>
+    <script src="../js/Pasta_home_js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="../js/Pasta_home_js/libra.js"></script>
+
+    <!-- Scripts JavaScript para Materialize CSS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"
+        integrity="sha512-NiWqa2rceHnN3Z5j6mSAvbwwg3tiwVNxiAQaaSMSXnRRDh5C2mk/+sKQRw8qjV1vN4nf8iK2a0b048PnHbyx+Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Script para animação de entrada (AOS) -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Inicialização da animação de entrada com AOS
+        AOS.init();
+
+        // materialize 
+        M.AutoInit();
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+            $('.tabs').tabs()
+        });
+        $(document).ready(function () {
+            $('.carousel').carousel(); // Inicializa o carousel
+            setInterval(function () {
+                $('.carousel').carousel('next'); // Avança para o próximo item a cada 5 segundos (ou o tempo desejado)
+            }, 5000); // 5000 milissegundos = 5 segundos
+        });
+    </script>
+</body>
 </body>
 
 </html>

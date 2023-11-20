@@ -10,8 +10,9 @@ height: 100px;
 margin-top: -8px;
 }
 .cor-nav{
-  position: fixed; 
-
+  /* position: fixed;  */
+ height: 130px;
+ padding: 8px;
   z-index: 999999;
 }
 .dropdown-content {
@@ -87,6 +88,7 @@ margin-top: -8px;
   }
   nav.nav-extended {
     height: 130px;
+  
   }
   /* Aumente a altura dos elementos internos conforme desejado */
   .brand-logo {

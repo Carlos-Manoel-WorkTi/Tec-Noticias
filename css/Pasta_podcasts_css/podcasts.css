@@ -302,3 +302,7 @@ hr {
       color: transparent;
     }
 }
+nav.nav-extended {
+  height: 130px;
+  padding: 8px;
+}

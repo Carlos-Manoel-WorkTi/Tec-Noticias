@@ -170,11 +170,14 @@ document.addEventListener('DOMContentLoaded', function () {
         topButton.style.display = (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) ? 'block' : 'none';
     });
 
-    topButton.addEventListener('click', function() {
-        // Quando o botão for clicado, role a página de volta ao topo
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
+  // Adicione um event listener para o clique no botão
+topButton.addEventListener('click', function() {
+    // Role a página de volta ao topo de forma suave
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // Rola de forma suave
     });
+});
 
    
 });
@@ -242,5 +245,18 @@ function scroll() {
 
   requestAnimationFrame(scroll);
 }
+
+let lastScrollTop = 0;
+const header = document.querySelector(".nav-extended");
+console.log(header);
+window.addEventListener('scroll', function() {
+  const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+  if (currentScroll > lastScrollTop) {
+    header.style.position = 'relative'; // Adiciona a classe 'hidden' se o scroll for para baixo
+  } else {
+    header.style.position = 'fixed'; // Remove a classe 'hidden' se o scroll for para cima
+  }
+  lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+});
 
 scroll();
