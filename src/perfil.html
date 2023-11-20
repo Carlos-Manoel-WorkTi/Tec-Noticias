@@ -19,7 +19,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link rel="icon" href="../img/favicon.png" type="image/x-icon">
-    <title>TEC Notícias - eventos</title>
+    <title>TEC Notícias - perfil</title>
 </head>
 
 <body class="tec-noticias">
@@ -125,7 +125,12 @@
 
     <main>
         <section>
-
+            <div vw class="enabled" >
+                <div  vw-access-button class="active"></div>
+                <div vw-plugin-wrapper>
+                  <div class="vw-plugin-top-wrapper"></div>
+                </div>
+              </div>
             <div class="row" style="margin-top: 20px;">
                 <div class="col s12 m12 l12 xl12">
                     <ul class="tabs">
@@ -630,6 +635,7 @@
 
     <!-- Script para animação de entrada (AOS) -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
     <script>
         // Inicialização da animação de entrada com AOS
         AOS.init();
@@ -646,6 +652,7 @@
                 $('.carousel').carousel('next'); // Avança para o próximo item a cada 5 segundos (ou o tempo desejado)
             }, 5000); // 5000 milissegundos = 5 segundos
         });
+        new window.VLibras.Widget();
     </script>
 </body>
 </body>
