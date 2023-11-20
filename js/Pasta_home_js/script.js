@@ -1,4 +1,20 @@
 
+    const menuIcon = document.getElementById('menu-icon');
+const mobileDemo = document.querySelector('#mobile-demo');
+window.addEventListener("click", e => {
+const menuIcon = document.getElementById("menu-icon");
+
+if (e.target.id === "menu-icon") {
+  menuIcon.textContent = 'close';
+  menuIcon.classList.remove("white", "white-text");
+  menuIcon.classList.add("red-text", "red");
+} else if (!menuIcon.contains(e.target) ) {
+  menuIcon.textContent = 'menu';
+  menuIcon.classList.remove("red-text", "red");
+  menuIcon.classList.add("white", "white-text");
+}
+});
+
 
 // document.addEventListener('DOMContentLoaded', function () {
 
@@ -260,3 +276,4 @@ window.addEventListener('scroll', function() {
 });
 
 scroll();
+

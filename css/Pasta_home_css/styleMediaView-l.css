@@ -3,7 +3,9 @@ body {
   padding: 0;
   zoom: 100%;
 }
-
+.container-footer-ctt{
+  border-right: 1px solid rgb(22, 2, 52); margin-top: 10px; height: 200px;
+}
 .row.header {
   margin-bottom: 0 !important;
 height: 100px;
@@ -359,6 +361,9 @@ margin-top: -8px;
   .linhaRoxa{
     position:absolute;margin-top: -40px; height: 17px; width: 100%;
   }
+  .container-footer-ctt{
+    border-right: 1px solid rgb(22, 2, 52); margin-top: 10px; height: 200px;
+  }
   #form_pesquisa {
     width: 100vw;
     max-width: 80%;
@@ -490,9 +495,7 @@ margin-top: -8px;
     height: 50px;
     margin-top: 15px;
   }
-  .page-footer {
-    font-size: 2px;
-  }
+
   #autocomplete-input {
     border: none;
     border-bottom: 1px solid #ffffff;
@@ -557,6 +560,9 @@ margin-left: -4.4%;
   .linhaRoxa{
     position:absolute;margin-top: -20px; height: 17px; width: 100%;
   }
+  .container-footer-ctt{
+    border-right: 1px solid rgb(22, 2, 52); margin-top: 10px; height: 200px;
+  }
   #form_pesquisa {
     top: 43px;
   }
@@ -590,7 +596,9 @@ margin-left: -4.4%;
   }
 }
 @media (max-width: 992px) {
- 
+  .container-footer-ctt{
+    border-right: 1px solid rgb(22, 2, 52); margin-top: 10px; height: 200px;
+  }
   /* NOTICIAS */
 #noticias{
   
@@ -702,6 +710,9 @@ margin-left: -4.4%;
   }
 }
 @media (max-width:790px){
+  .container-footer-ctt{
+    border-right: 1px solid rgb(22, 2, 52); margin-top: 10px; height: 200px;
+  }
   #noticias{
     .news-title {
       width: 36vw;
@@ -741,6 +752,9 @@ margin-left: -4.4%;
   }
 
 @media (max-width: 600px) {
+  .container-footer-ctt{
+    border-right: 1px solid rgb(22, 2, 52); margin-top: 10px; height: 200px;
+  }
   /* NOTICIAS */
 #noticias{
   
@@ -886,7 +900,18 @@ margin-left: -4.4%;
   }
 }
 @media (max-width: 600px) {
-
+  .container-footer-ctt{
+    border: none;
+    border-bottom: 1px solid rgb(22, 2, 52); margin-top: 10px; height: 100px;
+  }
+  .card-assinatura-title {
+    height: 25%;
+    background: transparent !important;
+    color: white;
+    border-bottom-right-radius: 40%;
+    overflow: hidden;
+    text-align: center;
+}
   #form_pesquisa {
     top: 9vh;
     height: 40px;
@@ -916,9 +941,9 @@ margin-left: -4.4%;
       rgba(6, 5, 105, 0),
       rgba(1, 4, 13, 0.87)
     ),
-    url("/img/Pasta_home_img/Rectangle 19.png");
+    /* url("/img/Pasta_home_img/Rectangle 19.png");
   background-size: cover;
-  background-position: center;
+  background-position: center; */
   }
   .word {
     text-align: center;
@@ -952,6 +977,9 @@ margin-left: -4.4%;
     height: 13px;
     width: 13px;
   }
+  .carousel .indicators {
+    left: 40px;
+}
   .carousel .indicators .indicator-item.active {
     background-color: #6c0583;
   }
@@ -1522,8 +1550,8 @@ margin-left: -4.4%;
       right: 10px;
     }
     .carousel .indicators .indicator-item {
-      height: 13px;
-      width: 13px;
+      height: 6px;
+      width: 14px;
     }
     .carousel .indicators .indicator-item.active {
       background-color: #6c0583;
@@ -1663,9 +1691,9 @@ margin-left: -4.4%;
       font-size: 0.6em;
     }
     .quem-somos {
-      font-size: 0.7em;
+      font-size: 30px;
       line-height: 1em;
-      margin-top: 2.1em;
+      margin-top: 0em;
     }
     .copyright {
       font-size: 10px;
