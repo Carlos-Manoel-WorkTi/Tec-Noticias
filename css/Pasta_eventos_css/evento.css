@@ -19,11 +19,11 @@ header, footer{
 }
 
 .banner-conteudo{
-    height: 6rem;
+    height: 10rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-left: 70px;
+    padding-left: 90px;
 }
 
 .banner-conteudo h2{
@@ -32,6 +32,7 @@ header, footer{
 
 .banner-conteudo p{
     font-size: 1.2rem;
+    padding-left: 5px; 
 }
 
 
@@ -52,7 +53,7 @@ header, footer{
 }
 
 .eventos{
-    padding-left: 60px;
+    padding-left: 90px;
     padding-top: 30px;
     background-color: rgb(1, 1, 11);
 }
@@ -131,9 +132,13 @@ header, footer{
     border-radius: 5px;
     background-image: linear-gradient(45deg, blue, darkblue, purple);
     color: white;
-    width: 100%;
+    width: 30%;
     text-align: center;
     font-weight: bolder;
+}
+
+.filtro-evento{
+    cursor: pointer;
 }
 
 .btn-eventos{
@@ -150,8 +155,40 @@ header, footer{
 
 hr{
     width: 1100px;
+<<<<<<< HEAD
 }
 nav.nav-extended {
     height: 130px;
     padding: 8px;
   }
+=======
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 50rem;
+    align-items: center;
+}
+
+.header-evento{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 190rem;
+    align-items: center;
+}
+
+h1{
+    margin: 20px 0 0 0;
+    align-self: center;
+}
+
+.info-icon{
+    width: 33px;
+    justify-self: center;
+    margin-top: 5px;
+}
+
+.info-icon:hover{
+    cursor: pointer;
+}
+>>>>>>> 7d3726865977a88c2b2dcdb009de6decc100f7b0

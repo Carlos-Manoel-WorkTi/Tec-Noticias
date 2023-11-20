@@ -132,11 +132,11 @@ footer {
 }
 
 .banner-conteudo {
-  height: 6rem;
+  height: 10rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-left: 70px;
+  padding-left: 90px;
 }
 
 .banner-conteudo h2 {
@@ -279,7 +279,7 @@ hr {
   margin-top: 0;
   margin-bottom: 0;
   .card .card-content {
-      padding: 10px;
+      padding: 10px 0;
       border-radius: 0 0 0 0;
       background: linear-gradient(to right, rgb(36, 4, 78), rgb(81, 23, 98), rgb(131, 60, 157));
     }
