@@ -66,3 +66,7 @@
   .card .card-action a{
     color: white !important ;
   }
+  nav.nav-extended {
+    height: 30;
+    padding: 8px;
+  }
