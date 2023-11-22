@@ -118,9 +118,15 @@
         </div>
     </section>
     <section> 
-      <a  id="librasButton" class="librasButton btn-floating btn-large purple">
+      <!-- <a  id="librasButton" class="librasButton btn-floating btn-large purple">
       <i class="material-icons">accessibility</i>
-    </a>    
+    </a>     -->
+    <div vw class="enabled" >
+      <div  vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
         <div class="topButton">
 
           <a style="top: 90%;" id="librasButton" class=" btn-floating btn-large blue">
@@ -466,6 +472,7 @@
 
 <!-- Scripts JavaScript para texto animado -->
 <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src="../js/Pasta_noticias_js.js/script.js"></script>
 <script src="../js/Pasta_home_js/script.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
   integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -482,7 +489,7 @@
 
 <!-- Script para animação de entrada (AOS) -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
 <script>
   // Inicialização da animação de entrada com AOS
   AOS.init();
@@ -510,7 +517,7 @@
   $(document).ready(function () {
     $('.tabs').tabs();
   });
-
+  new window.VLibras.Widget();
 </script>
 </body>
 </body>

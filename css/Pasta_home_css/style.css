@@ -15,6 +15,7 @@ background: linear-gradient(to bottom,black,blue);
 
  
 }
+
 #section-three {
   background: linear-gradient(to bottom,black,black,black,rgb(2, 2, 41),black);
   padding-top: 1px;
@@ -292,4 +293,33 @@ a:focus {
 .card .card-action {
   background-color: rgb(255, 255, 255);
   color: blue;
+}
+.linhaRoxa {
+  position: absolute;
+  margin-top: -20px;
+  height: 17px;
+  width: 100%;
+}
+
+@media (max-width:599px) {
+  .quem-somos {
+    /* font-size: 9.7em; */
+    line-height: 30px;
+    margin-top: 0em;
+}
+  .logo-footer {
+    height: 100px;
+  }
+  .icon-rede {
+    height: 30px;
+}
+.footer-canais {
+  height: 100px;
+}
+.contatos-text h4 {
+  font-size: 20px;
+}
+.icon-contato {
+  height: 30px;
+}
 }
