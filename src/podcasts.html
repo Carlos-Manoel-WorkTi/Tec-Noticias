@@ -104,11 +104,11 @@
 
 
   </header>
-  <section>
+  <section class="bloco-banner">
     <div class="banner">
       <div class="banner-conteudo">
         <h2>PODCASTS</h2>
-        <p>Assista os melhores podcasts queos surgem na área tech no Brasil.</p>
+        <p>Assista os melhores podcasts que surgem na área tech no Brasil.</p>
       </div>
     </div>
 
@@ -130,262 +130,205 @@
       </a>
     </div>
   </section>
-  <!-- PODCASTS -->
-  <section id="section-three">
-    <div class="sectio-two podcasts" data-aos="fade-up-left" data-aos-duration="1000" data-aos-offset="100"
-      data-aos-easing="ease-in-sine">
-      <div class="row" id="tittle-podcast">
-        <h2>Falando sobre tecnologias</h2>
-      </div>
-      <div class="container-video row" style="width: 90%; margin: 0 5%;">
-        <div class=" col s12 m12 l12 xl12">
-          <iframe width="90%" height="450vh" src="https://www.youtube.com/embed/7XX-ZwIYnV4"
-            frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div class="col s11 m11 l11 xl11" id="resumo-assitir-podcast" style="color: white; font-size: 20px;">
-          <span>A tecnologia é como uma pintura em constante evolução, onde cada traço e pincelada são os avanços que
-            moldam o futuro</span>
-        </div>
-        <div class="col s12 m12 l12 xl12" id="views-assistir"
-          style="color: rgba(255, 255, 255, 0.575); margin: 1% 0; display: flex; justify-content: space-between; width: 40%;">
-          <span>Por tec noticias</span><span>1,2 M Visualizações</span><span>10/10/2023</span>
-        </div>
-        <div class="col s12 m12 l12 xl12" id="btn-assistir-podcast" style="color: white; margin-bottom: 2%;">
-          <a href=""
-            style="background-color: rgba(255, 255, 255, 0); padding: 7px; display: flex; width: 16%; border-radius: 10%;">
-            <i class="material-icons" style="font-size: 40px; padding-top:10px; background-color: purple; ">thumb_up</i>
-            <i class="material-icons"
-              style="font-size: 40px; padding-top:10px; background-color: purple; margin-left: 20px;">thumb_down</i>
-          </a>
 
-        </div>
-      </div>
-      <!-- <div class="row">
-            <div class="col s12 m12 l12 xl12 center">
-                <iframe width="90%" height="450vh" src="https://www.youtube.com/embed/NM2BMYdD2Gk?si=GmrcoX7yWqkAc392"
-                    frameborder="0" allowfullscreen></iframe>
-            </div>
-            <div class=" s12 m12 l12 xl12 header-video">
-                <p class="col s12 m12 l12 xl12 resumo-podcast">A tecnologia é como uma pintura em constante evolução, onde cada traço e pincelada são os avanços que moldam o futuro.</p>
-                <div class="row center opinar">
+  <section class="video-inicial">
 
-                    <div class="col s1 m2 l2 xl2"><a class="waves-effect waves-light btn like-button">gostei</a></div>
-                    <div class="col s1 m2 l2 xl2"><a class="waves-effect waves-light btn like-button">NAo curti</a></div>
-                    <div class="col xl3"></div>
-                </div>
-            </div>
-        </div> -->
+    <div class="titulo-inicial">
+      <h2 id="tittle-podcast">Falando sobre tecnologias</h2>
+    </div>
+
+    <div class="video-principal">
+      <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/7XX-ZwIYnV4?si=4-FyxXCqMLlXqevl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="texto-inicial">
+      <p>A tecnologia é como uma pintura em constante evolução, onde cada traço e pincelada são os avanços que moldam o futuro.</p>
+    
+      <div class="detalhes-inicial">
+        <div>Por tec noticias</div>
+        <div>1,2 M Visualizações</div>
+        <div>10/10/2023</div>
+        <div><i class="material-icons" style="font-size: 40px; padding-top:10px; background-color: purple; ">thumb_up</i>
+          <i class="material-icons"
+            style="font-size: 40px; padding-top:10px; background-color: purple; margin-left: 20px;">thumb_down</i></div>
+      </div>
+    </div>
   </section>
+
+  <!-- PODCASTS -->
   <!-- <img style="width: 100%; height: 30px; margin-top: -15px;" src="../img/Pasta_home_img/lroxa.png" alt=""> -->
   <section class="container" style="width: 100%;">
-    <div class="input-field col s12 xl3" style="margin-left: 90px; margin-top:60px; width: 20%;">
+    <div class="input-field col s12 xl3">
       <select>
         <option value="" disabled selected>Qual tipo de conteudo vc deseja?</option>
         <option value="1">cibersegurança</option>
-        <option value="2">inteligencia artificial</option>
-        <option value="3">pogramaçãp</option>
+        <option value="2">inteligência artificial</option>
+        <option value="3">programação</option>
         
       </select>
       <label>Filtro podcasts</label>
     </div>
   </section>
-  <div class="row text-center custom-row">
-    <div class="col s12 m6 l4 xl4 custom-col">
-      <div class="card left-align">
-        <div class="card-image custom-card-image">
-          <img src="https://picsum.photos/200/200?category=technology">
-          <a class="custom-card-icon">
-            <i class="material-icons">play_arrow</i>
-          </a>
-        </div>
-        <div class="card-content">
-          <span class="card-title custom-card-title">Título do Podcast</span>
-          <p class="custom-card-description">Descrição do episódio do podcast, destacando os tópicos abordados e
-            convidados especiais.</p>
-          <p class="custom-card-date">Em 8 de novembro de 2023</p>
-        </div>
-        <div class="card-action center-align custom-card-action">
-          <a href="#" class="custom-card-link">Veja Agora</a>
-        </div>
+  <section class="podcasts">
+
+    <!--Card 1-->
+    <div class="podcast">
+      <div class="podcast-video">
+        <i class="material-icons">play_arrow</i>
+      </div>
+      <div class="podcast-texto">
+        <h3>Título do Podcast</h3>
+        <p>Descrição do episódio do podcast, destacando os tópicos abordados e
+          convidados especiais.</p>
+        <p class="data"><strong>Em 4 de novembro de 2023</strong></p>
+      </div>
+      <div class="podcast-btn">
+        <button>Veja agora</button>
       </div>
     </div>
 
-    <div class="col s12 m6 l4 xl4 custom-col">
-      <div class="card left-align">
-        <div class="card-image custom-card-image">
-          <img src="https://picsum.photos/200/200?category=technology">
-          <a class="custom-card-icon">
-            <i class="material-icons">play_arrow</i>
-          </a>
-        </div>
-        <div class="card-content">
-          <span class="card-title custom-card-title">Título do Podcast</span>
-          <p class="custom-card-description">Descrição do episódio do podcast, destacando os tópicos abordados e
-            convidados especiais.</p>
-          <p class="custom-card-date">Em 4 de novembro de 2023</p>
-        </div>
-        <div class="card-action center-align custom-card-action">
-          <a href="#" class="custom-card-action">Veja Agora</a>
-        </div>
+    <!--Card 2-->
+    <div class="podcast">
+      <div class="podcast-video">
+        <i class="material-icons">play_arrow</i>
+      </div>
+      <div class="podcast-texto">
+        <h3>Título do Podcast</h3>
+        <p>Descrição do episódio do podcast, destacando os tópicos abordados e
+          convidados especiais.</p>
+        <p class="data"><strong>Em 4 de novembro de 2023</strong></p>
+      </div>
+      <div class="podcast-btn">
+        <button>Veja agora</button>
       </div>
     </div>
 
-    <div class="col s12 m6 l4 xl4 custom-col">
-      <div class="card left-align">
-        <div class="card-image custom-card-image">
-          <img src="https://picsum.photos/200/200?category=technology">
-          <a class="custom-card-icon">
-            <i class="material-icons">play_arrow</i>
-          </a>
-        </div>
-        <div class="card-content">
-          <span class="card-title custom-card-title">Título do Podcast</span>
-          <p class="custom-card-description">Descrição do episódio do podcast, destacando os tópicos abordados e
-            convidados especiais.</p>
-          <p class="custom-card-date">Até 8 de novembro de 2023</p>
-        </div>
-        <div class="card-action center-align custom-card-action">
-          <a href="#" class="custom-card-link">Veja Agora</a>
-        </div>
+    <!--Card 3-->
+    <div class="podcast">
+      <div class="podcast-video">
+        <i class="material-icons">play_arrow</i>
       </div>
-    </div>
-  </div>
-  <div class="row text-center custom-row">
-    <div class="col s12 m6 l4 xl4 custom-col">
-      <div class="card left-align">
-        <div class="card-image custom-card-image">
-          <img src="https://picsum.photos/200/200?category=technology">
-          <a class="custom-card-icon">
-            <i class="material-icons">play_arrow</i>
-          </a>
-        </div>
-        <div class="card-content">
-          <span class="card-title custom-card-title">Título do Podcast</span>
-          <p class="custom-card-description">Descrição do episódio do podcast, destacando os tópicos abordados e
-            convidados especiais.</p>
-          <p class="custom-card-date">Até 8 de novembro de 2023</p>
-        </div>
-        <div class="card-action center-align custom-card-action">
-          <a href="#" class="custom-card-link">Veja Agora</a>
-        </div>
+      <div class="podcast-texto">
+        <h3>Título do Podcast</h3>
+        <p>Descrição do episódio do podcast, destacando os tópicos abordados e
+          convidados especiais.</p>
+        <p class="data"><strong>Em 4 de novembro de 2023</strong></p>
+      </div>
+      <div class="podcast-btn">
+        <button>Veja agora</button>
       </div>
     </div>
 
-    <div class="col s12 m6 l4 xl4 custom-col">
-      <div class="card left-align">
-        <div class="card-image custom-card-image">
-          <img src="https://picsum.photos/200/200?category=technology">
-          <a class="custom-card-icon">
-            <i class="material-icons">play_arrow</i>
-          </a>
-        </div>
-        <div class="card-content">
-          <span class="card-title custom-card-title">Título do Podcast</span>
-          <p class="custom-card-description">Descrição do episódio do podcast, destacando os tópicos abordados e
-            convidados especiais.</p>
-          <p class="custom-card-date">Até 8 de novembro de 2023</p>
-        </div>
-        <div class="card-action center-align custom-card-action">
-          <a href="#" class="custom-card-action">Veja Agora</a>
-        </div>
+    <!--Card 4-->
+    <div class="podcast">
+      <div class="podcast-video">
+        <i class="material-icons">play_arrow</i>
+      </div>
+      <div class="podcast-texto">
+        <h3>Título do Podcast</h3>
+        <p>Descrição do episódio do podcast, destacando os tópicos abordados e
+          convidados especiais.</p>
+        <p class="data"><strong>Em 4 de novembro de 2023</strong></p>
+      </div>
+      <div class="podcast-btn">
+        <button>Veja agora</button>
       </div>
     </div>
 
-    <div class="col s12 m6 l4 xl4 custom-col">
-      <div class="card left-align">
-        <div class="card-image custom-card-image">
-          <img src="https://picsum.photos/200/200?category=technology">
-          <a class="custom-card-icon">
-            <i class="material-icons">play_arrow</i>
-          </a>
-        </div>
-        <div class="card-content">
-          <span class="card-title custom-card-title">Título do Podcast</span>
-          <p class="custom-card-description">Descrição do episódio do podcast, destacando os tópicos abordados e
-            convidados especiais.</p>
-          <p class="custom-card-date">Até 8 de novembro de 2023</p>
-        </div>
-        <div class="card-action center-align custom-card-action">
-          <a href="#" class="custom-card-link">Veja Agora</a>
-        </div>
+    <!--Card 5-->
+    <div class="podcast">
+      <div class="podcast-video">
+        <i class="material-icons">play_arrow</i>
       </div>
-    </div>
-  </div>
-  
-  <div class="parallax-container">
-    <div class="parallax"><img src="../img/Pasta_home_img/parallaxx.png" alt=""></div>
-  </div>
-
-  <div class="row text-center custom-row">
-    <div class="col s12 m6 l4 xl4 custom-col">
-      <div class="card left-align">
-        <div class="card-image custom-card-image">
-          <img src="https://picsum.photos/200/200?category=technology">
-          <a class="custom-card-icon">
-            <i class="material-icons">play_arrow</i>
-          </a>
-        </div>
-        <div class="card-content">
-          <span class="card-title custom-card-title">Título do Podcast</span>
-          <p class="custom-card-description">Descrição do episódio do podcast, destacando os tópicos abordados e
-            convidados especiais.</p>
-          <p class="custom-card-date">Até 8 de novembro de 2023</p>
-        </div>
-        <div class="card-action center-align custom-card-action">
-          <a href="#" class="custom-card-link">Veja Agora</a>
-        </div>
+      <div class="podcast-texto">
+        <h3>Título do Podcast</h3>
+        <p>Descrição do episódio do podcast, destacando os tópicos abordados e
+          convidados especiais.</p>
+        <p class="data"><strong>Em 4 de novembro de 2023</strong></p>
+      </div>
+      <div class="podcast-btn">
+        <button>Veja agora</button>
       </div>
     </div>
 
-    <div class="col s12 m6 l4 xl4 custom-col">
-      <div class="card left-align">
-        <div class="card-image custom-card-image">
-          <img src="https://picsum.photos/200/200?category=technology">
-          <a class="custom-card-icon">
-            <i class="material-icons">play_arrow</i>
-          </a>
-        </div>
-        <div class="card-content">
-          <span class="card-title custom-card-title">Título do Podcast</span>
-          <p class="custom-card-description">Descrição do episódio do podcast, destacando os tópicos abordados e
-            convidados especiais.</p>
-          <p class="custom-card-date">Até 8 de novembro de 2023</p>
-        </div>
-        <div class="card-action center-align custom-card-action">
-          <a href="#" class="custom-card-action">Veja Agora</a>
-        </div>
+    <!--Card 6-->
+    <div class="podcast">
+      <div class="podcast-video">
+        <i class="material-icons">play_arrow</i>
+      </div>
+      <div class="podcast-texto">
+        <h3>Título do Podcast</h3>
+        <p>Descrição do episódio do podcast, destacando os tópicos abordados e
+          convidados especiais.</p>
+        <p class="data"><strong>Em 4 de novembro de 2023</strong></p>
+      </div>
+      <div class="podcast-btn">
+        <button>Veja agora</button>
       </div>
     </div>
 
-    <div class="col s12 m6 l4 xl4 custom-col">
-      <div class="card left-align">
-        <div class="card-image custom-card-image">
-          <img src="https://picsum.photos/200/200?category=technology">
-          <a class="custom-card-icon">
-            <i class="material-icons">play_arrow</i>
-          </a>
-        </div>
-        <div class="card-content">
-          <span class="card-title custom-card-title">Título do Podcast</span>
-          <p class="custom-card-description">Descrição do episódio do podcast, destacando os tópicos abordados e
-            convidados especiais.</p>
-          <p class="custom-card-date">Até 8 de novembro de 2023</p>
-        </div>
-        <div class="card-action center-align custom-card-action">
-          <a href="#" class="custom-card-link">Veja Agora</a>
-        </div>
+    <!--Card 7-->
+    <div class="podcast">
+      <div class="podcast-video">
+        <i class="material-icons">play_arrow</i>
+      </div>
+      <div class="podcast-texto">
+        <h3>Título do Podcast</h3>
+        <p>Descrição do episódio do podcast, destacando os tópicos abordados e
+          convidados especiais.</p>
+        <p class="data"><strong>Em 4 de novembro de 2023</strong></p>
+      </div>
+      <div class="podcast-btn">
+        <button>Veja agora</button>
       </div>
     </div>
- 
-  </div>
+
+    <!--Card 8-->
+    <div class="podcast">
+      <div class="podcast-video">
+        <i class="material-icons">play_arrow</i>
+      </div>
+      <div class="podcast-texto">
+        <h3>Título do Podcast</h3>
+        <p>Descrição do episódio do podcast, destacando os tópicos abordados e
+          convidados especiais.</p>
+        <p class="data"><strong>Em 4 de novembro de 2023</strong></p>
+      </div>
+      <div class="podcast-btn">
+        <button>Veja agora</button>
+      </div>
+    </div>
+
+    <!--Card 9-->
+    <div class="podcast">
+      <div class="podcast-video">
+        <i class="material-icons">play_arrow</i>
+      </div>
+      <div class="podcast-texto">
+        <h3>Título do Podcast</h3>
+        <p>Descrição do episódio do podcast, destacando os tópicos abordados e
+          convidados especiais.</p>
+        <p class="data"><strong>Em 4 de novembro de 2023</strong></p>
+      </div>
+      <div class="podcast-btn">
+        <button>Veja agora</button>
+      </div>
+    </div>
+  </section>
+
   <div class=" row center" style="margin: 0;">
-    <div class="col xl12" >
+    <div class="col xl12 seta" >
       <a href="Ver mais"><i class="material-icons">arrow_drop_down</i></a>
     </div>
   </div>
-  <!-- <div class="row center button-seeMore">
-    <div class="col xl12 "><a href="./src/podcasts.html">Ver mais</a></div>
-  </div> -->
+  
+  
+  <div class="parallax-container">
+    
+  </div>
+
   </section>
   <!-- FIM PODCASTS  -->
 
