@@ -301,7 +301,7 @@ document.querySelector("#cor-select").addEventListener("change", (e) => {
 //  submit
 
 form.addEventListener("submit", (e) => {
-    window.location.href = '../index.html';
+  
     
   e.preventDefault();
   
@@ -314,7 +314,7 @@ form.addEventListener("submit", (e) => {
 
   if (document.querySelectorAll(".valido").length >= 13) {
     e.currentTarget.submit();
-    window.location.href = 'C:\Users\Cliente\Desktop\projeto-Proz\Tec-Noticias\index.html';
+    window.location.href = '../index.html';
   }
   validos.forEach((x) => {
     if (!x.classList.contains("valido")){
