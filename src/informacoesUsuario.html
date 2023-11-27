@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tec notícias - informações do usuário</title>
+    <style>
+        .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 0;
+            background: linear-gradient(to right, rgb(93, 6, 164), rgb(142, 11, 250));
+        }
+
+        .logo {
+            width: 30%;
+        }
+        .skip{
+            color: rgb(255, 255, 255);
+            display: flex;
+            gap: 4px;
+            background-color: rgba(255, 255, 255, 0.311);
+            font-size: 1.4em;
+            border-color: rgba(255, 255, 255, 0.982);
+        }
+        .skip-icon{
+            font-size: 1.2em;
+        }
+        h1 {
+            font-size: 0rem;
+            line-height: 110%;
+            margin: 0;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            border: 1px solid rgb(184, 184, 184);
+            border-top: none;
+        }
+
+        ul:not(.browser-default) {
+        padding-left:15%;
+    list-style-type: none;
+}
+        .opt {
+            color: rgb(68, 68, 68);
+            margin: 20px;
+            background-color: white;
+            border: 1px solid black;
+            width: auto;
+            border-radius: 10px;
+        }
+        .btn-submit {
+            background: linear-gradient(to right, rgb(93, 6, 164), rgb(142, 11, 250));
+        }
+        /* Estilize o botão */
+.skip:hover {
+  color: white; /* Cor do texto do botão */
+  background-color: rgb(244, 236, 251);
+  color: purple;
+}
+.text-explicativo{
+    border-left: 1px solid rgb(184, 184, 184);
+    border-right: 1px solid rgb(184, 184, 184);
+    padding: 10px;
+    margin: 0;
+    font-family: monospace;
+    color: rgb(47, 47, 47);
+}
+/* Estilos para itens marcados */
+.listOpt li.checked {
+    background-color: #f0efef; /* Cor de fundo para itens marcados */
+    color: rgb(165, 15, 165); /* Cor do texto para itens marcados */
+    border: 1px solid purple;
+}
+
+    </style>
+</head>
+<body>
+    
+<div class="container">
+
+    <header>
+        <div class=" header row">
+            <h1 class="col s6 m6 l6 xl6"><img class="logo " src="../img/Pasta_login_img/TN.png" alt=""></h1>
+            <a class="col s4 m4 l4 xl4 center-align" href="../index.html">
+                <button class="btn waves-effect waves-light skip" type="submit" name="action">Skip
+                    <i class="material-icons right">fast_forward</i>
+                  </button></a>
+        </div>
+    </header>
+    <h5 class="row center text-explicativo">Selecione 3 campos</h5>
+    <hr style="width: 50%;height: 0.1em;  border: none; background: linear-gradient(to right, rgb(93, 6, 164), rgb(142, 11, 250))">
+    <form action="#" class="row center-align">
+        <div class="container center-align">
+            <ul class="row listOpt center-align">
+                <li class="col s3 m3 l3 xl3 opt">Desenvolvimento Web</li>
+                <li class="col s3 m3 l3  xl3 opt">Inteligência Artificial (IA)</li>
+                <li class="col s3 m3 l3 xl3 opt">Segurança da Informação</li>
+                <li class="col s3 m3 l3 xl3 opt">Ciência de Dados</li>
+                <li class="col s3 m3 l3 xl3 opt">Análise de Dados</li>
+                <li class="col s3 m3 l3 xl3 opt">Cloud</li>
+                <li class="col s3 m3 l3 xl3 opt">Internet das Coisas (IoT)</li>
+                <li class="col s3 m3 l3 xl3 opt">Machine Learning</li>
+                <li class="col s3 m3 l3 xl3 opt">Realidade Aumentada (AR)</li>
+                <li class="col s3 m3 l3 xl3 opt">UX/UI Design</li>
+                <li class="col s3 m3 l3 xl3 opt">Big Data</li>
+                <li class="col s3 m3 l3 xl3 opt">Cibersegurança</li>
+                <li class="col s3 m3 l3 xl3 opt">Desenvolvimento Mobile</li>
+                <li class="col s3 m3 l3 xl3 opt">Redes de Computadores</li>
+                <li class="col s3 m3 l3 xl3 opt">Gestão de Projetos de TI</li>
+                <li class="col s3 m3 l3 xl3 opt">Blockchain</li>
+                <li class="col s3 m3 l3 xl3 opt">Robótica</li>
+                <li class="col s3 m3 l3 xl3 opt">Automação</li>
+            </ul>
+            
+        </div>
+        <div class="col s12 m12 l12 xl12 center"><button class="btn waves-effect waves-light btn-submit " type="submit" name="action">Submit
+            <i class="material-icons right">send</i>
+          </button></div>
+          
+    </form>
+</div>
+
+<script>
+    // document.querySelector(".skip").addEventListener("click",e => window.location.href = '../index.html')
+  const div = `<div class="preloader-wrapper big active " style="position: absolute; top: 55%;right: 43%; width: 200px;height: 200px;">
+        <div class="spinner-layer spinner-blue-only">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div><div class="gap-patch">
+            <div class="circle"></div>
+          </div><div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>`
+    document.addEventListener('DOMContentLoaded', function() {
+    const checkboxes = document.querySelectorAll('.listOpt li');
+    let checkedCount = 0;
+
+    checkboxes.forEach((checkbox) => {
+        checkbox.addEventListener('click', function() {
+            if (this.classList.contains('checked')) {
+                this.classList.remove('checked');
+                checkedCount--;
+            } else {
+                if (checkedCount < 3) {
+                    this.classList.add('checked');
+                    checkedCount++;
+                }
+            }
+        });
+    });
+
+    const form = document.querySelector('form');
+    form.addEventListener('submit', function(event) {
+        if (checkedCount !== 3) {
+            event.preventDefault(); // Impede o envio do formulário se não estiverem selecionados três itens
+            M.toast({html: 'Marque os campos!', classes: 'rounded purple lighten-2 text-white'});
+        } else {
+            form.submit(); // Submete o formulário após exibir o alerta
+            document.body.innerHTML += div
+            setTimeout(function() {
+                window.location.href = "../index.html"
+            }, 4000);
+        }
+    });
+});
+
+
+</script>
+</body>
+
+</html>

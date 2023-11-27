@@ -2,56 +2,205 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
-    <link rel="stylesheet" href="../css/Pasta_cadastro_css/cadastro.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tec notícias - Cadastrar</title>
+  <link rel="stylesheet" href="../css/Pasta_cadastro_css/style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
-    <header>
 
-        <nav class="menu">
-            <img class="logo" src="../img/Pasta_login_img/TN.png" alt="logo" data-aos="fade-rght"
-                data-aos-duration="1100" />
-            <ul>
-                <li><a href="../index.html">Início</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="register">
-            <h1 class="title">Cadastre-se</h1>
-            <form action="" class="forms">
-                <fieldset class="fieldset">
-                    <label for="nome">Nome<input type="text" name="nome" id="nome"></label>
+  <header>
 
-                    <label for="email">Email<input type="email" name="email" id="email"></label>
+    <h1 class="header">
+      <img src="../img/Pasta_cadastro_img/header.png" alt="" srcset="" id="img-header">
+      <img src="../img/Pasta_cadastro_img/header-mob.png" id="img-hmob" alt="">
+    </h1>
+    <a href="#" id="inicio">Inicio</a>
+  </header>
 
-                    <label for="genero">Genero <select name="genero" id="genero">
-                            <option value="">Selecione uma Opção</option>
-                            <option value="1">Masculino</option>
-                            <option value="2">Feminino</option>
-                            <option value="3">Prefiro não Declarar</option>
-                        </select> </label>
+  <div class="container">
+    <!-- <div class="validarAll" data-aos="fade-down" data-aos-easing="linear"
+      data-aos-duration="100">Preencha todos os campos</div> -->
+    <form class="cadastro-form">
+      <div class="row">
+        <div class="form-group">
+          <label for="nome" id="labelnome" >Nome:</label>
+          <input class="valores" id="nome" name="nome" placeholder="Digite seu nome completo">
+          <span id="spannome" class="spanError"></span>
+        </div>
+        <div class="form-group">
+          <label for="email" id="labelemail">Email:</label>
+          <input class="valores" id="email" name="email" placeholder="Digite seu email">
+          <span id="spanemail" class="spanError"></span>
+        </div>
+      </div>
+      <div class="row pTop">
+        <div class="form-group">
+          <label for="phone" id="labelphone">Telefone:</label>
+          <!-- <input class="valores" type="number"  id="tel" name="tel" maxlength="11" placeholder="Digite seu numero" > -->
+          <input class="valores" type="text" id="phone" name="phone" placeholder="Digite seu numero">
+          <span id="spanphone" class="spanError"></span>
+        </div>
+        <div class="form-group">
+          <label for="cep" id="labelcep">CEP:</label>
+          <input class="valores" type="text" id="cep" name="cep" placeholder="Digite seu CEP">
+          <span id="spancep" class="spanError"></span>
+        </div>
+      </div>
+      <div class="row pTop">
+        <div class="form-group">
+          <label for="cidade" id="labelcidade">Cidade:</label>
+          <input class="valores" type="text" id="cidade" name="cidade" placeholder="Digite sua cidade">
+          <span id="spancidade" class="spanError"></span>
+        </div>
+        <div class="form-group">
+          <label for="data" id="labeldata">Data:</label>
+          <input class="valores" type="text" id="data" name="data" placeholder="Digite sua data de nascimento">
+          <span id="spandata" class="spanError"></span>
+        </div>
+      </div>
+      <div class="row pTop">
+        <div class="form-group">
+          <label for="senha" id="labelcor">Cor:</label>
+          <!-- <input class="valores" type="password" id="senha" name="senha" placeholder="Digite sua senha"> -->
+          <select class="valores" name="" id="cor-select"
+            >
+            <option disabled selected value="">selecione</option>
+            <option value="branco" style="color: black;">branco</option>
+            <option value="negro" style="color: black;">negro</option>
+            <option value="pardo" style="color: black;">pardo</option>
+            <option value="amarelo" style="color: black;">amarelo</option>
+            <option value="outra" style="color: black;">outra</option>
+          </select>
+          <span id="spancor" class="spanError"></span>
+        </div>
+        <div class="form-group">
+          <label for="gen" id="labelgenero">Genêro:</label>
 
-                    <label for="nascimento">Data de Nascimento<input type="date" name="nascimento" id=""></label>
+          <div class="container-opt genero valores" id="genero">
+            <div class="blocodef-one">
+              <input class="genero-opt" type="radio" id="feminino" name="genero" value="feminino"
+                placeholder="Digite seu CPF"><label for="feminino" class="genero-opts">Feminino</label>
+            </div>
+            <div class="blocodef-one">
+              <input class="genero-opt" type="radio" id="masculino"  name="genero" value="masculino"
+                placeholder="Digite seu CPF"><label for="masculino"  class="genero-opts" >Masculino</label>
+            </div>
+            <div class="blocodef-one">
+              <input class=" genero-opt" type="radio" id="outro" name="genero" value="outro"
+                placeholder="Digite seu CPF"><label for="outro"  class="genero-opts" >Outro</label>
+            </div>
+          </div>
+          <span id="spangenero" class="spanError"></span>
+        </div>
+ 
+      </div>
+      <div class="row pTop">
+        <div class="form-group">
+          <label for="" id="labeldfc">Deficiencia:</label>
+          <div class="container-opt dfc valores" id="dfc" >
+            <div class="blocodef-one">
+              <input class="deficite-opt" type="radio" id="def-yes" name="dfc" ><label for="def-yes" style="color: black;position: static;">sim</label>
+            </div>
+            <div class="blocodef-one">
+              <input class="deficite-opt" type="radio" id="def-no" name="dfc" ><label for="def-no" style="color: black;position: static;">não</label>
+            </div>
+          </div>
+          <span id="spandfc" class="spanError"></span>
 
-                    <label for="senha">Senha<input type="password" name="senha" id=""></label>
+        </div>
+        <div class="form-group">
+          <label for="Deficiencia" id="labeltipodef">Deficiencia:</label>
+          <input disabled class="" type="text" id="Deficiencia" name="Deficiencia"
+            placeholder="se tiver descreva qual.">
+          <span id="spantipodef" class="spanError"></span>
+        </div>
+      </div>
+      <div class="row pTop">
+        <div class="form-group">
+          <label for="cpf" id="labelcpf">CPF:</label>
+          <input class="valores" type="text" id="cpf" name="cpf" placeholder="Digite seu CPF">
+          <span id="spancpf" class="spanError"></span>
+        </div>
+        <div class="form-group">
+          <label for="senha" id="labelsenha">Senha:</label>
+          <input class="valores" type="password" id="senha" name="senha" placeholder="Digite sua senha">
+          <span id="spansenha" class="spanError"></span>
+        </div>
+      </div>
+      <div class="row pTop">
+        <div class="form-group">
+          <label for="senha2" id="labelsenha2">Verificar senha:</label>
+          <input class="valores" type="password" id="senha2" name="senha2" placeholder="Digite sua senha novamente">
+          <span id="spansenha2" class="spanError"></span>
+        </div>
+        <div class="form-group checkbox">
+          <input type="checkbox" id="termos" name="termos" class="valores">
+          <span id="nome_termos">Termos de <a href="#" id="link_termos" target="_blank" style="color: rgb(133, 57, 209);">privacidade.</a></span>
+        </div>
+      </div>
 
-                    <label for="confSenha">Confirme sua Senha<input type="password" name="confSenha" id=""></label>
+      <div class="row">
+        <div class="form-group area-submit">
+          <button type="submit" class="btn-cadastrar">Cadastrar</button>
+        </div>
+      </div>
 
-                    <label for="termos"><a href="#" class="terms">Termos e Condições</a><input type="checkbox" name="termos" id="check"></label>
+    </form>
 
-                    <button type="submit">Enviar</button>
+  </div>
 
-                </fieldset>
-            </form>
-        </section>
-    </main>
+  <!-- Incluindo as bibliotecas jQuery e jQuery UI -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+
+  <!-- Outros scripts, como o plugin jQuery Mask -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+  <script src="../js/Pasta_cadastro_js/script.js"></script>
+
+  <script>
+    AOS.init();
+    $('#cpf').mask('000.000.000-00', { reverse: true });
+    $('#cep').mask('00000-000');
+    $('#phone').mask('(00) 0 0000-0000');
+    $('#data').mask('00/00/0000');
+    $(function () {
+      let cidades = [
+        "Maceió", "Macapá", "Manaus", "Salvador", "Fortaleza", "Brasília", "Vitória", "Goiânia", "São Luís",
+        "Cuiabá", "Campo Grande", "Belo Horizonte", "Belém", "João Pessoa", "Curitiba", "Recife", "Teresina",
+        "Rio de Janeiro", "Natal", "Porto Alegre", "Porto Velho", "Boa Vista", "Florianópolis", "São Paulo",
+        "Aracaju", "Palmas"
+      ];
+
+      $("#cidade").autocomplete({
+        source: cidades,
+        select: function (event, ui) {
+          $("#cidade").val(ui.item.value);
+          return false;
+        }
+      });
+
+      // Capturando o evento de pressionar "Enter"
+      $("#cidade").on('keydown', function (event) {
+        if (event.keyCode === $.ui.keyCode.ENTER) {
+          event.preventDefault(); // Evita o comportamento padrão do Enter
+
+          var primeiroElemento = $("#cidade").autocomplete('widget').find('li:first').text();
+          if (primeiroElemento) {
+            $("#cidade").val(primeiroElemento); // Adiciona o primeiro elemento ao campo de entrada
+            $("#cidade").autocomplete('close'); // Fecha a lista do autocomplete
+          }
+        }
+      });
+    });
+
+  </script>
+
 </body>
-<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-<script>
-     new window.VLibras.Widget();
-</script>
+
 </html>

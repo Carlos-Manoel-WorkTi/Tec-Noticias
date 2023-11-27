@@ -1,0 +1,587 @@
+/* Estilos gerais */
+body {
+    box-sizing: border-box;
+    max-width: 100vw;
+    min-width: 250px;
+    margin: 2% 10%;
+    background-color: rgb(72, 12, 129);
+    font-size: 16px;
+    /* height: 80%; */
+}
+#labelNome{
+    width: aut; margin-left: 0.4em;
+}
+header{
+    width: 100%;
+    /* position: relative; */
+    margin: 0;
+    height: 250px;
+}
+h1.header {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+  width: 100%;
+  margin-bottom: 0;
+  margin-top: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  /* z-index: 999; */
+}
+#img-header{
+    width: 90%;
+    height: 900px;
+}
+
+#inicio {
+    position: relative;
+    z-index: 9999;
+    left: 85%;
+    top: -854px;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 32px;
+    border: 1px solid white;
+    list-style: none;
+    text-decoration: none;
+
+}
+.form-group input:focus {
+    border: none;
+    outline-style: solid; /* Estilo da linha de contorno */
+    outline-width: 0.1em; /* Largura da linha de contorno */
+    outline-color: rgb(145, 78, 203); /* Cor da linha de contorno */
+    /* Adicione outros estilos desejados quando o input estiver em foco */
+  }
+.container {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-around;
+}
+
+.cadastro-form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5%;
+    padding-top: 50px;
+    
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    position: relative;
+    margin-left: -10%;
+    width: 25%;
+    
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+}
+#cadastro-titulo {
+    color: rgb(81, 0, 128);
+    text-align: center;
+    font-size: 2.9em;
+    font-family: 'Times New Roman', Times, serif;
+    border-bottom: 1px solid rgba(73, 0, 128, 0.311);
+}
+
+input {
+    border: none;
+    border: 1px solid black;
+    margin-top: 4px;
+    height: 40px;
+    border-radius: 5px;
+    padding-left: 15px;
+    width: 140%;
+}
+
+label {
+    background-color: rgb(255, 255, 255);
+    color: rgb(124, 78, 188);
+    width: auto;
+    height: 20px;
+    text-align: center;
+    top: -8px;
+    margin-left: 5px;
+    position: absolute;
+}
+
+.deficite-opt, .genero-opt {
+    height: 20px;
+    border: none !important;
+    outline: none;
+    margin-top: 0px;
+}
+
+.area-submit {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width: 40%;
+    margin-left: 5%;
+    margin-top: 4%;
+}
+
+.btn-cadastrar {
+    display: flex;
+    width: 100%;
+    color: rgb(255, 253, 255);
+    background-color: rgb(191, 98, 192);
+    padding: 10px 34%;
+    margin: 10px 0;
+    font-size: 1.6em;
+    border: none;
+    border-bottom: 1px solid rgb(48, 5, 48);
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 10px;
+}
+.btn-cadastrar:hover{
+    background-color: rgb(171, 15, 171);
+    font-size: 1.7em;
+}
+#cidade,.form-group.checkbox input[type="checkbox"] {
+    /* Oculta as bordas e o outline */
+    border: none;
+    outline: none;
+    width: 30px;
+  }
+
+.checkbox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+#cidade{
+    width:138%;
+    height: 21px;
+    padding: 12px 10px 10px 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    border-color: black;
+}
+/* CSS para estilizar a lista de sugestões do Autocomplete */
+.ui-autocomplete {
+    max-height: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 1000;
+    padding: 5px;
+    background-color: #e1e0e0;
+    border: 1px solid #ccc;
+    list-style: none;
+    margin: 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
+  }
+  
+  .ui-autocomplete li {
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 1em !important;
+  }
+  
+  .ui-autocomplete li:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .ui-menu .ui-menu-item {
+    padding: 5px 10px;
+  }
+  .row{
+     height: 80px;width: 100%; z-index: 0; display: flex; justify-content:space-around;
+  }
+  #nome_termos{
+    color: rgb(101, 101, 101);
+    width: 100%;
+    /* font-size: 1em; */
+  }
+  #labeldeficite{
+    width: 10%; margin-left: 0em; 
+  }
+  .container-opt{
+    display: flex; gap: 20px; margin-top: 20px;
+  }
+  .blocodef-one{
+    display: flex; align-items: center;
+  }
+  #cor-select{
+    height: 45px;margin-top: 5px; width: 150%;border-radius: 5px;border: 1px solid rgba(0, 0, 0, 0.883); color: rgb(117, 117, 117); padding-left: 10px;
+  }
+  .genero-opts{
+    color: black;position: static; font-size: 0.9em; margin-left: 0;
+  }
+
+/* Estilos para telas grandes (desktops) */
+@media screen and (min-width: 1200px) {
+    body {
+        font-size: 18px;
+    }
+    #nome_termos {
+        color: rgb(101, 101, 101);
+        width: 130%;
+        font-size: 1em;
+    }
+    /* Adicione mais estilos para telas grandes aqui se necessário */
+    #inicio {
+        left: 80%;
+        /* top: -854px; */
+        padding: 5px 10px;
+        font-size: 32px;
+        transition: top 0.5s ease;
+    }
+    .cadastro-form {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 5%;
+        padding-top: 0px;
+        transition: width 0.5s ease;
+    }
+    #img-hmob{
+        display: none;
+    }
+
+}
+/* Estilos para telas médias (tablets) */
+@media screen and (max-width: 1199px) {
+    body {
+        font-size: 14px;
+    }
+    
+    .deficite-opt, .genero-opt {
+        margin-top: -5px;
+    }
+    .cadastro-form {
+        padding-top: 0px;
+        transition: width 0.5s ease;
+    }
+    #inicio {
+        top: -754px;
+        transition: top 0.5s ease;
+    }
+    #img-header{
+        width: 100%;
+        height: 800px;
+        display: block;
+    }
+    #img-hmob{
+        display: none;
+    }
+    #cidade,.form-group.checkbox input[type="checkbox"] {
+        width: 20px;
+      }
+
+}
+@media (max-width:1080px){
+    header{
+        height: 200px;
+    }
+    .cadastro-form {
+        width: 100%;
+        padding-top: 50px;
+    }
+ 
+}
+@media screen and (max-width: 960px) {
+    #inicio {
+        /* top: -160px; */
+        padding: 4px 8px;
+        font-size: 30px;
+    }
+    .genero-opts{
+        color: black;position: static; font-size: 0.9em;
+      }
+      .container-opt {
+        gap: 14px;
+    }
+    #cidade,.form-group.checkbox input[type="checkbox"] {
+        width: 20px;
+      }
+input {
+    width: 130%;
+}
+#cidade {
+    width: 127%;
+    height: 23px;
+
+}
+#cor-select{
+     width: 141%;
+  }
+}
+/* Estilos para telas pequenas (smartphones) */
+@media screen and (max-width: 840px) {
+    body {
+        font-size: 12px;
+    }
+    .cadastro-form {
+        width: 100%;
+        padding-top: 80px;
+    }
+    header{
+        height: 140px;
+    }
+    #inicio {
+        left: 84.6%;
+        /* top: -140px; */
+        padding: 4px 5px;
+        font-size: 27px;
+    }
+    input {
+        width: 120%;
+    }
+    .container-opt {
+        gap: 10px;
+    }
+    .row{
+        color: green; height: 80px;width: 102%; z-index: 9999999; display: flex; justify-content:space-around;
+      }
+      #cidade {
+        width: 118%;
+        height: 23px;
+    }
+    #cor-select{
+        width: 134%;
+     }
+}
+@media screen and (max-width: 710px){
+    #inicio {
+        /* top: -120px; */
+        font-size: 20px;
+    }
+    input {
+        width: 100%;
+    }
+    .row{
+        color: green; height: 80px;width: 108%; z-index: 9999999; display: flex; justify-content:space-around;
+      }
+      #cidade {
+        width: 98%;
+        height: 23px;
+    }
+    .form-group {
+        width: 30%;
+    }
+    #cor-select{
+        width: 112%;
+     }
+     .genero-opts{
+        color: black;position: static; font-size: 1em;
+      }
+     .container-opt {
+        gap: 1px;
+    }
+}
+@media screen and (max-width: 620px) {
+    body {
+        font-size: 12px;
+    }
+
+    header{
+        height: 140px;
+    }
+    #inicio {
+        
+        font-size: 20px;
+    }
+    
+    .form-group {
+        width: 30%;
+    }
+    .genero-opts{
+        color: black;position: static; font-size: 1em;
+      }
+    .container-opt {
+        gap: 0px;
+    }
+}
+@media screen and (max-width: 600px) {
+ 
+    .row{
+        color: green; height: 80px;width: 108%; z-index: 9999999; display: flex;flex-direction: column; justify-content:space-around;
+      }
+      #img-header {
+        display: none;
+    }
+    #img-hmob{
+        display: block;
+            width: 100%;
+            height: 130px;
+        
+    }
+    .form-group {
+        width: auto;
+    }
+    input {
+        width: 80%;
+    }
+    .form-group {
+   
+        margin-left: 10%;
+    }
+    #cidade {
+        width: 79.5%;
+        height: 23px;
+    }
+    .pTop{
+        padding-top: 3.4em;
+    }
+    #cor-select{
+        width: 84.5%;
+     }
+     .container-opt {
+        gap: 20px;
+    }
+    .cadastro-form {
+        width: 90%;
+        padding-top: 20px;
+    }
+}
+/* Estilos para telas extra pequenas (smartphones menores) */
+@media screen and (max-width: 550px) {
+    body{
+        background-color: white;
+        margin: 20px;
+    }
+    .cadastro-form {
+        width: 90%;
+        padding-top: 20px;
+    }
+    h1{
+        font-size: 1.7em;
+        width: 35%;
+      
+    }
+    #inicio {
+        left: 84%;
+        top: -118px;
+        padding: 4px 5px;
+        font-size: 17px;
+    }
+    #img-header {
+        display: none;
+    }
+    #img-hmob{
+        display: block;
+            width: 100%;
+            height: 130px;
+        
+    }
+    .spanError{
+        color: red;
+        font-size: 1em;
+    }
+    /* Adicione mais estilos para telas extra pequenas aqui se necessário */
+ 
+}
+@media screen and (max-width: 460px){
+    #inicio {
+        left: 84%;
+      
+        padding: 4px 5px;
+        font-size: 15px;
+    }
+    #cor-select{
+        width: 86%;
+     }
+
+}
+@media screen and (max-width: 410px) {
+    body{
+        background-color: white;
+        margin: 20px;
+    }
+    header{
+        height: 110px;
+    }
+    .cadastro-form {
+        width: 90%;
+        padding-top: 40px;
+    }
+    #img-header{
+        width: 110%;
+    }
+    .cadastro-form {
+        width: 90%;
+    }
+    h1{
+        font-size: 1.4em;
+        width: 35%;
+      
+    }
+    #inicio {
+        /* left: 83%;
+        top: -99px; */
+        padding: 4px 5px;
+        font-size: 12px;
+        
+    }
+    #cor-select{
+        width: 86.5%;
+     }
+
+    /* Adicione mais estilos para telas extra pequenas aqui se necessário */
+}
+@media screen and (max-width: 360px) {
+    #inicio {
+        left: 80%;
+        top: -120px;
+        padding: 2px 3px;
+        font-size: 14px;
+    }
+    #cor-select{
+        width: 87.5%;
+     }
+}
+@media screen and (max-width: 300px) {
+    #inicio {
+        left: 83%;
+        top: -110px;
+        padding: 0;
+        border: 0;
+        font-size: 10px;
+    }
+    #cor-select{
+        width: 89.5%;
+     }
+     .container-opt {
+        gap: 2px;
+    } 
+}
+
+.validarAll{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.2em;
+    background-color: rgb(69, 4, 233);
+    color: white;
+    width: 20%;
+    height: 60px;
+    border-radius: 10px;
+    border-top-right-radius: 0;
+    position: fixed;
+    z-index: 99999999;
+    top: 8%;
+    right: 11%;
+    font-family: 'Times New Roman', Times, serif;
+}
+.spanError{
+    color: red;
+    font-size: 0.8em;
+}
