@@ -11,6 +11,24 @@ body {
 #labelNome{
     width: aut; margin-left: 0.4em;
 }
+.validarAll{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.2em;
+    background-color: rgb(69, 4, 233);
+    color: white;
+    width: 20%;
+    height: 60px;
+    border-radius: 10px;
+    border-top-right-radius: 0;
+    position: fixed;
+    z-index: 99999999;
+    top: 8%;
+    right: 11%;
+    font-family: 'Times New Roman', Times, serif;
+}
 header{
     width: 100%;
     /* position: relative; */
@@ -129,7 +147,7 @@ label {
     display: flex;
     text-align: center;
     align-items: center;
-    width: 40%;
+    width: 40% ;
     margin-left: 5%;
     margin-top: 4%;
 }
@@ -322,6 +340,13 @@ input {
 #cor-select{
      width: 141%;
   }
+  .validarAll{
+    font-size: 1.2em;
+    width: 23%;
+    height: 60px;
+    top: 8%;
+    right: 11%;
+}
 }
 /* Estilos para telas pequenas (smartphones) */
 @media screen and (max-width: 840px) {
@@ -335,6 +360,7 @@ input {
     header{
         height: 140px;
     }
+
     #inicio {
         left: 84.6%;
         /* top: -140px; */
@@ -357,6 +383,14 @@ input {
     #cor-select{
         width: 134%;
      }
+     .validarAll{
+        font-size: 1.2em;
+        width: 24%;
+        height: 50px;
+        top: 8%;
+        right: 11%;
+    }
+    
 }
 @media screen and (max-width: 710px){
     #inicio {
@@ -376,6 +410,11 @@ input {
     .form-group {
         width: 30%;
     }
+    .area-submit {
+        width: 40% ;
+        margin-left: -5%;
+    }
+
     #cor-select{
         width: 112%;
      }
@@ -384,6 +423,13 @@ input {
       }
      .container-opt {
         gap: 1px;
+    }
+    .validarAll{
+        font-size: 1.2em;
+        width: 29%;
+        height: 45px;
+        top: 8%;
+        right: 11%;
     }
 }
 @media screen and (max-width: 620px) {
@@ -408,9 +454,22 @@ input {
     .container-opt {
         gap: 0px;
     }
+    .btn-cadastrar {
+        padding: 10px 25%;
+    }
+    
 }
 @media screen and (max-width: 600px) {
- 
+    .btn-cadastrar {
+        width: 70%;
+        padding: 10px 34%;
+        margin: 10px 40px 0 0;
+    }
+    .btn-cadastrar {
+        width: 70%;
+        padding: 10px 25%;
+        margin: 10px 40px 0 0;
+    }
     .row{
         color: green; height: 80px;width: 108%; z-index: 9999999; display: flex;flex-direction: column; justify-content:space-around;
       }
@@ -438,7 +497,7 @@ input {
         height: 23px;
     }
     .pTop{
-        padding-top: 3.4em;
+        padding-top: 4em;
     }
     #cor-select{
         width: 84.5%;
@@ -447,8 +506,15 @@ input {
         gap: 20px;
     }
     .cadastro-form {
-        width: 90%;
+        width: 100%;
         padding-top: 20px;
+    }
+    .validarAll{
+        font-size: 1.3em;
+        width: 40%;
+        height: 45px;
+        top: 8%;
+        right: 5%;
     }
 }
 /* Estilos para telas extra pequenas (smartphones menores) */
@@ -458,8 +524,8 @@ input {
         margin: 20px;
     }
     .cadastro-form {
-        width: 90%;
         padding-top: 20px;
+        margin-left: -10px;
     }
     h1{
         font-size: 1.7em;
@@ -478,7 +544,7 @@ input {
     #img-hmob{
         display: block;
             width: 100%;
-            height: 130px;
+            height: 140px;
         
     }
     .spanError{
@@ -497,10 +563,20 @@ input {
     }
     #cor-select{
         width: 86%;
-     }
+     }    
+     .validarAll{
+        font-size: 1.2em;
+        width: 45%;
+    }
+    .btn-cadastrar {
+        width: 70%;
+        padding: 10px 22%;
+        margin: 10px 40px 0 0;
+    }
 
 }
 @media screen and (max-width: 410px) {
+   
     body{
         background-color: white;
         margin: 20px;
@@ -509,7 +585,7 @@ input {
         height: 110px;
     }
     .cadastro-form {
-        width: 90%;
+        width: 100%;
         padding-top: 40px;
     }
     #img-header{
@@ -517,6 +593,11 @@ input {
     }
     .cadastro-form {
         width: 90%;
+    }
+    #img-hmob {
+        display: block;
+        width: 100%;
+        height: 120px;
     }
     h1{
         font-size: 1.4em;
@@ -528,7 +609,7 @@ input {
         top: -99px; */
         padding: 4px 5px;
         font-size: 12px;
-        
+        top: -90%;
     }
     #cor-select{
         width: 86.5%;
@@ -537,9 +618,17 @@ input {
     /* Adicione mais estilos para telas extra pequenas aqui se necessário */
 }
 @media screen and (max-width: 360px) {
+    .validarAll{
+        font-size: 1.2em;
+        width: 65%;
+        height: 45px;
+        top: 8%;
+        right: 5%;
+    }
+
     #inicio {
         left: 80%;
-        top: -120px;
+        top: -104px;
         padding: 2px 3px;
         font-size: 14px;
     }
@@ -563,24 +652,7 @@ input {
     } 
 }
 
-.validarAll{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 1.2em;
-    background-color: rgb(69, 4, 233);
-    color: white;
-    width: 20%;
-    height: 60px;
-    border-radius: 10px;
-    border-top-right-radius: 0;
-    position: fixed;
-    z-index: 99999999;
-    top: 8%;
-    right: 11%;
-    font-family: 'Times New Roman', Times, serif;
-}
+
 .spanError{
     color: red;
     font-size: 0.8em;

@@ -33,6 +33,18 @@ label {
   border-radius: 7px;
   font-weight: bolder;
 }
+.toast-centered {
+  /* Define o posicionamento absoluto */
+  width: 100%;
+  margin-top: 0vh;
+  margin-bottom: 50vh;
+  left: -200%;
+  right: 30%;
+  /* transform: translate(-50%, -50%); */
+  /* Define outras propriedades de estilo (pode personalizar conforme necessário) */
+  background-color: #c81616;
+  color: #fff;
+}
 /* border de ativação do input */
 input:not([type]):focus:not([readonly]),
 input[type="text"]:not(.browser-default):focus:not([readonly]),
@@ -105,6 +117,32 @@ textarea.materialize-textarea:focus:not([readonly]) {
     color: transparent;
   }
 }
+@media (max-width:1100px){
+  .toast-centered {
+    left: -160%;
+  }
+}
+@media (max-width:992px){
+  .toast-centered {
+    width: 100%;
+    margin-top: -270%;
+    left: 170%;
+    right: 30%;
+    background-color: #c81616;
+    color: #fff;
+  }
+}
+@media (max-width:840px){
+  .toast-centered {
+    width: 100%;
+    margin-top: -270%;
+    left: 130%;
+    right: 30%;
+    background-color: #c81616;
+    color: #fff;
+  }
+}
+
 @media (max-width: 600px) {
     .row .col.s12 {
         width: 100%;
@@ -130,15 +168,65 @@ textarea.materialize-textarea:focus:not([readonly]) {
   .btn-efect {
     font-size: 14px;
   }
+  .toast-centered {
+    width: 40%;
+    margin-top: 0vh;
+    margin-bottom: 75vh;
+    left: 30%;
+    right: 30%;
+    background-color: #c81616;
+    color: #fff;
+  }
 }
-.toast-centered {
-  /* Define o posicionamento absoluto */
-  width: 100%;
-  top: 30%;
-  left: -200%;
-  right: 30%;
-  /* transform: translate(-50%, -50%); */
-  /* Define outras propriedades de estilo (pode personalizar conforme necessário) */
-  background-color: #c81616;
-  color: #fff;
+@media (max-width:520px){
+  .toast-centered {
+    width: 50%;
+    margin-top: 0vh;
+    margin-bottom: 80vh;
+    left: 30%;
+    right: 30%;
+    background-color: #c81616;
+    color: #fff;
+  }
+}@media (max-width:420px){
+  .toast-centered {
+    width: 60%;
+    left: 25%;
+    right: 30%;
+    background-color: #c81616;
+    color: #fff;
+  }
+}
+@media (max-width:370px){
+  .toast-centered {
+    width: 50%;
+
+    left: 25%;
+    right: 30%;
+    font-size: 0.8em;
+    background-color: #c81616;
+    color: #fff;
+  }
+}
+@media (max-width:330px){
+  .toast-centered {
+    width: 60%;
+    margin-top: -185%;
+    left: 25%;
+    right: 30%;
+    font-size: 0.8em;
+    background-color: #c81616;
+    color: #fff;
+  }
+}
+@media (max-width:330px){
+  .toast-centered {
+    width: 60%;
+    margin-top: 100%;
+    left: 20%;
+    right: 30%;
+    font-size: 0.8em;
+    background-color: #c81616;
+    color: #fff;
+  }
 }

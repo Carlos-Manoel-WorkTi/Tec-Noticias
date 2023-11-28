@@ -62,10 +62,15 @@ Email.addEventListener("keypress", e => {
         if(validarEmail(e.target.value)){
             alterStyle(e.target,true,"red","Preencha com seu email!",'red')
             e.target.classList.remove("valido")
-            M.toast({html: 'Ex: usuario123@email.com', classes: 'toast-centered',})
+            if (!document.querySelector("#toast-container")) {
+                 M.toast({html: 'Ex: usuario123@email.com', classes: 'toast-centered',})
+            }
+           
         } else {
             alterStyle(e.target,false,"rgb(158, 158, 158)","Vazio sem valor",'#997ec7')
             e.target.classList.add("valido")
+            senha.focus()
+        
         }
     }
 });
@@ -87,19 +92,17 @@ senha.addEventListener("keypress", e => {
         if(validarSenha(e.target.value)){
             alterStyle(e.target,true,"red","Preencha com sua senha!",'red')
             e.target.classList.remove("valido")
-            M.toast({html: 'Ex: Deve', classes: 'toast-centered',})
+            // M.toast({html: 'Minimo de 8 caracteres', classes: 'toast-centered',})
         }else{
             alterStyle(e.target,false,"rgb(158, 158, 158)","Vazio sem valor",'#997ec7')
             e.target.classList.add("valido")
         }
     }
 });
-
-
 // validar envio
-form.addEventListener('submit', e => {
+form.addEventListener('submit', function validarEnvio(e){
     e.preventDefault()
-
+    
     if (validarCampos()) {
         const getEmailAtual = e.target.querySelector("#Email").value
         const getSenhaAtual = e.target.querySelector("#Senha").value
@@ -130,10 +133,77 @@ form.addEventListener('submit', e => {
 
 
         }
-        else{  M.toast({html: 'Os dados são invalidos', classes: 'toast-centered',})}
+        else{  
+            if (!document.getElementById("toast-container")){
+                M.toast({html: 'Os dados são invalidos', classes: 'toast-centered',})
+            }
     }
-    else{M.toast({html: 'Preencha corretamente', classes: 'toast-centered',})}
+    }
+    else{
+      
+        
+        if (!document.getElementById("toast-container")) {
+    
+            M.toast({html: 'Preencha corretamente', classes: 'toast-centered',})
+        }
+        
+    }
  
     
 
+})
+// envio por clicar em enter no doc
+document.addEventListener("keydown",(event) => {
+   
+   
+    if (event.key === 'Enter') {
+        
+        if (validarCampos()) {
+            const getEmailAtual = event.target.querySelector("#Email").value
+            const getSenhaAtual = event.target.querySelector("#Senha").value
+            if (validarUsuario(getEmailAtual,getSenhaAtual,usuarios)) {
+                
+                
+    
+    
+                document.querySelector("#preloader").classList.add("progress")
+    
+                setTimeout(function() {
+                    document.querySelector('#preloader').classList.remove("progress");  
+                    
+                    M.toast({html: 'redirecionando à home...!', classes: ' green darken-3 toast-centered'});
+            
+                    // Redireciona para "../index.html" após 3 segundos (3000ms)
+                    setTimeout(function() {
+                      window.location.href = '../index.html';
+                    }, 3000);
+    
+                  }, 3000); // Simula o preloader por 3 segundos (3000ms)
+                  // Mostra um toast
+               
+    
+    
+    
+    
+    
+    
+            }
+            else{  
+                if (!document.getElementById("toast-container")){
+                    M.toast({html: 'Os dados são invalidos', classes: 'toast-centered',})} 
+                }
+              
+         
+        }
+        
+        else{
+            if (event.target.id == 'Email') {
+                return
+            }
+            if (!document.getElementById("toast-container")) {
+                M.toast({html: 'Preencha corretamente', classes: 'toast-centered',})}
+            }
+            
+     
+    }
 })
