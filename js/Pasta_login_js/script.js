@@ -48,7 +48,7 @@ Email.addEventListener("blur", e => {
     if(validarEmail(e.target.value)){
         alterStyle(e.target,true,"red","preencha com seu email!",'red')
         e.target.classList.remove("valido")
-        M.toast({html: 'Ex: usario123@email.com', classes: 'toast-centered',})
+        M.toast({html: 'Ex: usario123@email.com', classes: 'toast-centered', displayLength: 1000})
     }else{
         alterStyle(e.target,false,"rgb(158, 158, 158)","vazio sem valor",'#997ec7')
         e.target
@@ -59,27 +59,27 @@ Email.addEventListener("blur", e => {
 // Validar email se a tecla "Enter" for pressionada
 Email.addEventListener("keypress", e => {
     if (e.key === 'Enter') {
+        e.preventDefault(); // Evita o comportamento padrão de submeter formulários com Enter
         if(validarEmail(e.target.value)){
             alterStyle(e.target,true,"red","Preencha com seu email!",'red')
             e.target.classList.remove("valido")
             if (!document.querySelector("#toast-container")) {
-                 M.toast({html: 'Ex: usuario123@email.com', classes: 'toast-centered',})
+                M.toast({html: 'Ex: usuario123@email.com', classes: 'toast-centered',displayLength: 1000})
             }
-           
         } else {
             alterStyle(e.target,false,"rgb(158, 158, 158)","Vazio sem valor",'#997ec7')
             e.target.classList.add("valido")
             senha.focus()
-        
         }
     }
 });
+
 // validar senha
 senha.addEventListener("blur", e => {  
     if(validarSenha(e.target.value)){
         alterStyle(e.target,true,"red","preencha com sua senha!",'red')
         e.target.classList.remove("valido")
-        M.toast({html: 'Minímo de 8 acaracteres', classes: 'toast-centered',})
+        M.toast({html: 'Minímo de 8 acaracteres', classes: 'toast-centered',displayLength: 1000})
     }else{
         alterStyle(e.target,false,"rgb(158, 158, 158)","vazio sem valor",'#997ec7')
         e.target.classList.add("valido")
@@ -116,7 +116,7 @@ form.addEventListener('submit', function validarEnvio(e){
             setTimeout(function() {
                 document.querySelector('#preloader').classList.remove("progress");  
                 
-                M.toast({html: 'redirecionando à home...!', classes: ' green darken-3 toast-centered'});
+                M.toast({html: 'redirecionando à home...!', classes: ' green darken-3 toast-centered',displayLength: 1000});
         
                 // Redireciona para "../index.html" após 3 segundos (3000ms)
                 setTimeout(function() {
@@ -135,7 +135,7 @@ form.addEventListener('submit', function validarEnvio(e){
         }
         else{  
             if (!document.getElementById("toast-container")){
-                M.toast({html: 'Os dados são invalidos', classes: 'toast-centered',})
+                M.toast({html: 'Os dados são invalidos', classes: 'toast-centered',displayLength: 1000})
             }
     }
     }
@@ -144,7 +144,7 @@ form.addEventListener('submit', function validarEnvio(e){
         
         if (!document.getElementById("toast-container")) {
     
-            M.toast({html: 'Preencha corretamente', classes: 'toast-centered',})
+            M.toast({html: 'Preencha corretamente', classes: 'toast-centered',displayLength: 1000})
         }
         
     }
@@ -171,7 +171,7 @@ document.addEventListener("keydown",(event) => {
                 setTimeout(function() {
                     document.querySelector('#preloader').classList.remove("progress");  
                     
-                    M.toast({html: 'redirecionando à home...!', classes: ' green darken-3 toast-centered'});
+                    M.toast({html: 'redirecionando à home...!', classes: ' green darken-3 toast-centered',displayLength: 1000});
             
                     // Redireciona para "../index.html" após 3 segundos (3000ms)
                     setTimeout(function() {
@@ -190,7 +190,7 @@ document.addEventListener("keydown",(event) => {
             }
             else{  
                 if (!document.getElementById("toast-container")){
-                    M.toast({html: 'Os dados são invalidos', classes: 'toast-centered',})} 
+                    M.toast({html: 'Os dados são invalidos', classes: 'toast-centered',displayLength: 1000})} 
                 }
               
          
@@ -201,7 +201,7 @@ document.addEventListener("keydown",(event) => {
                 return
             }
             if (!document.getElementById("toast-container")) {
-                M.toast({html: 'Preencha corretamente', classes: 'toast-centered',})}
+                M.toast({html: 'Preencha corretamente', classes: 'toast-centered',displayLength: 1000})}
             }
             
      
