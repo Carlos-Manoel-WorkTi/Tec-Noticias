@@ -313,8 +313,8 @@
   </section>
   <!-- FIM PODCASTS  -->
   <section>
-    <div class="parallax-container" style="height:60vh;">
-      <div class="parallax"><img src="img/Pasta_home_img/parallaxx.png"
+    <div class="parallax-container" >
+      <div class="parallax"><img id="img-paralax" src="img/Pasta_home_img/parallaxx.png"
           alt=""></div>
     </div>
   </section>
@@ -430,9 +430,9 @@
       </div>
       <div style="border-top: 2px solid rgb(62, 10, 121);" class="row">
         <div class=" s12 m12 l12 xl12">
-
-          <div class="row ver-mais-cultura" style="background-color: rgba(255, 0, 0, 0);   height: 0px; display: flex; align-items: center;justify-content: center; "> <a class="s12 m12 l12 xl12" style="background-color: rgb(81, 29, 192); padding: 10px; width: 13%; text-align: center; border-radius: 10px;margin-top: -200px; color:white; background-size: 400% 100%;
-            animation: texto 10s linear infinite;" href="#">Ver mais</a></div>
+          <a href="#" id="link-ver-mais-cultura"  > Ver mais</a>
+          <!-- <div class="row ver-mais-cultura" style="background-color: rgba(255, 0, 0, 0);   height: 0px; display: flex; align-items: center;justify-content: center; "> <a class="s12 m12 l12 xl12" style="background-color: rgb(81, 29, 192); padding: 10px; width: 13%; text-align: center; border-radius: 10px;margin-top: -200px; color:white; background-size: 400% 100%;
+            animation: texto 10s linear infinite;" href="#">Ver mais</a></div> -->
         </div>
       </div>
 
@@ -443,13 +443,13 @@
  
   <section class="row assinatura" style="display: flex; justify-content: center; align-items: center; flex-direction: column; ">
     <div class="nav-content " style="display: flex;">
-      <ul class="tabs tabs-transparent">
+      <ul class="tabs tabs-transparent tabs-assinatura">
         <li class="tab"><a href="#test1">PLANO BASICO</a></li>
         <li class="tab"><a class="active" href="#test2">PLANO PADRÃO</a></li>
         <li class="tab"><a href="#test3">PLANO AVANÇADO</a></li>
       </ul>
     </div>
-    <div class="row" style="width: 50%; display: flex; align-self: center;">
+    <div class="row container-cards-assinatura" >
     <div id="test1" class="col s12">
       <div style="display: flex; justify-content: center;" class="row">
         <div class="col s12 m6" style="width: 100%;">
@@ -485,7 +485,7 @@
         <div class="col s12 m6" style="width: 100%;">
           <div class="card white darken-1">
             <div class="card-content black-text">
-              <span class="card-assinatura-title card-title purple-text ">PADRÃO AVANÇADO</span>
+              <span class="card-assinatura-title card-title purple-text ">PLANO FULL</span>
               <p>Para a mais alta qualidade e impacto, nosso Plano Completo é a escolha perfeita. Com uma estrutura avançada, um design de alta qualidade e conteúdo multimídia envolvente, seu site de notícias irá se destacar. Personalize a experiência do usuário, ofereça assinaturas premium e vá além com um aplicativo móvel dedicado. Com a nossa equipe de marketing, você alcançará uma audiência maior e mais engajada. Assinantes deste plano desfrutam de notificações de notícias, acesso a notícias exclusivas e uma área VIP para salvar favoritos durante todo o ano.</p>
             </div>
             <div class="card-action center">
@@ -497,7 +497,7 @@
     </div>
 
   </section>
-  <section id="logos" > 
+  <section id="logos"  > 
 
     <div class="logo-container">
       <div class="logos"><img src="img/Pasta_home_img/icons8-figma-48.png" alt="Logo 1"></div>
@@ -541,11 +541,11 @@
                 <div class="row footer-canais">
                     <div class=" s2 m2 l2 xl2 "><img class="icon-rede"
                             src="img/Pasta_home_img/Facebook (icon — Colour).svg" alt=""></div>
-                    <div class="col s2 m2 l2 xl2 "><img class="icon-rede" src="../img/Pasta_home_img/GitHub (icon — Colour).svg"
+                    <div class="col s2 m2 l2 xl2 hide-on-small-only"><img class="icon-rede" src="../img/Pasta_home_img/GitHub (icon — Colour).svg"
                             alt=""></div>
                     <div class="col s2 m2 l2 xl2 "><img class="icon-rede"
                             src="img/Pasta_home_img/Instagram (icon — Colour).svg" alt=""></div>
-                    <div class="col s2 m2 l2 xl2 "><img class="icon-rede"
+                    <div class="col s2 m2 l2 xl2  "><img class="icon-rede"
                             src="img/Pasta_home_img/Twitter (icon — Colour).svg" alt=""></div>
                     <div class="col s2 m2 l2  x12 "><img class="icon-rede"
                             src="img/Pasta_home_img/YouTube (icon — Colour).svg" alt=""></div>
@@ -559,7 +559,7 @@
     <div class="container">
         <div class="row" style="margin-bottom: 0;">
             <div class="col s12 m4 l4 xl4 container-footer-ctt" >
-                <div class="row ">
+                <div class="row contatos">
                     <div class="col s12 m12 l12 xl12 contatos-text">
                         <h4>Contatos</h4>
                     </div>
@@ -574,9 +574,9 @@
             <div class="col s12 m8 l8 xl8">
                 <div class="row" style="margin-bottom: 0;">
                     <div class="col s4 m4 l4 xl4">
-                        <div class="row">
+                        <div class="row infs-footer">
                             <div class="col s12 m12 l12 xl12">
-                                <h5>Sobre</h5>
+                                <h5 >Sobre</h5>
                             </div>
                             <div class="col s12 m12 l12 xl12">
                                 <p>Tec notícias</p>
@@ -586,10 +586,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col s4 m4 l4 xl4">
-                        <div class="row">
+                    <div class="col s4 m4 l4 xl4 ">
+                        <div class="row infs-footer">
                             <div class="col s12 m12 l12 xl12">
-                                <h5>Conteudos</h5>
+                                <h5  >Conteudos</h5>
                             </div>
                             <div class="col s12 m12 l12 xl12">
                                 <p>Tecnologias</p>
@@ -600,9 +600,9 @@
                         </div>
                     </div>
                     <div class="col s4 m4 l4 xl4">
-                        <div class="row">
+                        <div class="row infs-footer">
                             <div class="col s12 m12 l12 xl12">
-                                <h5>Colaboradores</h5>
+                                <h5  >Colaboradores</h5>
                             </div>
                             <div class="col s12 m12 l12 xl12">
                                 <p>Carlos Manoel</p>

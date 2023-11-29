@@ -3,6 +3,12 @@ body {
   padding: 0;
   zoom: 100%;
 }
+.parallax-container{
+  height:70vh;
+}
+#img-paralax{
+  width: 50%;
+}
 .container-footer-ctt{
   border-right: 1px solid rgb(22, 2, 52); margin-top: 10px; height: 200px;
 }
@@ -31,6 +37,23 @@ margin-top: -8px;
   -webkit-transform-origin: 0 0;
   transform-origin: 0 0;
 }
+#tittle-cultura {
+  width: 70%;
+  margin: 0 10px;
+  margin-left: 13%;
+  border-bottom: 0.1em solid rgb(86, 5, 137);
+  background: linear-gradient(to right, rgb(16, 16, 165), rgb(88, 13, 88));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 0 0.1em 0.1em rgba(0, 0, 0, 0.296); /* Sombra na parte inferior */
+}
+
+.cultura h2 {
+  font-size: 5.56rem;
+  line-height: 110%;
+  margin: 2.37333rem 0px 1.424rem;
+}
 
 .tabs.tabs-transparent .indicator {
   background-color: #7f0ca1;
@@ -55,6 +78,37 @@ margin-top: -8px;
   font-size: 180px;
   color: transparent;
 }
+#link-ver-mais-cultura {
+  position: absolute;
+  margin-left: 45%;
+  margin-top: -120px;
+  background-clip: padding-box; /* Aplicar background dentro da borda */
+  height: 50px;
+  width: 140px;
+  display: flex;
+  align-items: center;
+  padding: 20px 10px;
+  font-size: 1.6em;
+  color: white;
+  border-radius: 10px;
+  justify-content: center;
+  border: 1px solid transparent; /* Borda transparente */
+  border-image: linear-gradient(to right, #460a7f, #8b14b8) 1; /* Gradiente para a borda */
+  background-color: rgba(0, 0, 0, 0); /* Plano de fundo transparente */
+}
+@keyframes float {
+  0% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-20px);
+  }
+  100% {
+      transform: translateY(0);
+  }}
+  .float{
+    animation: float 3s infinite ease-in;
+  }
 @media (min-width: 1201px) {
   .page-footer{
     
@@ -511,6 +565,7 @@ margin-top: -8px;
     
   will-change: transform;
 padding-bottom: 5vh;
+margin-bottom: 0;
 background: linear-gradient(to right,rgb(0, 0, 0),rgb(0, 0, 4),rgb(9, 2, 37));
 padding-top: 20px;
 margin-left: -4.4%;
@@ -596,6 +651,12 @@ margin-left: -4.4%;
   }
 }
 @media (max-width: 992px) {
+  .parallax-container{
+    height:60vh;
+  }
+  #img-paralax{
+    width: 80%;
+  }
   .container-footer-ctt{
     border-right: 1px solid rgb(22, 2, 52); margin-top: 10px; height: 200px;
   }
@@ -710,6 +771,13 @@ margin-left: -4.4%;
   }
 }
 @media (max-width:790px){
+  .parallax-container{
+    height:50vh;
+  }
+  #img-paralax{
+    width: 80%;
+    height: 400px;
+  }
   .container-footer-ctt{
     border-right: 1px solid rgb(22, 2, 52); margin-top: 10px; height: 200px;
   }
@@ -752,6 +820,13 @@ margin-left: -4.4%;
   }
 
 @media (max-width: 600px) {
+  .parallax-container{
+    height:40vh;
+  }
+  #img-paralax{
+    width: 80%;
+    height: 400px;
+  }
   .container-footer-ctt{
     border-right: 1px solid rgb(22, 2, 52); margin-top: 10px; height: 200px;
   }
@@ -904,6 +979,11 @@ margin-left: -4.4%;
     border: none;
     border-bottom: 1px solid rgb(22, 2, 52); margin-top: 10px; height: 100px;
   }
+  .cultura h2 {
+    font-size: 4.56rem;
+    line-height: 110%;
+    margin: 2.37333rem 0px 1.424rem;
+  }
   .card-assinatura-title {
     height: 25%;
     background: transparent !important;
@@ -917,7 +997,8 @@ margin-left: -4.4%;
     height: 40px;
   }
   #search-in-button .material-icons {
-    font-size: 30px;
+    font-size: 40px;
+    color: #9e9e9e;
   }
   .search-area{
     top:19vh;
@@ -1099,6 +1180,35 @@ margin-left: -4.4%;
     }
   }
   @media (max-width:600px){
+    #podcasts {
+      padding-bottom: 5vh;
+      margin-bottom: 0;
+      padding-top: 20px;
+      margin-left: 0.5%;
+  }
+  #podcasts
+  .texto-podcasts-titulo {
+      font-size: 1.4em;
+      width: 100%;
+      color: white;
+      font-family: 'Roboto Mono', monospace;
+      border-left: none;
+      padding: 2em 0 0em 0.3em;
+      margin: -0.43em 0 0.6em -0.246em;
+      height: 8.25em;
+  }
+  #podcasts .button-seeMore-podcasts {
+    background: linear-gradient(to right,rgb(29, 5, 57),rgb(54, 15, 116));
+    color: white;
+    padding: 1px 10px;
+    text-align: center;
+    max-width: 178px;
+    font-size: 0.7em;
+}
+#podcasts
+.div-video {
+    margin-top: 30px;
+}
     #noticias{
       .news-button {
         padding: 1px 10px;
@@ -1132,8 +1242,53 @@ margin-left: -4.4%;
     font-size: 8px;
   }
 }
+/* ///////////////////////////////////////////////// */
+#link-ver-mais-cultura{
+margin-left: 38% ; margin-top: -60px;  height: 40px;width: 150px; padding: 20px 10px; font-size: 1.4em; justify-content: center;
+}
+.cultura .carousel .carousel-item img {
+  width: 100%;
+  height: 260px;
+  margin-top: 70px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.cultura
+.carousel {
+width: 600px;
+height: 450px;
+perspective: 1200px;
+margin: 0 20px 0 20px;
+}
+.cultura
+.card-title {
+height: 25%;
+background: linear-gradient(to right, #151b5fad, #640083);
+color: white;
+border-bottom-right-radius: 40%;
+overflow: hidden;
+text-align: center;
+}
+.cultura
+.card-title h3 {
+font-size: 15px;
+margin-top: 10px;
+padding: 5%;
+}
+.cultura
+.indicators {
+top: 370px;
+}
+
 }
 @media (max-width:510px){
+  .parallax-container{
+    height:36vh;
+  }
+  #img-paralax{
+    width: 100%;
+    height: 350px;
+  }
   #noticias{
     .news-button {
       padding: 1px 5px;
@@ -1171,12 +1326,18 @@ margin-left: -4.4%;
   padding-top: 1px;
 }
 }
+#link-ver-mais-cultura{
+  margin-left: 35% ; margin-top: -55px;  height: 40px;width: 140px; padding: 20px 10px; font-size: 1.4em; justify-content: center;
+  }
 }
 
   @media (max-width: 450px) {
+
+
     #form_pesquisa {
       top: 10vh;
     }
+    
     #search-in-button .material-icons {
       font-size: 30px;
     }
@@ -1202,47 +1363,40 @@ margin-left: -4.4%;
       font: 90 normal 1.7em/1.5 "Montserrat", sans-serif;
   
     }
-    /* carousel */
-    .carousel {
+    .cultura .carousel .carousel-item img {
       width: 100%;
-      height: 400px;
-      perspective: 300px;
-    }
-    .carousel .carousel-item {
-      width: 200px;
-      height: 255px;
-      top: -25px;
-    }
-    .carousel .carousel-item img {
-      width: 100%;
-      height: 90%;
+      height: 260px;
+      margin-top: 70px;
       border-top-right-radius: 20px;
       border-top-left-radius: 20px;
-    }
-    .indicators {
-      top: 340px;
-      right: 17px;
-    }
-    .carousel .indicators .indicator-item {
-      height: 13px;
-      width: 13px;
-    }
-    .carousel .indicators .indicator-item.active {
-      background-color: #6c0583;
-    }
-    .card-title {
-      height: 25%;
-      background: linear-gradient(to right, #0c1254, #640083);
-      color: white;
-      border-bottom-right-radius: 40%;
-      overflow: hidden;
-      text-align: center;
-    }
-    .card-title h3 {
-      font-size: 15px;
-      margin-top: 5px;
-      padding: 5%;
-    }
+  }
+  .cultura
+.carousel {
+    width: 600px;
+    height: 450px;
+    perspective: 1200px;
+    margin: 0 20px 0 20px;
+}
+    .cultura
+.card-title {
+    height: 25%;
+    background: linear-gradient(to right, #151b5fad, #640083);
+    color: white;
+    border-bottom-right-radius: 40%;
+    overflow: hidden;
+    text-align: center;
+}
+.cultura
+.card-title h3 {
+    font-size: 15px;
+    margin-top: 10px;
+    padding: 5%;
+}
+.cultura
+.indicators {
+    top: 370px;
+}
+  
     #autocomplete-input {
       font-size: 19px;
     }
@@ -1455,8 +1609,18 @@ margin-left: -4.4%;
     .termos {
       font-size: 10px;
     }
+    #link-ver-mais-cultura{
+      margin-left: 34% ; margin-top: -55px;  height: 40px;width: 140px; padding: 20px 10px; font-size: 1.4em; justify-content: center;
+      }
   }
   @media (max-width:400px){
+    .parallax-container{
+      height:28vh;
+    }
+    #img-paralax{
+      width: 130%;
+      height: 330px;
+    }
     #noticias{
       .row .col.s4 {
         width: 45.3333333333%;
@@ -1502,9 +1666,13 @@ margin-left: -4.4%;
     padding-top: 1px;
   }
   }
+  #link-ver-mais-cultura{
+    margin-left: 32% ; margin-top: -60px;  height: 15px;width: 140px; padding: 15px 10px; font-size: 1em; justify-content: center; font-family: 'Roboto Mono', monospace;
+    }
+
   }
-  @media (max-width: 395px) {
- }
+  /* @media (max-width: 395px) {
+ } */
    
     #autocomplete-input {
       font-size: 17px;
@@ -1580,7 +1748,9 @@ margin-left: -4.4%;
    .cultura{
     text-align: center;
     #tittle-cultura{
+      width: 70%;
       margin: 0 10px;
+    margin-left: 13%;
       border-bottom: 0.2em solid rgb(27, 3, 44);
       background: linear-gradient(to right,rgb(6, 6, 130),purple);
       background-clip: text;
@@ -1766,6 +1936,8 @@ margin-left: -4.4%;
       text-align: center;
       #tittle-cultura{
         margin: 0 10px;
+        width: 70%;
+        margin-left: 13%;
         border-bottom: 0.2em solid rgb(27, 3, 44);
         background: linear-gradient(to right,rgb(6, 6, 130),purple);
         background-clip: text;

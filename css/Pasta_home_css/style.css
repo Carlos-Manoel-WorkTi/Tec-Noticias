@@ -15,6 +15,9 @@ background: linear-gradient(to bottom,black,blue);
 
  
 }
+.row .container-cards-assinatura{
+  width: 50%; display: flex; align-self: center;
+}
 
 #section-three {
   background: linear-gradient(to bottom,black,black,black,rgb(2, 2, 41),black);
@@ -322,4 +325,66 @@ a:focus {
 .icon-contato {
   height: 30px;
 }
+.card .card-content {
+  padding: 24px;
+  border-radius: 0 0 2px 2px;
+  height: 200px;
+  overflow: hidden;
+}
+.row .container-cards-assinatura{
+  width: 70%; 
+  margin-left: 17%; 
+}
+.tabs-assinatura{
+  display: block !important; 
+}
+.tabs .tab a {
+  margin-top: 4%;
+  font-size: 13px !important;
+}
+.footer-canais {
+  height: 100px;
+  display: flex;
+  gap: 0px;
+  align-items: center;
+  margin-bottom: 0;
+}
+.infs-footer h5{
+  font-size: 1em ;
+}
+.infs-footer p{
+  color: rgb(186, 186, 186);
+  font-size: 0.9em;
+}
+.contatos{
+  padding-bottom: 10px;
+}
+.footer-contatos {
+  gap: 40px;
+  margin-top: 5px;
+}
+#logos {
+  background-color: rgb(255, 255, 255);
+  overflow-y: hidden;
+  height: 65px;
+  /* position: absolute; */
+  margin-top: -60px;
+}
+}
+@media (max-width:400px){
+  .tabs .tab a {
+    font-size: 11px !important;
+  }
+  .row .container-cards-assinatura{
+    width: 70%;
+    margin-left: 16%; 
+  }
+}
+@media (max-width:320px){
+  .tabs .tab a {
+    font-size: 9px !important;
+  }
+  .row .container-cards-assinatura{
+    width: 80%; 
+  }
 }
