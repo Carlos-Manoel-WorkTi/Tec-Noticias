@@ -314,6 +314,10 @@ form.addEventListener("submit", (e) => {
 
   if (document.querySelectorAll(".valido").length >= 13) {
     e.currentTarget.submit();
+    let log = { logado: true };
+    localStorage.clear();
+    // Atualizar o objeto no localStorage
+    localStorage.setItem("log", JSON.stringify(log));
     window.location.href = '../index.html';
   }
   validos.forEach((x) => {

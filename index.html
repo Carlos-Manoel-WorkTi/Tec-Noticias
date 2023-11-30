@@ -42,7 +42,7 @@
           <li class="links-nav hide-on-med-and-down"><a href="src/eventos.html">EVENTOS</a></li>
           <!-- formulario para pesquisar -->
           <li class="links-nav hide-on-med-and-down"><a href="src/cultura.html">CULTURA</a></li>
-          <li>
+          <li id="last_li_header">
             <button type="button" id="search-button"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40"
                 viewBox="0,0,256,256">
                 <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
@@ -58,8 +58,9 @@
               </svg></button>
 
           </li>
-          <li class="btns"><a href="src/perfil.html"><button class="btn-cria ">CADASTRAR</button></a></li>
-          <li class="right"><a href="src/login.html"><button class="btn-login">ENTRAR</button></a></li>
+          <li class="btns "><a href="src/cadastro.html"><button class="btn-cria ">CADASTRAR</button></a></li>
+          <li class="right remove-btn"><a href="src/login.html"><button class="btn-login">ENTRAR</button></a></li>
+
 
         </ul>
       </div>
@@ -674,6 +675,22 @@
     new window.VLibras.Widget();
 
 
+        // Construir o HTML do elemento a ser inserido
+var novoElementoHTML = '<a href="src/perfil.html" style="display: flex; flex-direction: column; text-align: center;">' +
+    '<img src="https://picsum.photos/300/300?=profile" alt="" style="width: 70px;height: 70px; border-radius: 50%; border: 3px solid rgb(211, 210, 214)">' +
+    '<span style="margin-top: -1.4em; font-family: \'Segoe UI\', Tahoma, Geneva, Verdana, sans-serif;">jose</span>' +
+    '</a>';
+
+const loguinJSON = localStorage.getItem('log');
+const loguin = JSON.parse(loguinJSON);
+    console.log(loguin.logado);
+      if (loguin.logado) {
+        document.querySelector("#last_li_header").insertAdjacentHTML('afterend', novoElementoHTML);
+    document.querySelector(".btns").remove()
+    document.querySelector(".remove-btn").remove()
+      }
+
+      
 
 
   </script>
