@@ -208,13 +208,10 @@ document.addEventListener("keydown", (event) => {
             classes: " green darken-3 toast-centered",
             displayLength: 1000,
           });
-
-          // Redireciona para "../index.html" após 3 segundos (3000ms)
           setTimeout(function () {
             window.location.href = "../index.html";
           }, 3000);
-        }, 3000); // Simula o preloader por 3 segundos (3000ms)
-        // Mostra um toast
+        }, 3000);
       } else {
         if (!document.getElementById("toast-container")) {
           M.toast({
@@ -229,6 +226,9 @@ document.addEventListener("keydown", (event) => {
         return;
       }
       if (!document.getElementById("toast-container")) {
+        if (event.target.id == "Senha") {
+          return;
+        }
         M.toast({
           html: "Preencha corretamente",
           classes: "toast-centered",

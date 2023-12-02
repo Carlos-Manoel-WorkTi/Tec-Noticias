@@ -15,6 +15,15 @@ background: linear-gradient(to bottom,black,blue);
 
  
 }
+.link-perfil{
+  display: flex; flex-direction: column; text-align: center;
+}
+.img-perfil{
+  width: 70px;height: 70px; border-radius: 50%; border: 3px solid rgb(211, 210, 214)
+}
+.nome-perfil{
+  margin-top: -1.4em; font-family: \'Segoe UI\', Tahoma, Geneva, Verdana, sans-serif;
+}
 .row .container-cards-assinatura{
   width: 50%; display: flex; align-self: center;
 }

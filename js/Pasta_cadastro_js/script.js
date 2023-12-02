@@ -318,7 +318,7 @@ form.addEventListener("submit", (e) => {
     localStorage.clear();
     // Atualizar o objeto no localStorage
     localStorage.setItem("log", JSON.stringify(log));
-    window.location.href = '../index.html';
+    window.location.href = './informacoesUsuario.html';
   }
   validos.forEach((x) => {
     if (!x.classList.contains("valido")){

@@ -676,11 +676,10 @@
 
 
         // Construir o HTML do elemento a ser inserido
-var novoElementoHTML = '<a href="src/perfil.html" style="display: flex; flex-direction: column; text-align: center;">' +
-    '<img src="https://picsum.photos/300/300?=profile" alt="" style="width: 70px;height: 70px; border-radius: 50%; border: 3px solid rgb(211, 210, 214)">' +
-    '<span style="margin-top: -1.4em; font-family: \'Segoe UI\', Tahoma, Geneva, Verdana, sans-serif;">jose</span>' +
+var novoElementoHTML = '<a href="src/perfil.html" class="link-perfil">' +
+    '<img src="https://picsum.photos/300/300?=profile" alt="" class="img-perfil">' +
+    '<span class="nome-perfil">jose</span>' +
     '</a>';
-
 const loguinJSON = localStorage.getItem('log');
 const loguin = JSON.parse(loguinJSON);
     console.log(loguin.logado);
@@ -689,7 +688,7 @@ const loguin = JSON.parse(loguinJSON);
     document.querySelector(".btns").remove()
     document.querySelector(".remove-btn").remove()
       }
-
+   localStorage.clear()
       
 
 

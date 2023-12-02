@@ -412,6 +412,7 @@ margin-top: -8px;
 }
 
 @media screen and (max-width: 1200px) {
+  
   .linhaRoxa{
     position:absolute;margin-top: -40px; height: 17px; width: 100%;
   }
@@ -612,6 +613,15 @@ margin-left: -4.4%;
 }
 }
 @media (max-width: 1050px) {
+  .link-perfil{
+  display: flex; flex-direction: column; text-align: center;
+}
+.img-perfil{
+  width: 70px;height: 65px; border-radius: 50%; border: 3px solid rgb(211, 210, 214)
+}
+.nome-perfil{
+  margin-top: -1.4em; font-family: \'Segoe UI\', Tahoma, Geneva, Verdana, sans-serif;
+}
   .linhaRoxa{
     position:absolute;margin-top: -20px; height: 17px; width: 100%;
   }
@@ -651,6 +661,15 @@ margin-left: -4.4%;
   }
 }
 @media (max-width: 992px) {
+  .link-perfil{
+    display: flex; flex-direction: column; text-align: center; margin-top: 15px;
+  }
+  .img-perfil{
+    width: 50px;height: 45px; border-radius: 50%; border: 3px solid rgb(211, 210, 214)
+  }
+  .nome-perfil{
+    margin-top: -5.8em; font-family: \'Segoe UI\', Tahoma, Geneva, Verdana, sans-serif;
+  }
   .parallax-container{
     height:60vh;
   }
@@ -820,6 +839,16 @@ margin-left: -4.4%;
   }
 
 @media (max-width: 600px) {
+  .link-perfil{
+    display: flex; flex-direction: column; text-align: center; margin-top: 6px; margin-right:-15px;
+  }
+  .img-perfil{
+    width: 50px;height: 45px; border-radius: 50%; border: 3px solid rgb(211, 210, 214);
+  }
+  .nome-perfil{
+    margin-top: -3.4em; font-family: \'Segoe UI\', Tahoma, Geneva, Verdana, sans-serif;
+    margin-right:-15px;
+  }
   .parallax-container{
     height:40vh;
   }
@@ -1332,8 +1361,17 @@ top: 370px;
 }
 
   @media (max-width: 450px) {
-
-
+    .link-perfil{
+      display: flex; flex-direction: column; text-align: center; margin-top: 11px; margin-right:-15px;
+    }
+    .img-perfil{
+      width: 40px;height: 35px; border-radius: 50%; border: 2px solid rgb(211, 210, 214);
+    }
+    .nome-perfil{
+      margin-top: -3.7em; font-family: \'Segoe UI\', Tahoma, Geneva, Verdana, sans-serif;
+      margin-right:-1.2em; font-size: 0.8em;
+    }
+   
     #form_pesquisa {
       top: 10vh;
     }
@@ -1873,6 +1911,16 @@ top: 370px;
     }
   }
   @media (max-width: 360px) {
+    .link-perfil{
+      display: flex; flex-direction: column; text-align: center; margin-top: 11px; margin-right:-15px;
+    }
+    .img-perfil{
+      width: 40px;height: 35px; border-radius: 50%; border: 2px solid rgb(211, 210, 214);
+    }
+    .nome-perfil{
+      margin-top: -3.7em; font-family: \'Segoe UI\', Tahoma, Geneva, Verdana, sans-serif;
+      margin-right:0px; font-size: 0.8em;
+    }
     html {
       max-width: 360px;
     }
