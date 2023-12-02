@@ -218,21 +218,23 @@ function validarDefice() {
 function validarCor() {
   if (document.querySelector("#cor-select").value === "") {
     document.querySelector("#spancor").textContent = "Este campo é obrigatorio";
+    return false;
   }
   if (document.querySelector("#cor-select").value != "") {
     document.querySelector("#spancor").textContent = "";
+    return true;
   }
 }
 function checkTermos() {
   let nomeTermos = document.querySelector("#nome_termos");
-  let link_termos = document.querySelector("#link_termos")
+  let link_termos = document.querySelector("#link_termos");
   if (document.querySelector("#termos").checked) {
     nomeTermos.style.color = "#2f3dcb";
-    link_termos.style.color = "rgb(118, 57, 209)"
+    link_termos.style.color = "rgb(118, 57, 209)";
     nomeTermos.classList.add("valido"); // Adiciona a classe "valido"
   } else {
     nomeTermos.style.color = "#f55454";
-    link_termos.style.color = "rgb(255 0 63)"
+    link_termos.style.color = "rgb(255 0 63)";
     nomeTermos.classList.remove("valido"); // Remove a classe "valido"
   }
 }
@@ -241,131 +243,283 @@ function checkTermos() {
 
 document.getElementById("nome").addEventListener("input", (e) => {
   msgError(e.target.id, "label" + e.target.id, validarNome(e.target.value));
+  const valor = validarNome(e.target.value);
+  if (valor.msg === "Campo valido") {
+  }
+});
+document.getElementById("nome").addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    const valor = validarNome(e.target.value);
+    if (valor.msg === "Campo valido") {
+      document.getElementById("email").focus();
+    } else {
+      renderError(new CardError("validarAll", "Preencha todos os campos"));
+    }
+  }
 });
 
 document.getElementById("email").addEventListener("input", (e) => {
   msgError(e.target.id, "label" + e.target.id, validarEmail(e.target.value));
 });
+document.getElementById("email").addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    const valor = validarEmail(e.target.value);
+    if (valor.msg === "Campo valido") {
+      document.getElementById("phone").focus();
+    } else {
+      renderError(new CardError("validarAll", "Preencha todos os campos"));
+    }
+  }
+});
 
 document.getElementById("phone").addEventListener("input", (e) => {
   msgError(e.target.id, "label" + e.target.id, validarTel(e.target.value));
+});
+document.getElementById("phone").addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    const valor = validarTel(e.target.value);
+    if (valor.msg === "Campo valido") {
+      document.getElementById("cep").focus();
+    } else {
+      renderError(new CardError("validarAll", "Preencha todos os campos"));
+    }
+  }
 });
 
 document.getElementById("cep").addEventListener("input", (e) => {
   msgError(e.target.id, "label" + e.target.id, validarCep(e.target.value));
 });
+document.getElementById("cep").addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    const valor = validarCep(e.target.value);
+    if (valor.msg === "Campo valido") {
+      document.getElementById("cidade").focus();
+    } else {
+      renderError(new CardError("validarAll", "Preencha todos os campos"));
+    }
+  }
+});
 
 document.getElementById("cidade").addEventListener("input", (e) => {
   msgError(e.target.id, "label" + e.target.id, validarCidade(e.target.value));
+});
+document.getElementById("cidade").addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    const valor = validarCidade(e.target.value);
+    if (valor.msg === "Campo valido") {
+      document.getElementById("data").focus();
+    } else {
+      renderError(new CardError("validarAll", "Preencha todos os campos"));
+    }
+  }
 });
 
 document.getElementById("data").addEventListener("input", (e) => {
   msgError(e.target.id, "label" + e.target.id, validarData(e.target.value));
 });
+document.getElementById("data").addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    const valor = validarData(e.target.value);
+    if (valor.msg === "Campo valido") {
+      document.getElementById("cor-select").focus();
+    } else {
+      renderError(new CardError("validarAll", "Preencha todos os campos"));
+    }
+  }
+});
+
+document.querySelector("#cor-select").addEventListener("change", (e) => {
+  e.currentTarget.classList.add("valido");
+  validarCor();
+  document.querySelector("#cor-select").blur();
+});
+document.querySelector("#cor-select").addEventListener("blur", (e) => {
+  if (!validarCor()) {
+    renderError(new CardError("validarAll", "Preencha todos os campos"));
+  }
+});
+
+document.querySelector("#genero").addEventListener("change", (e) => {
+  document.querySelector("#spangenero").textContent = "";
+  validarGenero();
+});
+document.querySelector(".genero").addEventListener("click", (e) => {
+  document.querySelector("#genero").classList.add("valido");
+  e.target.blur();
+});
+
+document.querySelector("#dfc").addEventListener("change", (e) => {
+  validarDefice();
+});
+document.querySelector(".dfc").addEventListener("click", (e) => {
+  e.currentTarget.classList.add("valido");
+  //  msgError("dcf", "labeldfc",validarDefice(document.querySelectorAll(".dfc")))
+  document.getElementById("cpf").focus();
+});
 
 document.getElementById("cpf").addEventListener("input", (e) => {
   msgError(e.target.id, "label" + e.target.id, validarCpf(e.target.value));
+});
+document.getElementById("cpf").addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    const valor = validarCpf(e.target.value);
+    if (valor.msg === "Campo valido") {
+      document.getElementById("senha").focus();
+    } else {
+      renderError(new CardError("validarAll", "Preencha todos os campos"));
+    }
+  }
 });
 
 document.getElementById("senha").addEventListener("input", (e) => {
   msgError(e.target.id, "label" + e.target.id, validarSenha(e.target.value));
 });
+document.getElementById("senha").addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    const valor = validarSenha(e.target.value);
+    if (valor.msg === "Campo valido") {
+      document.getElementById("senha2").focus();
+    } else {
+      renderError(new CardError("validarAll", "Preencha todos os campos"));
+    }
+  }
+});
 
 document.getElementById("senha2").addEventListener("input", (e) => {
   msgError(e.target.id, "label" + e.target.id, checkSenha(e.target.value));
 });
-
-document.querySelector(".genero").addEventListener("click", (e) => {
-  document.querySelector("#genero").classList.add("valido");
-});
-document.querySelector(".dfc").addEventListener("click", (e) => {
-  e.currentTarget.classList.add("valido");
-  //  msgError("dcf", "labeldfc",validarDefice(document.querySelectorAll(".dfc")))
+document.getElementById("senha2").addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    const valor = checkSenha(e.target.value);
+    if (valor.msg === "Campo valido") {
+      document.getElementById("senha2").blur();
+    } else {
+      renderError(new CardError("validarAll", "Preencha todos os campos"));
+    }
+  }
 });
 
 document.getElementById("termos").addEventListener("click", (e) => {
   checkTermos();
 });
-document.querySelector("#genero").addEventListener("change", (e) => {
-  document.querySelector("#spangenero").textContent = "";
-  validarGenero();
-});
-document.querySelector("#dfc").addEventListener("change", (e) => {
-  validarDefice();
-});
-document.querySelector("#cor-select").addEventListener("change", (e) => {
-  e.currentTarget.classList.add("valido");
-  validarCor();
-});
 
 //  submit
 
 form.addEventListener("submit", (e) => {
-  
-    
   e.preventDefault();
-  
+
   const validos = document.querySelectorAll(".valores");
-
-
-  if (!checkValid(document.querySelectorAll(".valores"))) {
+  if (document.querySelectorAll(".valido").length < 1) {
     renderError(new CardError("validarAll", "Preencha todos os campos"));
   }
-
   if (document.querySelectorAll(".valido").length >= 13) {
     e.currentTarget.submit();
     let log = { logado: true };
     localStorage.clear();
     // Atualizar o objeto no localStorage
     localStorage.setItem("log", JSON.stringify(log));
-    window.location.href = './informacoesUsuario.html';
+    window.location.href = "./informacoesUsuario.html";
   }
-  validos.forEach((x) => {
-    if (!x.classList.contains("valido")){
-      if (x.id === "nome") {
-        msgError(x.id, "label" + x.id, validarNome(x.value));
-      }
-      if (x.id === "email") {
-        msgError(x.id, "label" + x.id, validarEmail(x.value));
-      }
-      if (x.id === "phone") {
-        msgError(x.id, "label" + x.id, validarTel(x.value));
-      }
-      if (x.id === "cep") {
-        msgError(x.id, "label" + x.id, validarCep(x.value));
-      }
-      if (x.id === "cidade") {
-        msgError(x.id, "label" + x.id, validarCidade(x.value));
-      }
-      if (x.id === "data") {
-        msgError(x.id, "label" + x.id, validarData(x.value));
-      }
-      validarCor();
-      if (x.id === "genero") {
-        msgError(
-          x.id,
-          "label" + x.id,
-          validarGenero(document.querySelectorAll(".genero-opt"))
-        );
-      }
-      if (x.id === "dfc") {
-        msgError(
-          x.id,
-          "label" + x.id,
-          validarGenero(document.querySelectorAll(".Deficiencia"))
-        );
-      }
-      if (x.id === "cpf") {
-        msgError(x.id, "label" + x.id, validarCpf(x.value));
-      }
-      if (x.id === "senha") {
-        msgError(x.id, "label" + x.id, validarSenha(x.value));
-      }
-      if (x.id === "senha2") {
-        msgError(x.id, "label" + x.id, checkSenha(x.value));
-      }
 
-      checkTermos();
+  for (let i = 0; i < validos.length - 1; i++) {
+    if (!validos[i].classList.contains("valido")) {
+      
+      if (!validos[i].classList.contains("valido")) {
+       
+        if (validos[i].id === "nome") {
+          msgError(
+            validos[i].id,
+            "label" + validos[i].id,
+            validarNome(validos[i].value)
+          );
+          break;
+        }
+
+        if (validos[i].id === "email") {
+          msgError(
+            validos[i].id,
+            "label" + validos[i].id,
+            validarEmail(validos[i].value)
+          );
+          break;
+        }
+        if (validos[i].id === "phone") {
+          msgError(
+            validos[i].id,
+            "label" + validos[i].id,
+            validarTel(validos[i].value)
+          );
+          break;
+        }
+        if (validos[i].id === "cep") {
+          msgError(
+            validos[i].id,
+            "label" + validos[i].id,
+            validarCep(validos[i].value)
+          );
+          break;
+        }
+        if (validos[i].id === "cidade") {
+          msgError(
+            validos[i].id,
+            "label" + validos[i].id,
+            validarCidade(validos[i].value)
+          );
+          break;
+        }
+  
+        if (validos[i].id === "data") {
+          msgError(
+            validos[i].id,
+            "label" + validos[i].id,
+            validarData(validos[i].value)
+          );
+          break;
+        }
+        validarCor();
+
+        if (validos[i].id === "genero") {
+          msgError(
+            validos[i].id,
+            "label" + validos[i].id,
+            validarGenero(document.querySelectorAll(".genero-opt"))
+          );
+          break;
+        }
+        if (validos[i].id === "dfc") {
+          msgError(
+            validos[i].id,
+            "label" + validos[i].id,
+            validarGenero(document.querySelectorAll(".Deficiencia"))
+          );
+          break;
+        }
+        if (validos[i].id === "cpf") {
+          msgError(
+            validos[i].id,
+            "label" + validos[i].id,
+            validarCpf(validos[i].value)
+          );
+          break;
+        }
+        if (validos[i].id === "senha") {
+          msgError(
+            validos[i].id,
+            "label" + validos[i].id,
+            validarSenha(validos[i].value)
+          );
+          break;
+        } checkTermos();
+        if (validos[i].id === "senha2") {
+          msgError(
+            validos[i].id,
+            "label" + validos[i].id,
+            checkSenha(validos[i].value)
+          );
+          break;
+        }
+       
+      }
     }
-  });
+  }
 });
