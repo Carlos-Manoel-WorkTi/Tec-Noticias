@@ -116,7 +116,7 @@
 
       <section class="row artigo">
         <!-- Publicidade -->
-        <div class="col s2 m2 l2 xl2 adsAll">
+        <div class="col hide-on-small-only m2 l2 xl2 adsAll">
           <div class="ads1">
             <img style="height: 200px;" src="https://hackrads.com.br/wp-content/uploads/2023/11/ebook-lp-img.webp" alt="publicidad">
             <span>Publicidade</span>
@@ -143,22 +143,30 @@
         </div>
         <!-- Fim publicidade -->
         <!-- Conteudo -->
-        <div class=" col s7 m7 l7 xl7 container-artigo">
+        
+        <div class=" col s12 m7 l7 xl7 container-artigo">
+          <div class="container-mobile">
           <div class="row">
             <h class="col s12 m12 l12 xl12 titulo-artigo">A Realidade Virtual: Uma Janela para Mundos Virtuais</h>
-            <div class="col s4 m4 l4 xl8">
-              <h6 class="autor-artigo">Por <a href="../index.html" target="_blank" rel="noopener noreferrer">TEC notícias</a></h6>
-              <h6 class="data-artigo">12 de novembro de 2023</h6>
+            <div class="col s7 m4 l4 xl8">
+              <h6 class="autor-artigo inf-art">Por <a href="../index.html" target="_blank" rel="noopener noreferrer">TEC notícias</a></h6>
+              <h6 class="data-artigo inf-art">12 de novembro de 2023</h6>
             </div>
-            <div class="col s4 m4 l4 xl4 redes">
+            <div class="col s3 m4 l4 xl4 redes">
               <img class="icon-rede" src="../img/Pasta_home_img/Facebook (icon — Colour).svg">
               <img class="icon-rede" src="../img/Pasta_home_img/Instagram (icon — Colour).svg" alt="">
               <img class="icon-rede" src="../img/Pasta_home_img/zap.svg" alt="">
               <img class="icon-rede share" src="../img/Pasta_home_img/share.png" alt="">
             </div>
           </div>
+          <audio controls>
+            <source src="caminho/do/arquivo-de-audio.mp3" type="audio/mpeg">
+            Seu navegador não suporta o elemento de áudio.
+          </audio>
+          
           <div class="row img-artigo"><img src="../img/Pasta_home_img/guide-video-playback-react.avif" alt=""></div>
-          <div class="col s12 m12 l12 xl12">
+          </div>
+          <div class="col s12 m12 l12 xl12 Conteudo-art">
             <p>A realidade virtual (RV) está transformando a maneira como interagimos com o mundo digital, levando a experiência do usuário a um novo patamar. Ao vestir um <a href="http://" target="_blank" rel="noopener noreferrer">headset de RV</a>, somos transportados para além das limitações físicas, imergindo-nos em mundos virtuais ricos e envolventes. Este artigo explora como a RV está moldando nosso entendimento da interação digital e o impacto que essa tecnologia está tendo em diversos setores.</p>
             <p>Desde seu surgimento, a realidade virtual tem sido mais do que uma mera ferramenta de entretenimento. Embora os jogos e simulações tenham sido os pioneiros na adoção dessa tecnologia, a RV agora está penetrando em áreas como medicina, educação, treinamento profissional e muito mais. Essa revolução está redefinindo como aprendemos, trabalhamos e nos comunicamos.</p>
             <h5>Uma Imersão Além do Convencional</h5>
@@ -188,7 +196,7 @@
               class=" small material-icons back-step">arrow_back</i></div>
               <div class="col xl6 " style="color: white; position: fixed;margin:10px 0px 0 280px;"> <i
                 class="small material-icons close-area">close</i></div>
-                <h2  style="color: rgb(30, 28, 28); position: fixed;margin:30px 70px 0 50px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Recursos</h2>
+                <h2 id="recursos" >Recursos</h2>
                 <!-- Audio -->
             <div class="col s12 m12 l12 xl12 audio" id="audioContainer">
               <audio controls>
@@ -205,7 +213,7 @@
                 href="#">
                 <p>
                   <label>
-                    <input type="checkbox" />
+                    <input type="checkbox" id="alterMode" />
                     <span>TEMA DARK</span>
                   </label>
                 </p>
@@ -213,7 +221,7 @@
             </div>
 
 
-            <div class="size-font input-field col s12 m12 l12 xl12 " style="color: white; position: fixed;margin: 390px 0 0 20px; background-color: transparent; padding: 5px 15px; width: 21%; border-radius: 10px;border: 2px solid rgb(48, 19, 123);  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  font-size: 1.2em;">
+            <div class="size-font input-field col s12 m12 l12 xl12 " style="color: white; position: fixed;margin: 390px 0 0 20px; background-color: transparent; padding: 5px 15px; width: 21%; border-radius: 10px;border: 2px solid rgb(48, 19, 123);  box-shadow: 0 0 10px rgbaartigo(0, 0, 0, 0.1);  font-size: 1.2em;">
               <select style="color: white;">
                 <option value=""  disabled selected>Fonte</option>
                 <option value="1">Fonte:12</option>
@@ -229,19 +237,19 @@
 
       </section>
       <section>
-        <!-- <a id="librasButton" class="librasButton btn-floating btn-large purple">
+        <a id="librasButton" class="librasButton btn-floating btn-large purple">
           <i class="material-icons">accessibility</i>
-        </a> -->
+        </a>
         <div vw class="enabled" >
-          <div  vw-access-button class="active"></div>
+          <div  vw-access-button class="active" style="z-index: 10;"></div>
           <div vw-plugin-wrapper>
             <div class="vw-plugin-top-wrapper"></div>
           </div>
         </div>
         <div class="topButton">
 
-          <a style="top: 90%;" id="librasButton" class=" btn-floating btn-large blue">
-            <i class=" material-icons">keyboard_arrow_up</i>
+          <a style="top: 90%; z-index: 12;" id="librasButton"  class="topbtn btn-floating btn-large blue">
+            <i class=" material-icons" >keyboard_arrow_up</i>
           </a>
         </div>
       </section>
@@ -252,82 +260,68 @@
     </main>
   </section>
 
-
-
-  <section class="row" style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+ 
+  <section class="row assinatura" style="display: flex; justify-content: center; align-items: center; flex-direction: column; ">
     <div class="nav-content " style="display: flex;">
-      <ul class="tabs tabs-transparent">
+      <ul class="tabs tabs-transparent tabs-assinatura">
         <li class="tab"><a href="#test1">PLANO BASICO</a></li>
         <li class="tab"><a class="active" href="#test2">PLANO PADRÃO</a></li>
         <li class="tab"><a href="#test3">PLANO AVANÇADO</a></li>
       </ul>
     </div>
-    <div class="row" style="width: 50%; display: flex; align-self: center;">
-      <div id="test1" class="col s12">
-        <div style="display: flex; justify-content: center;" class="row">
-          <div class="col s12 m6" style="width: 100%;">
-            <div class="card blue-grey darken-1">
-              <div class="card-content white-text">
-                <span class="card-title">PLANO BASICO</span>
-                <p>Introduza o seu público ao mundo das notícias de maneira simples e eficaz com o nosso Plano Básico.
-                  Com uma estrutura fácil de usar, um design responsivo e uma variedade de categorias de notícias, seu
-                  site de notícias estará pronto para ação. Perfeito para começar a compartilhar informações com o seu
-                  público-alvo. Os assinantes deste plano terão acesso a notícias exclusivas por um mês.</p>
-              </div>
-              <div class="card-action center">
-                <a href="#">ASSINAR</a>
-              </div>
+    <div class="row container-cards-assinatura" >
+    <div id="test1" class="col s12">
+      <div style="display: flex; justify-content: center;" class="row">
+        <div class="col s12 m6" style="width: 100%;">
+          <div class="card white darken-1" >
+            <div class="card-content black-text card-assinatura">
+              <span class="card-assinatura-title card-title blue-text">PLANO BASICO</span>
+              <p>Introduza o seu público ao mundo das notícias de maneira simples e eficaz com o nosso Plano Básico. Com uma estrutura fácil de usar, um design responsivo e uma variedade de categorias de notícias, seu site de notícias estará pronto para ação. Perfeito para começar a compartilhar informações com o seu público-alvo. Os assinantes deste plano terão acesso a notícias exclusivas por um mês.</p>
+            </div>
+            <div class="card-action center">
+              <a href="#">ASSINAR</a>
             </div>
           </div>
         </div>
       </div>
-      <div id="test2" class="col s12">
-        <div style="width: 100%;" class="row">
-          <div style="width: 100%;" class="col s12 m6">
-            <div class="card green darken-1">
-              <div class="card-content white-text">
-                <span class="card-title">PLANO PADRÂO</span>
-                <p>Eleve a sua presença online com o nosso Plano Padrão. Além de uma estrutura aprimorada, oferecemos um
-                  design personalizado que cria uma identidade de marca distinta para o seu site de notícias. Conte com
-                  redatores experientes para entregar conteúdo de alta qualidade e integração de mídias sociais para
-                  aumentar o engajamento. Explore oportunidades de monetização e expanda sua influência online.
-                  Assinantes deste plano terão acesso exclusivo a notícias por um ano, notificações de notícias e uma
-                  área VIP em seus perfis para salvar seus favoritos.</p>
-              </div>
-              <div class="card-action center">
-                <a href="#">ASSINAR</a>
-              </div>
+    </div>
+    <div id="test2" class="col s12">
+      <div style="width: 100%;" class="row">
+        <div style="width: 100%;" class="col s12 m6" >
+          <div class="card white darken-1">
+            <div class="card-content black-text">
+              <span class="card-assinatura-title card-title  purple-text">PLANO PADRÂO</span>
+              <p>Eleve a sua presença online com o nosso Plano Padrão. Além de uma estrutura aprimorada, oferecemos um design personalizado que cria uma identidade de marca distinta para o seu site de notícias. Conte com redatores experientes para entregar conteúdo de alta qualidade e integração de mídias sociais para aumentar o engajamento. Explore oportunidades de monetização e expanda sua influência online. Assinantes deste plano terão acesso exclusivo a notícias por um ano, notificações de notícias e uma área VIP em seus perfis para salvar seus favoritos.</p>
+            </div>
+            <div class="card-action center">
+              <a href="#">ASSINAR</a>
             </div>
           </div>
         </div>
       </div>
-      <div id="test3" class="col s12">
-        <div class="row" style="width: 100%;">
-          <div class="col s12 m6" style="width: 100%;">
-            <div class="card blue darken-1">
-              <div class="card-content white-text">
-                <span class="card-title">PADRÃO AVANÇADO</span>
-                <p>Para a mais alta qualidade e impacto, nosso Plano Completo é a escolha perfeita. Com uma estrutura
-                  avançada, um design de alta qualidade e conteúdo multimídia envolvente, seu site de notícias irá se
-                  destacar. Personalize a experiência do usuário, ofereça assinaturas premium e vá além com um
-                  aplicativo móvel dedicado. Com a nossa equipe de marketing, você alcançará uma audiência maior e mais
-                  engajada. Assinantes deste plano desfrutam de notificações de notícias, acesso a notícias exclusivas e
-                  uma área VIP para salvar favoritos durante todo o ano.</p>
-              </div>
-              <div class="card-action center">
-                <a href="#">ASSINAR</a>
-              </div>
+    </div>
+    <div id="test3" class="col s12">
+      <div class="row" style="width: 100%;">
+        <div class="col s12 m6" style="width: 100%;">
+          <div class="card white darken-1">
+            <div class="card-content black-text">
+              <span class="card-assinatura-title card-title purple-text ">PLANO FULL</span>
+              <p>Para a mais alta qualidade e impacto, nosso Plano Completo é a escolha perfeita. Com uma estrutura avançada, um design de alta qualidade e conteúdo multimídia envolvente, seu site de notícias irá se destacar. Personalize a experiência do usuário, ofereça assinaturas premium e vá além com um aplicativo móvel dedicado. Com a nossa equipe de marketing, você alcançará uma audiência maior e mais engajada. Assinantes deste plano desfrutam de notificações de notícias, acesso a notícias exclusivas e uma área VIP para salvar favoritos durante todo o ano.</p>
+            </div>
+            <div class="card-action center">
+              <a href="#">ASSINAR</a>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
   </section>
-  <section id="logos">
+  <section id="logos"  > 
 
     <div class="logo-container">
       <div class="logos"><img src="../img/Pasta_home_img/icons8-figma-48.png" alt="Logo 1"></div>
-      <div class="logos"><img src="..//Pasta_home_img/icons8-dinâmica-365-48.png" alt="Logo 1"></div>
+      <div class="logos"><img src="../img/Pasta_home_img/icons8-dinâmica-365-48.png" alt="Logo 1"></div>
       <div class="logos"><img src="../img/Pasta_home_img/icons8-logotipo-duolingo-48.png" alt="Logo 1"></div>
       <div class="logos"><img src="../img/Pasta_home_img/icons8-logo-da-huawei-64.png" alt="Logo 1"></div>
       <div class="logos"><img src="../img/Pasta_home_img/icons8-magento-64.png" alt="Logo 1"></div>
@@ -339,116 +333,115 @@
       <div class="logos"><img src="../img/Pasta_home_img/icons8-dinâmica-365-48.png" alt="Logo 1"></div>
       <div class="logos"><img src="../img/Pasta_home_img/icons8-logotipo-duolingo-48.png" alt="Logo 1"></div>
       <div class="logos"><img src="../img/Pasta_home_img/icons8-logo-da-huawei-64.png" alt="Logo 1"></div>
-    </div>
-  </section>
+   </div>
+</section>
 
   <!-- FOOTER -->
   <footer class="page-footer">
     <div class="container">
-      <div class="row">
-        <div class="col s5 m5 l5 xl5">
-          <h2 class=" quem-somos white-text">Quem somos?</h2>
+        <div class="row">
+            <div class="col s5 m5 l5 xl5">
+                <h2 class=" quem-somos white-text">Quem somos?</h2>
+            </div>
+            <div class="col s6 m6 l6 xl6">
+                <p>
+                    A TEC notícias é uma empresa de notícias
+                    especializada em tecnologia, trazendo as
+                    últimas novidades e análises do mundo da
+                    tecnologia para você.
+                </p>
+            </div>
         </div>
-        <div class="col s6 m6 l6 xl6">
-          <p>
-            A TEC notícias é uma empresa de notícias
-            especializada em tecnologia, trazendo as
-            últimas novidades e análises do mundo da
-            tecnologia para você.
-          </p>
-        </div>
-      </div>
     </div>
-    <img style="width: 100%; height: 30px; margin-top: -15px;" src="../img/Pasta_home_img/Line-footer-up.png"
-      class="linhaRoxa" alt="">
+    <img  src="../img/Pasta_home_img/Line-footer-up.png" class="linhaRoxa" alt="">
     <div class="container">
-      <div style="margin-bottom: 0;" class="row">
-        <div class="col s5 m5 l5 xl5"><img class="logo-footer" src="../img/Pasta_home_img/TN.png" alt=""></div>
-        <div class="col s6 m6 l6 xl6">
-          <div class="row footer-canais">
-            <div class=" s2 m2 l2 xl2 "><img class="icon-rede" src="../img/Pasta_home_img/Facebook (icon — Colour).svg"
-                alt=""></div>
-            <div class="col s2 m2 l2 xl2 "><img class="icon-rede" src="../img/Pasta_home_img/GitHub (icon — Colour).svg"
-                alt=""></div>
-            <div class="col s2 m2 l2 xl2 "><img class="icon-rede"
-                src="../img/Pasta_home_img/Instagram (icon — Colour).svg" alt=""></div>
-            <div class="col s2 m2 l2 xl2 "><img class="icon-rede"
-                src="../img/Pasta_home_img/Twitter (icon — Colour).svg" alt=""></div>
-            <div class="col s2 m2 l2  x12 "><img class="icon-rede"
-                src="../img/Pasta_home_img/YouTube (icon — Colour).svg" alt=""></div>
+        <div style="margin-bottom: 0;" class="row">
+            <div class="col s5 m5 l5 xl5"><img class="logo-footer" src="../img/Pasta_home_img/TN.png" alt=""></div>
+            <div class="col s6 m6 l6 xl6">
+                <div class="row footer-canais">
+                    <div class=" s2 m2 l2 xl2 "><img class="icon-rede"
+                            src="../img/Pasta_home_img/Facebook (icon — Colour).svg" alt=""></div>
+                    <div class="col s2 m2 l2 xl2 hide-on-small-only"><img class="icon-rede" src="../img/Pasta_home_img/GitHub (icon — Colour).svg"
+                            alt=""></div>
+                    <div class="col s2 m2 l2 xl2 "><img class="icon-rede"
+                            src="../img/Pasta_home_img/Instagram (icon — Colour).svg" alt=""></div>
+                    <div class="col s2 m2 l2 xl2  "><img class="icon-rede"
+                            src="../img/Pasta_home_img/Twitter (icon — Colour).svg" alt=""></div>
+                    <div class="col s2 m2 l2  x12 "><img class="icon-rede"
+                            src="../img/Pasta_home_img/YouTube (icon — Colour).svg" alt=""></div>
 
 
-          </div>
-        </div>
-      </div>
+                </div>
+            </div>
+        </div>../
     </div>
-    <div style="background-color: rgb(30, 5, 89); height: 2px; width: 100%;"></div>
+    <div style="background:linear-gradient(to right,rgb(20, 2, 51),rgb(47, 11, 100)); height: 2px; width: 100%;"></div>
     <div class="container">
-      <div class="row" style="margin-bottom: 0;">
-        <div class="col xl4" style="border-right: 1px solid rgb(22, 2, 52); margin-top: 10px; height: 200px;">
-          <div class="row ">
-            <div class="col s12 m12 l12 xl12 contatos-text">
-              <h4>Contatos</h4>
+        <div class="row" style="margin-bottom: 0;">
+            <div class="col s12 m4 l4 xl4 container-footer-ctt" >
+                <div class="row contatos">
+                    <div class="col s12 m12 l12 xl12 contatos-text">
+                        <h4>Contatos</h4>
+                    </div>
+                    <div class="col s12 m12 l12 xl12 footer-contatos">
+                        <img class="icon-contato" src="../img/Pasta_home_img/Telegram (icon — Colour).svg" alt="">
+                        <img class="icon-contato" src="../img/Pasta_home_img/mail.svg" alt="">
+                        <img class="icon-contato" src="../img/Pasta_home_img/zap.svg" alt="">
+                        <img class="icon-contato" src="../img/Pasta_home_img/fone.svg" alt="">
+                    </div>
+                </div>
             </div>
-            <div class="col s12 m12 l12 xl12 footer-contatos">
-              <img class="icon-contato" src="../img/Pasta_home_img/Telegram (icon — Colour).svg" alt="">
-              <img class="icon-contato" src="../img/Pasta_home_img/mail.svg" alt="">
-              <img class="icon-contato" src="../img/Pasta_home_img/zap.svg" alt="">
-              <img class="icon-contato" src="../img/Pasta_home_img/fone.svg" alt="">
+            <div class="col s12 m8 l8 xl8">
+                <div class="row" style="margin-bottom: 0;">
+                    <div class="col s4 m4 l4 xl4">
+                        <div class="row infs-footer">
+                            <div class="col s12 m12 l12 xl12">
+                                <h5 >Sobre</h5>
+                            </div>
+                            <div class="col s12 m12 l12 xl12">
+                                <p>Tec notícias</p>
+                                <p>privacidade</p>
+                                <p>suporte</p>
+                                <p>usuario</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s4 m4 l4 xl4 ">
+                        <div class="row infs-footer">
+                            <div class="col s12 m12 l12 xl12">
+                                <h5  >Conteudos</h5>
+                            </div>
+                            <div class="col s12 m12 l12 xl12">
+                                <p>Tecnologias</p>
+                                <p>Eventos</p>
+                                <p>Podcasts</p>
+                                <p>Cultura</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s4 m4 l4 xl4">
+                        <div class="row infs-footer">
+                            <div class="col s12 m12 l12 xl12">
+                                <h5  >Colaboradores</h5>
+                            </div>
+                            <div class="col s12 m12 l12 xl12">
+                                <p>Carlos Manoel</p>
+                                <p>Gabriel Meiki</p>
+                                <p>Alexnder Pereira</p>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="col s8 m8 l8 xl8">
-          <div class="row" style="margin-bottom: 0;">
-            <div class="col s4 m4 l4 xl4">
-              <div class="row">
-                <div class="col s12 m12 l12 xl12">
-                  <h5>Sobre</h5>
-                </div>
-                <div class="col s12 m12 l12 xl12">
-                  <p>Tec notícias</p>
-                  <p>privacidade</p>
-                  <p>suporte</p>
-                  <p>usuario</p>
-                </div>
-              </div>
-            </div>
-            <div class="col s4 m4 l4 xl4">
-              <div class="row">
-                <div class="col s12 m12 l12 xl12">
-                  <h5>Conteudos</h5>
-                </div>
-                <div class="col s12 m12 l12 xl12">
-                  <p>Tecnologias</p>
-                  <p>Eventos</p>
-                  <p>Podcasts</p>
-                  <p>Cultura</p>
-                </div>
-              </div>
-            </div>
-            <div class="col s4 m4 l4 xl4">
-              <div class="row">
-                <div class="col s12 m12 l12 xl12">
-                  <h5>Colaboradores</h5>
-                </div>
-                <div class="col s12 m12 l12 xl12">
-                  <p>Carlos Manoel</p>
-                  <p>Gabriel Meiki</p>
-                  <p>Alexnder Pereira</p>
 
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-
-      </div>
     </div>
     <div class="row copyright">
-      <div class="col s8 m8 l8 xl8">©2018 Tec Notícias - Todos os Direitos Reservados</div>
-      <div class="col s4 m4 l4 xl4">termos de serviço</div>
+        <div class="col s8 m8 l8 xl8">©2018 Tec Notícias - Todos os Direitos Reservados</div>
+        <div class="col s4 m4 l4 xl4">termos de serviço</div>
     </div>
-  </footer>
+</footer>
 
 
 

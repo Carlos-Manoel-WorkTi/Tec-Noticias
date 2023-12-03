@@ -44,3 +44,35 @@ close_area.addEventListener("click", e => {
 backButton.addEventListener("click", function () {
   window.history.back();
 });
+
+
+const theme = document.getElementById("alterMode")
+theme.addEventListener("click", e => {
+
+  document.querySelector(".container-artigo").style.backgroundColor = "rgb(5 5 5)"
+  document.querySelector(".container-artigo").style.color = "rgb(18 17 17)"
+  document.querySelector(".artigo").style.backgroundColor = "rgb(5 5 5)"
+  document.querySelector(".titulo-artigo").style.color = "white"
+  document.querySelector(".autor-artigo").style.color = "#dfdfdfab"
+  document.querySelector(".data-artigo").style.color = "#dfdfdfab"
+  document.querySelector(".Conteudo-art").style.color = "#ffffffe0"
+  document.querySelector(".acessibilidade").style.backgroundColor = "black"
+  document.getElementById("recursos").style.color = "white"
+  document.querySelector(".option-libra a ").style.color = "white"
+  document.querySelector(".select-wrapper input.select-dropdown").style.color = "white"
+  document.querySelector('[type="checkbox"]+span:not(.lever)').style.color ="white"
+  document.querySelector(".audio").style.backgroundColor = "black"
+})
+// .artigo {
+//   background-color: #201f1f;
+// }
+// .container-artigo{
+//   color: rgb(209 209 209);
+//   margin-top: 0px;
+//   background-color: #131212;
+// }
+// .titulo-artigo{
+//   color: white;
+//   font-size: 2.7em;
+//   margin-top: 40px;
+// }

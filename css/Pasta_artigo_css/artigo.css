@@ -8,12 +8,25 @@
     font-size: 2.7em;
     margin-top: 40px;
 }
-/* .autor-artigo{
-
+.librasButton{
+  background-color: rgb(106, 0, 255) !important;
+  border-radius: 10px !important;
+  width: 40px !important;
+  height: 40px !important;
+  top: 43% !important;
 }
-.data-artigo{
-
-} */
+.topbtn{
+ 
+  width: 40px !important;
+  height: 40px !important;
+  top: 90% !important;
+}
+.btn-floating.btn-large i {
+  line-height: 26px;
+}
+#recursos{
+  color: rgb(30, 28, 28); position: fixed;margin:30px 70px 0 50px; font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 @keyframes slidein {
   from {
       transform: translateX(100%);
@@ -135,3 +148,28 @@ audio {
     fill: rgba(253, 253, 253, 0.87);
 }
 
+@media (max-width:600px){
+  .container-mobile{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+  }
+  .img-artigo img{
+    width: 98%;
+    height: 300px;
+}
+.icon-rede{
+  width: 26px;
+  height: 30px;
+  margin-top: 23px;
+  margin-right: 4px;
+   }
+   .titulo-artigo{
+    color: rgb(0, 0, 0);
+    font-size: 2.3em;
+    margin-top: 40px;
+}
+.inf-art{
+  font-size: 1.1em;
+}
+}
