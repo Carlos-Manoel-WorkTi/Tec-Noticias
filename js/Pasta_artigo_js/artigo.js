@@ -28,11 +28,11 @@ window.addEventListener('scroll', function() {
 librasButton.addEventListener("click", function () {
     area_acessibilidade.classList.toggle("hide")
     librasButton.classList.toggle("hide")
-    area_acessibilidade.classList.remove("slide-efect"); // Remove a classe antes de adicioná-la novamente
+    area_acessibilidade.classList.remove("slide-efect"); 
     setTimeout(() => {
       area_acessibilidade.classList.add("slide-efect");
     }, 10);
-    // area_acessibilidade.classList.toggle("slide-efect")
+
     
 });
 close_area.addEventListener("click", e => {
@@ -48,20 +48,9 @@ backButton.addEventListener("click", function () {
 
 const theme = document.getElementById("alterMode")
 theme.addEventListener("click", e => {
-
-  document.querySelector(".container-artigo").style.backgroundColor = "rgb(5 5 5)"
-  document.querySelector(".container-artigo").style.color = "rgb(18 17 17)"
-  document.querySelector(".artigo").style.backgroundColor = "rgb(5 5 5)"
-  document.querySelector(".titulo-artigo").style.color = "white"
-  document.querySelector(".autor-artigo").style.color = "#dfdfdfab"
-  document.querySelector(".data-artigo").style.color = "#dfdfdfab"
-  document.querySelector(".Conteudo-art").style.color = "#ffffffe0"
-  document.querySelector(".acessibilidade").style.backgroundColor = "black"
-  document.getElementById("recursos").style.color = "white"
-  document.querySelector(".option-libra a ").style.color = "white"
-  document.querySelector(".select-wrapper input.select-dropdown").style.color = "white"
-  document.querySelector('[type="checkbox"]+span:not(.lever)').style.color ="white"
-  document.querySelector(".audio").style.backgroundColor = "black"
+  document.querySelector(".artigo").classList.toggle("dark")
+  themeMode()
+ 
 })
 // .artigo {
 //   background-color: #201f1f;
@@ -76,3 +65,35 @@ theme.addEventListener("click", e => {
 //   font-size: 2.7em;
 //   margin-top: 40px;
 // }
+function themeMode(){
+  if (document.querySelector(".artigo").classList.contains("dark")) {
+      document.querySelector(".container-artigo").style.backgroundColor = "rgb(5 5 5)"
+  document.querySelector(".container-artigo").style.color = "rgb(18 17 17)"
+  document.querySelector(".artigo").style.backgroundColor = "rgb(5 5 5)"
+  document.querySelector(".titulo-artigo").style.color = "white"
+  document.querySelector(".autor-artigo").style.color = "#dfdfdfab"
+  document.querySelector(".data-artigo").style.color = "#dfdfdfab"
+  document.querySelector(".Conteudo-art").style.color = "#ffffffe0"
+  document.querySelector(".acessibilidade").style.backgroundColor = "black"
+  document.getElementById("recursos").style.color = "white"
+  document.querySelector(".option-libra a ").style.color = "white"
+  document.querySelector(".select-wrapper input.select-dropdown").style.color = "white"
+  document.querySelector('[type="checkbox"]+span:not(.lever)').style.color ="white"
+  document.querySelector(".audio").style.backgroundColor = "black"
+  }else{
+    document.querySelector(".container-artigo").style.backgroundColor = "white"
+document.querySelector(".container-artigo").style.color = "white"
+document.querySelector(".artigo").style.backgroundColor = "white"
+document.querySelector(".titulo-artigo").style.color = "black"
+document.querySelector(".autor-artigo").style.color = "black"
+document.querySelector(".data-artigo").style.color = "black"
+document.querySelector(".Conteudo-art").style.color = "black"
+document.querySelector(".acessibilidade").style.backgroundColor = "white"
+document.getElementById("recursos").style.color = "black"
+document.querySelector(".option-libra a ").style.color = "black"
+document.querySelector(".select-wrapper input.select-dropdown").style.color = "black"
+document.querySelector('[type="checkbox"]+span:not(.lever)').style.color ="black"
+document.querySelector(".audio").style.backgroundColor = "white"
+  }
+
+}
