@@ -45,6 +45,7 @@
   }
   
  */
+
  .container-eventos {
   width: 100%;
   height: 660px;
@@ -228,7 +229,14 @@
 .data-evento {
   color: rgb(250, 250, 250);
 }
-
+.image-evento{
+  height: 150px; width: 150px;
+}
+@media screen and (max-width:1230px) {
+  .image-evento{
+    height: 130px; width: 140px; margin-top: -3px;
+  }
+}
 @media screen and (max-width:992px) {
   .card-evento {
     height: 23%;
@@ -348,6 +356,12 @@
 }
 
 @media (max-width:600px) {
+  .image-evento{
+    height: 120px; width: 140px; margin-top: -10px;
+  }
+  .card-evento {
+    border-bottom: 1px solid rgb(81 8 101 / 43%);
+}
   .text11 {
     display: none;
   }
@@ -386,7 +400,7 @@
 
   .resumo-evento {
     margin-top: 0;
-    max-height: 3.5em;
+    max-height: 4.4em;
     font-size: 0.84em;
   }
 
@@ -415,7 +429,7 @@
   }
 
   .borda-superior {
-    width: 90%;
+    width: 0%;
   }
 
   .borda-inferior {
@@ -432,22 +446,40 @@
   }
 
   .ver-mais-eventos {
-    margin-top: 1.5em;
-    width: 4em;
+    margin-top: 0em;
+    width: 10em;
     height: 2em;
-    font-size: 1em;
-    margin-left: 0.7em;
+    font-size: 1.1em;
+    margin-left: 0.8em;
     display: flex;
     align-items: center;
-    border-top-right-radius: 30px;
-  }
+    border-top-right-radius: 0px;
+}
 
   .line-left-eventos {
-    width: 450px;
+    width: 400px;
   }
 }
 
 @media screen and (max-width:460px) {
+  .ver-mais-eventos {
+    margin-top: 0em;
+    width: 10em;
+    height: 2em;
+    font-size: 1.1em;
+    margin-left: 0em;
+    display: flex;
+    align-items: center;
+    border-top-right-radius: 0px;
+}
+  .image-evento {
+    height: 125px;
+    width: 140px;
+    margin-top: -10px;
+}
+.evento1{
+  margin-top: 0px;
+}
   .card-evento .title-card-evento {
 
     margin-top: 6%;
@@ -470,19 +502,33 @@
     top: 133px;
   }
 
-  .ver-mais-eventos {
-    margin-top: 1.5em;
-    width: 4em;
-    height: 2em;
-    font-size: 1em;
-    margin-left: 0em;
 
-    border-bottom-right-radius: 0px;
-  }
 }
 
 
+@media screen and (max-width:420px) {
+  .image-evento {
+    height: 125px;
+    width: 120px;
+    margin-top: -10px;
+}
+}
 @media screen and (max-width:390px) {
+  .line-left-eventos {
+    width: 370px;
+  }
+  .ver-mais-eventos {
+    margin-top: -27px;
+}
+  .image-evento {
+    height: 110px;
+    width: 120px;
+    margin-top: -9px;
+}
+.evento1 {
+  margin-top: 0px;
+  height: 115px;
+}
   .card-evento .title-card-evento {
 
     margin-top: 6%;
@@ -501,7 +547,7 @@
 
   .resumo-evento {
     margin-top: 0;
-    max-height: 3.5em;
+    max-height: 4.3em;
     margin-left: 0.6em;
     font-size: 0.77em;
     margin-left: 0;

@@ -110,9 +110,6 @@ margin-top: -8px;
     animation: float 3s infinite ease-in;
   }
 @media (min-width: 1201px) {
-  .page-footer{
-    
-  }
   #apresentar{
     background: linear-gradient(to right,rgb(0, 0, 0),rgb(0, 0, 4),rgb(9, 2, 37));
     /* background-image: linear-gradient(
@@ -1732,7 +1729,7 @@ top: 370px;
       padding-top: 5%;
       height: 60px;
       font: 90 normal 1.5em/1.5 "Montserrat", sans-serif;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.429);
+      border-bottom: 1px outset #3d0083;
     }
     /* carousel */
     .carousel {
@@ -1748,8 +1745,8 @@ top: 370px;
     .carousel .carousel-item img {
       width: 100%;
       height: 85%;
-      border-top-right-radius: 20px;
-      border-top-left-radius: 20px;
+      border-top-right-radius: 10px;
+      border-top-left-radius: 45px;
     }
     .indicators {
       top: 320px;
@@ -1764,7 +1761,7 @@ top: 370px;
     }
     .card-title {
       height: 25%;
-      background: linear-gradient(to right, #0c1254, #640083);
+      background: linear-gradient(to right, #0c1254, #3d0083);
       color: white;
       border-bottom-right-radius: 40%;
       overflow: hidden;
