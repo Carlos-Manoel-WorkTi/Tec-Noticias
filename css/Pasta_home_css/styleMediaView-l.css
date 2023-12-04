@@ -3,6 +3,9 @@ body {
   padding: 0;
   zoom: 100%;
 }
+.addnoticias{
+  margin: 0 !important;
+}
 .parallax-container{
   height:70vh;
 }

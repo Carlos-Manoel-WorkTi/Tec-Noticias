@@ -2,8 +2,42 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:700);
 
 /* Estilos gerais */
+/* Estilos para a barra de rolagem */
+/* Chrome, Safari e Edge */
+::-webkit-scrollbar {
+  width: 8px; /* Largura da barra de rolagem */
+}
 
+/* Cor de fundo da barra de rolagem */
+::-webkit-scrollbar-track {
+  background-color: rgba(52, 52, 52, 0.364); /* Cor de fundo */
+}
 
+/* Cor do indicador da posição atual na barra de rolagem */
+::-webkit-scrollbar-thumb {
+  background-color:rgb(30, 4, 62); /* Cor roxa com transparência */
+  border-radius: 3px; /* Borda arredondada */
+}
+
+/* Cor ao passar o mouse sobre a barra de rolagem */
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(52, 12, 196); /* Cor roxa mais intensa ao passar o mouse */
+}
+.btn-floating.btn-large {
+  width: 46px;
+  height: 46px;
+  padding: 0;
+}
+.btn-floating.btn-large i {
+  line-height: 46px;
+}
+#librasButton{
+  top: 43%;
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+
+}
 body {
   background-color: rgb(1, 1, 11); 
 }

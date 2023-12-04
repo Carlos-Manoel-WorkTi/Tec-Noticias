@@ -71,3 +71,5 @@ setInterval(() => {
   }, 9000);
 }, 6000);
 
+// resovlendo bug
+document.querySelector(".news-button").style.top = 310 + "px";

@@ -124,6 +124,12 @@
 
 
     <main>
+        <aside>
+            <a id="librasButton" class="librasButton btn-floating btn-large purple">
+            <i class="material-icons">accessibility</i>
+          </a>
+        </aside>
+
         <section>
             <div vw class="enabled" >
                 <div  vw-access-button class="active"></div>
@@ -142,7 +148,7 @@
 
 
 
-                    <div id="test1" class="tab s12 m12 l12 xl12" style="background-color: white;">
+                    <div id="test1" class="tab s12 m12 l12 xl12" >
                         <div class="row">
                             <!-- <div class=" col s12 m5 l6 xl4 "></div>
          <img src="https://picsum.photos/300/300?=profile" class="img-perfil col s12 m5 l6 xl4 offset-xl1">
@@ -155,12 +161,12 @@
                                         </i></a>
                                     </div>
                                     <!-- img -->
-                                    <img src="https://picsum.photos/300/300?=profile"
-                                        class="img-perfil col l6 xl8 offset-xl2 img-xl">
+                                    <img src="https://picsum.photos/300/300?=profile" id="img-perfil"
+                                        class=" col l6 xl8 offset-xl2 img-xl">
                                     <!-- info -->
                                     <div class="input-field  col s12 m5 l6 xl8 offset-xl2">
-                                        <input disabled id="last_name" type="text" class="validate" value="João">
-                                        <label style="color: rgb(11, 7, 7);" for="last_name">Nome</label>
+                                        <input disabled type="text" id="nome-perfil" class="validate" value="Jose">
+                                        <label  id="nome-label" for="last_name">Nome</label>
                                     </div>
                                     <div class="divider"></div>
 
@@ -269,7 +275,7 @@
                                                 <div class="input-field col s12">
                                                     <a href="#"
                                                         class="waves-effect waves-light purple-text lighten-5">Ver
-                                                        Mais</a>
+                                                        Mais...</a>
 
 
                                                 </div>
