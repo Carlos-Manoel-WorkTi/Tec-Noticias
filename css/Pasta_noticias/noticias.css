@@ -59,7 +59,7 @@ header, footer{
 .eventos{
     padding-left: 90px;
     padding-top: 30px;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(0 0 0 / 57%);
 }
 
 .card-evento{
@@ -102,7 +102,8 @@ header, footer{
     color: white;
 }
 .tiitle-eventos{
-    background-image: linear-gradient(to bottom, #28156d , #2B26BF );
+    background-image: linear-gradient(to right, #5227eb , #b3b1dc );
+
    font-size: 2.2em;
    margin-bottom: 0.2em;
   /* Segundo passo: apagar do fundo tudo que não estiver imediatamente atrás de texto */

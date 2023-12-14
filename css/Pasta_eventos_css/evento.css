@@ -7,7 +7,12 @@
 header, footer{
     background-color: red;
 }
-
+element.style {
+    margin-top: 0px;
+    margin-bottom: 40px;
+    color: white;
+    margin-right: 20% ;
+}
 .banner{
     background-color: blue;
     background-image: radial-gradient(#1F2563, #1B205B, #06062A);
@@ -45,7 +50,7 @@ header, footer{
   }
 
 .dropdown-content li>a, .dropdown-content li>span {
-    font-size: 26px;
+    font-size: 20px;
     color: rgb(31, 21, 117);
     display: block;
     line-height: 22px;
@@ -98,7 +103,7 @@ header, footer{
     color: white;
 }
 .tiitle-eventos{
-    background-image: linear-gradient(to bottom, #28156d , #2B26BF );
+    background-image: linear-gradient(to right, #5227eb , #b3b1dc );
    font-size: 2.2em;
    margin-bottom: 0.2em;
   /* Segundo passo: apagar do fundo tudo que não estiver imediatamente atrás de texto */
@@ -155,13 +160,6 @@ header, footer{
 
 hr{
     width: 1100px;
-<<<<<<< HEAD
-}
-nav.nav-extended {
-    height: 130px;
-    padding: 8px;
-  }
-=======
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -191,4 +189,3 @@ h1{
 .info-icon:hover{
     cursor: pointer;
 }
->>>>>>> 7d3726865977a88c2b2dcdb009de6decc100f7b0
