@@ -1,3 +1,7 @@
+-- Link de conexão do banco de dados:
+-- postgres://pjhibdmz:LjejOQDq1C2gF7VgVOYzYK7Ub38XVIhq@silly.db.elephantsql.com/pjhibdmz
+
+
 create table usuarios(
   id serial primary key,
 	nome text (250) not null,
